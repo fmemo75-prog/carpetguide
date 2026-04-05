@@ -1,29 +1,60 @@
-# hali-rehberi-
-🇬🇧 Discover types, care & weaving techniques.
-🇫🇷 Découvrez les types, l'entretien et le tissage.
-🇮🇹 Scopri tipologie, cura e tecniche tessili.
-🇪🇸 Descubre tipos, cuidado y técnicas de tejido.
-1. History & Heritage (Tarihçe ve Miras)
-Turkish carpets represent a 2500-year-old tradition, originating from Central Asian nomadic tribes and evolving through Anatolian Seljuk and Ottoman eras.
-EN: From the Pazyryk carpet to the palaces of Istanbul, weaving is a language of symbols.
-FR: Du tapis de Pazyryk aux palais d'Istanbul, le tissage est un langage de symboles.
-IT: Dal tappeto di Pazyryk ai palazzi di Istanbul, la tessitura è un linguaggio di simboli.
-ES: Desde la alfombra de Pazyryk hasta los palacios de Estambul, el tejido es un lenguaje de símbolos.
-2. The Handmade Difference (El Yapımı Farkı)
-The soul of a rug lies in its imperfections. Unlike machine-made rugs, handmade pieces use natural dyes and individual knots.
-EN: Handmade rugs feature unique "Ghiordes" double knots, ensuring durability for generations.
-FR: Les tapis faits main présentent des doubles nœuds "Ghiordes" uniques, garantissant une durabilité séculaire.
-IT: I tappeti fatti a mano presentano esclusivi doppi nodi "Ghiordes", garantendo una durata secolare.
-ES: Las alfombras hechas a mano cuentan con nudos dobles "Ghiordes" únicos, lo que garantiza su durabilidad secular.
-3. Carpet vs. Kilim (Halı ve Kilim Farkı)
-While carpets have a "pile" (thickness), Kilims are flat-woven, lighter, and often more geometric.
-EN: Carpets are knotted and thick; Kilims are flat-woven and pileless works of art.
-FR: Les tapis sont noués et épais ; les kilims sont des œuvres d'art tissées à plat sans poils.
-IT: I tappeti sono annodati e spessi; i kilim sono opere d'arte a trama piatta senza pelo.
-ES: Las alfombras son anudadas y gruesas; los kilims son obras de arte de tejido plano sin pelo.
-4. Technical Specifications (Teknik Özellikler)
-Natural materials define the quality: Wool on wool, Silk on silk, or Cotton foundations.
-EN: Natural dyes and hand-spun wool create a vibrant, living texture.
-FR: Les teintures naturelles et la laine filée à la main créent une texture vibrante et vivante.
-IT: Le tinture naturali e la lana filata a mano creano una consistenza vibrante e viva.
-ES: Los tintes naturales y la lana hilada a mano crean una textura vibrante y viva.
+# 🧶 The Global Carpet & Kilim Guide | Halı ve Kilim Rehberi
+
+![Carpet Banner](https://images.unsplash.com/photo-1576016773942-334520fe3121?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80)
+
+## 🌍 Introduction / Présentation / Introduzione / Introducción
+
+**[EN]** Discover types, care & weaving techniques. An open-source encyclopedia for rug enthusiasts. Join us to preserve this heritage!  
+**[FR]** Découvrez les types, l'entretien et le tissage. Une encyclopédie en libre accès pour les passionnés. Rejoignez-nous !  
+**[IT]** Scopri tipologie, cura e tecniche tessili. Un'enciclopedia open source per appassionati. Unisciti a noi!  
+**[ES]** Descubre tipos, cuidado y técnicas de tejido. Una enciclopedia de código abierto para entusiastas. ¡Únete!
+
+---
+
+## 🏛️ History & Heritage (Tarihçe ve Miras)
+
+| Language | Heritage Description |
+| :--- | :--- |
+| 🇬🇧 **English** | Turkish carpets represent a 2500-year-old tradition, originating from Central Asian nomadic tribes and evolving through Ottoman eras. |
+| 🇫🇷 **Français** | Les tapis turcs représentent une tradition de 2500 ans, originaire des tribus nomades d'Asie centrale. |
+| 🇮🇹 **Italiano** | I tappeti turchi rappresentano una tradizione di 2500 anni, originaria delle tribù nomadi dell'Asia centrale. |
+| 🇪🇸 **Español** | Las alfombras turcas representan una tradición de 2500 años, originaria de las tribus nómadas de Asia Central. |
+
+---
+
+## ✨ The Handmade Difference (El Yapımı Farkı)
+
+*   **🇬🇧 EN:** Handmade rugs use the **Ghiordes (double) knot** and natural dyes. Unlike machine rugs, they are unique and last for centuries.
+*   **🇫🇷 FR:** Les tapis faits main utilisent le **nœud Ghiordes** et des teintures naturelles. Ils sont uniques et durent des siècles.
+*   **🇮🇹 IT:** I tappeti fatti a mano usano il **nodo Ghiordes** e tinture naturali. Sono unici e durano per secoli.
+*   **🇪🇸 ES:** Las alfombras hechas a mano usan el **nudo Ghiordes** y tintes naturales. Son únicas y duran siglos.
+
+---
+
+## 🧵 Carpet vs. Kilim (Halı ve Kilim)
+
+| Feature | 🧶 Carpet (Halı) | 🎨 Kilim (Kilim) |
+| :--- | :--- | :--- |
+| **Texture** | Knotted / Thick (Pile) | Flat-woven / Thin |
+| **Technique** | Ghiordes or Persian Knot | Weft-faced weaving |
+| **Feel** | Soft and heavy | Light and firm |
+
+---
+
+## 📂 Navigation (Rehber Bölümleri)
+
+*   📍 **[Types of Rugs](./types/)** - Hereke, Usak, Bergama...
+*   🌿 **[Materials](./materials/)** - Wool, Silk, Cotton...
+*   🧼 **[Care & Cleaning](./care/)** - Preservation tips...
+*   📖 **[Glossary](./glossary/)** - Technical terms...
+
+---
+
+## 🤝 Contributing (Katkıda Bulunma)
+This is an open-source project. If you want to add a new rug type or a cleaning tip:
+1. Fork the project.
+2. Add your content.
+3. Open a **Pull Request**.
+
+---
+*Created with ❤️ for the world of weaving.*
