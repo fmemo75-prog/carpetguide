@@ -1,2 +1,5 @@
 # hali-rehberi-
-ingilizce: Discover types, care &amp; weaving techniques. Fransızca: Découvrez les types, l'entretien et le tissage. İtalyanca: Scopri tipologie, cura e tecniche tessili. İspanyolca: Descubre tipos, cuidado y técnicas de tejido.
+🇬🇧 Discover types, care & weaving techniques.
+🇫🇷 Découvrez les types, l'entretien et le tissage.
+🇮🇹 Scopri tipologie, cura e tecniche tessili.
+🇪🇸 Descubre tipos, cuidado y técnicas de tejido.
