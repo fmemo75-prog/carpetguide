@@ -1,8 +1,11 @@
 # 🎈 Welcome to the Kingdom of Rugs & Kilims: Cappadocia Edition
-### *Where Ancient Weaving Meets the Magic of the Skies*
 
-![Cappadocia Banner](https://images.unsplash.com/photo-1621259252378-028889812548?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80)
-*Handmade Heritage | Authentic Art | The Soul of Anatolia*
+<div align="center">
+  <img src="./cappadocia-balloons.png" width="100%" alt="Cappadocia Rugs and Balloons">
+  <p><i>"Where ancient weaving meets the magic of the skies."</i></p>
+</div>
+
+---
 
 ---
 
@@ -35,6 +38,30 @@ Choose your path into the world of weaving. These guides are designed for collec
 If you are visiting Cappadocia, this guide will help you distinguish between high-quality **museum-grade** pieces and tourist replicas. We preserve the culture of the Silk Road.
 
 > **"A rug is a map of the soul. In Cappadocia, every knot is a dream taking flight."**
+---
 
+## 🧿 The Secret Language of Rugs: Motifs & Meanings
+
+A rug is more than a decoration; it is a "woven diary." Anatolian women have used symbols for centuries to express their hopes, fears, and dreams.
+
+### 🎭 Most Popular Anatolian Motifs
+
+| Motif | Name (TR) | Meaning | Symbolizes |
+| :---: | :--- | :--- | :--- |
+| 💃 | **Hands on Hips** *(Eli Belinde)* | Motherhood & Fertility | Represents the female figure and the joy of life. |
+| 🐏 | **Ram’s Horn** *(Koçboynuzu)* | Power & Masculinity | Represents strength, heroism, and the protection of the family. |
+| 🌳 | **Tree of Life** *(Hayat Ağacı)* | Eternity | Represents the connection between Earth and Heaven; immortality. |
+| 🌊 | **Running Water** *(Akarsu)* | Life & Purity | Represents the flow of life and the importance of water. |
+| 🧿 | **Evil Eye** *(Nazar)* | Protection | Used to ward off bad luck and keep the family safe. |
+
+---
+
+## 🔍 Buyer's Guide: How to Spot Quality in Cappadocia
+
+1.  **Check the Back:** A handmade rug's pattern is almost as clear on the back as it is on the front.
+2.  **The "Abrash" Effect:** Slight color variations in the same shade are a sign of natural root dyes and hand-spun wool. This is a mark of value, not a defect!
+3.  **Knot Density:** Flip the rug and look at the knots per square inch. More knots mean more labor and higher detail.
+
+> **"In every thread, there is a prayer. In every knot, there is a soul."**
 ---
 *Maintained with ❤️ by [@fmemo75-prog](https://github.com/fmemo75-prog)*
