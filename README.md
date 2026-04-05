@@ -1,37 +1,40 @@
-# 🏰 Welcome to the Kingdom of Carpets and Kilims
-### *Where History is Woven into Every Thread*
+# 🎈 Welcome to the Kingdom of Rugs & Kilims: Cappadocia Edition
+### *Where Ancient Weaving Meets the Magic of the Skies*
 
-![Welcome Banner](https://images.unsplash.com/photo-1594142571722-b5e080206969?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80)
-*Handmade Heritage | Natural Art | Timeless Investment*
-
----
-
-## 🌐 Language Selection / Dil Seçimi
-
-### 🇬🇧 English Guide (Primary)
-Explore our comprehensive collection of knowledge, divided into two main categories:
-
-#### 🧶 [The Art of Carpets (Halı)](./en/README.md#the-timeless-legacy-from-pazyryk-to-your-home)
-*Knotted masterpieces, 2500 years of history, from Pazyryk to Hereke.*
-*   [History & Ancient Origins](./en/README.md#🏺-the-timeless-legacy-from-pazyryk-to-your-home)
-*   [Handmade vs. Machine Made](./en/README.md#⚖️-why-handmade-the-smart-investment)
-*   [Famous Anatolian Types](./en/README.md#🏆-masterpieces-of-anatolia-famous-rug-types)
-
-#### 🎨 [The Poetry of Kilims (Kilim)](./en/README.md#🎨-kilim--flat-weaves-the-geometry-of-culture)
-*Flat-woven stories, geometric wonders, Cicim, Zili, and Sumak techniques.*
-*   [Kilim Techniques (Cicim, Zili, Sumak)](./en/README.md#🧵-types-of-weaving-cicim-zili-and-sumak)
-*   [Symbolism & Meaning (Coming Soon)](#)
+![Cappadocia Banner](https://images.unsplash.com/photo-1621259252378-028889812548?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80)
+*Handmade Heritage | Authentic Art | The Soul of Anatolia*
 
 ---
 
-### 🌍 Other Languages (Coming Soon)
-*   🇫🇷 **Français** - *Découvrez l'art du tissage (Bientôt)*
-*   🇮🇹 **Italiano** - *Scopri il regno dei tappeti (Prossimamente)*
-*   🇪🇸 **Español** - *El mundo de las alfombras y kilims (Próximamente)*
+## 🌐 Language & Selection (English)
+
+Choose your path into the world of weaving. These guides are designed for collectors, travelers, and art lovers.
+
+### 🧶 [The Art of Carpets (Halı)](./en/README.md)
+*Explore the 2500-year history of knotted masterpieces.*
+- 🏺 **[Pazyryk: The World's Oldest Rug](./en/README.md#🏺-the-timeless-legacy-from-pazyryk-to-your-home)**
+- ⚖️ **[Why Handmade? (Investment Guide)](./en/README.md#⚖️-why-handmade-the-smart-investment)**
+- 🏆 **[Famous Anatolian Types (Hereke, Usak)](./en/README.md#🏆-masterpieces-of-anatolia-famous-rug-types)**
+
+### 🎨 [The Poetry of Kilims (Kilim)](./en/README.md#🎨-kilim--flat-weaves-the-geometry-of-culture)
+*Flat-woven stories told through geometric symbols.*
+- 🧵 **[Cicim, Zili & Sumak Techniques](./en/README.md#🧵-types-of-weaving-cicim-zili-and-sumak)**
+- 🧿 **[Symbolism in Weaving (Coming Soon)](#)**
 
 ---
 
-## 🤝 Join the Community
-This is an open-source cultural project. If you are a collector, weaver, or enthusiast, feel free to contribute to our global database!
+## 🌍 International Sections (Coming Soon)
 
-*Created with ❤️ by [@fmemo75-prog](https://github.com/fmemo75-prog)*
+| 🇫🇷 French | 🇮🇹 Italian | 🇪🇸 Spanish |
+| :---: | :---: | :---: |
+| ![Bientôt](https://img.shields.io/badge/Status-Coming_Soon-lightgrey?style=for-the-badge) | ![Prossimamente](https://img.shields.io/badge/Status-Coming_Soon-lightgrey?style=for-the-badge) | ![Próximamente](https://img.shields.io/badge/Status-Coming_Soon-lightgrey?style=for-the-badge) |
+
+---
+
+## 🏘️ Experience Cappadocia
+If you are visiting Cappadocia, this guide will help you distinguish between high-quality **museum-grade** pieces and tourist replicas. We preserve the culture of the Silk Road.
+
+> **"A rug is a map of the soul. In Cappadocia, every knot is a dream taking flight."**
+
+---
+*Maintained with ❤️ by [@fmemo75-prog](https://github.com/fmemo75-prog)*
