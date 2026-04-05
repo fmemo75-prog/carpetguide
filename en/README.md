@@ -5,6 +5,20 @@
 *The Pazyryk Carpet - The world's oldest known carpet (5th Century BC).*
 *The Pazyryk Carpet (approx. 400 BC), currently preserved in the Hermitage Museum, St. Petersburg.*
 
+2. Yöntem (Numaralandırılmış Tablo), bir müze kataloğu gibi göründüğü için müşteriye en çok güven veren yöntemdir. Bu yöntemle Pazırık halısının üzerindeki detayları "X-Ray" çekiyormuş gibi açıklayabiliriz.
+Aşağıdaki kodu en/README.md dosyanızda Pazırık resmi olan bölümün hemen altına yapıştırın:
+🔍 Deep Dive: Secrets of the Pazyryk Design
+The Pazyryk carpet is not just a pattern; it is a coded map of an ancient civilization. Below is a breakdown of its most significant sections:
+Section No	Part of Rug	Symbolic Meaning & Description
+1	Central Field	24 Squares of Rosettes: Represents solar symbols or the "flower of life." It symbolizes eternity and the cycle of nature.
+2	Inner Border	Procession of Elks (Stags): These animals were sacred to the nomads. They represent grace, speed, and the connection between earth and sky.
+3	Outer Border	Horsemen & Grooms: 28 horses and riders. This reflects the social structure and military power of the Scythian tribes.
+4	Technical Base	The Ghiordes Knot: The world's first recorded "Double Knot." This is the proof that high-level textile art existed 2500 years ago.
+🧶 Technical Specifications for Collectors
+Material: 100% Fine Wool on Wool foundation.
+Knot Density: Approximately 3,600 knots per square decimeter (very high for that era!).
+Dyes: Organic root dyes (Madder red, yellow, and blue).
+
 Buying a handmade rug is not just an interior design choice; it is an acquisition of a 2,500-year-old human heritage. Here is why the story of weaving matters to you.
 
 🏛️ The Beginning: The Pazyryk Carpet (5th Century BC)
