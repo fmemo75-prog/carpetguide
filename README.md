@@ -19,10 +19,25 @@ Choose your path into the world of weaving. These guides are designed for collec
 - ⚖️ **[Why Handmade? (Investment Guide)](./en/README.md#⚖️-why-handmade-the-smart-investment)**
 - 🏆 **[Famous Anatolian Types (Hereke, Usak)](./en/README.md#🏆-masterpieces-of-anatolia-famous-rug-types)**
 
-### 🎨 [The Poetry of Kilims (Kilim)](./en/README.md#🎨-kilim--flat-weaves-the-geometry-of-culture)
-*Flat-woven stories told through geometric symbols.*
-- 🧵 **[Cicim, Zili & Sumak Techniques](./en/README.md#🧵-types-of-weaving-cicim-zili-and-sumak)**
-- 🧿 **[Symbolism in Weaving (Coming Soon)](#)**
+#### 🎨 [The Poetry of Kilims (Kilim)](./en/README.md#🎨-kilim--flat-weaves-the-geometry-of-culture)
+
+<details>
+  <summary><b>Click to explore the secrets of Kilim... (Bilgi için tıklayın)</b></summary>
+  <br>
+  
+  **[EN]** Unlike carpets, Kilims are flat-woven masterpieces. They are "woven poems" where every geometric shape tells a story of tribal identity, migration, and nature.
+  
+  **Key Highlights:**
+  *   **No Knots:** Kilims are pileless, making them lightweight and reversible.
+  *   **Symbolism:** Discover the meaning of *Cicim, Zili,* and *Sumak* techniques.
+  *   **Artistic Value:** Perfect for modern wall decor and authentic floor covering.
+
+  👉 **[Read the Full Kilim & Flat-Weave Guide Here](./en/README.md#🎨-kilim--flat-weaves-the-geometry-of-culture)**
+</details>
+
+*Explore flat-woven stories told through 2500 years of geometric symbols.*
+
+---
 
 ---
 
