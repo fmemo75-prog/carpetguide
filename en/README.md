@@ -1,7 +1,8 @@
 # 📊 Rug & Kilim Comparison Matrix (English)
 
  The Timeless Legacy: From Pazyryk to Your Home
- ![The Pazyryk Carpet - The World's Oldest Rug](https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Pazyryk_Rug.jpg/800px-Pazyryk_Rug.jpg)
+ ![The Pazyryk Carpet](./pazyryk.jpg)
+*The Pazyryk Carpet - The world's oldest known carpet (5th Century BC).*
 *The Pazyryk Carpet (approx. 400 BC), currently preserved in the Hermitage Museum, St. Petersburg.*
 Buying a handmade rug is not just an interior design choice; it is an acquisition of a 2,500-year-old human heritage. Here is why the story of weaving matters to you.
 🏛️ The Beginning: The Pazyryk Carpet (5th Century BC)
