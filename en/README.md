@@ -1,7 +1,7 @@
 # 📊 Rug & Kilim Comparison Matrix (English)
 
  The Timeless Legacy: From Pazyryk to Your Home
- ![The Pazyryk Carpet](./Pazyryk.jpg)
+ ![The Pazyryk Carpet](./Pazyryk_carpet.jpg)
 *The Pazyryk Carpet - The world's oldest known carpet (5th Century BC).*
 *The Pazyryk Carpet (approx. 400 BC), currently preserved in the Hermitage Museum, St. Petersburg.*
 
