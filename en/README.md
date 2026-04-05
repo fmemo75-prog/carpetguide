@@ -5,8 +5,7 @@
 *The Pazyryk Carpet - The world's oldest known carpet (5th Century BC).*
 *The Pazyryk Carpet (approx. 400 BC), currently preserved in the Hermitage Museum, St. Petersburg.*
 
-2. Yöntem (Numaralandırılmış Tablo), bir müze kataloğu gibi göründüğü için müşteriye en çok güven veren yöntemdir. Bu yöntemle Pazırık halısının üzerindeki detayları "X-Ray" çekiyormuş gibi açıklayabiliriz.
-Aşağıdaki kodu en/README.md dosyanızda Pazırık resmi olan bölümün hemen altına yapıştırın:
+
 🔍 Deep Dive: Secrets of the Pazyryk Design
 The Pazyryk carpet is not just a pattern; it is a coded map of an ancient civilization. Below is a breakdown of its most significant sections:
 Section No	Part of Rug	Symbolic Meaning & Description
