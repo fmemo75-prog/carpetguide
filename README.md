@@ -1,8 +1,11 @@
 # 🎈 Welcome to the Kingdom of Rugs & Kilims: Cappadocia Edition
-### *Where Ancient Weaving Meets the Magic of the Skies*
 
-![Cappadocia Banner](https://images.unsplash.com/photo-1621259252378-028889812548?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80)
-*Handmade Heritage | Authentic Art | The Soul of Anatolia*
+<div align="center">
+  <img src="./cappadocia-balloons.png" width="100%" alt="Cappadocia Rugs and Balloons">
+  <p><i>"Where ancient weaving meets the magic of the skies."</i></p>
+</div>
+
+---
 
 ---
 
