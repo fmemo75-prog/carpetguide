@@ -14,6 +14,8 @@ If you are looking for specific information, jump directly to:
 - 🏺 **[History of Weaving](./en/history.md)**
 - 🔍 **[How to Identify a Handmade Rug](./en/handmade-vs-machine.md)**
 - 🧼 **[Cleaning & Maintenance](./en/maintenance.md)**
-
+## 🌐 Select Language / Dil Seçin
+- 🇬🇧 **[English Carpet Guide (Start Here)](./en/README.md)** 
+- 🇹🇷 [Türkçe Halı Rehberi (Çok Yakında)](./tr/README.md)
 ---
 *Maintained by [@fmemo75-prog](https://github.com/fmemo75-prog)*
