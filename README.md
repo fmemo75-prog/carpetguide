@@ -23,7 +23,15 @@
   </p>
 </div>
 
-> **About the Expert:** Fatih is a professional French teacher with an academic background and a lifelong passion for the weaving heritage of Anatolia. By bridging his linguistic mastery with deep technical knowledge of rug arts, he provides a unique, expert-level perspective for global collectors and travelers visiting Cappadocia.
+> **About the Expert:** Fatih is a professional French teacher with an academic background and a lifelong passion for the weaving heritage of Anatolia. By bridging his linguistic mastery with deep technical knowledge of rug arts, he provides a unique, expert-level perspective for global collectors and travelers visiting Cappadocia.---
+
+### 🎓 Educational Resources
+
+As a professional educator, I invite you to explore my structured Turkish language course:
+
+[![Turkish Lessons](https://img.shields.io/badge/LEARN_TURKISH-Click_for_Lessons-red?style=for-the-badge&logo=duolingo)](https://fmemo75-prog.github.io/turkce-ders/index.html)
+
+---
 
 ---
 
