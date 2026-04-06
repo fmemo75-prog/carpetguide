@@ -55,13 +55,11 @@ Choosing a handmade rug is more than buying furniture; it is an investment in a 
 ## 🎨 Kilim & Flat-Weaves: The Poetry of Geometry
 Unlike carpets, **Kilims** are flat-woven. They are the "woven poems" of Anatolia, where every triangle and diamond shape tells a story.
 
-<a name="techniques"></a>
-### 🧵 Specialized Techniques: Cicim, Zili, and Sumak
-*   **Cicim (Jijim):** Patterns look like embroidery on a flat base. Very decorative.
-*   **Zili (Sili):** Thicker and ribbed texture, incredibly durable for floor use.
-*   **Sumak (Soumak):** A complex chain-stitch technique, used for fine artistic details.
+### 🎨 [The Poetry of Kilims (Kilim)](./en/README.md#kilim-section)
+*Flat-woven stories told through geometric symbols.*
 
----
+*   🌸 **[Detailed Guide: Cicim (Jijim) Technique](./en/cicim.md)***   **Cicim (Jijim):** Patterns look like embroidery on a flat base. Very decorative. [Read the full Cicim Guide here](./cicim.md)
+*   📘 [Zili & Sumak Techniques (Coming Soon)](#)---
 
 <a name="motifs"></a>
 ## 🧿 The Secret Language: Motifs & Meanings
