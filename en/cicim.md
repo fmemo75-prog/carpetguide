@@ -12,19 +12,14 @@ Unlike a standard Kilim, where the surface is smooth, a Cicim rug has a raised p
    Intricate Details Allows for much finer and more delicate motifs than a regular Kilim.
    Versatility Traditionally used for bridal dowries (çeyiz), wall hangings, and decorative floor covers.
 
----
-
-## 📸 Visual Gallery (Examples)
-
+---# 📸 Visual Gallery (Examples)
 ### 1. The Classic Anatolian Cicim
 ![Anatolian Cicim Example](httpsimages.unsplash.comphoto-1576016773942-334520fe3121auto=format&fit=crop&w=800&q=80)
 Example of a vintage Cicim with geometric floral motifs.
-
 ### 2. Geometric Precision
 ![Geometric Cicim](httpsraw.githubusercontent.comfmemo75-proghali-rehberi-mainencicim_detail.png)
 (Note You can upload your own close-up photos of Cicim textures here)
 # 🌸 Cicim (Jijim) Gallery: The Language of Geometry
-
 Cicim weaving is like painting with a needle on a loom. Every line and shape is a "coded message" from the weaver. Let’s analyze these two masterpieces from our collection.
 
 ---
@@ -35,19 +30,16 @@ Cicim weaving is like painting with a needle on a loom. Every line and shape is 
 
 This piece represents the classic tribal Anatolian style. Its dark, rich tones and structured layout speak of tradition and protection.
 
-No	Visual Zone	Element & Symbolism
+
 ### 🔍 Deep Dive: Analyzing the Nomadic Cicim (Point-by-Point)
 
 ![Cicim Analysis](./cicim-dark.webp)
-
-
 | No | Visual Zone | Element & Symbolism |
 | :---: | :--- | :--- |
-| **1** | **The Outer Border (Kenar)** | **The Protective Shield:** The border represents the boundary of the home. These repeating geometric patterns are designed to keep bad luck outside while preserving the peace within the family. |
-| **2** | **Central Burdock (Pıtrak)** | **Warding off the Evil Eye:** These "star-like" motifs are called *Pıtrak*. Just like the burdock plant that sticks to everything, it is believed to "catch" and neutralize the Evil Eye. |
-| **3** | **The Fringes (Saçaklar)** | **The Foundation:** Unlike machine rugs where fringes are sewn on later, these are the actual **warp threads**. They prove the rug was woven on a traditional loom. |
-| **4** | **Diamond Lattice (Baklava)** | **Unity & Connection:** The white grid lines connect the motifs. This represents the strength of family bonds—how different lives are woven into one strong unit. |
-## ☀️ Example 2: The Anatolian Sun (Vibrant Geometry)
+| **1** | **The Outer Border (Kenar)** | **The Protective Shield:** The border represents the boundary of the home. These repeating geometric patterns are designed to keep bad luck outside. |
+| **2** | **Central Burdock (Pıtrak)** | **Warding off the Evil Eye:** These "star-like" motifs are called *Pıtrak*. It is believed to "catch" and neutralize envious glares. |
+| **3** | **The Fringes (Saçaklar)** | **The Foundation:** Unlike machine rugs, these are the actual **warp threads**. They prove the rug was woven on a traditional loom. |
+| **4** | **Diamond Lattice (Baklava)** | **Unity & Connection:** The white grid lines connect the motifs. This represents the strength of family and tribal bonds. |
 
 ![Vibrant Cicim](./cicim-vibrant.webp)
 
