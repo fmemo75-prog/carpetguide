@@ -31,7 +31,7 @@ Cicim weaving is like painting with a needle on a loom. Every line and shape is 
 
 ## 🍷 Example 1: The Nomadic Mystery (Deep Burgundy)
 
-![Deep Burgundy Cicim](./cicim-dark.webp)
+
 
 This piece represents the classic tribal Anatolian style. Its dark, rich tones and structured layout speak of tradition and protection.
 
@@ -39,6 +39,7 @@ No	Visual Zone	Element & Symbolism
 ### 🔍 Deep Dive: Analyzing the Nomadic Cicim (Point-by-Point)
 
 ![Cicim Analysis](./cicim-dark.webp)
+
 
 | No | Visual Zone | Element & Symbolism |
 | :---: | :--- | :--- |
