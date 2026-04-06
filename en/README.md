@@ -58,7 +58,7 @@ Unlike carpets, **Kilims** are flat-woven. They are the "woven poems" of Anatoli
 ### 🎨 [The Poetry of Kilims (Kilim)](./en/README.md#kilim-section)
 *Flat-woven stories told through geometric symbols.*
 
-*   🌸 **[Detailed Guide: Cicim (Jijim) Technique](./en/cicim.md)***   **Cicim (Jijim):** Patterns look like embroidery on a flat base. Very decorative. [Read the full Cicim Guide here](./cicim.md)
+* *   **Cicim (Jijim):** Patterns look like embroidery on a flat base. [Read the full Cicim Guide here](./cicim.md)
 *   📘 [Zili & Sumak Techniques (Coming Soon)](#)---
 
 <a name="motifs"></a>
