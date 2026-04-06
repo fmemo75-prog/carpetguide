@@ -27,9 +27,19 @@
 
 ### 🎓 Educational Resources
 
-As a professional educator, I invite you to explore my structured Turkish language course:
+---
 
-[![Turkish Lessons](https://img.shields.io/badge/LEARN_TURKISH-Click_for_Lessons-red?style=for-the-badge&logo=duolingo)](https://fmemo75-prog.github.io/turkce-ders/index.html)
+### 🏛️ Language Academy (Eğitim Hizmetleri)
+
+| Course | Target Audience | Language of Instruction |
+| :--- | :--- | :--- |
+| 🇹🇷 **Turkish** | Foreigners & Travelers | English / French / Italian |
+| 🇫🇷 **French** | All Levels | Turkish / English / Italian |
+| 🇮🇹 **Italian** | Beginners & Intermediate | Turkish / French / English |
+
+> **[🚀 Explore Lessons (Dersleri Keşfedin)](https://fmemo75-prog.github.io/turkce-ders/index.html)**
+
+---
 
 ---
 
