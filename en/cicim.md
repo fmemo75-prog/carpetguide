@@ -35,12 +35,11 @@ Cicim weaving is like painting with a needle on a loom. Every line and shape is 
 
 This piece represents the classic tribal Anatolian style. Its dark, rich tones and structured layout speak of tradition and protection.
 
-### 🔍 Key Motifs & Symbols:
-*   **The Diamond Lattice (Baklava):** The white lines forming diamonds represent **unity and family**. It acts as a "fence" protecting the symbols inside.
-*   **The Burdock (Pıtrak):** Inside the diamonds, you see colorful star-like shapes. In Anatolia, the Burdock is a plant that sticks to everything; thus, it is believed to **"stick to evil eyes"** and keep them away from the home.
-*   **Color Palette:** The deep madder red (*Kök Boya*) symbolizes fire and life, while the indigo blue represents the sky.
-
----
+No	Visual Zone	Element & Symbolism
+1	The Outer Border (Kenar)	The Protective Shield: The border represents the boundary of the home. These repeating geometric patterns are designed to keep bad luck outside while preserving the peace within the family.
+2	Central Burdock (Pıtrak)	Warding off the Evil Eye: These "star-like" motifs are called Pıtrak. Just like the burdock plant that sticks to everything, this motif is believed to "catch" and neutralize envious glares (the Evil Eye).
+3	The Fringes (Saçaklar)	The Foundation: Unlike machine-made rugs where fringes are sewn on later, these are the actual warp threads. They prove the rug was woven on a traditional loom from start to finish.
+4	Diamond Lattice (Baklava)	Unity & Connection: The white grid lines (lattice) connect the individual motifs. This represents the strength of tribal or family bonds—how different lives are woven together into one strong unit.---
 
 ## ☀️ Example 2: The Anatolian Sun (Vibrant Geometry)
 
