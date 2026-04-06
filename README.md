@@ -5,13 +5,7 @@
   <p><i>"Where ancient weaving meets the magic of the skies."</i></p>
 </div>
 
-------
 
----
-
-## 👨‍🏫 Meet Your Curator: Fatih Mehmet Canıtez
-
----
 
 ## 👨‍🏫 Meet Your Curator: Fatih Mehmet Canıtez
 
@@ -60,15 +54,7 @@
 
 > **[🚀 Explore Lessons (Dersleri Keşfedin)](https://fmemo75-prog.github.io/turkce-ders/index.html)**
 
----
-
----
-
----
-
----
-
-## 🌐 Language & Selection (English)
+----## 🌐 Language & Selection (English)
 
 Choose your path into the world of weaving. These guides are designed for collectors, travelers, and art lovers.
 
