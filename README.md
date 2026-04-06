@@ -74,16 +74,11 @@ Choose your path into the world of weaving. These guides are designed for collec
 
 ### 🧶 [The Art of Carpets (Halı)](./en/README.md)
 *Explore the 2500-year history of knotted masterpieces.*
-- 🏺 **[Pazyryk: The World's Oldest Rug](./en/README.md#🏺-the-timeless-legacy-from-pazyryk-to-your-home)**
-- ⚖️ **[Why Handmade? (Investment Guide)](./en/README.md#⚖️-why-handmade-the-smart-investment)**
-- 🏆 **[Famous Anatolian Types (Hereke, Usak)](./en/README.md#🏆-masterpieces-of-anatolia-famous-rug-types)**
 
-#### 🎨 [The Poetry of Kilims (Kilim)](./en/README.md#🎨-kilim--flat-weaves-the-geometry-of-culture)
+### 🎨 [The Poetry of Kilims (Kilim)](./en/README.md#kilim-section)
+*Flat-woven stories told through geometric symbols.*
 
-<details>
-  <summary><b>Click to explore the secrets of Kilim... (Bilgi için tıklayın)</b></summary>
-  <br>
-  
+*   🌸 **[Detailed Guide: Cicim (Jijim) Technique](./en/cicim.md)**  
   **[EN]** Unlike carpets, Kilims are flat-woven masterpieces. They are "woven poems" where every geometric shape tells a story of tribal identity, migration, and nature.
   
   **Key Highlights:**
