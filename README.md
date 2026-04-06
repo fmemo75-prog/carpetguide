@@ -7,21 +7,32 @@
 
 ------
 
+---
+
 ## 👨‍🏫 Meet Your Curator: Fatih Mehmet Canıtez
 
 <div align="center">
   <img src="./carpet.jpeg" width="200" style="border-radius: 50%; border: 3px solid #f39c12;" alt="Fatih Mehmet Canıtez">
   <h3><b>Fatih Mehmet Canıtez</b></h3>
   <p><b>Expert in Traditional Turkish Carpet & Kilim Arts</b></p>
-  <p><i>French Language Educator & Polyglot</i></p>
+  <p><i>French Language Educator & Polyglot (EN, FR, IT, ES)</i></p>
 
-  <p>
-    <img src="https://img.shields.io/badge/Language-French-blue?style=for-the-badge&logo=icloud" alt="French">
-    <img src="https://img.shields.io/badge/Language-Italian-green?style=for-the-badge&logo=apple" alt="Italian">
-    <img src="https://img.shields.io/badge/Language-Spanish-red?style=for-the-badge" alt="Spanish">
-    <img src="https://img.shields.io/badge/Language-English-orange?style=for-the-badge" alt="English">
-  </p>
+  <!-- İletişim Butonları -->
+  <a href="https://wa.me/905054466760" target="_blank">
+    <img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="WhatsApp">
+  </a>
+  <a href="mailto:fmemo75@gmail.com">
+    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email">
+  </a>
+  <a href="https://www.facebook.com/share/18X32VU2k5/" target="_blank">
+    <img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white" alt="Facebook">
+  </a>
+
 </div>
+
+> **Direct Contact:** Whether you are looking for a rare antique rug, need an expert opinion in Cappadocia, or are interested in language lessons, feel free to reach out. I provide consultancy in **English, French, Italian, and Spanish.**
+
+---
 
 > **About the Expert:** Fatih is a professional French teacher with an academic background and a lifelong passion for the weaving heritage of Anatolia. By bridging his linguistic mastery with deep technical knowledge of rug arts, he provides a unique, expert-level perspective for global collectors and travelers visiting Cappadocia.---
 
