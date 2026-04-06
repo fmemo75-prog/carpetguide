@@ -11,25 +11,35 @@
 
 ## 👨‍🏫 Meet Your Curator: Fatih Mehmet Canıtez
 
+---
+
+## 👨‍🏫 Meet Your Curator: Fatih Mehmet Canıtez
+
 <div align="center">
-  <img src="./carpet.jpeg" width="200" style="border-radius: 50%; border: 3px solid #f39c12;" alt="Fatih Mehmet Canıtez">
+  <img src="./carpet.jpeg" width="180" style="border-radius: 50%; border: 3px solid #f39c12;" alt="Fatih Mehmet Canıtez">
   <h3><b>Fatih Mehmet Canıtez</b></h3>
   <p><b>Expert in Traditional Turkish Carpet & Kilim Arts</b></p>
   <p><i>French Language Educator & Polyglot (EN, FR, IT, ES)</i></p>
 
-  <!-- İletişim Butonları -->
+  <!-- Görünür İletişim Bilgileri -->
+  <p>
+    📱 <b>WhatsApp:</b> <a href="https://wa.me/905054466760">+90 505 446 67 60</a><br>
+    📧 <b>Email:</b> <a href="mailto:fmemo75@gmail.com">fmemo75@gmail.com</a><br>
+    🔵 <b>Facebook:</b> <a href="https://www.facebook.com/share/18X32VU2k5/" target="_blank">Visit Profile</a>
+  </p>
+
+  <!-- Hızlı İletişim Rozetleri -->
   <a href="https://wa.me/905054466760" target="_blank">
-    <img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="WhatsApp">
-  </a>
-  <a href="mailto:fmemo75@gmail.com">
-    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email">
+    <img src="https://img.shields.io/badge/WhatsApp-25D366?style=flat-square&logo=whatsapp&logoColor=white" alt="WhatsApp">
   </a>
   <a href="https://www.facebook.com/share/18X32VU2k5/" target="_blank">
-    <img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white" alt="Facebook">
+    <img src="https://img.shields.io/badge/Facebook-1877F2?style=flat-square&logo=facebook&logoColor=white" alt="Facebook">
   </a>
-
 </div>
 
+> **Expert Consultancy:** I provide professional guidance for rug collectors and language students. Feel free to message me directly on WhatsApp for any inquiries regarding Anatolian weaving arts or language lessons.
+
+---
 > **Direct Contact:** Whether you are looking for a rare antique rug, need an expert opinion in Cappadocia, or are interested in language lessons, feel free to reach out. I provide consultancy in **English, French, Italian, and Spanish.**
 
 ---
