@@ -32,10 +32,8 @@ This piece represents the classic tribal Anatolian style. Its dark, rich tones a
 
 
 ### 🔍 Deep Dive: Analyzing the Nomadic Cicim (Point-by-Point)
-
 ![Cicim Analysis](./cicim-dark.webp)
-| No | Visual Zone | Element & Symbolism |
-| :---: | :--- | :--- |
+
 | **1** | **The Outer Border (Kenar)** | **The Protective Shield:** The border represents the boundary of the home. These repeating geometric patterns are designed to keep bad luck outside. |
 | **2** | **Central Burdock (Pıtrak)** | **Warding off the Evil Eye:** These "star-like" motifs are called *Pıtrak*. It is believed to "catch" and neutralize envious glares. |
 | **3** | **The Fringes (Saçaklar)** | **The Foundation:** Unlike machine rugs, these are the actual **warp threads**. They prove the rug was woven on a traditional loom. |
