@@ -5,6 +5,26 @@
   <p><i>"Where ancient weaving meets the magic of the skies."</i></p>
 </div>
 
+------
+
+## 👨‍🏫 Meet Your Curator: Fatih Mehmet Canıtez
+
+<div align="center">
+  <img src="./carpet.jpeg" width="200" style="border-radius: 50%; border: 3px solid #f39c12;" alt="Fatih Mehmet Canıtez">
+  <h3><b>Fatih Mehmet Canıtez</b></h3>
+  <p><b>Expert in Traditional Turkish Carpet & Kilim Arts</b></p>
+  <p><i>French Language Educator & Polyglot</i></p>
+
+  <p>
+    <img src="https://img.shields.io/badge/Language-French-blue?style=for-the-badge&logo=icloud" alt="French">
+    <img src="https://img.shields.io/badge/Language-Italian-green?style=for-the-badge&logo=apple" alt="Italian">
+    <img src="https://img.shields.io/badge/Language-Spanish-red?style=for-the-badge" alt="Spanish">
+    <img src="https://img.shields.io/badge/Language-English-orange?style=for-the-badge" alt="English">
+  </p>
+</div>
+
+> **About the Expert:** Fatih is a professional French teacher with an academic background and a lifelong passion for the weaving heritage of Anatolia. By bridging his linguistic mastery with deep technical knowledge of rug arts, he provides a unique, expert-level perspective for global collectors and travelers visiting Cappadocia.
+
 ---
 
 ---
