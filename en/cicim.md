@@ -36,11 +36,16 @@ Cicim weaving is like painting with a needle on a loom. Every line and shape is 
 This piece represents the classic tribal Anatolian style. Its dark, rich tones and structured layout speak of tradition and protection.
 
 No	Visual Zone	Element & Symbolism
-1	The Outer Border (Kenar)	The Protective Shield: The border represents the boundary of the home. These repeating geometric patterns are designed to keep bad luck outside while preserving the peace within the family.
-2	Central Burdock (Pıtrak)	Warding off the Evil Eye: These "star-like" motifs are called Pıtrak. Just like the burdock plant that sticks to everything, this motif is believed to "catch" and neutralize envious glares (the Evil Eye).
-3	The Fringes (Saçaklar)	The Foundation: Unlike machine-made rugs where fringes are sewn on later, these are the actual warp threads. They prove the rug was woven on a traditional loom from start to finish.
-4	Diamond Lattice (Baklava)	Unity & Connection: The white grid lines (lattice) connect the individual motifs. This represents the strength of tribal or family bonds—how different lives are woven together into one strong unit.---
+### 🔍 Deep Dive: Analyzing the Nomadic Cicim (Point-by-Point)
 
+![Cicim Analysis](./cicim-dark.webp)
+
+| No | Visual Zone | Element & Symbolism |
+| :---: | :--- | :--- |
+| **1** | **The Outer Border (Kenar)** | **The Protective Shield:** The border represents the boundary of the home. These repeating geometric patterns are designed to keep bad luck outside while preserving the peace within the family. |
+| **2** | **Central Burdock (Pıtrak)** | **Warding off the Evil Eye:** These "star-like" motifs are called *Pıtrak*. Just like the burdock plant that sticks to everything, it is believed to "catch" and neutralize the Evil Eye. |
+| **3** | **The Fringes (Saçaklar)** | **The Foundation:** Unlike machine rugs where fringes are sewn on later, these are the actual **warp threads**. They prove the rug was woven on a traditional loom. |
+| **4** | **Diamond Lattice (Baklava)** | **Unity & Connection:** The white grid lines connect the motifs. This represents the strength of family bonds—how different lives are woven into one strong unit. |
 ## ☀️ Example 2: The Anatolian Sun (Vibrant Geometry)
 
 ![Vibrant Cicim](./cicim-vibrant.webp)
