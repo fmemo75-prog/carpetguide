@@ -63,6 +63,21 @@ Choose your path into the world of weaving. These guides are designed for collec
 
 ### 🎨 [The Poetry of Kilims (Kilim)](./en/README.md#kilim-section)
 *Flat-woven stories told through geometric symbols.*
+🎨 The Poetry of Kilims: The Geometry of Human Soul
+A Kilim is not a product; it is a woven diary. While carpets represent the grandeur of palaces, Kilims represent the raw, honest, and poetic soul of the Anatolian plateau.
+🏛️ Beyond Commerce: A Canvas of Heritage
+For centuries, a Kilim has never been "just a rug" to an Anatolian woman. It was her unspoken language. In a society where she might not have had a formal voice, she spoke through symbols. Every geometric diamond, every sharp zigzag, and every choice of color is a reflection of her aspirations, sorrows, joys, and prayers. When you touch a Kilim, you are not touching a fabric; you are touching a human life story.
+🧶 The Anatomy of a Masterpiece (Kilim vs. Carpet)
+The primary difference lies in the DNA of the weave:
+The Flat-Weave Technique: Unlike carpets which have a "pile" (thickness created by knots), Kilims are flat-woven. The colorful weft threads are tightly interwoven with the vertical warp threads.
+Lightness & Versatility: Because they have no pile, Kilims are thinner, lighter, and often reversible. This made them perfect for the nomadic lifestyle—easy to carry, durable for tents, and elegant for walls.
+Geometric Precision: The technical nature of flat-weaving naturally lends itself to bold, sharp, and geometric patterns, creating a "modern" look that has remained timeless for thousands of years.
+👩‍🎨 The Labor of Anatolian Women
+Every single Kilim in an authentic collection is 100% handmade. There are no "blueprints" or printed patterns in front of the weaver.
+Memory Weaving: The designs are passed down from mother to daughter, held in the heart and mind.
+Hand-Spun Magic: The process starts with the shearing of the sheep. The wool is then hand-spun into yarn using a drop spindle (kirmen), creating a texture that machines can never replicate.
+The Alchemy of Nature: The vibrant reds come from madder root (kök boya), yellows from chamomile or onion skins, and blues from indigo. These natural dyes age gracefully, gaining a "patina" that increases the value over decades.
+"A carpet is a palace, but a kilim is a poem. A carpet is a statement, but a kilim is a conversation."
 
 *   🌸 **[Detailed Guide: Cicim (Jijim) Technique](./en/cicim.md)**  
   **[EN]** Unlike carpets, Kilims are flat-woven masterpieces. They are "woven poems" where every geometric shape tells a story of tribal identity, migration, and nature.
