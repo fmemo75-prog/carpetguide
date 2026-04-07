@@ -30,6 +30,39 @@ Buying a handmade rug is an acquisition of a 2,500-year-old human heritage. It i
 
 ---
 
+## 🛠️ The Making of a Masterpiece (Production Journey)
+
+*Click on the images below to zoom in on mobile devices.*
+
+<details open>
+  <summary><b>🐑 Step 1: The Journey of Wool (From Sheep to Loom)</b></summary>
+  <br>
+  <a href="./wool-journey.webp">
+    <img src="./wool-journey.webp" width="100%" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" alt="Wool Journey">
+  </a>
+  <p align="center">🔍 <i>Tap image to see the 12-step traditional process</i></p>
+</details>
+
+<details>
+  <summary><b>🌿 Step 2: The Art of Vegetal Dyeing (Natural Colors)</b></summary>
+  <br>
+  <a href="./natural-dyeing.webp">
+    <img src="./natural-dyeing.webp" width="100%" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" alt="Natural Dyeing">
+  </a>
+  <p>Our colors are harvested from nature: <b>Madder Root</b> for reds, <b>Indigo</b> for blues, and <b>Pomegranate skins</b> for yellows. No chemicals, just earth.</p>
+</details>
+
+<details>
+  <summary><b>👑 Step 3: Silk Weaving & The Solid Loom</b></summary>
+  <br>
+  <a href="./silk-weaving.webp">
+    <img src="./silk-weaving.webp" width="100%" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" alt="Silk Weaving">
+  </a>
+  <p>Silk weaving requires extreme precision. With a solid loom and fine silk threads, a weaver can tie over 1 million knots per square meter.</p>
+</details>
+
+---
+
 <a name="investment"></a>
 ## ⚖️ Why Handmade? (The Smart Investment)
 Choosing a handmade rug is more than buying furniture; it is an investment in a durable asset that appreciates in value over time.
