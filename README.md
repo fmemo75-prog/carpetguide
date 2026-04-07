@@ -61,10 +61,16 @@ Choose your path into the world of weaving. These guides are designed for collec
 ### 🧶 [The Art of Carpets (Halı)](./en/README.md)
 *Explore the 2500-year history of knotted masterpieces.*
 
-### 🎨 [The Poetry of Kilims (Kilim)](./en/README.md#kilim-section)
+## 🎨 [The Poetry of Kilims (Kilim)](./en/README.md#kilim-section)
 *Flat-woven stories told through geometric symbols.*
-🎨 The Poetry of Kilims: The Geometry of Human Soul
-A Kilim is not a product; it is a woven diary. While carpets represent the grandeur of palaces, Kilims represent the raw, honest, and poetic soul of the Anatolian plateau.
+
+<div align="center">
+  <img src="./kilim-motifs.png" width="100%" alt="Anatolian Kilim Motifs">
+  <p><i>"The Secret Language of Anatolia: Every motif is a story."</i></p>
+</div>
+
+*   🌸 **[Detailed Guide: Cicim (Jijim) Technique](./en/cicim.md)**
+*   📘 [Symbolism & Meanings (Explore in Guide)](./en/README.md#motifs)
 🏛️ Beyond Commerce: A Canvas of Heritage
 For centuries, a Kilim has never been "just a rug" to an Anatolian woman. It was her unspoken language. In a society where she might not have had a formal voice, she spoke through symbols. Every geometric diamond, every sharp zigzag, and every choice of color is a reflection of her aspirations, sorrows, joys, and prayers. When you touch a Kilim, you are not touching a fabric; you are touching a human life story.
 🧶 The Anatomy of a Masterpiece (Kilim vs. Carpet)
