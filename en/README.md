@@ -64,6 +64,53 @@ The strength and detail of a rug are determined by its "DNA"—the knotting tech
 
 ---
 
+## 🐑 Step 1: The Journey of Wool (From Sheep to Masterpiece)
+
+Every handmade rug begins with nature. Here is the 12-step traditional process that ensures the longevity and soul of an Anatolian rug:
+
+<div align="center">
+  <img src="./wool-journey.png" width="100%" style="border-radius: 10px;" alt="The Journey of a Wool Rug">
+</div>
+
+1. **Shearing & Sorting:** Only the best quality wool is selected.
+2. **Cleaning:** The wool is washed in natural spring waters.
+3. **Carding & Spinning:** The wool is combed and turned into yarn using a hand-spindle (*kirmen*).
+4. **Dyeing & Weaving:** The most critical stages where art meets labor.
+5. **Final Washing:** Every rug is washed one last time to settle the dyes and soften the texture.
+
+---
+
+## 🌿 Step 2: The Art of Natural Dyeing (Vegetal Dyes)
+
+The vibrant colors of our rugs come from the earth, not a laboratory. Natural dyes are organic, non-toxic, and become more beautiful with age.
+
+<div align="center">
+  <img src="./natural-dyeing.png" width="100%" style="border-radius: 10px;" alt="Natural Dyeing Process">
+</div>
+
+### 🎨 Nature’s Secret Ingredients:
+*   **🔴 Madder Root (Rubia tinctorium):** The king of dyes. It provides the deep, famous "Turkish Red."
+*   **🔵 Indigo:** A plant-based dye used for rich blues and teals.
+*   **🟡 Weld & Pomegranate Skin:** Used to create vibrant yellows.
+*   **🟢 Mixing Colors:** To get green, we dip yellow-dyed wool into indigo blue.
+*   **💎 Alum (Mordant):** A natural mineral used to "fix" the color to the wool so it never fades.
+
+---
+
+## 👑 Step 3: The Precision of Silk Weaving
+
+Silk rugs (like the world-famous *Hereke*) represent the pinnacle of weaving technology. 
+
+<div align="center">
+  <img src="./silk-weaving.png" width="100%" style="border-radius: 10px;" alt="Silk Rug Weaving">
+</div>
+
+*   **The Foundation:** Fine silk threads are stretched much tighter than wool, allowing for incredible detail.
+*   **High Density:** Because silk is so thin, a weaver can tie over **1 million knots** in a single square meter.
+*   **The Shine:** Natural silk reflects light, making the colors of the rug change depending on the angle you look at it.
+
+---
+
 <a name="types"></a>
 ## 🏆 Masterpieces of Anatolia (Famous Rug Types)
 
