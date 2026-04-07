@@ -114,16 +114,35 @@ If you are visiting Cappadocia, this guide will help you distinguish between hig
 
 A rug is more than a decoration; it is a "woven diary." Anatolian women have used symbols for centuries to express their hopes, fears, and dreams.
 
-### 🎭 Most Popular Anatolian Motifs
+<a name="kilim-section"></a>
+## 🎨 Kilim & Flat-Weaves: The Poetry of Geometry
 
-| Motif | Name (TR) | Meaning | Symbolizes |
-| :---: | :--- | :--- | :--- |
-| 💃 | **Hands on Hips** *(Eli Belinde)* | Motherhood & Fertility | Represents the female figure and the joy of life. |
-| 🐏 | **Ram’s Horn** *(Koçboynuzu)* | Power & Masculinity | Represents strength, heroism, and the protection of the family. |
-| 🌳 | **Tree of Life** *(Hayat Ağacı)* | Eternity | Represents the connection between Earth and Heaven; immortality. |
-| 🌊 | **Running Water** *(Akarsu)* | Life & Purity | Represents the flow of life and the importance of water. |
-| 🧿 | **Evil Eye** *(Nazar)* | Protection | Used to ward off bad luck and keep the family safe. |
+Unlike carpets, **Kilims** are flat-woven. They are the "woven poems" of Anatolia, where every triangle and diamond shape tells a story of tribal identity, migration, and nature.
 
+### 🧿 The Silent Language: Kilim Motifs
+
+Before diving into the meanings, look at this visual map of the most traditional Anatolian symbols. Every line has a soul:
+
+<div align="center">
+  <img src="./sembol.png" width="90%" alt="Anatolian Kilim Symbols Map">
+  <p><i>"The Universal Alphabet of Anatolian Weavers"</i></p>
+</div>
+
+| Motif | Name (TR) | Meaning & Symbolism |
+| :---: | :--- | :--- |
+| 💃 | **Hands on Hips** | Motherhood, Fertility & The Joy of Life. |
+| 🐏 | **Ram’s Horn** | Power, Masculinity, Heroism & Protection. |
+| 🌳 | **Tree of Life** | Eternity, Immortality & Connection to Heaven. |
+| 🧿 | **Evil Eye** | Protection from envy, jealousy, and bad luck. |
+| 🌊 | **Running Water** | Purity, the flow of life, and the necessity of water. |
+
+---
+
+<a name="techniques"></a>
+### 🧵 Specialized Techniques: Cicim, Zili, and Sumak
+*   **Cicim (Jijim):** Patterns look like embroidery on a flat base. **[→ View Detailed Cicim Analysis](./cicim.md)**
+*   **Zili (Sili):** Thicker and ribbed texture, very durable.
+*   **Sumak (Soumak):** Complex chain-stitch for fine artistic details.
 ---
 
 ## 🔍 Buyer's Guide: How to Spot Quality in Cappadocia
