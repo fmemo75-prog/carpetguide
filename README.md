@@ -1,39 +1,45 @@
 # 🎈 Welcome to the Kingdom of Rugs & Kilims: Cappadocia Edition
 
-<div align="center">
-  <img src="./cappadocia-balloons.png" width="100%" alt="Cappadocia Rugs and Balloons">
-  <p><i>"Where ancient weaving meets the magic of the skies."</i></p>
-</div>
-
-
-
----
-
-## 👨‍🏫 Meet Your Curator: Fatih Mehmet Canıtez
-
 <table border="0">
   <tr>
-    <td width="200" valign="top">
-      <img src="./carpet.jpeg" width="200" style="border-radius: 50%; border: 3px solid #f39c12;" alt="Fatih Mehmet Canıtez">
+    <!-- SOL TARAF: Kapadokya, Balonlar ve Halı Görseli -->
+    <td width="55%" valign="middle" align="center">
+      <img src="./cappadocia-balloons.png" width="100%" style="border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);" alt="Cappadocia Rugs">
+      <p align="center"><i>"Where ancient weaving meets the magic of the skies."</i></p>
     </td>
-    <td valign="top" style="padding-left: 20px;">
-      <h3><b>Fatih Mehmet Canıtez</b></h3>
-      <p><b>Expert in Traditional Turkish Carpet & Kilim Arts</b><br>
-      <i>French Language Educator & Polyglot (EN, FR, IT, ES)</i></p>
-      <p>
+    
+    <!-- SAĞ TARAF: Sizin Profiliniz ve İletişim Bilgileriniz -->
+    <td width="45%" valign="middle" style="padding-left: 25px;">
+      <div align="center">
+        <img src="./carpet.jpeg" width="130" style="border-radius: 50%; border: 3px solid #f39c12;" alt="Fatih Mehmet Canıtez">
+        <h3><b>Fatih Mehmet Canıtez</b></h3>
+        <p><b>Expert in Turkish Carpet & Kilim Arts</b><br>
+        <i>French Language Educator & Polyglot</i><br>
+        (FR, IT, ES, EN)</p>
+      </div>
+      <hr>
+      <p style="font-size: 0.9em; line-height: 1.5;">
         📱 <b>WhatsApp:</b> <a href="https://wa.me/905054466760">+90 505 446 67 60</a><br>
         📧 <b>Email:</b> <a href="mailto:fmemo75@gmail.com">fmemo75@gmail.com</a><br>
         🔵 <b>Facebook:</b> <a href="https://www.facebook.com/share/18X32VU2k5/" target="_blank">Visit Profile</a>
       </p>
-      <a href="https://wa.me/905054466760" target="_blank">
-        <img src="https://img.shields.io/badge/WhatsApp-25D366?style=flat-square&logo=whatsapp&logoColor=white" alt="WhatsApp">
-      </a>
-      <a href="https://www.facebook.com/share/18X32VU2k5/" target="_blank">
-        <img src="https://img.shields.io/badge/Facebook-1877F2?style=flat-square&logo=facebook&logoColor=white" alt="Facebook">
-      </a>
+      <div align="center">
+        <a href="https://wa.me/905054466760" target="_blank">
+          <img src="https://img.shields.io/badge/WhatsApp-25D366?style=flat-square&logo=whatsapp&logoColor=white" alt="WhatsApp">
+        </a>
+        <a href="https://www.facebook.com/share/18X32VU2k5/" target="_blank">
+          <img src="https://img.shields.io/badge/Facebook-1877F2?style=flat-square&logo=facebook&logoColor=white" alt="Facebook">
+        </a>
+      </div>
     </td>
   </tr>
 </table>
+
+---
+
+### 🌐 Explore the Collection / Rehberi Keşfedin
+
+<!-- Alt kısımdaki Halı ve Kilim linkleri buraya gelecek -->
 
 > **Expert Consultancy:** I provide professional guidance for rug collectors and language students. Feel free to message me directly for inquiries regarding Anatolian weaving arts or language lessons in French, Italian, and Turkish.
 
