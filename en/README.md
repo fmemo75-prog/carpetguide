@@ -47,7 +47,7 @@ Choosing a handmade rug is more than buying furniture; it is an investment in a 
 The strength and detail of a rug are determined by its "DNA"—the knotting technique. This definitive comparison from *Britannica* explains why the choice of knot defines the rug's character:
 
 <div align="center">
-  <img src="./rug-knots-comparison.jpg" width="100%" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);" alt="Ghiordes vs Sehna Rug Knots Comparison">
+  <img src="./rug-knots-comparison.png" width="100%" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);" alt="Ghiordes vs Sehna Rug Knots Comparison">
 </div>
 
 ### 🇹🇷 Ghiordes (Turkish) Double Knot
