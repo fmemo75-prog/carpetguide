@@ -42,6 +42,28 @@ Choosing a handmade rug is more than buying furniture; it is an investment in a 
 
 ---
 
+## 🪢 The Science of Knots: Ghiordes vs. Sehna
+
+The strength and detail of a rug are determined by its "DNA"—the knotting technique. This definitive comparison from *Britannica* explains why the choice of knot defines the rug's character:
+
+<div align="center">
+  <img src="./rug-knots-comparison.jpg" width="100%" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);" alt="Ghiordes vs Sehna Rug Knots Comparison">
+</div>
+
+### 🇹🇷 Ghiordes (Turkish) Double Knot
+**"The Foundation of Resilience"**
+*   **The Unbreakable Lock:** Two full loops wrap around adjacent warps, creating a symmetrical foundation of incredible strength.
+*   **Durability:** This is the gold standard for lasting quality. It makes Turkish rugs the most resistant to wear and tear over centuries.
+*   **Resilience:** The double-wrap structure provides exceptional "spring-back," preserving the pile's plushness for generations.
+
+### 🇮🇷 Sehna (Persian) Single Knot
+**"Artistic Precision & Detail"**
+*   **Asymmetric Lock:** One end of the yarn is left free, allowing for a much tighter and more compressed weave.
+*   **High Definition:** This technique is essential for intricate, complex, and curvy floral designs where fine detail is the priority.
+*   **Intricacy:** Perfect for museum-grade silk rugs and high-density city pieces.
+
+---
+
 <a name="types"></a>
 ## 🏆 Masterpieces of Anatolia (Famous Rug Types)
 
