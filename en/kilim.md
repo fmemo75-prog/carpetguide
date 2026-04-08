@@ -8,8 +8,8 @@ A Kilim is not just a rug; it is a **woven poem**. As the older ancestor of the 
 Every diamond, triangle, and zigzag on a Kilim is a letter in an ancient alphabet. These designs were born from the **Shamanistic beliefs** of early Turkic tribes.
 
 <div align="center">
-  <a href="./kilim-motifs.png">
-    <img src="./kilim-motifs.png" width="350" style="border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.2);" alt="Kilim Motifs">
+  <a href="en./kilim-motifs.png">
+    <img src="en./kilim-motifs.png" width="350" style="border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.2);" alt="Kilim Motifs">
   </a>
   <p>🔍 <i>Click to enlarge / Büyütmek için tıklayın</i></p>
 </div>
