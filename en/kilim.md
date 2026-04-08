@@ -27,7 +27,23 @@ For centuries, weaving was the only way for a young woman to express her emotion
   <img src="./ceyiz.png" width="80%" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);" alt="The Dowry - Çeyiz">
   <p><i>"A young weaver preparing her dowry—every thread carries a dream of a new life."</i></p>
 </div>
+---
 
+## 🏗️ The Master at Work: Weaving Memory into Art
+
+A Kilim is created on a traditional wooden loom called a **"Tezgah."** Unlike modern textiles, there are no digital blueprints or printed patterns in front of the weaver.
+
+<div align="center">
+  <img src="./kilim_loom.png" width="90%" style="border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.3);" alt="Woman weaving a Kilim on a loom">
+  <p><i>"The weaver at her loom—using the 'Kirkit' (heavy comb) to beat the threads into a lifetime of durability."</i></p>
+</div>
+
+### 🔍 What are you seeing?
+*   **Memory Weaving:** The master weaver translates ancestral patterns directly from her mind to her fingers. This requires immense concentration and spatial memory.
+*   **The Kirkit (Comb):** You can see her using a heavy iron or wooden comb. Each horizontal thread (weft) is beaten down firmly to ensure the Kilim is tight, strong, and lasts for a century.
+*   **The Rhythm of Labor:** A single medium-sized Kilim can take **3 to 6 months** of daily labor. When you look at the finished piece, you are looking at thousands of hours of rhythmic, meditative hand movements.
+
+---
 *   **A Personal Diary:** If she was happy, her colors were bright. If she was longing for love, she used specific symbols. It was her only way to speak in a traditional world.
 
 ---
