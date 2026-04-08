@@ -76,7 +76,10 @@ Choose your path into the world of weaving. These guides are designed for collec
 *Explore the 9,000-year-old history of flat-woven nomadic art.*
 
 <div align="center">
-  <img src="./kilim-motifs.png" width="100%" alt="Anatolian Kilim Motifs">
+  <a href="./kilim-motifs.png">
+    <img src="./kilim-motifs.png" width="350" style="border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.2);" alt="Kilim Motifs">
+  </a>
+  <p>🔍 <i>Click to enlarge / Büyütmek için tıklayın</i></p>
 </div>
 
 *   📖 **[Full Kilim Guide: History, Meaning & Art](./en/kilim.md)**
