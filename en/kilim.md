@@ -34,7 +34,7 @@ For centuries, weaving was the only way for a young woman to express her emotion
 A Kilim is created on a traditional wooden loom called a **"Tezgah."** Unlike modern textiles, there are no digital blueprints or printed patterns in front of the weaver.
 
 <div align="center">
-  <img src="./kilim_loom.png" width="90%" style="border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.3);" alt="Woman weaving a Kilim on a loom">
+  <img src="en/kilim_loom.png" width="90%" style="border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.3);" alt="Woman weaving a Kilim on a loom">
   <p><i>"The weaver at her loom—using the 'Kirkit' (heavy comb) to beat the threads into a lifetime of durability."</i></p>
 </div>
 
