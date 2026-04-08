@@ -5,8 +5,8 @@ A Kilim is not just a rug; it is a **woven poem**. As the older ancestor of the 
 ---
 
 <div align="center">
-  <img src="../kilim-motifs.png" width="100%" style="border-radius: 10px;" alt="Anatolian Kilim Motifs">
-  <p><i>"The Symbols of Anatolia: Every motif is a silent prayer."</i></p>
+  <img src="./kilim_loom.png" width="90%" alt="Kilim Loom">
+  <p><i>The weaver at her loom.</i></p>
 </div>
 
 ---
