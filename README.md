@@ -85,10 +85,6 @@ Choose your path into the world of weaving. These guides are designed for collec
 
 ---
 
-<div align="center">
-  <img src="./kilim-motifs.png" width="100%" alt="Anatolian Kilim Motifs">
-  <p><i>"The Secret Language of Anatolia: Every motif is a story."</i></p>
-</div>
 
 *   📘 [Symbolism & Meanings (Explore in Guide)](./en/README.md#motifs)
 🏛️ Beyond Commerce: A Canvas of Heritage
