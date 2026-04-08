@@ -1,11 +1,9 @@
----
-
-## 🏛️ Regional Varieties: The "Dialects" of Sumak
+# 🌀 Regional Varieties of Sumak
 
 Anatolia is a vast geography, and every region has developed its own signature Sumak style. Understanding these variations is the mark of a true connoisseur.
 
 <div align="center">
-  <img src="./sumak-regions.webp" width="100%" style="border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.3);" alt="Regional Sumak Styles">
+  <img src="./sumak-regions.webp" width="100%" style="border-radius:10px; box-shadow:0 4px 12px rgba(0,0,0,0.3);" alt="Regional Sumak Styles">
   <p><i>"From Gaziantep to Adana: Four distinct souls of the Anatolian Sumak."</i></p>
 </div>
 
@@ -30,8 +28,3 @@ Anatolia is a vast geography, and every region has developed its own signature S
 *   **Best For:** Wall hangings or centerpiece decor in elegant, art-focused rooms.
 
 ---
-
-### 💡 Buyer's Choice: Which Sumak is for you?
-Whether you prefer the **architectural strength of Gaziantep** or the **painterly elegance of Adana**, every Sumak in our collection is a testament to the "Heartbeat of the Loom." 
-
-> **Expert Tip:** To see the authentic regional dyes used in these pieces, feel free to ask for a high-definition video consultation via WhatsApp.
