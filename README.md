@@ -72,9 +72,18 @@ Choose your path into the world of weaving. These guides are designed for collec
 
 ### 🧶 [The Art of Carpets (Halı)](./en/README.md)
 *Explore the 2500-year history of knotted masterpieces.*
+### 🎨 [The Poetry of Kilims (Kilim)](./en/kilim.md)
+*Explore the 9,000-year-old history of flat-woven nomadic art.*
 
-## 🎨 [The Poetry of Kilims (Kilim)](./en/README.md#kilim-section)
-*Flat-woven stories told through geometric symbols.*
+<div align="center">
+  <img src="./kilim-motifs.png" width="100%" alt="Anatolian Kilim Motifs">
+</div>
+
+*   📖 **[Full Kilim Guide: History, Meaning & Art](./en/kilim.md)**
+*   🌸 **[Detailed Guide: Cicim (Jijim) Technique](./en/cicim.md)**
+*   🏺 [Ancient Rug History (Pazyryk)](./en/guide.md#pazyryk)
+
+---
 
 <div align="center">
   <img src="./kilim-motifs.png" width="100%" alt="Anatolian Kilim Motifs">
