@@ -3,7 +3,7 @@
 Anatolia is a vast geography, and every region has developed its own signature Sumak style. Understanding these variations is the mark of a true connoisseur.
 
 <div align="center">
-  <img src="./sumak-regions.webp" width="100%" style="border-radius:10px; box-shadow:0 4px 12px rgba(0,0,0,0.3);" alt="Regional Sumak Styles">
+  <img src="./sumak.png" width="100%" style="border-radius:10px; box-shadow:0 4px 12px rgba(0,0,0,0.3);" alt="Regional Sumak Styles">
   <p><i>"From Gaziantep to Adana: Four distinct souls of the Anatolian Sumak."</i></p>
 </div>
 
