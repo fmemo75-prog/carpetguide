@@ -27,7 +27,7 @@
 
 ---
 ### 🌍 International Sections (Coming Soon)
-* 🇫🇷 Français | 🇮🇹 Italiano | 🇪🇸 Español
+* 🇫🇷 Français | 🇮🇹 Italiano | 🇪🇸 Español   .
 
 ---
 *Created with ❤️ by [@fmemo75-prog](https://github.com/fmemo75-prog)*
