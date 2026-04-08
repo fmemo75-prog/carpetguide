@@ -154,14 +154,14 @@ Before diving into the meanings, look at this visual map of the most traditional
 | 🧿 | **Evil Eye** | Protection from envy, jealousy, and bad luck. |
 | 🌊 | **Running Water** | Purity, the flow of life, and the necessity of water. |
 
----
+
 
 <a name="techniques"></a>
 ### 🧵 Specialized Techniques: Cicim, Zili, and Sumak
-*   **Cicim (Jijim):** Patterns look like embroidery on a flat base. [**[Detailed Guide: Cicim (Jijim) Technique](./en/cicim.md)** 
+*   **Cicim (Jijim):** Patterns look like embroidery on a flat base. 
 *   **Zili (Sili):** Thicker and ribbed texture, very durable.
 *   **Sumak (Soumak):** Complex chain-stitch for fine artistic details.
----
+---**[Detailed Guide: Cicim (Jijim) Technique](./en/cicim.md)**  
 
 ## 🔍 Buyer's Guide: How to Spot Quality in Cappadocia
 
