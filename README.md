@@ -148,7 +148,15 @@ Before diving into the meanings, look at this visual map of the most traditional
 | 🧿 | **Evil Eye** | Protection from envy, jealousy, and bad luck. |
 | 🌊 | **Running Water** | Purity, the flow of life, and the necessity of water. |
 
+### 🧵 Specialized Techniques: Cicim, Zili, and Sumak
 
+*   **Cicim (Jijim):** Patterns look like embroidery on a flat base. Unlike carpets, Kilims are flat-woven masterpieces. They are "woven poems" where every geometric shape tells a story. **[→ Detailed Guide: Cicim (Jijim) Technique](./cicim.md)**
+
+*   **Sumak (Soumak):** Complex chain-stitch used for fine, artistic, and intricate details. Often used in high-end collector pieces.
+
+*   **Zili (Sili):** Thicker and ribbed texture. It is incredibly durable and often used for heavy-duty floor coverings due to its robust structure.
+
+---
 
 <a name="techniques"></a>
 ### 🧵 Specialized Techniques: Cicim, Zili, and Sumak
