@@ -158,12 +158,7 @@ Before diving into the meanings, look at this visual map of the most traditional
 
 ---
 
-<a name="techniques"></a>
-### 🧵 Specialized Techniques: Cicim, Zili, and Sumak
-*   **Cicim (Jijim):** Patterns look like embroidery on a flat base.Unlike carpets, Kilims are flat-woven masterpieces. They are "woven poems" where every geometric shape tells a story of tribal identity, migration, and nature. **[Detailed Guide: Cicim (Jijim) Technique](./en/cicim.md)** 
-*   **Sumak (Soumak):** Complex chain-stitch for fine artistic details.
-*  **Zili (Sili):** Thicker and ribbed texture. It is incredibly durable and often used for heavy-duty floor coverings.
---- 
+
 
 ## 🔍 Buyer's Guide: How to Spot Quality in Cappadocia
 
