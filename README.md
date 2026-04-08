@@ -97,8 +97,6 @@ Hand-Spun Magic: The process starts with the shearing of the sheep. The wool is 
 The Alchemy of Nature: The vibrant reds come from madder root (kök boya), yellows from chamomile or onion skins, and blues from indigo. These natural dyes age gracefully, gaining a "patina" that increases the value over decades.
 "A carpet is a palace, but a kilim is a poem. A carpet is a statement, but a kilim is a conversation."
 
-*   🌸 **[Detailed Guide: Cicim (Jijim) Technique](./en/cicim.md)**  
-  **[EN]** Unlike carpets, Kilims are flat-woven masterpieces. They are "woven poems" where every geometric shape tells a story of tribal identity, migration, and nature.
   
   **Key Highlights:**
   *   **No Knots:** Kilims are pileless, making them lightweight and reversible.
@@ -111,10 +109,7 @@ The Alchemy of Nature: The vibrant reds come from madder root (kök boya), yello
 *Explore flat-woven stories told through 2500 years of geometric symbols.*
 
 ---
-
----
-
-## 🌍 International Sections (Coming Soon)
+--## 🌍 International Sections (Coming Soon)
 
 | 🇫🇷 French | 🇮🇹 Italian | 🇪🇸 Spanish |
 | :---: | :---: | :---: |
@@ -158,9 +153,9 @@ Before diving into the meanings, look at this visual map of the most traditional
 
 <a name="techniques"></a>
 ### 🧵 Specialized Techniques: Cicim, Zili, and Sumak
-*   **Cicim (Jijim):** Patterns look like embroidery on a flat base. **[Detailed Guide: Cicim (Jijim) Technique](./en/cicim.md)** 
-*   **Zili (Sili):** Thicker and ribbed texture, very durable.
+*   **Cicim (Jijim):** Patterns look like embroidery on a flat base.Unlike carpets, Kilims are flat-woven masterpieces. They are "woven poems" where every geometric shape tells a story of tribal identity, migration, and nature. **[Detailed Guide: Cicim (Jijim) Technique](./en/cicim.md)** 
 *   **Sumak (Soumak):** Complex chain-stitch for fine artistic details.
+*   **Zili (Sili):** Thicker and ribbed texture, very durable.
 --- 
 
 ## 🔍 Buyer's Guide: How to Spot Quality in Cappadocia
