@@ -14,20 +14,27 @@
 
   <br><br>
 
-  <!-- HIZLI LİNKLER -->
-  | 🏺 [Ancient History](./en/guide.md) | 🎨 [Kilim Art](./en/kilim.md) | 🌸 [Cicim Technique](./en/cicim.md) | 🌀 [Sumak Guide](./en/sumak.md) |
+  <!-- HIZLI ERİŞİM TABLOSU (TABLO ÇALIŞMASI İÇİN ÜSTTE BOŞLUK OLMALI) -->
+
+  | 🏺 [Ancient History](./en/guide.md) | 🎨 [Kilim Art](./en/kilim.md) | 🌸 [Cicim Guide](./en/cicim.md) | 🌀 [Sumak Guide](./en/sumak.md) |
   | :---: | :---: | :---: | :---: |
 
   <br>
 
+  <!-- İLETİŞİM BUTONU -->
   <a href="https://wa.me/905054466760">
-    <img src="https://img.shields.io/badge/WhatsApp-Contact-25D366?style=flat-square&logo=whatsapp&logoColor=white" alt="WhatsApp">
+    <img src="https://img.shields.io/badge/WhatsApp-Contact_Fatih-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="WhatsApp">
   </a>
+
 </div>
 
 ---
+
 ### 🌍 International Sections (Coming Soon)
-* 🇫🇷 Français | 🇮🇹 Italiano | 🇪🇸 Español   .
+
+| 🇫🇷 French | 🇮🇹 Italian | 🇪🇸 Spanish |
+| :--- | :--- | :--- |
+| *Bientôt* | *Prossimamente* | *Próximamente* |
 
 ---
-*Created with ❤️ by [@fmemo75-prog](https://github.com/fmemo75-prog)*
+<p align="center"><i>"A rug is a map of the soul. Let us show you the way."</i></p>
