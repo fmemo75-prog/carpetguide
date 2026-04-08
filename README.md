@@ -81,7 +81,6 @@ Choose your path into the world of weaving. These guides are designed for collec
   <p><i>"The Secret Language of Anatolia: Every motif is a story."</i></p>
 </div>
 
-*   🌸 **[Detailed Guide: Cicim (Jijim) Technique](./en/cicim.md)**
 *   📘 [Symbolism & Meanings (Explore in Guide)](./en/README.md#motifs)
 🏛️ Beyond Commerce: A Canvas of Heritage
 For centuries, a Kilim has never been "just a rug" to an Anatolian woman. It was her unspoken language. In a society where she might not have had a formal voice, she spoke through symbols. Every geometric diamond, every sharp zigzag, and every choice of color is a reflection of her aspirations, sorrows, joys, and prayers. When you touch a Kilim, you are not touching a fabric; you are touching a human life story.
@@ -155,7 +154,7 @@ Before diving into the meanings, look at this visual map of the most traditional
 ### 🧵 Specialized Techniques: Cicim, Zili, and Sumak
 *   **Cicim (Jijim):** Patterns look like embroidery on a flat base.Unlike carpets, Kilims are flat-woven masterpieces. They are "woven poems" where every geometric shape tells a story of tribal identity, migration, and nature. **[Detailed Guide: Cicim (Jijim) Technique](./en/cicim.md)** 
 *   **Sumak (Soumak):** Complex chain-stitch for fine artistic details.
-*   **Zili (Sili):** Thicker and ribbed texture, very durable.
+*  **Zili (Sili):** Thicker and ribbed texture. It is incredibly durable and often used for heavy-duty floor coverings.
 --- 
 
 ## 🔍 Buyer's Guide: How to Spot Quality in Cappadocia
