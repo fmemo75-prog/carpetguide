@@ -1,36 +1,37 @@
-# 🌀 Sumak (Soumak): The Ancient Chain-Stitch Masterpiece
-
-If a Kilim is a poem, then a **Sumak** is an epic saga. Named after the town of Shemakha, this ancient technique is the strongest and most detailed among all flat-weaves.
-
 ---
 
-## 🏗️ The Texture of Excellence
-Unlike a standard Kilim, where the threads are simply interlaced, in **Sumak**, the weaver wraps the colored yarns around the warp threads in a complex "chain-stitch."
+## 🏛️ Regional Varieties: The "Dialects" of Sumak
+
+Anatolia is a vast geography, and every region has developed its own signature Sumak style. Understanding these variations is the mark of a true connoisseur.
 
 <div align="center">
-  <img src="./sumak.png" width="90%" style="border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.3);" alt="Sumak Weaving Technique">
-  <p><i>"The distinct braided texture of a Sumak—where durability meets high-definition art."</i></p>
+  <img src="./sumak-regions.webp" width="100%" style="border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.3);" alt="Regional Sumak Styles">
+  <p><i>"From Gaziantep to Adana: Four distinct souls of the Anatolian Sumak."</i></p>
 </div>
 
-### 🔍 What makes this technique unique?
-1.  **The Braided Surface:** Look closely at the image. You can see a slanted, corded texture. This is created by wrapping the yarn 360 degrees around the warps.
-2.  **Extreme Durability:** Because of this wrapping process, Sumaks are much thicker and heavier than regular Kilims. They were traditionally used as saddlebags and floor covers for high-traffic areas.
-3.  **The "Shaggy" Back:** A genuine Sumak is **not reversible**. If you flip it over, you will see loose threads left from the wrapping process. This acts as a natural cushion and proves it was made by hand.
+### 1. Çapraz Sumak (Gaziantep Style) 🍷
+*   **Technique:** "Çapraz" means **diagonal**. The weaver wraps the threads at an angle, creating a very strong, interlocking structure.
+*   **Aura:** Usually features deep burgundy and navy tones with bold central diamonds.
+*   **Best For:** High-traffic areas where extreme durability is required.
+
+### 2. Düz Sumak (Niğde Style) 🏺
+*   **Technique:** "Düz" means **straight/flat**. The wrapping follows horizontal bands, creating a very clean and organized look.
+*   **Aura:** Focuses on classic Anatolian tribal symbols on earthy red and cream foundations.
+*   **Best For:** Traditional interiors and lovers of rustic, tribal aesthetics.
+
+### 3. Karma Sumak (Konya Style) 💎
+*   **Technique:** "Karma" means **mixed or hybrid**. This style combines the fine detail of city rugs with the soul of nomadic geometry.
+*   **Aura:** Known for intricate internal patterns within the diamonds and a rich use of turquoise and indigo.
+*   **Best For:** Collectors looking for a "bridge" between tribal and sophisticated art.
+
+### 4. Nakışlı Sumak (Adana/Cilician Style) 🌸
+*   **Technique:** "Nakışlı" means **embroidered**. This is the most artistic form of Sumak, where the rug looks like a detailed needlepoint painting.
+*   **Aura:** Features the **"Tree of Life,"** birds, and floral motifs. It is the most delicate and pictorial of all.
+*   **Best For:** Wall hangings or centerpiece decor in elegant, art-focused rooms.
 
 ---
 
-## 📊 The Flat-Weave Comparison
+### 💡 Buyer's Choice: Which Sumak is for you?
+Whether you prefer the **architectural strength of Gaziantep** or the **painterly elegance of Adana**, every Sumak in our collection is a testament to the "Heartbeat of the Loom." 
 
-| Feature | 🖼️ Kilim | 🌸 Cicim | 🌀 Sumak |
-| :--- | :--- | :--- | :--- |
-| **Texture** | Smooth / Flat | Raised Embroidery | Braided / Ribbed |
-| **Thickness** | Thin | Medium | Thick & Heavy |
-| **Reversible?** | Yes | Often | No (Unique back) |
-| **Durability** | High | Medium | **Extreme** |
-
----
-
-### 🛡️ Why Collectors Choose Sumak
-Since the weaver isn't restricted by the "slits" of a normal Kilim, Sumak allows for incredible detail—birds, tiny animals, and complex geometric rosettes that look like they were painted with a needle.
-
-[⬅️ Back to English Guide](./guide.md) | [🏠 Global Home Page](../README.md)
+> **Expert Tip:** To see the authentic regional dyes used in these pieces, feel free to ask for a high-definition video consultation via WhatsApp.
