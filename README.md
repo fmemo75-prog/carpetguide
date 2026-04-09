@@ -4,7 +4,29 @@
   <br>
   <i>"Your expert guide to the 2500-year-old art of Anatolian weaving."</i>
 </div>
+<table border="0" width="100%">
+  <tr>
+    <td valign="middle">
+      <h1>🎈 Carpet & Kilim Guide</h1>
+      <p><b>Cappadocia Edition</b></p>
+    </td>
+    <td align="right" valign="middle">
+      <a href="./carpet.jpeg">
+        <img src="./carpet.jpeg" width="100" style="border-radius: 50%; border: 3px solid #f39c12; cursor: zoom-in;" alt="Fatih Mehmet Canıtez">
+      </a>
+      <br>
+      <small><b>Fatih Mehmet Canıtez</b><br>Expert Curator</small>
+    </td>
+  </tr>
+</table>
 
+<div align="center">
+  <img src="./cappadocia-balloons.png" width="450" style="border-radius: 15px;" alt="Cappadocia Rugs">
+  <br>
+  <i>"Your expert guide to the 2500-year-old art of Anatolian weaving."</i>
+</div>
+
+---
 ---
 
 ## 🏛️ 1. The Art of Carpets (Halı)
