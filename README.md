@@ -30,7 +30,7 @@ Understand the Neolithic roots, the nomadic spirit, and the "Eli Belinde" symbol
 Click on a technique to see high-definition photos and detailed analyses:
 *   🌸 **[Cicim (Jijim):](./en/cicim)** The art of "woven embroidery."
 *   🌀 **[Sumak (Soumak):](./en/sumak)** The strongest, braided chain-stitch technique.
-*   🏗️ **Zili (Sili):** The heavy-duty corded weave (Coming Soon).
+*   🏗️ **Zili (Sili):** The heavy-duty corded weave *   🏗️ **[Detailed Guide: Zili (Sili) Technique](./en/zili)**
 
 ---
 
