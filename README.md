@@ -52,8 +52,8 @@ Click on a technique to see high-definition photos and detailed analyses:
   <summary><b>🪢 Symmetrical vs Asymmetrical Knots - Click to see</b></summary>
   <br>
   <div align="center">
-    <a href="./en/rug-knots-comparison.jpg">
-      <img src="./en/rug-knots-comparison.jpg" width="100%" style="max-width: 700px; border-radius: 10px;" alt="Knot Comparison">
+    <a href="./en/rug-knots-comparison.png">
+      <img src="./en/rug-knots-comparison.png" width="100%" style="max-width: 700px; border-radius: 10px;" alt="Knot Comparison">
     </a>
     <p><i>The science of the "Turkish Double Knot" vs. the "Persian Single Knot."</i></p>
   </div>
