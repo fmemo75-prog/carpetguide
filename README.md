@@ -1,9 +1,5 @@
 # 🎈 Carpet & Kilim Guide: Cappadocia Edition
-<div align="center">
-  <img src="./cappadocia-balloons.png" width="450" style="border-radius: 15px;" alt="Cappadocia Rugs">
-  <br>
-  <i>"Your expert guide to the 2500-year-old art of Anatolian weaving."</i>
-</div>
+
 <table border="0" width="100%">
   <tr>
     <td valign="middle">
