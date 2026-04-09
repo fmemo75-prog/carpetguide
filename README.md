@@ -1,35 +1,8 @@
-# 🧶 Global Carpet & Kilim Guide: Cappadocia Edition
-
-<!-- 1. ÜST BÖLÜM: İSİM VE FOTOĞRAF YAN YANA -->
-<table border="0" width="100%">
-  <tr>
-    <td valign="middle">
-      <h1>Expert Curation</h1>
-      <p><b>Fatih Mehmet Canıtez</b><br>
-      French Language Educator & Polyglot<br>
-      Expert in Traditional Anatolian Weaving</p>
-    </td>
-    <td align="right" valign="middle">
-      <a href="./carpet.jpeg">
-        <img src="./carpet.jpeg" width="110" style="border-radius: 50%; border: 3px solid #f39c12; cursor: zoom-in;" alt="Fatih Mehmet Canıtez">
-      </a>
-    </td>
-  </tr>
-</table>
-
-<!-- 2. ANA VİTRİN: KAPADOKYA VE WHATSAPP -->
-<div align="center">
-  <img src="./cappadocia-balloons.png" width="450" style="border-radius: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);" alt="Cappadocia Balloons">
-  <br><br>
-  <a href="https://wa.me/905054466760">
-    <img src="https://img.shields.io/badge/WhatsApp-Contact_Expert_Directly-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="WhatsApp Contact">
-  </a>
-  <p><i>"Ancient tools, eternal art. A rug is a map of the soul."</i></p>
-</div>
-
 ---
 
-<!-- 3. HALI BÖLÜMÜ (SOLDA KÜÇÜK KİRKİT) -->
+## 🌐 Explore the Collection / Rehberi Keşfedin
+
+<!-- 1. HALI BÖLÜMÜ (SOLDA KÜÇÜK KİRKİT) -->
 <table border="0">
   <tr>
     <td width="100" valign="top">
@@ -39,15 +12,16 @@
       <h3>🏛️ 1. The Art of Carpets (Halı)</h3>
       <p><i>Discover the 2500-year history of knotted masterpieces.</i></p>
       <ul>
-        <li>🏺 <b><a href="./en/#pazyryk">The Pazyryk Carpet: Our Story Starts Here</a></b></li>
-        ### 🏛️ 1. The Art of Carpets (Halı)
-*Discover the 2,500-year history of knotted masterpieces.*
+        <li>🏺 <b><a href="./en/supercarpet.md">Super Rug Guide: Pazyryk, Hereke, Usak & Bergama</a></b></li>
+        <li>📜 <a href="./en/README.md">Ancient History & Production Process</a></li>
+      </ul>
+    </td>
+  </tr>
+</table>
 
-*   🏺 **[Super Rug Guide: Pazyryk, Hereke, Usak & Bergama](./en/supercarpet)**
-*   🏺 [Ancient History & Production Process](./en/guide)
-🏺
+<br>
 
-<!-- 4. KİLİM BÖLÜMÜ (SOLDA KÜÇÜK MOTİFLER) -->
+<!-- 2. KİLİM BÖLÜMÜ (SOLDA KÜÇÜK MOTİFLER) -->
 <table border="0">
   <tr>
     <td width="100" valign="top">
@@ -57,10 +31,10 @@
       <h3>🎨 2. The Poetry of Kilims (Düz Dokuma)</h3>
       <p><i>Flat-woven stories told through 9,000 years of geometric symbols.</i></p>
       <ul>
-        <li>📖 <b><a href="./en/kilim">Full Kilim Guide: History & Symbols</a></b></li>
-        <li>🌸 <a href="./en/cicim">Detailed Guide: Cicim (Jijim) Technique</a></li>
-        <li>🌀 <a href="./en/sumak">Detailed Guide: Sumak (Soumak) Technique</a></li>
-        <li>🏗️ <a href="./en/zili">Detailed Guide: Zili (Sili) Technique</a></li>
+        <li>📖 <b><a href="./en/kilim.md">Full Kilim Guide: History & Symbols</a></b></li>
+        <li>🌸 <a href="./en/cicim.md">Detailed Guide: Cicim (Jijim) Technique</a></li>
+        <li>🌀 <a href="./en/sumak.md">Detailed Guide: Sumak (Soumak) Technique</a></li>
+        <li>🏗️ <a href="./en/zili.md">Detailed Guide: Zili (Sili) Technique</a></li>
       </ul>
     </td>
   </tr>
