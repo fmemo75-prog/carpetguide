@@ -1,8 +1,44 @@
+# 🧶 Global Carpet & Kilim Guide: Cappadocia Edition
+
+<!-- 1. ÜST BÖLÜM: KİŞİSEL ANTET -->
+<table border="0" width="100%">
+  <tr>
+    <td valign="middle">
+      <h1>Expert Curation</h1>
+      <p><b>Fatih Mehmet Canıtez</b><br>
+      French Language Educator & Polyglot<br>
+      Expert in Traditional Anatolian Weaving</p>
+    </td>
+    <td align="right" valign="middle">
+      <a href="./carpet.jpeg">
+        <img src="./carpet.jpeg" width="110" style="border-radius: 50%; border: 3px solid #f39c12; cursor: zoom-in;" alt="Fatih Mehmet Canıtez">
+      </a>
+    </td>
+  </tr>
+</table>
+
+<!-- 2. ANA VİTRİN VE WHATSAPP -->
+<div align="center">
+  <img src="./cappadocia-balloons.png" width="450" style="border-radius: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);" alt="Cappadocia Balloons">
+  <br><br>
+  <a href="https://wa.me/905054466760">
+    <img src="https://img.shields.io/badge/WhatsApp-Contact_Expert_Directly-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="WhatsApp Contact">
+  </a>
+  <p><i>"Ancient tools, eternal art. A rug is a map of the soul."</i></p>
+</div>
+
+---
+
+<!-- 3. EĞİTİM BÖLÜMÜ -->
+### 🎓 Language Academy
+As a professional polyglot educator, I offer structured language courses for international travelers:
+> 🇹🇷 **[Click Here for Turkish & French Lessons](https://fmemo75-prog.github.io/turkce-ders/index.html)**
+
 ---
 
 ## 🌐 Explore the Collection / Rehberi Keşfedin
 
-<!-- 1. HALI BÖLÜMÜ (SOLDA KÜÇÜK KİRKİT) -->
+<!-- 4. HALI BÖLÜMÜ (SOLDA KÜÇÜK KİRKİT) -->
 <table border="0">
   <tr>
     <td width="100" valign="top">
@@ -21,7 +57,7 @@
 
 <br>
 
-<!-- 2. KİLİM BÖLÜMÜ (SOLDA KÜÇÜK MOTİFLER) -->
+<!-- 5. KİLİM BÖLÜMÜ (SOLDA KÜÇÜK MOTİFLER) -->
 <table border="0">
   <tr>
     <td width="100" valign="top">
@@ -42,7 +78,7 @@
 
 ---
 
-<!-- 5. TEKNİK DETAYLAR (AÇILIR PANELLER) -->
+<!-- 6. TEKNİK DETAYLAR (AÇILIR PANELLER) -->
 ## 🛠️ Technical Insights: Behind the Loom
 
 <details>
@@ -58,29 +94,21 @@
   <summary><b>🪢 Knot Comparison (Turkish vs Persian)</b></summary>
   <br>
   <div align="center">
-    <img src="./en/rug-knots-comparison.png" width="100%" style="max-width: 600px; border-radius: 10px;">
+    <img src="./en/rug-knots-comparison.jpg" width="100%" style="max-width: 600px; border-radius: 10px;">
     <p><i>The science of the Ghiordes Double Knot.</i></p>
   </div>
 </details>
 
-<details>
-  <summary><b>🐑 The 12-Step Production Journey</b></summary>
-  <br>
-  <div align="center">
-    <img src="./en/wool-journey.png" width="100%" style="max-width: 600px; border-radius: 10px;">
-  </div>
-</details>
+---
+
+<!-- 7. UZMAN PROFİLİ -->
+### 👨‍🏫 About the Expert
+Learn more about my background, polyglot skills, and professional consultancy.
+> [👉 View My Full Profile & Lessons (me.md)](./me.md)
 
 ---
 
-<!-- 6. UZMAN PROFİLİ VE DERSLER LİNKİ -->
-### 👨‍🏫 Meet the Expert & Academy
-Learn more about my background as a polyglot educator and rug curator. 
-> [👉 View My Full Profile & Language Lessons (me.md)](./me)
-
----
-
-<!-- 7. ULUSLARARASI BÖLÜMLER -->
+<!-- 8. ULUSLARARASI BÖLÜMLER -->
 ### 🌍 International Sections (Coming Soon)
 | 🇫🇷 French | 🇮🇹 Italian | 🇪🇸 Spanish |
 | :--- | :--- | :--- |
