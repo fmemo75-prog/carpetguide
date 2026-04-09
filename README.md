@@ -1,6 +1,6 @@
 # 🧶 Global Carpet & Kilim Guide: Cappadocia Edition
 
-<!-- 1. ÜST BÖLÜM: KİŞİSEL ANTET -->
+<!-- 1. ÜST PROFİL BÖLÜMÜ -->
 <table border="0" width="100%">
   <tr>
     <td valign="middle">
@@ -11,41 +11,31 @@
     </td>
     <td align="right" valign="middle">
       <a href="./carpet.jpeg">
-        <img src="./carpet.jpeg" width="110" style="border-radius: 50%; border: 3px solid #f39c12; cursor: zoom-in;" alt="Fatih Mehmet Canıtez">
+        <img src="./carpet.jpeg" width="110" style="border-radius: 50%; border: 3px solid #f39c12;" alt="Fatih Mehmet Canıtez">
       </a>
     </td>
   </tr>
 </table>
 
-<!-- 2. ANA VİTRİN VE WHATSAPP -->
+<!-- 2. VİTRİN VE İLETİŞİM -->
 <div align="center">
   <img src="./cappadocia-balloons.png" width="450" style="border-radius: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);" alt="Cappadocia Balloons">
   <br><br>
   <a href="https://wa.me/905054466760">
     <img src="https://img.shields.io/badge/WhatsApp-Contact_Expert_Directly-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="WhatsApp Contact">
   </a>
-  <p><i>"Ancient tools, eternal art. A rug is a map of the soul."</i></p>
 </div>
 
 ---
 
-<!-- 3. EĞİTİM BÖLÜMÜ -->
-### 🎓 Language Academy
-As a professional polyglot educator, I offer structured language courses for international travelers:
-> 🇹🇷 **[Click Here for Turkish & French Lessons](https://fmemo75-prog.github.io/turkce-ders/index.html)**
+## 🏛️ 1. The Art of Carpets (Halı)
 
----
-
-## 🌐 Explore the Collection / Rehberi Keşfedin
-
-<!-- 4. HALI BÖLÜMÜ (SOLDA KÜÇÜK KİRKİT) -->
 <table border="0">
   <tr>
     <td width="100" valign="top">
       <img src="./kirkit.png" width="80" alt="Kirkit Symbol">
     </td>
     <td valign="top" style="padding-left: 15px;">
-      <h3>🏛️ 1. The Art of Carpets (Halı)</h3>
       <p><i>Discover the 2500-year history of knotted masterpieces.</i></p>
       <ul>
         <li>🏺 <b><a href="./en/supercarpet.md">Super Rug Guide: Pazyryk, Hereke, Usak & Bergama</a></b></li>
@@ -55,16 +45,16 @@ As a professional polyglot educator, I offer structured language courses for int
   </tr>
 </table>
 
-<br>
+---
 
-<!-- 5. KİLİM BÖLÜMÜ (SOLDA KÜÇÜK MOTİFLER) -->
+## 🎨 2. The Poetry of Kilims (Düz Dokuma)
+
 <table border="0">
   <tr>
     <td width="100" valign="top">
-      <img src="./kilim-motifs.png" width="80" style="border-radius: 5px;" alt="Motif Symbol">
+      <img src="./kilim-motifs.png" width="80" alt="Motif Symbol">
     </td>
     <td valign="top" style="padding-left: 15px;">
-      <h3>🎨 2. The Poetry of Kilims (Düz Dokuma)</h3>
       <p><i>Flat-woven stories told through 9,000 years of geometric symbols.</i></p>
       <ul>
         <li>📖 <b><a href="./en/kilim.md">Full Kilim Guide: History & Symbols</a></b></li>
@@ -78,15 +68,15 @@ As a professional polyglot educator, I offer structured language courses for int
 
 ---
 
-<!-- 6. TEKNİK DETAYLAR (AÇILIR PANELLER) -->
 ## 🛠️ Technical Insights: Behind the Loom
+*Click on the titles below to explore the craftsmanship.*
 
 <details>
   <summary><b>🌿 The Art of Natural Dyeing (Kök Boya)</b></summary>
   <br>
   <div align="center">
     <img src="./en/natural-dyeing.png" width="100%" style="max-width: 600px; border-radius: 10px;">
-    <p><i>Organic colors from Madder Root, Indigo, and Saffron.</i></p>
+    <p><i>Organic colors harvested from Madder Root, Indigo, and Saffron.</i></p>
   </div>
 </details>
 
@@ -94,25 +84,25 @@ As a professional polyglot educator, I offer structured language courses for int
   <summary><b>🪢 Knot Comparison (Turkish vs Persian)</b></summary>
   <br>
   <div align="center">
-    <img src="./en/rug-knots-comparison.jpg" width="100%" style="max-width: 600px; border-radius: 10px;">
-    <p><i>The science of the Ghiordes Double Knot.</i></p>
+    <img src="./en/rug-knots-comparison.png" width="100%" style="max-width: 600px; border-radius: 10px;">
+    <p><i>Comparing the Ghiordes (Turkish) Double Knot and the Sehna Knot.</i></p>
+  </div>
+</details>
+
+<details>
+  <summary><b>🐑 The 12-Step Production Journey (Wool Journey)</b></summary>
+  <br>
+  <div align="center">
+    <img src="./en/wool-journey.png" width="100%" style="max-width: 600px; border-radius: 10px;">
+    <p><i>The complete cycle from shearing to the final wash.</i></p>
   </div>
 </details>
 
 ---
 
-<!-- 7. UZMAN PROFİLİ -->
-### 👨‍🏫 About the Expert
-Learn more about my background, polyglot skills, and professional consultancy.
-> [👉 View My Full Profile & Lessons (me.md)](./me.md)
+### 👨‍🏫 3. About the Expert & Language Academy
+*   👉 **[View My Full Profile & Lessons (me.md)](./me.md)**
+*   🇹🇷 **[Explore Turkish & French Lessons](https://fmemo75-prog.github.io/turkce-ders/index.html)**
 
 ---
-
-<!-- 8. ULUSLARARASI BÖLÜMLER -->
-### 🌍 International Sections (Coming Soon)
-| 🇫🇷 French | 🇮🇹 Italian | 🇪🇸 Spanish |
-| :--- | :--- | :--- |
-| ![Bientôt](https://img.shields.io/badge/Status-Soon-lightgrey) | ![Prossimamente](https://img.shields.io/badge/Status-Soon-lightgrey) | ![Próximamente](https://img.shields.io/badge/Status-Soon-lightgrey) |
-
----
-<p align="center"><i>Maintained with ❤️ by @fmemo75-prog</i></p>
+<p align="center"><i>"Ancient tools, eternal art. A rug is a map of the soul."</i></p>
