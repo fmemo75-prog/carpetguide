@@ -34,6 +34,46 @@ Click on a technique to see high-definition photos and detailed analyses:
 
 ---
 
+## 🛠️ Technical Mastery: How a Rug is Born
+*Explore the secret processes behind our handmade collection.*
+
+<details>
+  <summary><b>🌿 The Art of Natural Dyeing (Kök Boya) - Click to see</b></summary>
+  <br>
+  <div align="center">
+    <a href="./en/natural-dyeing.png">
+      <img src="./en/natural-dyeing.png" width="100%" style="max-width: 700px; border-radius: 10px;" alt="Natural Dyeing Process">
+    </a>
+    <p><i>Our colors are harvested from nature: Madder root, Indigo, and Saffron.</i></p>
+  </div>
+</details>
+
+<details>
+  <summary><b>🪢 Symmetrical vs Asymmetrical Knots - Click to see</b></summary>
+  <br>
+  <div align="center">
+    <a href="./en/rug-knots-comparison.jpg">
+      <img src="./en/rug-knots-comparison.jpg" width="100%" style="max-width: 700px; border-radius: 10px;" alt="Knot Comparison">
+    </a>
+    <p><i>The science of the "Turkish Double Knot" vs. the "Persian Single Knot."</i></p>
+  </div>
+</details>
+
+<details>
+  <summary><b>🐑 The 12-Step Production Journey - Click to see</b></summary>
+  <br>
+  <div align="center">
+    <a href="./en/wool-journey.png">
+      <img src="./en/wool-journey.png" width="100%" style="max-width: 700px; border-radius: 10px;" alt="Wool Journey">
+    </a>
+    <p><i>From sheep shearing to the final museum-grade wash.</i></p>
+  </div>
+</details>
+
+---
+
+---
+
 ## 👨‍🏫 3. Meet the Expert
 Learn more about my background as a polyglot educator and rug curator.
 > [👉 View Fatih's Profile & Language Lessons](./me)
