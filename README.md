@@ -40,11 +40,11 @@
       <p><i>Discover the 2500-year history of knotted masterpieces.</i></p>
       <ul>
         <li>🏺 <b><a href="./en/#pazyryk">The Pazyryk Carpet: Our Story Starts Here</a></b></li>
-        <li>🏆 <a href="./en/#types">Famous Rug Types (Hereke, Usak, Bergama)</a></li>
-      </ul>
-    </td>
-  </tr>
-</table>
+        ### 🏛️ 1. The Art of Carpets (Halı)
+*Discover the 2,500-year history of knotted masterpieces.*
+
+*   🏺 **[Super Rug Guide: Pazyryk, Hereke, Usak & Bergama](./en/supercarpet)**
+*   🏺 [Ancient History & Production Process](./en/guide)
 🏺
 
 <!-- 4. KİLİM BÖLÜMÜ (SOLDA KÜÇÜK MOTİFLER) -->
