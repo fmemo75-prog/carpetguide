@@ -1,5 +1,3 @@
-# 🎈 Carpet & Kilim Guide: Cappadocia Edition
-
 <table border="0" width="100%">
   <tr>
     <td valign="middle">
