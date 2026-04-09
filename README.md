@@ -85,7 +85,7 @@
   <summary><b>🪢 Knot Comparison (Turkish vs Persian)</b></summary>
   <br>
   <div align="center">
-    <img src="./en/rug-knots-comparison.jpg" width="100%" style="max-width: 600px; border-radius: 10px;">
+    <img src="./en/rug-knots-comparison.png" width="100%" style="max-width: 600px; border-radius: 10px;">
     <p><i>The science of the Ghiordes Double Knot.</i></p>
   </div>
 </details>
