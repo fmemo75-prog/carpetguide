@@ -1,53 +1,75 @@
 ---
 layout: default
-title: Dashboard
+title: Global Carpet Guide
 ---
 
-# 🧶 The Soul of Anatolia: The Weaving Loom
+# 🧶 Global Carpet & Kilim Guide: Cappadocia Edition
 
-A carpet is not just a product; it is a symphony written on a vertical stage. The loom (Tezgâh) is where raw wool meets the weaver's soul.
-
-<div style="text-align: center; margin: 30px 0;">
-  <a href="./loom.jpg" target="_blank">
-    <img src="./loom.jpg" alt="Traditional Anatolian Loom" style="width: 90%; border: 5px solid #fff; box-shadow: 0 10px 20px rgba(0,0,0,0.2);" loading="lazy">
-  </a>
-  <br><i><b>"The Heart of the Craft"</b> - Traditional Vertical Loom from Cappadocia</i>
-</div>
-
-## 🏛️ Technical Anatomy of the Loom
-As an expert curator, I have classified the vital components of this masterpiece:
-
-<table border="0" style="width:100%; background-color: #fffaf0; border-radius: 10px; padding: 15px;">
+<table border="0" style="width:100%; border-spacing: 20px;">
   <tr>
-    <td style="padding: 10px;">
-      <b>1. The Warp (Eriş):</b> The vertical strings that form the skeleton of the rug. They must be kept under perfect tension.
+    <td style="width: 65%; vertical-align: top;">
+      <h2>Expert Curation</h2>
+      <p><strong>Fatih Mehmet Canıtez</strong><br>
+      <em>French Language Educator & Polyglot</em><br>
+      <b>Expert in Traditional Anatolian Weaving</b></p>
+      <p>Welcome to a professional journey through the soul of Anatolian weaving. This guide covers everything from the 2500-year-old Pazyryk tradition to the imperial elegance of Hereke silk.</p>
     </td>
-  </tr>
-  <tr>
-    <td style="padding: 10px;">
-      <b>2. The Weft (Argaç):</b> The horizontal threads passed between the warps to secure the knots in place.
-    </td>
-  </tr>
-  <tr>
-    <td style="padding: 10px;">
-      <b>3. The Kirkit (Beater):</b> The heavy comb used to pack the rows of knots and wefts tightly together.
-    </td>
-  </tr>
-  <tr>
-    <td style="padding: 10px;">
-      <b>4. The Shuttle (Mekik):</b> The tool that carries the weft yarn across the warps with rhythmic precision.
+    <td style="width: 35%; text-align: center;">
+      <img src="./me.png" alt="Curator" style="width: 140px; border-radius: 50%; border: 4px solid #8b0000; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
     </td>
   </tr>
 </table>
 
+<hr>
+
+<!-- 1 NUMARA: LOOM (TEZGAH) VE TEKNİK ANALİZ -->
+<div style="text-align: center; margin: 30px 0;">
+  <h2 style="color: #8b0000;">The Heart of the Craft: Traditional Loom</h2>
+  <a href="./loom.jpg" target="_blank">
+    <img src="./loom.jpg" alt="Traditional Loom" style="width: 100%; border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.2);">
+  </a>
+  <p><i>"Every knot is a story written on a vertical stage."</i></p>
+</div>
+
+<table border="0" style="width:100%; background-color: #fdf5e6; padding: 20px; border-radius: 10px; border: 1px solid #d2b48c;">
+  <tr>
+    <td>
+      <h3>🏛️ Technical Anatomy of the Loom</h3>
+      <ol>
+        <li><strong>The Warp (Eriş):</strong> Vertical skeleton strings under high tension.</li>
+        <li><strong>The Weft (Argaç):</strong> Horizontal threads that secure the knots.</li>
+        <li><strong>The Kirkit (Beater):</strong> Heavy comb to pack the rows tightly.</li>
+        <li><strong>The Shuttle (Mekik):</strong> Tool that carries the weft across.</li>
+      </ol>
+    </td>
+  </tr>
+</table>
+
+<hr>
+
+<!-- KAPADOKYA VİTRİNİ -->
+<div style="text-align: center; margin: 30px 0;">
+  <img src="./cappadocia-balloons.png" alt="Cappadocia" style="width: 100%; border-radius: 10px;">
+</div>
+
+<hr>
+
+### 🏰 Historical & Imperial Masterpieces
+*   🏺 [**Pazyryk Carpet Analysis**](./en/pazyryk) - The world's oldest knotted masterpiece.
+*   👑 [**Hereke Silk Carpets**](./en/hereke) - The imperial peak of Turkish art.
+
+### ⚙️ Technical Knowledge & Materials
+*   🌍 [**Carpet World (Hand-Knotted)**](./en/handknotted) - Regional centers (Oushak & Bergama).
+*   📊 [**Classification by Materials**](./en/materials) - Understanding Wool, Cotton, and Silk.
+
+### 🧶 The Art of Kilim (Flat-Weaves)
+*   📐 [**Full Kilim Guide**](./en/kilim) - History, motifs, and symbolism.
+*   🌸 [**Cicim (Jijim) Technique**](./en/cicim) - Detailed weaving guide.
+*   🌀 [**Sumak (Soumak) Style**](./en/sumak) - Technical analysis.
+*   🏗️ [**Zili (Sili) Technique**](./en/zili) - The ancient art of structure.
+
 ---
 
-### 📖 Explore the Guide
-*   🏰 [**Imperial Legacy:** Hereke Silk Carpets](./en/hereke)
-*   🏺 [**The Ancestor:** Pazyryk Carpet Analysis](./en/pazyryk)
-*   ⚙️ [**Material World:** Wool, Cotton, and Silk Classification](./en/materials)
-*   🌍 [**Regional Styles:** Oushak & Bergama Traditions](./en/handknotted)
-
----
-
-[**About the Curator (Fatih Mehmet Canıtez)**](./me)
+<div style="text-align: center;">
+  <a href="./me" style="font-weight: bold; color: #8b0000;">[Learn more about the Curator and French Lessons]</a>
+</div>
