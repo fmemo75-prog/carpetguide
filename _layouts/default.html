@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'en-US' }}">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ page.title }} | Carpet Guide</title>
+    <!-- Buraya varsa CSS linklerini ekleyebilirsin -->
+  </head>
+  <body>
+
+    <!-- GOOGLE TRANSLATE WIDGET (Tüm Sayfalarda Görünecek) -->
+    <div style="background-color: #f8f9fa; border-bottom: 1px solid #ddd; padding: 10px; text-align: right;">
+      <div id="google_translate_element"></div>
+    </div>
+
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+          pageLanguage: 'en',
+          includedLanguages: 'tr,en,fr,de,it,es,ja,ar', // İstediğin dilleri buraya ekle
+          layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+        }, 'google_translate_element');
+      }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <!-- WIDGET BİTİŞ -->
+
+    <div style="max-width: 900px; margin: 0 auto; padding: 20px; font-family: sans-serif;">
+      <!-- SAYFA İÇERİĞİ BURAYA GELECEK -->
+      {{ content }}
+    </div>
+
+    <footer style="text-align: center; margin-top: 50px; padding: 20px; border-top: 1px solid #eee; font-size: 14px;">
+      <p>© {{ site.time | date: '%Y' }} Carpet Guide - Curator: Fatih Mehmet Canıtez</p>
+    </td>
+  </body>
+</html>
