@@ -54,9 +54,9 @@
       <p><i>Flat-woven stories told through 9,000 years of geometric symbols.</i></p>
       <ul>
         <li>📖 <b><a href="./en/kilim.md">Full Kilim Guide: History & Symbols</a></b></li>
-        <li>🌸 <a href="./en/cicim.md">Detailed Guide: Cicim (Jijim) Technique</a></li>
-        <li>🌀 <a href="./en/sumak.md">Detailed Guide: Sumak (Soumak) Technique</a></li>
-        <li>🏗️ <a href="./en/zili.md">Detailed Guide: Zili (Sili) Technique</a></li>
+        <li>🌸 <a href="./en/cicim">Detailed Guide: Cicim (Jijim) Technique</a></li>
+        <li>🌀 <a href="./en/sumak">Detailed Guide: Sumak (Soumak) Technique</a></li>
+        <li>🏗️ <a href="./en/zili">Detailed Guide: Zili (Sili) Technique</a></li>
       </ul>
     </td>
   </tr>
