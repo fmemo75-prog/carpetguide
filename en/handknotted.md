@@ -1,63 +1,65 @@
 ---
 layout: default
-title: Carpet World (Hand Knotted)
+title: Carpet World - Hand Knotted Analysis
 ---
 
-# Carpet World: The Art of Hand-Knotted Masterpieces
+# Masterpieces of Anatolia: Motif & Design Analysis
 
-The world of hand-knotted carpets is divided into regional traditions, each with its own "DNA" of motifs and materials.
-
-<table border="0" style="width:100%; background-color: #f9f9f9; padding: 15px; border-radius: 10px; margin-bottom: 20px;">
-  <tr>
-    <td>
-      <p>A hand-knotted carpet is not just a floor covering; it is a document of history. Below, we explore the most prestigious centers of this art.</p>
-      <a href="./materials" style="font-weight: bold; color: #8b4513;">📊 Click here to learn about Materials (Wool & Silk)</a>
-    </td>
-  </tr>
-</table>
+A hand-knotted carpet tells a story through its symbols. Below is a technical and symbolic analysis of the Uşak and Bergama traditions.
 
 <hr>
 
 <!-- SECTION: UŞAK (OUSHAK) -->
-<table border="0" style="width:100%; margin-bottom: 30px;">
+<table border="0" style="width:100%; margin-bottom: 40px; background-color: #fcfcfc; padding: 15px; border-radius: 10px;">
   <tr>
-    <td style="width: 40%; text-align: center; vertical-align: middle; border: 1px dashed #ccc;">
-      <p style="color: #999;">[Uşak Image Placeholder]</p>
-      <!-- Resim geldiğinde burayı güncelleyeceğiz -->
+    <td style="width: 45%; text-align: center; vertical-align: middle;">
+      <a href="./usak.jpg" target="_blank">
+        <img src="./usak.jpg" alt="Uşak Carpet Analysis" style="width: 100%; border-radius: 5px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+      </a>
+      <br><small>(Click to enlarge Uşak image)</small>
     </td>
-    <td style="width: 60%; padding-left: 20px; vertical-align: top;">
-      <h2 style="color: #b22222;">1. Uşak (Oushak) Carpets</h2>
-      <p>Known as the "Carpets of Stars and Medallions," Uşak has been a major production center since the 15th century. These carpets were so prestigious that they appeared in the paintings of European masters like Holbein and Lotto.</p>
+    <td style="width: 55%; padding-left: 25px; vertical-align: top;">
+      <h2 style="color: #b22222; margin-top: 0;">1. The Uşak (Oushak) Tradition</h2>
+      <p>Uşak carpets are the "aristocrats" of the Turkish carpet world. The example shown features a rare indigo field with sophisticated floral arrangements.</p>
+      
+      <h3>Key Motifs in this Piece:</h3>
       <ul>
-        <li><strong>Character:</strong> Grand medallions and floral patterns.</li>
-        <li><strong>Technique:</strong> Usually wool on cotton foundation.</li>
-        <li><strong>Palette:</strong> Subtle terracotta, gold, and ivory tones.</li>
+        <li><strong>Palmettes & Lotus:</strong> These large floral symbols represent immortality and the "Gardens of Paradise."</li>
+        <li><strong>The Star (Yıldız):</strong> Often found in the center, symbolizing the universe and spiritual light.</li>
+        <li><strong>Indigo Palette:</strong> The deep blue represents nobility and was historically a sign of high status.</li>
       </ul>
+      <p><i>Technical Note: Large-scale patterns like these require high-quality wool to maintain the soft, decorative look.</i></p>
     </td>
   </tr>
 </table>
 
 <!-- SECTION: BERGAMA -->
-<table border="0" style="width:100%; margin-bottom: 30px;">
+<table border="0" style="width:100%; margin-bottom: 40px; background-color: #f9fdf9; padding: 15px; border-radius: 10px;">
   <tr>
-    <td style="width: 60%; padding-right: 20px; vertical-align: top;">
-      <h2 style="color: #2e8b57;">2. Bergama Carpets</h2>
-      <p>Originating from the ancient city of Pergamon, Bergama carpets represent the deep tribal roots of Anatolia. Unlike the courtly style of Uşak, Bergama pieces are famous for their rustic, bold, and geometric nomadic designs.</p>
+    <td style="width: 55%; padding-right: 25px; vertical-align: top;">
+      <h2 style="color: #2e8b57; margin-top: 0;">2. The Bergama Tradition</h2>
+      <p>Bergama carpets are the descendants of the ancient Pergamon culture, deeply rooted in nomadic (Yörük) traditions.</p>
+      
+      <h3>Key Motifs in this Piece:</h3>
       <ul>
-        <li><strong>Character:</strong> Large geometric motifs and highly saturated colors.</li>
-        <li><strong>Technique:</strong> Traditionally <b>Wool on Wool</b> (all-wool structure).</li>
-        <li><strong>Palette:</strong> Deep madder red, indigo blue, and natural whites.</li>
+        <li><strong>Geometric Medallions:</strong> Unlike the rounded Uşak forms, Bergama uses octagons and squares representing protection and tribal stamps (Tamga).</li>
+        <li><strong>Elibelinde (Hands-on-Hips):</strong> A sacred symbol of femininity, fertility, and the mother goddess.</li>
+        <li><strong>The Scorpion (Akrep):</strong> Used on the borders to protect the owner from external harm.</li>
       </ul>
+      <p><i>Technical Note: Bergama carpets are famous for their long-pile wool and "Wool on Wool" structure.</i></p>
     </td>
-    <td style="width: 40%; text-align: center; vertical-align: middle; border: 1px dashed #ccc;">
-      <p style="color: #999;">[Bergama Image Placeholder]</p>
-      <!-- Resim geldiğinde burayı güncelleyeceğiz -->
+    <td style="width: 45%; text-align: center; vertical-align: middle;">
+      <a href="./bergama.jpg" target="_blank">
+        <img src="./bergama.jpg" alt="Bergama Carpet Analysis" style="width: 100%; border-radius: 5px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+      </a>
+      <br><small>(Click to enlarge Bergama image)</small>
     </td>
   </tr>
 </table>
 
 <hr>
 
-<p><i>This technical guide is being expanded with more regional centers and knot analysis.</i></p>
-
-[Return to Main Guide](./)
+<p style="text-align: center;">
+  <strong>Explore further:</strong><br>
+  <a href="./materials">View Material Classification</a> | <a href="./">Return to Dashboard</a>
+</p>
