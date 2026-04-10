@@ -43,7 +43,6 @@ title: Global Carpet Guide
 <table border="0" style="width:100%; text-align: center;">
   <tr>
     <td style="padding:10px;"><a href="./en/hereke" style="text-decoration:none; color:#8b0000; font-weight:bold;">🏰 Hereke</a></td>
-    <!-- BURASI DÜZELTİLDİ -->
     <td style="padding:10px;"><a href="./en/" style="text-decoration:none; color:#8b0000; font-weight:bold;">🏺 Pazyryk</a></td>
     <td style="padding:10px;"><a href="./en/handknotted" style="text-decoration:none; color:#8b0000; font-weight:bold;">🌍 Carpet World</a></td>
     <td style="padding:10px;"><a href="./en/materials" style="text-decoration:none; color:#8b0000; font-weight:bold;">📊 Materials</a></td>
