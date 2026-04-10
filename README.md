@@ -34,13 +34,6 @@
   <li>📜 <a href="./en/">Ancient History & Production Process</a></li>
 </ul>
 
-<!-- Kilim Bölümü Linkleri -->
-<ul>
-  <li>📖 <b><a href="./en/kilim">Full Kilim Guide: History & Symbols</a></b></li>
-  <li>🌸 <a href="./en/cicim">Detailed Guide: Cicim Technique</a></li>
-  <li>🌀 <a href="./en/sumak">Detailed Guide: Sumak Technique</a></li>
-</ul>
-
 ---
 
 ## 🎨 2. The Poetry of Kilims (Düz Dokuma)
