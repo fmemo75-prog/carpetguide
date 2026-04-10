@@ -32,7 +32,12 @@
 <table border="0" style="width:100%; background-color: #fcfcfc; border: 1px solid #eee; border-radius: 8px; padding: 15px;">
   <tr>
     <td style="width: 35%; text-align: center;">
-      <img src="./hereke.png" alt="Hereke Silk Carpet" style="width: 100%; border-radius: 5px;">
+      <!-- Resme tıklandığında yeni sekmede açılması için link ekledik -->
+      <a href="./hereke.png" target="_blank">
+        <img src="./hereke.png" alt="Hereke Silk Carpet" style="width: 100%; border-radius: 5px; cursor: zoom-in;" title="Click to enlarge">
+      </a>
+      <br>
+      <small style="color: #666;">(Click image to enlarge)</small>
     </td>
     <td style="width: 65%; padding-left: 20px; vertical-align: top;">
       <h3 style="margin-top: 0; color: #8b4513;">Hereke: The King of Carpets</h3>
