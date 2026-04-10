@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # 🎨 Kilim: The Ancient Geometry of the Soul
 
 A Kilim is not just a rug; it is a **woven poem**. As the older ancestor of the knotted carpet, the Kilim has been the portable canvas of nomadic tribes for over 9,000 years.
