@@ -1,20 +1,4 @@
-<!-- Google Translate Widget Start -->
-<div id="google_translate_element" style="text-align:right; padding:10px;"></div>
 
-<script type="text/javascript">
-function googleTranslateElementInit() {
-  new google.translate.TranslateElement({
-    pageLanguage: 'en', 
-    includedLanguages: 'tr,en,fr,de,it,es', // Buraya istediğin dilleri ekleyebilirsin
-    layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
-    autoDisplay: false
-  }, 'google_translate_element');
-}
-</script>
-
-<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-<!-- Google Translate Widget End -->
-<hr>
 
 # 🧶 Global Carpet & Kilim Guide: Cappadocia Edition
 
