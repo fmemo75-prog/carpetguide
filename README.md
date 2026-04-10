@@ -46,7 +46,7 @@
         <strong>Knot Style:</strong> Double Knot (Ghiordes)<br>
         <strong>Material:</strong> Pure Silk / Fine Wool
       </p>
-      <a href="../hereke" style="display: inline-block; padding: 8px 15px; background-color: #8b4513; color: white; text-decoration: none; border-radius: 5px; font-weight: bold;">🔍 More Details</a>
+      <a href="./hereke" style="display: inline-block; padding: 8px 15px; background-color: #8b4513; color: white; text-decoration: none; border-radius: 5px; font-weight: bold;">🔍 More Details</a>
     </td>
   </tr>
 </table>
