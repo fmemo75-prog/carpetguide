@@ -42,7 +42,7 @@ title: Global Carpet Guide
 
 <!-- KAPADOKYA MANZARA -->
 <div style="text-align: center; margin: 30px 0;">
-  <img src="./cappadocia-balloons.png" alt="Cappadocia View" style="width: 90%; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+  <img src="./cappadocia-balloons.jpg" alt="Cappadocia View" style="width: 90%; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
 </div>
 
 <hr style="border-top: 2px solid #8b0000; margin: 30px 0;">
