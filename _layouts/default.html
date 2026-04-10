@@ -65,3 +65,80 @@
 
   </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ page.title }} | Carpet Guide</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; margin: 0; padding: 0; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 20px; }
+        .translate-bar { 
+            background-color: #f8f9fa; 
+            padding: 10px 20px; 
+            border-bottom: 1px solid #ddd; 
+            display: flex; 
+            justify-content: flex-end; 
+            align-items: center;
+        }
+        .translate-label { font-size: 14px; margin-right: 12px; font-weight: 600; color: #444; }
+        .goog-te-gadget-simple { border: 1px solid #ccc !important; border-radius: 4px !important; padding: 5px !important; }
+        
+        /* Ana Sayfaya Dönüş Butonu Stili */
+        .back-home-container {
+            margin-top: 40px;
+            padding: 20px 0;
+            border-top: 2px solid #8b4513;
+            text-align: center;
+        }
+        .back-home-btn {
+            display: inline-block;
+            padding: 12px 25px;
+            background-color: #8b4513;
+            color: white !important;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        .back-home-btn:hover { background-color: #5d2e0d; }
+    </style>
+  </head>
+  <body>
+
+    <!-- Translation Bar -->
+    <div class="translate-bar">
+      <span class="translate-label">Select Language:</span>
+      <div id="google_translate_element"></div>
+    </div>
+
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+          pageLanguage: 'en',
+          includedLanguages: 'en,tr,fr,de,it,es,ja,ru,ar',
+          layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+          autoDisplay: false
+        }, 'google_translate_element');
+      }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit&hl=en"></script>
+
+    <div class="container">
+      
+      <!-- Sayfanın asıl içeriği (Hereke, Kilim vb.) -->
+      {{ content }}
+
+      <!-- OTOMATİK ANA SAYFAYA DÖNÜŞ BUTONU -->
+      <div class="back-home-container">
+        <a href="{{ site.baseurl }}/" class="back-home-btn">🏠 Back to Main Dashboard</a>
+      </div>
+      
+      <footer style="text-align: center; font-size: 13px; color: #888; padding-bottom: 40px; margin-top: 20px;">
+        <p>© {{ site.time | date: '%Y' }} Carpet Guide | Curator: Fatih Mehmet Canıtez</p>
+      </footer>
+    </div>
+
+  </body>
+</html>
