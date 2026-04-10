@@ -28,26 +28,55 @@
 
 ---
 
-<!-- Hereke Carpet Section -->
-<table border="0" style="width:100%; background-color: #fcfcfc; border: 1px solid #eee; border-radius: 8px; padding: 15px;">
+---
+layout: default
+---
+
+# 🏰 Carpet Guide: Professional Dashboard
+
+Welcome to the digital carpet library. Below you can find the most important masterpieces of weaving history.
+
+<!-- PAZYRYK SECTION (RECOVERED) -->
+<table border="0" style="width:100%; background-color: #fdf5e6; border: 1px solid #d2b48c; border-radius: 10px; padding: 20px; margin-bottom: 20px;">
   <tr>
-    <td style="width: 35%; text-align: center;">
-      <!-- Resme tıklandığında yeni sekmede açılması için link ekledik -->
-      <a href="./hereke.png" target="_blank">
-        <img src="./hereke.png" alt="Hereke Silk Carpet" style="width: 100%; border-radius: 5px; cursor: zoom-in;" title="Click to enlarge">
+    <td style="width: 40%; text-align: center; vertical-align: middle;">
+      <a href="./en/Pazyryk_numbered.png" target="_blank">
+        <img src="./en/Pazyryk_numbered.png" alt="Pazyryk Numbered Analysis" style="width: 100%; border-radius: 8px; cursor: zoom-in;">
       </a>
-      <br>
-      <small style="color: #666;">(Click image to enlarge)</small>
+      <br><small style="color: #666;">(Click to see numbered motifs)</small>
     </td>
-    <td style="width: 65%; padding-left: 20px; vertical-align: top;">
-      <h3 style="margin-top: 0; color: #8b4513;">Hereke: The King of Carpets</h3>
-      <p>Known as the <strong>"Shah of Carpets,"</strong> Hereke represents the pinnacle of silk weaving. Hand-knotted with the traditional Turkish double knot, these masterpieces have graced royal palaces for centuries.</p>
-      <a href="./en/hereke" style="font-weight: bold; color: #8b4513; text-decoration: none;">🔍 Click for Production Process & Details</a>
+    <td style="width: 60%; padding-left: 25px; vertical-align: top;">
+      <h2 style="margin-top: 0; color: #8b0000;">The Pazyryk Carpet: 2500 Years Old</h2>
+      <p>The <b>Pazyryk Carpet</b> is the oldest knotted carpet in the world (5th Century BC). This numbered analysis shows the complex motifs like horsemen, stags, and griffins, proving the ancient roots of the <b>Turkish Double Knot</b>.</p>
+      <p><i>"The ancestor of all carpets, found frozen in the Altai Mountains."</i></p>
+      <!-- Bu link senin attığın en/README.md sayfasına gider -->
+      <a href="./en/" style="display: inline-block; padding: 8px 15px; background-color: #8b0000; color: white; text-decoration: none; border-radius: 5px; font-weight: bold;">📜 More Details & Historical Context</a>
     </td>
   </tr>
 </table>
----
 
+<!-- HEREKE SECTION -->
+<table border="0" style="width:100%; background-color: #fcfcfc; border: 1px solid #eee; border-radius: 10px; padding: 20px; margin-bottom: 20px;">
+  <tr>
+    <td style="width: 40%; text-align: center;">
+      <a href="./hereke.png" target="_blank">
+        <img src="./hereke.png" alt="Hereke Silk Carpet" style="width: 100%; border-radius: 8px;">
+      </a>
+      <br><small style="color: #666;">(The King of Carpets)</small>
+    </td>
+    <td style="width: 60%; padding-left: 25px; vertical-align: top;">
+      <h2 style="margin-top: 0; color: #8b4513;">Hereke: The Imperial Silk</h2>
+      <p>Representing the peak of Ottoman art, Hereke carpets are 100% silk and hand-knotted for palaces. They are the fine-art of the carpet world.</p>
+      <a href="./en/hereke" style="display: inline-block; padding: 8px 15px; background-color: #8b4513; color: white; text-decoration: none; border-radius: 5px; font-weight: bold;">🔍 Production Process</a>
+    </td>
+  </tr>
+</table>
+
+<hr>
+
+### 📚 Quick Navigation
+- 🧶 [Full Kilim Guide](./en/kilim)
+- 👨‍🏫 [About the Curator (Fatih Mehmet Canıtez)](./me)
 ## 🎨 2. The Poetry of Kilims (Düz Dokuma)
 
 <table border="0">
