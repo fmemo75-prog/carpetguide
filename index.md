@@ -34,7 +34,7 @@ title: Global Carpet Guide
 
 <!-- Kapadokya Manzara -->
 <div style="text-align: center; margin: 30px 0;">
-  <img src="./cappadocia-balloons.png" alt="Cappadocia View" style="width: 80%; border-radius: 12px;">
+  <img src="./cappadocia-balloons.jpg" alt="Cappadocia View" style="width: 80%; border-radius: 12px;">
 </div>
 
 <hr style="border-top: 2px solid #8b0000; margin: 30px 0;">
