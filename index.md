@@ -1,7 +1,8 @@
 ---
+---
 layout: default
 title: Global Carpet Guide
----
+
 
 <!-- SADECE BU ÜST KISMI DEĞİŞTİR -->
 <table border="0" style="width:100%; border-collapse: collapse; margin-top: 20px;">
