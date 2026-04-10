@@ -21,7 +21,7 @@
 
 <!-- 2. VİTRİN VE İLETİŞİM -->
 <div align="center">
-  <img src="./cappadocia-balloons.png" width="450" style="border-radius: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);" alt="Cappadocia Balloons">
+  <img src="./cappadocia-balloons.jpg" width="450" style="border-radius: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);" alt="Cappadocia Balloons">
   <br><br>
   <a href="https://wa.me/905054466760">
     <img src="https://img.shields.io/badge/WhatsApp-Contact_Expert_Directly-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="WhatsApp Contact">
