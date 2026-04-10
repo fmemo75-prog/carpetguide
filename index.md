@@ -1,47 +1,32 @@
----
----
-layout: default
-title: Global Carpet Guide
 
 
-<!-- SADECE BU ÜST KISMI DEĞİŞTİR -->
-<table border="0" style="width:100%; border-collapse: collapse; margin-top: 20px;">
+# 🧶 Global Carpet & Kilim Guide: Cappadocia Edition
+
+<!-- 1. ÜST PROFİL BÖLÜMÜ -->
+<table border="0" width="100%">
   <tr>
-    <!-- Sol: Başlık ve Unvanlar -->
-    <td style="width: 35%; vertical-align: top; padding-right: 15px;">
-      <h1 style="font-size: 26px; color: #2c3e50; line-height: 1.2;">🧶 Global Carpet & Kilim Guide: Cappadocia Edition</h1>
-      <br>
-      <h2 style="font-size: 22px; color: #34495e; font-weight: normal;">Expert Curation</h2>
-      <br>
-      <p><strong>Fatih Mehmet Canıtez</strong></p>
-      <p style="font-size: 14px; color: #7f8c8d;">French Language Educator & Polyglot<br>Expert in Traditional Anatolian Weaving</p>
+    <td valign="middle">
+      <h1>Expert Curation</h1>
+      <p><b>Fatih Mehmet Canıtez</b><br>
+      French Language Educator & Polyglot<br>
+      Expert in Traditional Anatolian Weaving</p>
     </td>
-
-    <!-- Orta: Büyük Tezgah (loom.jpg) -->
-    <td style="width: 50%; text-align: center; vertical-align: middle;">
-      <img src="./loom.jpg" style="width: 100%; border-radius: 15px; box-shadow: 0 8px 20px rgba(0,0,0,0.15);">
-    </td>
-
-    <!-- Sağ: Yuvarlak Profil (carpet.jpg) -->
-    <td style="width: 15%; text-align: center; vertical-align: middle; padding-left: 15px;">
-      <img src="./carpet.jpg" style="width: 100px; height: 100px; border-radius: 50%; border: 3px solid #d4af37; object-fit: cover;">
+    <td align="right" valign="middle">
+      <a href="./carpet.jpeg">
+        <img src="./carpet.jpeg" width="110" style="border-radius: 50%; border: 3px solid #f39c12;" alt="Fatih Mehmet Canıtez">
+      </a>
     </td>
   </tr>
 </table>
 
-<!-- Kapadokya Manzara -->
-<div style="text-align: center; margin: 30px 0;">
-  <img src="./cappadocia-balloons.png" style="width: 80%; border-radius: 15px;">
+<!-- 2. VİTRİN VE İLETİŞİM -->
+<div align="center">
+  <img src="./cappadocia-balloons.jpg" width="450" style="border-radius: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);" alt="Cappadocia Balloons">
+  <br><br>
+  <a href="https://wa.me/905054466760">
+    <img src="https://img.shields.io/badge/WhatsApp-Contact_Expert_Directly-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="WhatsApp Contact">
+  </a>
 </div>
-
-<hr style="border-top: 2px solid #8b0000; margin: 30px 0;">
-
-<!-- BURADAN AŞAĞISI ESKİ LİNKLERİN OLARAK KALSIN -->
-
-
-<!-- BURADAN AŞAĞISI ESKİ LİNKLERİN OLARAK KALSIN -->
-
-
 
 ---
 
