@@ -3,13 +3,12 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Sayfa başlığı otomatik gelir -->
     <title>{{ page.title }} | Carpet Guide</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; margin: 0; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; margin: 0; padding: 0; }
         .container { max-width: 1000px; margin: 0 auto; padding: 20px; }
         .translate-bar { 
-            background-color: #f4f4f4; 
+            background-color: #f8f9fa; 
             padding: 10px 20px; 
             border-bottom: 1px solid #ddd; 
             display: flex; 
@@ -18,43 +17,49 @@
         }
         .translate-label { 
             font-size: 14px; 
-            margin-right: 10px; 
-            font-weight: bold; 
-            color: #555;
+            margin-right: 12px; 
+            font-weight: 600; 
+            color: #444;
         }
-        /* Google kutusunu biraz daha sadeleştirir */
-        .goog-te-gadget-simple { border: 1px solid #ccc !important; border-radius: 4px !important; padding: 4px !important; }
+        /* Cleaning up Google Widget appearance */
+        .goog-te-gadget-simple { border: 1px solid #ccc !important; border-radius: 4px !important; padding: 5px !important; font-size: 13px !important; }
+        .goog-te-gadget-icon { display: none !important; } /* Removes Google logo for cleaner look */
     </style>
   </head>
   <body>
 
-    <!-- İngilizce Etiketli Çeviri Çubuğu -->
+    <!-- Translation Bar with English Label -->
     <div class="translate-bar">
-      <span class="translate-label">Translate this page:</span>
+      <span class="translate-label">Select Language:</span>
       <div id="google_translate_element"></div>
     </div>
 
     <script type="text/javascript">
       function googleTranslateElementInit() {
         new google.translate.TranslateElement({
-          pageLanguage: 'en',
-          // Sadece en çok ihtiyaç duyacağın dilleri ekledim (Arttırabilirsin)
-          includedLanguages: 'en,tr,fr,de,it,es,ja,ru,ar', 
+          pageLanguage: 'en', // Your content is in English
+          includedLanguages: 'en,tr,fr,de,it,es,ja,ru,ar',
           layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
           autoDisplay: false
         }, 'google_translate_element');
       }
     </script>
-    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    
+    <!-- hl=en ensures the Google Translate interface itself is in English -->
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit&hl=en"></script>
 
     <div class="container">
-      <!-- İçerik Alanı -->
+      <!-- Main Content -->
       {{ content }}
       
-      <hr style="margin-top: 50px; border: 0; border-top: 1px solid #eee;">
-      <footer style="text-align: center; font-size: 13px; color: #777; padding-bottom: 30px;">
+      <hr style="margin-top: 60px; border: 0; border-top: 1px solid #eee;">
+      <footer style="text-align: center; font-size: 13px; color: #888; padding-bottom: 40px;">
         <p>© {{ site.time | date: '%Y' }} Carpet Guide | Curator: Fatih Mehmet Canıtez</p>
-        <p><a href="/" style="color: #777; text-decoration: none;">Home</a> | <a href="/en/materials" style="color: #777; text-decoration: none;">Materials</a></p>
+        <p>
+          <a href="/" style="color: #888; text-decoration: none; margin: 0 10px;">Home</a> | 
+          <a href="/en/materials" style="color: #888; text-decoration: none; margin: 0 10px;">Technical Guide</a> | 
+          <a href="/me" style="color: #888; text-decoration: none; margin: 0 10px;">About</a>
+        </p>
       </footer>
     </div>
 
