@@ -24,14 +24,14 @@ title: Global Carpet Guide
 
     <!-- SAĞ: Yuvarlak Profil (carpet.jpg) -->
     <td style="width: 15%; text-align: center; vertical-align: middle; padding-left: 10px;">
-      <img src="./carpet.jpg" alt="Curator" style="width: 90px; height: 90px; border-radius: 50%; border: 3px solid #d4af37; object-fit: cover;">
+      <img src="../carpet.jpg" alt="Curator" style="width: 90px; height: 90px; border-radius: 50%; border: 3px solid #d4af37; object-fit: cover;">
     </td>
   </tr>
 </table>
 
 <!-- Alt Bölüm: Kapadokya Manzara -->
 <div style="text-align: center; margin: 30px 0;">
-  <img src="./cappadocia-balloons.png" alt="Cappadocia View" style="width: 80%; border-radius: 12px;">
+  <img src="./cappadocia-balloons.jpg" alt="Cappadocia View" style="width: 80%; border-radius: 12px;">
 </div>
 
 <hr style="border-top: 2px solid #8b0000; margin: 30px 0;">
