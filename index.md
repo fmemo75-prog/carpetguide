@@ -49,7 +49,7 @@ title: Global Carpet Guide
 
 <!-- KAPADOKYA VİTRİNİ -->
 <div style="text-align: center; margin: 30px 0;">
-  <img src="./cappadocia-balloons.png" alt="Cappadocia" style="width: 100%; border-radius: 10px;">
+  <img src="./cappadocia-balloons.jpg" alt="Cappadocia" style="width: 100%; border-radius: 10px;">
 </div>
 
 <hr>
