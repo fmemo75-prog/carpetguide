@@ -47,23 +47,40 @@ title: Global Carpet Guide
 
 <hr style="border-top: 2px solid #8b0000; margin: 30px 0;">
 
-<!-- LİNKLER: 4+4 DÜZENİ -->
-<h3 style="text-align: center; color: #8b0000; font-size: 18px;">🏛️ Historical & Technical Guides</h3>
-<table border="0" style="width:100%; text-align: center;">
+<hr style="border: 0; border-top: 2px solid #8b0000; margin: 40px 0;">
+
+<!-- LİNK BÖLÜMÜ 1: TARİHİ VE TEKNİK REHBERLER -->
+<h3 style="text-align: center; color: #8b0000; font-family: 'Georgia', serif;">🏛️ Historical & Technical Deep-Dives</h3>
+<table border="0" style="width:100%; text-align: center; table-layout: fixed;">
   <tr>
-    <td style="padding:10px; width:25%;"><a href="./en/hereke" style="text-decoration:none; color:#8b0000; font-weight:bold; font-size:14px;">🏰 Hereke</a></td>
-    <td style="padding:10px; width:25%;"><a href="./en/" style="text-decoration:none; color:#8b0000; font-weight:bold; font-size:14px;">🏺 Pazyryk</a></td>
-    <td style="padding:10px; width:25%;"><a href="./en/handknotted" style="text-decoration:none; color:#8b0000; font-weight:bold; font-size:14px;">🌍 World</a></td>
-    <td style="padding:10px; width:25%;"><a href="./en/materials" style="text-decoration:none; color:#8b0000; font-weight:bold; font-size:14px;">📊 Materials</a></td>
+    <td style="padding:10px;">
+      <a href="./en/hereke" style="text-decoration:none; color:#8b0000; font-weight:bold;">🏰 Imperial Hereke</a>
+    </td>
+    <td style="padding:10px;">
+      <!-- Pazyryk detayları en/README.md içinde olduğu için direkt /en/ klasörüne gider -->
+      <a href="./en/" style="text-decoration:none; color:#8b0000; font-weight:bold;">🏺 Pazyryk Analysis</a>
+    </td>
+    <td style="padding:10px;">
+      <a href="./en/handknotted" style="text-decoration:none; color:#8b0000; font-weight:bold;">🌍 Carpet World</a>
+    </td>
+    <td style="padding:10px;">
+      <!-- Yeni görsellerin olduğu sayfa -->
+      <a href="./en/materials" style="text-decoration:none; color:#8b0000; font-weight:bold;">📊 Materials & Techniques</a>
+    </td>
   </tr>
 </table>
 
-<h3 style="text-align: center; color: #2e8b57; font-size: 18px; margin-top: 15px;">📐 Kilim Techniques</h3>
-<table border="0" style="width:100%; text-align: center;">
+<!-- LİNK BÖLÜMÜ 2: KİLİM VE DOKUMA TÜRLERİ -->
+<h3 style="text-align: center; color: #2e8b57; margin-top: 20px; font-family: 'Georgia', serif;">📐 Kilim & Flat-Weave Masterpieces</h3>
+<table border="0" style="width:100%; text-align: center; table-layout: fixed;">
   <tr>
-    <td style="padding:10px; width:25%;"><a href="./en/kilim" style="text-decoration:none; color:#2e8b57; font-weight:bold; font-size:14px;">📐 Kilim</a></td>
-    <td style="padding:10px; width:25%;"><a href="./en/cicim" style="text-decoration:none; color:#2e8b57; font-weight:bold; font-size:14px;">🌸 Cicim</a></td>
-    <td style="padding:10px; width:25%;"><a href="./en/sumak" style="text-decoration:none; color:#2e8b57; font-weight:bold; font-size:14px;">🌀 Sumak</a></td>
-    <td style="padding:10px; width:25%;"><a href="./en/zili" style="text-decoration:none; color:#2e8b57; font-weight:bold; font-size:14px;">🏗️ Zili</a></td>
+    <td style="padding:10px;"><a href="./en/kilim" style="text-decoration:none; color:#2e8b57; font-weight:bold;">📐 Kilim Guide</a></td>
+    <td style="padding:10px;"><a href="./en/cicim" style="text-decoration:none; color:#2e8b57; font-weight:bold;">🌸 Cicim Style</a></td>
+    <td style="padding:10px;"><a href="./en/sumak" style="text-decoration:none; color:#2e8b57; font-weight:bold;">🌀 Sumak Tech</a></td>
+    <td style="padding:10px;"><a href="./en/zili" style="text-decoration:none; color:#2e8b57; font-weight:bold;">🏗️ Zili Tech</a></td>
   </tr>
 </table>
+
+<div style="text-align: center; margin-top: 30px;">
+  <a href="./me" style="color: #7f8c8d; font-size: 14px; text-decoration: none; border: 1px dashed #ccc; padding: 5px 15px; border-radius: 20px;">👤 Curator Profile & French Lessons</a>
+</div>
