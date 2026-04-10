@@ -27,7 +27,7 @@ title: Global Carpet Guide
     <!-- SAĞ: Yuvarlak Profil (carpet.jpg) -->
     <td style="width: 15%; text-align: center; vertical-align: middle; padding-left: 10px;">
       <!-- Resim yolu burada garantiye alındı -->
-      <img src="./carpet.jpg" alt="Fatih Mehmet Canıtez" style="width: 100px; height: 100px; border-radius: 50%; border: 3px solid #d4af37; object-fit: cover; display: block; margin: 0 auto;">
+      <img src="./carpet.jpeg" alt="Fatih Mehmet Canıtez" style="width: 100px; height: 100px; border-radius: 50%; border: 3px solid #d4af37; object-fit: cover; display: block; margin: 0 auto;">
     </td>
   </tr>
 </table>
