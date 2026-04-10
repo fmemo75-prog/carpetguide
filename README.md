@@ -54,7 +54,12 @@ Welcome to the digital carpet library. Below you can find the most important mas
     </td>
   </tr>
 </table>
-
+<!-- CARPET WORLD SECTION -->
+<div style="text-align: center; margin: 30px 0; padding: 20px; border: 2px double #8b4513;">
+  <h1 style="color: #8b4513; margin: 0;">🌍 Carpet World (Hand Knotted)</h1>
+  <p>The technical heart of our guide. Learn the secrets of knots, materials, and weaving heritage.</p>
+  <a href="./en/handknotted" style="font-size: 1.2em; font-weight: bold; color: #8b4513;">👉 Enter the Hand-Knotted Universe</a>
+</div>
 <!-- HEREKE SECTION -->
 <table border="0" style="width:100%; background-color: #fcfcfc; border: 1px solid #eee; border-radius: 10px; padding: 20px; margin-bottom: 20px;">
   <tr>
