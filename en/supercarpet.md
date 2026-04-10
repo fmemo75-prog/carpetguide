@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # 🏺 The Art of Carpets: Masterpieces of Anatolia
 
 Every knotted rug is a physical manifestation of time and labor. To understand our collection, you must understand the three "Masterpieces of Anatolia."
