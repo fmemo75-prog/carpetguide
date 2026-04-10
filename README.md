@@ -28,22 +28,18 @@
 
 ---
 
-## 🏛️ 1. The Art of Carpets (Halı)
+<!-- Halı Bölümü Linkleri -->
+<ul>
+  <li>🏺 <b><a href="./en/supercarpet">Super Rug Guide: Pazyryk, Hereke, Usak & Bergama</a></b></li>
+  <li>📜 <a href="./en/">Ancient History & Production Process</a></li>
+</ul>
 
-<table border="0">
-  <tr>
-    <td width="100" valign="top">
-      <img src="./kirkit.png" width="80" alt="Kirkit Symbol">
-    </td>
-    <td valign="top" style="padding-left: 15px;">
-      <p><i>Discover the 2500-year history of knotted masterpieces.</i></p>
-      <ul>
-        <li>🏺 <b><a href="./en/supercarpet.md">Super Rug Guide: Pazyryk, Hereke, Usak & Bergama</a></b></li>
-        <li>📜 <a href="./en/README.md">Ancient History & Production Process</a></li>
-      </ul>
-    </td>
-  </tr>
-</table>
+<!-- Kilim Bölümü Linkleri -->
+<ul>
+  <li>📖 <b><a href="./en/kilim">Full Kilim Guide: History & Symbols</a></b></li>
+  <li>🌸 <a href="./en/cicim">Detailed Guide: Cicim Technique</a></li>
+  <li>🌀 <a href="./en/sumak">Detailed Guide: Sumak Technique</a></li>
+</ul>
 
 ---
 
