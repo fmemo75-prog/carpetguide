@@ -15,7 +15,7 @@ title: Global Carpet Guide
       <p>Welcome to a professional journey through the soul of Anatolian weaving. This guide covers everything from the 2500-year-old Pazyryk tradition to the imperial elegance of Hereke silk.</p>
     </td>
     <td style="width: 35%; text-align: center;">
-      <img src="./me.jpg" alt="Curator" style="width: 140px; border-radius: 50%; border: 4px solid #8b0000; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+      <img src="./carpet.jpeg" alt="Curator" style="width: 140px; border-radius: 50%; border: 4px solid #8b0000; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
     </td>
   </tr>
 </table>
