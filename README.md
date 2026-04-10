@@ -28,31 +28,55 @@
 
 ---
 
-<!-- Halı Bölümü Linkleri -->
-<ul>
-  <li>🏺 <b><a href="./en/supercarpet">Super Rug Guide: Pazyryk, Hereke, Usak & Bergama</a></b></li>
-  <li>📜 <a href="./en/">Ancient History & Production Process</a></li>
-</ul>
-<!-- Hereke Section Start -->
-<table border="0" style="width:100%; background-color: #fcfcfc; border: 1px solid #eee; border-radius: 10px; padding: 15px;">
+---
+layout: default
+---
+
+# 🏰 Carpet Guide: Professional Dashboard
+
+Welcome to the digital carpet library. Below you can find the most important masterpieces of weaving history.
+
+<!-- PAZYRYK SECTION (RECOVERED) -->
+<table border="0" style="width:100%; background-color: #fdf5e6; border: 1px solid #d2b48c; border-radius: 10px; padding: 20px; margin-bottom: 20px;">
   <tr>
-    <td style="width: 30%; text-align: center; vertical-align: middle;">
-      <img src="{{ site.baseurl }}/hereke.png" alt="Hereke Silk Carpet" style="width: 100%; border-radius: 5px;">
+    <td style="width: 40%; text-align: center; vertical-align: middle;">
+      <a href="./en/Pazyryk_numbered.png" target="_blank">
+        <img src="./en/Pazyryk_numbered.png" alt="Pazyryk Numbered Analysis" style="width: 100%; border-radius: 8px; cursor: zoom-in;">
+      </a>
+      <br><small style="color: #666;">(Click to see numbered motifs)</small>
     </td>
-    <td style="width: 70%; padding-left: 20px; vertical-align: top;">
-      <h3 style="margin-top: 0; color: #8b4513;">Hereke: The Shah of Carpets</h3>
-      <p>Discover the world's finest silk carpets, hand-knotted with the legendary Turkish double knot. Once made exclusively for Ottoman Sultans, Hereke carpets are the ultimate symbol of luxury and craftsmanship.</p>
-      <p>
-        <strong>Knot Style:</strong> Double Knot (Ghiordes)<br>
-        <strong>Material:</strong> Pure Silk / Fine Wool
-      </p>
-      <a href="./hereke" style="display: inline-block; padding: 8px 15px; background-color: #8b4513; color: white; text-decoration: none; border-radius: 5px; font-weight: bold;">🔍 More Details</a>
+    <td style="width: 60%; padding-left: 25px; vertical-align: top;">
+      <h2 style="margin-top: 0; color: #8b0000;">The Pazyryk Carpet: 2500 Years Old</h2>
+      <p>The <b>Pazyryk Carpet</b> is the oldest knotted carpet in the world (5th Century BC). This numbered analysis shows the complex motifs like horsemen, stags, and griffins, proving the ancient roots of the <b>Turkish Double Knot</b>.</p>
+      <p><i>"The ancestor of all carpets, found frozen in the Altai Mountains."</i></p>
+      <!-- Bu link senin attığın en/README.md sayfasına gider -->
+      <a href="./en/" style="display: inline-block; padding: 8px 15px; background-color: #8b0000; color: white; text-decoration: none; border-radius: 5px; font-weight: bold;">📜 More Details & Historical Context</a>
     </td>
   </tr>
 </table>
-<!-- Hereke Section End -->
----
 
+<!-- HEREKE SECTION -->
+<table border="0" style="width:100%; background-color: #fcfcfc; border: 1px solid #eee; border-radius: 10px; padding: 20px; margin-bottom: 20px;">
+  <tr>
+    <td style="width: 40%; text-align: center;">
+      <a href="./hereke.png" target="_blank">
+        <img src="./hereke.png" alt="Hereke Silk Carpet" style="width: 100%; border-radius: 8px;">
+      </a>
+      <br><small style="color: #666;">(The King of Carpets)</small>
+    </td>
+    <td style="width: 60%; padding-left: 25px; vertical-align: top;">
+      <h2 style="margin-top: 0; color: #8b4513;">Hereke: The Imperial Silk</h2>
+      <p>Representing the peak of Ottoman art, Hereke carpets are 100% silk and hand-knotted for palaces. They are the fine-art of the carpet world.</p>
+      <a href="./en/hereke" style="display: inline-block; padding: 8px 15px; background-color: #8b4513; color: white; text-decoration: none; border-radius: 5px; font-weight: bold;">🔍 Production Process</a>
+    </td>
+  </tr>
+</table>
+
+<hr>
+
+### 📚 Quick Navigation
+- 🧶 [Full Kilim Guide](./en/kilim)
+- 👨‍🏫 [About the Curator (Fatih Mehmet Canıtez)](./me)
 ## 🎨 2. The Poetry of Kilims (Düz Dokuma)
 
 <table border="0">
