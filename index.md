@@ -42,20 +42,10 @@ title: Global Carpet Guide
 <!-- Linkler Bölümü -->
 <table border="0" style="width:100%; text-align: center;">
   <tr>
-    <td><a href="./en/hereke" style="text-decoration:none; color:#8b0000; font-weight:bold;">🏰 Hereke</a></td>
-    <td><a href="./en/pazyryk" style="text-decoration:none; color:#8b0000; font-weight:bold;">🏺 Pazyryk</a></td>
-    <td><a href="./en/handknotted" style="text-decoration:none; color:#8b0000; font-weight:bold;">🌍 Carpet World</a></td>
-    <td><a href="./en/materials" style="text-decoration:none; color:#8b0000; font-weight:bold;">📊 Materials</a></td>
-  </tr>
-</table>
-
-<br>
-
-<table border="0" style="width:100%; text-align: center;">
-  <tr>
-    <td><a href="./en/kilim" style="text-decoration:none; color:#2e8b57; font-weight:bold;">📐 Kilim</a></td>
-    <td><a href="./en/cicim" style="text-decoration:none; color:#2e8b57; font-weight:bold;">🌸 Cicim</a></td>
-    <td><a href="./en/sumak" style="text-decoration:none; color:#2e8b57; font-weight:bold;">🌀 Sumak</a></td>
-    <td><a href="./en/zili" style="text-decoration:none; color:#2e8b57; font-weight:bold;">🏗️ Zili</a></td>
+    <td style="padding:10px;"><a href="./en/hereke" style="text-decoration:none; color:#8b0000; font-weight:bold;">🏰 Hereke</a></td>
+    <!-- BURASI DÜZELTİLDİ -->
+    <td style="padding:10px;"><a href="./en/" style="text-decoration:none; color:#8b0000; font-weight:bold;">🏺 Pazyryk</a></td>
+    <td style="padding:10px;"><a href="./en/handknotted" style="text-decoration:none; color:#8b0000; font-weight:bold;">🌍 Carpet World</a></td>
+    <td style="padding:10px;"><a href="./en/materials" style="text-decoration:none; color:#8b0000; font-weight:bold;">📊 Materials</a></td>
   </tr>
 </table>
