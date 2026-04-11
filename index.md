@@ -2,7 +2,8 @@
 layout: default
 title: Global Carpet Guide
 ---
-[Interactive Map için tıklayın](/carpetguide/cappodoce/#interactive-map)
+<a href="/carpetguide/Cappodoce.html#interactive-map" style="display: inline-block; background: #8b0000; color: white !important; padding: 12px 25px; border-radius: 50px; text-decoration: none; font-weight: bold;">
+    🗺️ View Interactive Map
 </a>
 <!-- Mobil Uyumluluk İçin Küçük Bir Stil Dokunuşu -->
 <style>
