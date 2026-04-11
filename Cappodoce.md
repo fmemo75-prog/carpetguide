@@ -68,15 +68,7 @@
     }
 </style>
 
-
-        <span>50 Years of Cappadocia Experience</span>
-    </div>
-</div>
----
----
-layout: default
-title: Global Cappadocia Guide - Polyglot Edition
----
+  ---
 
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
