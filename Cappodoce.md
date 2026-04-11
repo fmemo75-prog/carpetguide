@@ -14,7 +14,207 @@
       </ul>
       <p><i>This map shows the 40km circle where I have spent my life, learning every valley and every knot of our culture.</i></p>
     </td>
+---
+layout: default
+title: Global Cappadocia Guide - Polyglot Edition
+---
 
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<style>
+    #map { height: 600px; width: 100%; border-radius: 15px; border: 3px solid #8b0000; box-shadow: 0 10px 30px rgba(0,0,0,0.2); }
+    .lang-box { text-align: center; margin: 20px 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
+    .lang-btn { padding: 8px 15px; cursor: pointer; border-radius: 50px; border: 1.5px solid #8b0000; background: white; font-weight: bold; font-size: 13px; transition: 0.3s; }
+    .lang-btn.active { background: #8b0000; color: white; }
+    
+    .info-card { background: #fff; padding: 25px; border-radius: 15px; border-top: 10px solid #8b0000; margin-top: 20px; box-shadow: 0 5px 20px rgba(0,0,0,0.15); min-height: 350px; position: relative; }
+    .info-section { margin-bottom: 12px; padding-bottom: 8px; border-bottom: 1px dashed #ddd; }
+    .info-label { font-weight: bold; color: #8b0000; text-transform: uppercase; font-size: 11px; display: block; }
+    .whatsapp-btn { display: inline-block; background: #25D366; color: white !important; padding: 10px 20px; border-radius: 50px; text-decoration: none; font-weight: bold; margin-top: 10px; }
+    #place-name { margin-top: 0; color: #8b0000; font-family: 'Georgia', serif; }
+</style>
+
+<div style="text-align: center; font-family: 'Georgia', serif; padding: 10px;">
+    <h1 style="color: #8b0000;">🏺 Cappadocia Master Polyglot Guide</h1>
+    <p><i>Insider Tips, VIP Contacts & Interactive Map</i></p>
+</div>
+
+<!-- ÇOK DİLLİ SEÇİCİ -->
+<div class="lang-box">
+    <button id="en-btn" class="lang-btn active" onclick="setLang('en')">🇺🇸 English</button>
+    <button id="fr-btn" class="lang-btn" onclick="setLang('fr')">🇫🇷 Français</button>
+    <button id="es-btn" class="lang-btn" onclick="setLang('es')">🇪🇸 Español</button>
+    <button id="it-btn" class="lang-btn" onclick="setLang('it')">🇮🇹 Italiano</button>
+    <button id="ru-btn" class="lang-btn" onclick="setLang('ru')">🇷🇺 Русский</button>
+    <button id="zh-btn" class="lang-btn" onclick="setLang('zh')">🇨🇳 中文</button>
+    <button id="ja-btn" class="lang-btn" onclick="setLang('ja')">🇯🇵 日本語</button>
+</div>
+
+<div id="map"></div>
+
+<div id="info-card" class="info-card">
+    <div id="default-msg">
+        <h3 style="text-align:center; color:#8b0000;">📍 Select a Location or VIP Expert</h3>
+        <p style="text-align:center;">Click markers for history, shops, and direct WhatsApp contacts.</p>
+    </div>
+    
+    <div id="content-area" style="display:none;">
+        <h2 id="place-name"></h2>
+        
+        <div class="info-section">
+            <span class="info-label" id="label-worth">Expert Recommendation</span>
+            <p id="worth-text" style="font-weight: bold; margin: 5px 0;"></p>
+        </div>
+
+        <div class="info-section">
+            <span class="info-label" id="label-see">Description</span>
+            <p id="see-text" style="margin: 5px 0;"></p>
+        </div>
+
+        <div id="contact-section" class="info-section" style="display:none; background: #f0fff4; padding: 10px; border-radius: 10px;">
+            <span class="info-label">📱 Direct Contact</span>
+            <p id="contact-name" style="margin: 5px 0; font-weight: bold;"></p>
+            <a id="wa-link" href="#" target="_blank" class="whatsapp-btn">💬 Chat on WhatsApp</a>
+        </div>
+
+        <div class="info-section" style="border-bottom:none;">
+            <span class="info-label" id="label-secret">Insider Note</span>
+            <p id="do-text" style="margin: 5px 0; font-style: italic;"></p>
+        </div>
+    </div>
+</div>
+
+<script>
+var map = L.map('map').setView([38.65, 34.85], 11);
+var currentLang = 'en';
+var activePoint = null;
+
+L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png').addTo(map);
+
+// LOKASYON VERİLERİ (Genişletilmiş ve Çok Dilli)
+var locations = [
+    {
+        coords: [38.642, 34.829],
+        id: "kervan",
+        wa: "905367602165",
+        en: { n: "KERVAN CARPET (Bülent Güler)", w: "Highly Recommended for Shopping", s: "Located in Goreme. Fine selection of hand-knotted carpets.", d: "Ask for Bülent. He is a true gentleman of the craft." },
+        fr: { n: "KERVAN CARPET (Bülent Güler)", w: "Hautement recommandé", s: "Situé à Göreme. Fine sélection de tapis noués à la main.", d: "Demandez Bülent. Un vrai maître de l'art." },
+        es: { n: "ALFOMBRAS KERVAN", w: "Muy recomendado", s: "Ubicado en Goreme. Gran selección de alfombras.", d: "Pregunta por Bülent." },
+        it: { n: "KERVAN CARPET", w: "Altamente raccomandato", s: "Selezione di tappeti fatti a mano.", d: "Chiedi di Bülent." },
+        ru: { n: "КЕРВАН КОВРЫ", w: "Рекомендуется", s: "Лучший выбор ковров в Гёреме.", d: "Спросите Бюлента." },
+        zh: { n: "KERVAN 地毯", w: "强烈推荐", s: "位于格雷梅，精选手工毯。", d: "找 Bülent。" },
+        ja: { n: "KERVAN 絨毯", w: "強くお勧めします", s: "ギョレメにある手織り絨毯店。", d: "Bülentさんを訪ねてください。" }
+    },
+    {
+        coords: [38.621, 34.856],
+        id: "punto",
+        wa: "905324970321",
+        en: { n: "PUNTO ANTIQUE CARPETS (Hüseyin Özer)", w: "VIP Antique Collection", s: "Located in Ortahisar. Specialist in old and rare textile collections.", d: "Ask for Hüseyin Özer for professional antique analysis." },
+        fr: { n: "PUNTO TAPIS ANTIQUES", w: "Collection VIP Antique", s: "Situé à Ortahisar. Spécialiste des collections textiles rares.", d: "Demandez Hüseyin Özer." },
+        es: { n: "PUNTO ALFOMBRAS ANTIGUAS", w: "Colección VIP", s: "Ortahisar. Especialista en piezas raras.", d: "Hüseyin Özer." },
+        it: { n: "PUNTO TAPPETI ANTICHI", w: "Collezione Antica VIP", s: "Specialista in tessuti rari.", d: "Chiedi di Hüseyin Özer." },
+        ru: { n: "ПУНТО АНТИКВАРНЫЕ КОВРЫ", w: "VIP Коллекция", s: "Ортахисар. Редкие ковры.", d: "Хюсейн Озер." },
+        zh: { n: "PUNTO 古董地毯", w: "VIP古董收藏", s: "位于奥塔希萨尔，稀有收藏。", d: "找 Hüseyin Özer。" },
+        ja: { n: "PUNTO アンティーク絨毯", w: "VIPアンティーク", s: "希少なアンティーク絨毯の専門店。", d: "Hüseyin Özerさんまで。" }
+    },
+    {
+        coords: [38.645, 34.831],
+        id: "ikman",
+        en: { n: "IKMAN CARPET (Photography)", w: "The #1 Instagram Spot", s: "Famous for traditional carpet photography setups.", d: "A colorful paradise for photographers." },
+        fr: { n: "TAPIS IKMAN (Photographie)", w: "Le spot Instagram n°1", s: "Célèbre pour les séances photo traditionnelles.", d: "Paradis pour photographes." },
+        es: { n: "ALFOMBRAS IKMAN (Fotos)", w: "Punto Instagram", s: "Famoso por sus fotos con alfombras.", d: "Paraíso fotográfico." },
+        it: { n: "IKMAN CARPET (Foto)", w: "Spot Instagram", s: "Famoso per set fotografici.", d: "Paradiso dei fotografi." },
+        ru: { n: "ИКМАН КОВРЫ (Фото)", w: "Инстаграм спот", s: "Знаменитое место для фотосессий.", d: "Рай для фотографов." },
+        zh: { n: "IKMAN 地毯 (摄影)", w: "顶级网红打卡点", s: "传统地毯背景摄影。", d: "摄影师的天堂。" },
+        ja: { n: "IKMAN 絨毯 (写真)", w: "インスタ映えスポット", s: "絨毯に囲まれた有名な写真スポット。", d: "フォトグラファーのパラダイス。" }
+    },
+    {
+        coords: [38.641, 34.832],
+        id: "museum",
+        en: { n: "ANATOLIAN ART MUSEUM", w: "Cultural Landmark", s: "Museum dedicated to the history of Anatolian weaving and arts.", d: "A must-visit for academic understanding of the art." },
+        fr: { n: "MUSÉE D'ART ANATOLIEN", w: "Repère culturel", s: "Musée dédié à l'histoire du tissage anatolien.", d: "Indispensable pour la culture académique." },
+        es: { n: "MUSEO DE ARTE ANATOLIO", w: "Hito cultural", s: "Dedicado a la historia del tejido.", d: "Visita obligatoria." },
+        it: { n: "MUSEO D'ARTE ANATOLICA", w: "Punto culturale", s: "Dedicato alla storia della tessitura.", d: "Visita accademica." },
+        ru: { n: "МУЗЕЙ АНАТОЛИЙСКОГО ИСКУССТВА", w: "Культурный центр", s: "История анатолийского ткачества.", d: "Обязательно к посещению." },
+        zh: { n: "安纳托利亚艺术博物馆", w: "文化地标", s: "致力于安纳托利亚编织历史。", d: "学术了解艺术必看。" },
+        ja: { n: "アナトリア芸術博物館", w: "文化遺産", s: "アナトリアの織物歴史博物館。", d: "芸術を学ぶなら必見。" }
+    },
+    {
+        coords: [38.640, 34.825],
+        id: "halil",
+        wa: "905322478674",
+        en: { n: "VIP GUIDE: HALİL KÖKSAL", w: "Expert Language Guide", s: "Specialist in French & Spanish languages. Deep historical knowledge.", d: "Book Halil for a high-quality, professional cultural tour." },
+        fr: { n: "GUIDE VIP : HALİL KÖKSAL", w: "Expert Conférencier", s: "Spécialiste en Français et Espagnol.", d: "Réservez Halil pour une visite culturelle de haute qualité." },
+        es: { n: "GUÍA VIP: HALİL KÖKSAL", w: "Guía Experto", s: "Especialista en Francés y Español.", d: "Reserva a Halil para un tour profesional." },
+        it: { n: "GUIDA VIP: HALİL KÖKSAL", w: "Guida Esperta", s: "Parla Francese e Spagnolo.", d: "Prenota Halil per tour professionali." },
+        ru: { n: "VIP ГИД: ХАЛИЛ КЁКСАЛ", w: "Профессиональный гид", s: "Специалист по истории на французском и испанском.", d: "Закажите Халила для тура высшего класса." },
+        zh: { n: "VIP 导游: HALİL KÖKSAL", w: "专家语言导游", s: "精通法语和西班牙语，深厚的历史知识。", d: "预订 Halil 提供高质量文化之旅。" },
+        ja: { n: "VIPガイド: HALİL KÖKSAL", w: "公認ガイド", s: "フランス語とスペイン語のエキスパート。", d: "プロの文化ツアーならHalilさんを。" }
+    }
+];
+
+var labels = {
+    en: { worth: "Expert Recommendation", see: "Description", secret: "Insider Note" },
+    fr: { worth: "Recommandation d'expert", see: "Description", secret: "Note locale" },
+    es: { worth: "Recomendación experta", see: "Descripción", secret: "Nota interna" },
+    it: { worth: "Raccomandazione", see: "Descrizione", secret: "Nota locale" },
+    ru: { worth: "Рекомендация", see: "Описание", secret: "Заметка" },
+    zh: { worth: "专家推荐", see: "描述", secret: "业内提示" },
+    ja: { worth: "専門家の推奨", see: "説明", secret: "インサイダーノート" }
+};
+
+locations.forEach(function(loc) {
+    var marker = L.marker(loc.coords).addTo(map);
+    marker.on('click', function() {
+        activePoint = loc;
+        updateUI();
+    });
+});
+
+function updateUI() {
+    if(!activePoint) return;
+    document.getElementById('default-msg').style.display = 'none';
+    document.getElementById('content-area').style.display = 'block';
+    
+    var d = activePoint[currentLang];
+    var l = labels[currentLang];
+    
+    document.getElementById('place-name').innerText = d.n;
+    document.getElementById('worth-text').innerText = d.w;
+    document.getElementById('see-text').innerText = d.s;
+    document.getElementById('do-text').innerText = d.d;
+    
+    document.getElementById('label-worth').innerText = l.worth;
+    document.getElementById('label-see').innerText = l.see;
+    document.getElementById('label-secret').innerText = l.secret;
+    
+    if(activePoint.wa) {
+        document.getElementById('contact-section').style.display = 'block';
+        document.getElementById('contact-name').innerText = d.n;
+        document.getElementById('wa-link').href = "https://wa.me/" + activePoint.wa;
+    } else {
+        document.getElementById('contact-section').style.display = 'none';
+    }
+}
+
+function setLang(lang) {
+    currentLang = lang;
+    document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
+    document.getElementById(lang + '-btn').classList.add('active');
+    updateUI();
+}
+</script>
+
+<hr>
+
+### 📱 Professional Contacts (Direct Access)
+- **Bülent Güler (Goreme - Kervan):** [Chat via WhatsApp](https://wa.me/905367602165)
+- **Hüseyin Özer (Ortahisar - Punto):** [Chat via WhatsApp](https://wa.me/905324970321)
+- **Halil Koksal (Guide - FR/ES):** [Chat via WhatsApp](https://wa.me/905322478674)
+
+---
+[Return to Dashboard](../)
     <!-- SAĞ SÜTUN: HARİTA GÖRSELİ -->
     <td style="width: 50%; text-align: center; vertical-align: middle;">
       <a href="./ben_.jpg" target="_blank" title="Click to enlarge my life map">
@@ -40,37 +240,7 @@ title: Cappadocia Map
     <p>Click on the pins to see details in English and French.</p>
 </div>
 
-<!-- Harita Alanı -->
-<div id="map" style="height: 500px; width: 100%; border: 3px solid #8b0000; border-radius: 15px;"></div>
 
-<!-- Bilgi Paneli -->
-<div id="info" style="margin-top:20px; padding:20px; background:#fdf5e6; border-left:5px solid #8b0000; min-height:100px;">
-    <h3 id="t" style="margin-top:0;">Select a point on the map</h3>
-    <p id="d">Information will appear here.</p>
-</div>
-
-<script>
-// Haritayı başlat
-var map = L.map('map').setView([38.6, 34.8], 10);
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
-
-// Veriler
-var data = [
-    { c: [38.37, 34.63], t: "Derinkuyu", d: "World's deepest underground city. / La cité souterraine la plus profonde." },
-    { c: [38.64, 34.82], t: "Goreme", d: "Heart of the National Park. / Le coeur du parc national." },
-    { c: [38.86, 34.96], t: "Bayramhaci", d: "Curator's birthplace & Thermal springs. / Lieu de naissance et eaux thermales." },
-    { c: [38.29, 34.45], t: "Ihlara", d: "Amazing canyon with rock churches. / Canyon magnifique avec églises." }
-];
-
-// Pinleri ekle
-data.forEach(function(item) {
-    var marker = L.marker(item.c).addTo(map);
-    marker.on('click', function() {
-        document.getElementById('t').innerText = item.t;
-        document.getElementById('d').innerText = item.d;
-    });
-});
-</script>
 
 <!-- SECTION 1: LOGISTICS & DISTANCES -->
 <h2 style="color: #1a2a6c;">✈️ Getting Here & Around</h2>
