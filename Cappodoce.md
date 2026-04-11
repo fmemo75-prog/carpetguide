@@ -118,6 +118,8 @@ title: Global Cappadocia Guide - Polyglot Edition
             <span class="info-label">📱 Direct Contact</span>
             <p id="contact-name" style="margin: 5px 0; font-weight: bold; font-size:13px;"></p>
             <a id="wa-link" href="#" target="_blank" class="whatsapp-btn">💬 WhatsApp</a>
+            <a id="ig-link" href="#" target="_blank" style="display:none; margin-left:8px; background:#E1306C; color:white; padding:8px 16px; border-radius:50px; text-decoration:none; font-weight:bold; font-size:13px;">📸 Instagram</a>
+            <a id="maps-link" href="#" target="_blank" style="display:none; margin-left:8px; background:#4285F4; color:white; padding:8px 16px; border-radius:50px; text-decoration:none; font-weight:bold; font-size:13px;">📍 Google Maps</a>
         </div>
 
         <div class="info-section" style="border-bottom:none;">
@@ -141,6 +143,7 @@ var locations = [
         coords: [38.642, 34.829],
         id: "kervan",
         wa: "905367602165",
+        maps: "https://share.google/4EOqQF0v25v89O0XW",
         en: { n: "KERVAN CARPET (Bülent Güler)", w: "Highly Recommended for Shopping", s: "Located in Goreme. Fine selection of hand-knotted carpets.", d: "Ask for Bülent. He is a true gentleman of the craft." },
         fr: { n: "KERVAN CARPET (Bülent Güler)", w: "Hautement recommandé", s: "Situé à Göreme. Fine sélection de tapis noués à la main.", d: "Demandez Bülent. Un vrai maître de l'art." },
         es: { n: "ALFOMBRAS KERVAN", w: "Muy recomendado", s: "Ubicado en Goreme. Gran selección de alfombras.", d: "Pregunta por Bülent." },
@@ -153,13 +156,14 @@ var locations = [
         coords: [38.621, 34.856],
         id: "punto",
         wa: "905324970321",
-        en: { n: "PUNTO ANTIQUE CARPETS (Hüseyin Özer)", w: "VIP Antique Collection", s: "Located in Ortahisar. Specialist in old and rare textile collections.", d: "Ask for Hüseyin Özer for professional antique analysis." },
-        fr: { n: "PUNTO TAPIS ANTIQUES", w: "Collection VIP Antique", s: "Situé à Ortahisar. Spécialiste des collections textiles rares.", d: "Demandez Hüseyin Özer." },
-        es: { n: "PUNTO ALFOMBRAS ANTIGUAS", w: "Colección VIP", s: "Ortahisar. Especialista en piezas raras.", d: "Hüseyin Özer." },
-        it: { n: "PUNTO TAPPETI ANTICHI", w: "Collezione Antica VIP", s: "Specialista in tessuti rari.", d: "Chiedi di Hüseyin Özer." },
-        ru: { n: "ПУНТО АНТИКВАРНЫЕ КОВРЫ", w: "VIP Коллекция", s: "Ортахисар. Редкие ковры.", d: "Хюсейн Озер." },
-        zh: { n: "PUNTO 古董地毯", w: "VIP古董收藏", s: "位于奥塔希萨尔，稀有收藏。", d: "找 Hüseyin Özer。" },
-        ja: { n: "PUNTO アンティーク絨毯", w: "VIPアンティーク", s: "希少なアンティーク絨毯の専門店。", d: "Hüseyin Özerさんまで。" }
+        ig: "puntoofcappadocia",
+        en: { n: "PUNTO ANTIQUE CARPETS", w: "VIP Antique Collection", s: "Located in Ortahisar. Specialist in old and rare textile collections.", d: "Ask for Headmaster Hüseyin ÖZER for professional antique analysis." },
+        fr: { n: "PUNTO TAPIS ANTIQUES", w: "Collection VIP Antique", s: "Situé à Ortahisar. Spécialiste des collections textiles rares.", d: "Demandez le Directeur Hüseyin ÖZER pour une analyse antique professionnelle." },
+        es: { n: "PUNTO ALFOMBRAS ANTIGUAS", w: "Colección VIP", s: "Ortahisar. Especialista en piezas raras.", d: "Pregunta por el Director Hüseyin ÖZER para análisis profesional." },
+        it: { n: "PUNTO TAPPETI ANTICHI", w: "Collezione Antica VIP", s: "Specialista in tessuti rari.", d: "Chiedi del Direttore Hüseyin ÖZER per un'analisi antiquaria professionale." },
+        ru: { n: "ПУНТО АНТИКВАРНЫЕ КОВРЫ", w: "VIP Коллекция", s: "Ортахисар. Редкие ковры.", d: "Обратитесь к директору Хюсейн ОЗЕР для профессиональной антикварной экспертизы." },
+        zh: { n: "PUNTO 古董地毯", w: "VIP古董收藏", s: "位于奥塔希萨尔，稀有收藏。", d: "请找负责人 Hüseyin ÖZER 进行专业古董鉴定。" },
+        ja: { n: "PUNTO アンティーク絨毯", w: "VIPアンティーク", s: "希少なアンティーク絨毯の専門店。", d: "専門鑑定はヘッドマスター Hüseyin ÖZER さんにお声がけください。" }
     },
     {
         coords: [38.645, 34.831],
@@ -344,6 +348,22 @@ function updateUI() {
         document.getElementById('contact-section').style.display = 'none';
     }
 
+    var igLink = document.getElementById('ig-link');
+    if(activePoint.ig) {
+        igLink.href = "https://www.instagram.com/" + activePoint.ig + "/";
+        igLink.style.display = 'inline-block';
+    } else {
+        igLink.style.display = 'none';
+    }
+
+    var mapsLink = document.getElementById('maps-link');
+    if(activePoint.maps) {
+        mapsLink.href = activePoint.maps;
+        mapsLink.style.display = 'inline-block';
+    } else {
+        mapsLink.style.display = 'none';
+    }
+
     document.getElementById('info-card').classList.add('visible');
 }
 
@@ -362,51 +382,23 @@ function setLang(lang) {
 
 <hr>
 
+### 📍 Kappadokya Gezilecek Yerler (Yeni Eklenenler)
+- **Göreme Açık Hava Müzesi** — UNESCO Dünya Mirası, Bizans dönemi kaya kiliseleri
+- **Uçhisar Kalesi** — Kapadokya'nın en yüksek panoramik noktası
+- **Derinkuyu Yeraltı Şehri** — Dünyanın en derin yeraltı şehri (85m)
+- **Paşabağ / Peribacaları** — Peribacalarını yakından görmek için en iyi yer
+- **Avanos** — Çömlek geleneğiyle ünlü nehir kenti
+- **Güvercinlik Vadisi** — Göreme–Uçhisar arası doğa yürüyüşü
+- **Göreme Balon Noktası** — Sıcak hava balonu kalkış alanı
+- **Ürgüp** — Butik oteller, yerel şarap ve restoran merkezi
+
+### 📱 Professional Contacts (Direct Access)
+- **Bülent Güler (Goreme - Kervan):** [Chat via WhatsApp](https://wa.me/905367602165)
+- **Hüseyin Özer (Ortahisar - Punto):** [Chat via WhatsApp](https://wa.me/905324970321)
+- **Halil Koksal (Guide - FR/ES):** [Chat via WhatsApp](https://wa.me/905322478674)
 
 ---
 [Return to Dashboard](../)
-
-
-
-<!-- SECTION 1: LOGISTICS & DISTANCES -->
-<h2 style="color: #1a2a6c;">✈️ Getting Here & Around</h2>
-<p>Göreme is the "center of the puzzle." Here is how you reach us and the distances you need to know:</p>
-
-<table border="1" style="width:100%; border-collapse: collapse; text-align: left; border-color: #eee;">
-  <tr style="background-color: #1a2a6c; color: white;">
-    <th style="padding: 10px;">Destination</th>
-    <th style="padding: 10px;">Distance from Göreme</th>
-    <th style="padding: 10px;">Travel Time / Tip</th>
-  </tr>
-  <tr>
-    <td style="padding: 10px;"><strong>Nevşehir Airport (NAV)</strong></td>
-    <td style="padding: 10px;">~40 km</td>
-    <td style="padding: 10px;">45 min. Best for domestic flights from Istanbul.</td>
-  </tr>
-  <tr>
-    <td style="padding: 10px;"><strong>Kayseri Airport (ASR)</strong></td>
-    <td style="padding: 10px;">~75 km</td>
-    <td style="padding: 10px;">1 hour. More international connections.</td>
-  </tr>
-  <tr>
-    <td style="padding: 10px;"><strong>Ürgüp Center</strong></td>
-    <td style="padding: 10px;">~10 km</td>
-    <td style="padding: 10px;">12 min. The hub for nightlife and wine tasting.</td>
-  </tr>
-  <tr>
-    <td style="padding: 10px;"><strong>Avanos (My Town)</strong></td>
-    <td style="padding: 10px;">~12 km</td>
-    <td style="padding: 10px;">15 min. Famous for pottery and the Red River.</td>
-  </tr>
-  <tr>
-    <td style="padding: 10px;"><strong>Mustafapaşa (Sinasos)</strong></td>
-    <td style="padding: 10px;">~15 km</td>
-    <td style="padding: 10px;">20 min. An old Greek village with amazing architecture.</td>
-  </tr>
-</table>
-<p><i>*Pro Tip: Always book an <b>Airport Shuttle</b> in advance. Taxis are very expensive for airport transfers.</i></p>
-
-<hr>
 
 <!-- SECTION 2: THE BALLOON BIBLE -->
 <h2 style="color: #8b0000;">🎈 The Hot Air Balloon Bible</h2>
