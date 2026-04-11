@@ -7,18 +7,17 @@ title: Hereke - The Silk Legend
 
 <table border="0" style="width:100%; border-spacing: 20px;">
   <tr>
-    <td style="vertical-align: top; width: 50%;">
-      <p><strong>From Mulberry Trees to Royal Palaces</strong><br>
-      The story of a Hereke carpet begins in the mulberry gardens. As the "King of Carpets," Hereke represents the pinnacle of Turkish weaving art. Established in 1843 by Sultan Abdülmecid, these workshops were dedicated to creating the world's finest silk masterpieces for Ottoman sultans and world leaders.</p>
-      <p>Every single knot in a Hereke carpet is a <strong>Turkish Double Knot</strong>, making it not only the most intricate but also one of the most durable carpets in existence.</p>
-    </td>
-    <td style="text-align: center; width: 50%;">
-      <img src="../hereke.png" alt="Hereke Production Process" style="width:100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-      <br>
-      <em>The Journey of Silk: From Cocoon to Home</em>
-    </td>
-  </tr>
-</table>
+   <td style="text-align: center; width: 50%; vertical-align: middle;">
+  <!-- Resmi tıklanabilir hale getiren link -->
+  <a href="{{ site.baseurl }}/hereke.png" target="_blank" title="Click to enlarge">
+    <img src="{{ site.baseurl }}/hereke.png" 
+         alt="Hereke Production Process" 
+         style="width:100%; border-radius: 12px; box-shadow: 0 8px 20px rgba(0,0,0,0.15); cursor: zoom-in;" 
+         loading="lazy">
+  </a>
+  <br>
+  <em style="font-size: 13px; color: #555;">The Journey of Silk: From Cocoon to Home<br><strong>(Click image to enlarge)</strong></em>
+</t
 
 <hr>
 
