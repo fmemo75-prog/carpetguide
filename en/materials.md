@@ -33,17 +33,9 @@ The quality of a hand-knotted carpet is fundamentally determined by the fibers u
 </table>
 
 <!-- SECTION 3: KNOT COMPARISON -->
-<table border="0" style="width:100%; margin-bottom: 30px; background-color: #f9f9f9; padding: 20px; border-radius: 10px;">
-  <tr>
-    <td style="vertical-align: top;">
-      <h2 style="color: #2c3e50; margin-top: 0;">3. Knot Structure: The Foundation</h2>
-      <p>The strength of a rug lies in its knots. The <strong>Turkish (Ghiordes) Double Knot</strong> is the hallmark of Anatolian carpets, providing superior durability compared to the single knot technique.</p>
-      <img src="./rug-knots-comparison.png" alt="Knot Comparison" style="width: 100%; border-radius: 10px; border: 1px solid #ddd;" loading="lazy">
-      <p style="font-size: 14px; font-style: italic; text-align: center; margin-top: 10px;">Visual comparison between different knotting techniques.</p>
-    </td>
-  </tr>
-</table>
-
+<h2 id="knots" style="color: #2c3e50; margin-top: 0;">3. Knot Structure: The Foundation</h2>
+<p>The strength of a rug lies in its knots...</p>
+<img src="./rug-knots-comparison.png" alt="Knot Comparison" ...
 <hr>
 
 <div style="text-align: center;">
