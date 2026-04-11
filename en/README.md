@@ -21,6 +21,7 @@
 ---
 
 ### ❄️ Frozen in Time: Why This Rug Changed History
-The **Pazyryk Carpet** is the world’s oldest known knotted rug (5th Century BC). Trapped in a frozen tomb for **2,500 years**, it was preserved in solid ice. This miracle allows us to see the **Ghiordes (Turkish) Double Knot** technique exactly as it was perfected by ancient Turkic tribes millennia ago.
+The **Pazyryk Carpet** is the world’s oldest known knotted rug (5th Century BC). Trapped in a frozen tomb for **2,500 years**, it was preserved in solid ice. This miracle allows us to see the **Ghiordes (Turkish) Double Knot** - **Knot:** [Ghiordes (Turkish) Double Knot](./materials#knots)
+- **Origin:** Scythian / Ancient Turkic.technique exactly as it was perfected by ancient Turkic tribes millennia ago.
 
 ---
