@@ -497,21 +497,6 @@ function setLang(lang) {
 
 <hr>
 
-### 📍 Kappadokya Gezilecek Yerler (Yeni Eklenenler)
-- **Göreme Açık Hava Müzesi** — UNESCO Dünya Mirası, Bizans dönemi kaya kiliseleri
-- **Uçhisar Kalesi** — Kapadokya'nın en yüksek panoramik noktası
-- **Derinkuyu Yeraltı Şehri** — Dünyanın en derin yeraltı şehri (85m)
-- **Paşabağ / Peribacaları** — Peribacalarını yakından görmek için en iyi yer
-- **Avanos** — Çömlek geleneğiyle ünlü nehir kenti
-- **Güvercinlik Vadisi** — Göreme–Uçhisar arası doğa yürüyüşü
-- **Göreme Balon Noktası** — Sıcak hava balonu kalkış alanı
-- **Ürgüp** — Butik oteller, yerel şarap ve restoran merkezi
-
-### 📱 Professional Contacts (Direct Access)
-- **Bülent Güler (Goreme - Kervan):** [Chat via WhatsApp](https://wa.me/905367602165)
-- **Hüseyin Özer (Ortahisar - Punto):** [Chat via WhatsApp](https://wa.me/905324970321)
-- **Halil Koksal (Guide - FR/ES):** [Chat via WhatsApp](https://wa.me/905322478674)
-
 ---
 [Return to Dashboard](../)
 ---
