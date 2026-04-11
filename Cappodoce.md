@@ -1,102 +1,134 @@
 ---
 layout: default
-title: Cappadocia Ultimate Guide - By Fatih Mehmet Canıtez
+title: Cappadocia Ultimate Insider Guide
 ---
 
-# 🌋 Cappadocia: The Land of Beautiful Horses & Ancient Arts
+# 🌋 Cappadocia: The Definitive Local Guide
+**Curated by Fatih Mehmet Canıtez - Local Expert & Educator**
 
-Welcome! I am **Fatih Mehmet Canıtez**. I was born in the thermal waters of **Bayramhacı**, grew up in the pottery workshops of **Avanos**, and today, I share the secrets of **Göreme** with visitors from all over the world. This is not just a guide; it is my home.
+Welcome to my home. This guide is designed to answer every question a traveler has, from logistics to the secret gems of the valleys.
 
 <hr>
 
-<!-- SECTION 1: THE CURATOR'S JOURNEY -->
-<table border="0" style="width:100%; background-color: #fdf5e6; border-radius: 15px; padding: 20px;">
+<!-- SECTION 1: LOGISTICS & DISTANCES -->
+<h2 style="color: #1a2a6c;">✈️ Getting Here & Around</h2>
+<p>Göreme is the "center of the puzzle." Here is how you reach us and the distances you need to know:</p>
+
+<table border="1" style="width:100%; border-collapse: collapse; text-align: left; border-color: #eee;">
+  <tr style="background-color: #1a2a6c; color: white;">
+    <th style="padding: 10px;">Destination</th>
+    <th style="padding: 10px;">Distance from Göreme</th>
+    <th style="padding: 10px;">Travel Time / Tip</th>
+  </tr>
   <tr>
-    <td style="width: 60%; vertical-align: top;">
-      <h3>🏠 My Cappadocia Trio</h3>
-      <ul>
-        <li><strong>Bayramhacı (My Roots):</strong> A hidden gem known for its healing thermal springs. If you want to see the real, untouched village life, this is where my story began.</li>
-        <li><strong>Avanos (My Childhood):</strong> The center of terracotta art. I grew up watching masters turn the red clay of the Kızılırmak River into masterpieces.</li>
-        <li><strong>Göreme (My Office):</strong> The heart of the UNESCO World Heritage site. Today, I am active here in tourism, helping visitors understand the deep history of our fairy chimneys.</li>
-      </ul>
-    </td>
-    <td style="width: 40%; text-align: center;">
-      <img src="./cappadocia-balloons.png" alt="Cappadocia View" style="width: 100%; border-radius: 10px;">
-      <br><em>The heart of the valley</em>
+    <td style="padding: 10px;"><strong>Nevşehir Airport (NAV)</strong></td>
+    <td style="padding: 10px;">~40 km</td>
+    <td style="padding: 10px;">45 min. Best for domestic flights from Istanbul.</td>
+  </tr>
+  <tr>
+    <td style="padding: 10px;"><strong>Kayseri Airport (ASR)</strong></td>
+    <td style="padding: 10px;">~75 km</td>
+    <td style="padding: 10px;">1 hour. More international connections.</td>
+  </tr>
+  <tr>
+    <td style="padding: 10px;"><strong>Ürgüp Center</strong></td>
+    <td style="padding: 10px;">~10 km</td>
+    <td style="padding: 10px;">12 min. The hub for nightlife and wine tasting.</td>
+  </tr>
+  <tr>
+    <td style="padding: 10px;"><strong>Avanos (My Town)</strong></td>
+    <td style="padding: 10px;">~12 km</td>
+    <td style="padding: 10px;">15 min. Famous for pottery and the Red River.</td>
+  </tr>
+  <tr>
+    <td style="padding: 10px;"><strong>Mustafapaşa (Sinasos)</strong></td>
+    <td style="padding: 10px;">~15 km</td>
+    <td style="padding: 10px;">20 min. An old Greek village with amazing architecture.</td>
+  </tr>
+</table>
+<p><i>*Pro Tip: Always book an <b>Airport Shuttle</b> in advance. Taxis are very expensive for airport transfers.</i></p>
+
+<hr>
+
+<!-- SECTION 2: THE BALLOON BIBLE -->
+<h2 style="color: #8b0000;">🎈 The Hot Air Balloon Bible</h2>
+<p>The #1 question everyone asks. Let's be honest about how it works:</p>
+
+<table border="0" style="width:100%; background-color: #fffaf0; border: 1px dashed #8b0000; padding: 20px; border-radius: 10px;">
+  <tr>
+    <td>
+      <h3>Why do prices change daily?</h3>
+      <p>Think of it like a stock market. Prices depend on: 
+      1. Seasonality (May-Oct is peak). 
+      2. The "Backlog" (If flights were canceled for 3 days, the 4th day will be very expensive because everyone is waiting).</p>
+      
+      <h3>The "Flag" System (Red/Yellow/Green)</h3>
+      <p>The <strong>SHGM (Civil Aviation Authority)</strong> decides if we fly. 
+      - 🟢 <b>Green:</b> We fly! 
+      - 🟡 <b>Yellow:</b> Delay/Standby. 
+      - 🔴 <b>Red:</b> Canceled. If it's red, no one flies. No exceptions for money or luck.</p>
+      
+      <h3>Refunds?</h3>
+      <p>If the flight is canceled by SHGM, you get a <b>100% full refund</b>. No cancellation fee. Period.</p>
     </td>
   </tr>
 </table>
 
 <hr>
 
-<!-- SECTION 2: HOT AIR BALLOONS - THE DEEP DIVE -->
-<h2 style="color: #8b0000; text-align: center;">🎈 The Ultimate Balloon Guide</h2>
-<p style="text-align: center; font-style: italic;">Everything you need to know about the flight of a lifetime.</p>
+<!-- SECTION 3: LOCAL CITIES & VILLAGES -->
+<h2 style="color: #2e8b57;">🏘️ Towns You Must Visit</h2>
 
-<table border="1" style="width:100%; border-collapse: collapse; border-color: #ddd;">
-  <tr style="background-color: #8b0000; color: white;">
-    <th style="padding: 10px;">Topic</th>
-    <th style="padding: 10px;">The "Insider" Truth</th>
-  </tr>
-  <tr>
-    <td style="padding: 10px;"><strong>Daily Price Changes</strong></td>
-    <td style="padding: 10px;">Prices are dynamic. They change based on demand, seasonal availability, and the number of flight slots allowed by Civil Aviation. Booking early is your only shield against price spikes.</td>
-  </tr>
-  <tr>
-    <td style="padding: 10px;"><strong>Cancellations</strong></td>
-    <td style="padding: 10px;">Flights are controlled by <strong>SHGM (Civil Aviation)</strong>. If the wind exceeds 11 km/h or visibility is low, all flights are canceled. Safety is never compromised.</td>
-  </tr>
-  <tr>
-    <td style="padding: 10px;"><strong>Refund Policy</strong></td>
-    <td style="padding: 10px;"><strong>100% Guaranteed.</strong> If your flight is canceled due to weather, you are entitled to a full refund or a move to the next day (if there is space).</td>
-  </tr>
-  <tr>
-    <td style="padding: 10px;"><strong>The Secret Tip</strong></td>
-    <td style="padding: 10px;">Stay at least 3 mornings in Cappadocia. If the first day is canceled, you still have two more chances.</td>
-  </tr>
-</table>
-
-<hr>
-
-<!-- SECTION 3: MUST-DO ACTIVITIES -->
-<h2 style="color: #2e8b57;">🏇 Adventure & Culture</h2>
-<table border="0" style="width:100%;">
-  <tr>
-    <td style="width: 33%; padding: 10px; background: #fff; text-align: center; border: 1px solid #eee;">
-      <strong>Horse Tours</strong><br>
-      The "real" way to see the valleys. Sunset rides in Rose Valley are legendary.
-    </td>
-    <td style="width: 33%; padding: 10px; background: #fff; text-align: center; border: 1px solid #eee;">
-      <strong>ATV / Quad Safari</strong><br>
-      Dusty, exciting, and perfect for those who want a bit of adrenaline in the mud and sand.
-    </td>
-    <td style="width: 33%; padding: 10px; background: #fff; text-align: center; border: 1px solid #eee;">
-      <strong>Ihlara Valley</strong><br>
-      A 14km canyon with rock-cut churches. Perfect for a long, spiritual hike.
-    </td>
-  </tr>
-</table>
-
-<hr>
-
-<!-- SECTION 4: THE HANDICRAFTS -->
-<h2 style="color: #d4af37;">🧶 The Art of the Land</h2>
-<p>As a carpet expert, I recommend visiting the local weaving schools. Cappadocia is not just about rocks; it is about the <strong>Silk</strong> and <strong>Wool</strong> that carry the motifs of our ancestors.</p>
-<ul>
-  <li><strong>Pottery:</strong> Visit Avanos for a "try-it-yourself" wheel experience.</li>
-  <li><strong>Carpets:</strong> [Visit my Carpet & Kilim Technical Guide](./en/handknotted) to understand what you are buying.</li>
-</ul>
-
-<hr>
-
-<!-- MAP & LOGISTICS -->
-<div style="text-align: center;">
-  <h3>📍 Essential Map Points</h3>
-  <p>Don't leave without seeing: <strong>Uçhisar Castle, Pasabağ Fairy Chimneys, and the Derinkuyu Underground City.</strong></p>
-  <img src="./loom.jpg" alt="Local Craft" style="width: 60%; border-radius: 10px;">
-  <br><em>"Anatolian spirit in every corner"</em>
+<div style="display: flex; flex-wrap: wrap; gap: 20px; margin-top: 20px;">
+  <div style="flex: 1; min-width: 250px; background: #f9f9f9; padding: 15px; border-radius: 10px; border-left: 5px solid #d4af37;">
+    <h4>🌟 Ürgüp</h4>
+    <p>The "sophisticated" Cappadocia. Great for dining, high-end boutique hotels, and seeing the "Three Beauties" fairy chimneys.</p>
+  </div>
+  <div style="flex: 1; min-width: 250px; background: #f9f9f9; padding: 15px; border-radius: 10px; border-left: 5px solid #2e8b57;">
+    <h4>🎨 Avanos</h4>
+    <p>My childhood home. Crossed by the Red River. You must try the pottery wheel and walk across the swinging bridge.</p>
+  </div>
+  <div style="flex: 1; min-width: 250px; background: #f9f9f9; padding: 15px; border-radius: 10px; border-left: 5px solid #8b0000;">
+    <h4>⛪ Mustafapaşa</h4>
+    <p>A hidden historical treasure. Formerly known as Sinasos, it holds the best examples of 19th-century Greek masonry.</p>
+  </div>
 </div>
 
 <hr>
 
-[Back to Main Dashboard](./)
+<!-- SECTION 4: MUSEUMS & HIDDEN GEMS -->
+<h2 style="color: #d4af37;">🏛️ Museums & Valleys</h2>
+<ul>
+  <li><strong>Göreme Open Air Museum:</strong> The mandatory stop for rock-cut churches and frescoes.</li>
+  <li><strong>Zelve Open Air Museum:</strong> Much larger and more "wild" than Göreme. Great for hiking without huge crowds.</li>
+  <li><strong>Bayramhacı (Curator's Choice):</strong> My birthplace. If you want a break from rocks, come here for the natural hot springs and thermal healing.</li>
+  <li><strong>Ihlara Valley:</strong> A 14km hike through a lush canyon with 100+ churches.</li>
+</ul>
+
+<hr>
+
+<!-- SECTION 5: ADVENTURE -->
+<h2 style="color: #e67e22;">🐎 Adventure Tours</h2>
+<p>If you have extra time, try these:</p>
+<table border="0" style="width:100%;">
+  <tr>
+    <td style="width: 50%; padding: 10px;">
+      <b>Horseback Riding:</b> Cappadocia means "Land of Beautiful Horses." Sunset tours in the valleys are magic.
+    </td>
+    <td style="width: 50%; padding: 10px;">
+      <b>ATV / Quad Safari:</b> Best for the "Sword Valley" and "Love Valley" trails if you like adrenaline and dust!
+    </td>
+  </tr>
+</table>
+
+<hr>
+
+<div style="text-align: center; background-color: #2c3e50; color: white; padding: 20px; border-radius: 10px;">
+  <h3>Need more local advice?</h3>
+  <p>As a local active in Göreme, I'm here to help you understand the true culture behind the fairy chimneys.</p>
+  <a href="./me" style="color: #d4af37; font-weight: bold;">Learn more about me & my French courses</a>
+</div>
+
+<p style="text-align: center; margin-top: 30px;">
+  <a href="./">🏠 Return to Main Dashboard</a> | <a href="./en/handknotted">🧶 Technical Carpet Guide</a>
+</p>
