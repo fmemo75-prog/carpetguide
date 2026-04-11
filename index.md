@@ -70,6 +70,12 @@ title: Global Carpet Guide
   </tr>
 </table>
 
+<div style="text-align: center; margin-top: 20px;">
+  <a href="./Cappodoce" style="font-size: 1.5em; font-weight: bold; color: #8b0000; text-decoration: none; border: 2px solid #8b0000; padding: 10px 20px; border-radius: 10px;">
+    🌄 Explore My Cappadocia Guide (Insider Tips)
+  </a>
+</div>
+
 <!-- LİNK BÖLÜMÜ 2: KİLİM VE DOKUMA TÜRLERİ -->
 <h3 style="text-align: center; color: #2e8b57; margin-top: 20px; font-family: 'Georgia', serif;">📐 Kilim & Flat-Weave Masterpieces</h3>
 <table border="0" style="width:100%; text-align: center; table-layout: fixed;">
