@@ -80,10 +80,12 @@
     <p>Explore with curiosity, shop with confidence, and let Cappadocia touch your heart the way it has touched mine.</p>
 
     <div class="signature">
-        Your Guide & Teacher
+        Your Guide & Teacher 
+        Fatih Mehmet CANITEZ
         <span>50 Years of Cappadocia Experience</span>
     </div>
 </div>
+---
 ---
 layout: default
 title: Global Cappadocia Guide - Polyglot Edition
@@ -146,8 +148,35 @@ title: Global Cappadocia Guide - Polyglot Edition
             right: 8px;
             left: 8px;
             width: auto;
-            max-height: 55%;
+            max-height: 52%;
         }
+    }
+
+    /* Mobil kaydır hatırlatıcısı */
+    #scroll-hint {
+        display: none;
+        position: absolute;
+        bottom: 70px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: rgba(139,0,0,0.82);
+        color: white;
+        font-size: 12px;
+        font-family: Georgia, serif;
+        padding: 7px 16px;
+        border-radius: 20px;
+        white-space: nowrap;
+        z-index: 1100;
+        pointer-events: none;
+        animation: bounceUp 1.4s ease-in-out infinite;
+    }
+    #scroll-hint.visible { display: block; }
+    @keyframes bounceUp {
+        0%, 100% { transform: translateX(-50%) translateY(0); }
+        50%       { transform: translateX(-50%) translateY(-5px); }
+    }
+    @media (min-width: 521px) {
+        #scroll-hint { display: none !important; }
     }
 </style>
 
@@ -167,8 +196,19 @@ title: Global Cappadocia Guide - Polyglot Edition
     <button id="ja-btn" class="lang-btn" onclick="setLang('ja')">🇯🇵 日本語</button>
 </div>
 
+<div style="background: linear-gradient(135deg, #fff8f0 0%, #fff 100%); border-left: 5px solid #8b0000; border-radius: 12px; padding: 22px 26px; margin-bottom: 22px; box-shadow: 0 3px 14px rgba(139,0,0,0.08); font-family: Georgia, serif;">
+    <p style="margin: 0 0 10px 0; font-size: 15px; color: #8b0000; font-weight: bold; letter-spacing: 0.5px;">✍️ A Personal Note</p>
+    <p style="margin: 0; font-size: 15px; color: #333; line-height: 1.85;">
+        Dear traveller, welcome to Cappadocia — one of the most extraordinary places on earth.<br><br>
+        I have been walking these valleys, visiting these workshops, and sharing this land with visitors from every corner of the world for over <strong>50 years</strong>. As a teacher by profession and a passionate guide by heart, I have seen what makes a journey here truly memorable — and what leads people astray.<br><br>
+        The places and people I have marked on this map are not random recommendations. They are the result of half a century of friendship, trust, and personal experience. When I point you to a carpet shop or a local expert, I do so as a friend who has sat at their table, drunk their tea, and watched them work with my own eyes.<br><br>
+        <em>Explore with curiosity, shop with confidence, and let Cappadocia touch your heart the way it has touched mine.</em>
+    </p>
+</div>
+
 <div id="map-wrapper">
     <div id="map"></div>
+    <div id="scroll-hint">👆 Scroll up to read more</div>
 
     <div id="info-card">
         <button id="close-btn" onclick="closePanel()">✕</button>
@@ -435,10 +475,15 @@ function updateUI() {
     }
 
     document.getElementById('info-card').classList.add('visible');
+    document.getElementById('scroll-hint').classList.add('visible');
+    setTimeout(function() {
+        document.getElementById('scroll-hint').classList.remove('visible');
+    }, 4000);
 }
 
 function closePanel() {
     document.getElementById('info-card').classList.remove('visible');
+    document.getElementById('scroll-hint').classList.remove('visible');
     activePoint = null;
 }
 
@@ -452,13 +497,23 @@ function setLang(lang) {
 
 <hr>
 
-
+### 📍 Kappadokya Gezilecek Yerler (Yeni Eklenenler)
+- **Göreme Açık Hava Müzesi** — UNESCO Dünya Mirası, Bizans dönemi kaya kiliseleri
+- **Uçhisar Kalesi** — Kapadokya'nın en yüksek panoramik noktası
+- **Derinkuyu Yeraltı Şehri** — Dünyanın en derin yeraltı şehri (85m)
+- **Paşabağ / Peribacaları** — Peribacalarını yakından görmek için en iyi yer
+- **Avanos** — Çömlek geleneğiyle ünlü nehir kenti
+- **Güvercinlik Vadisi** — Göreme–Uçhisar arası doğa yürüyüşü
+- **Göreme Balon Noktası** — Sıcak hava balonu kalkış alanı
+- **Ürgüp** — Butik oteller, yerel şarap ve restoran merkezi
 
 ### 📱 Professional Contacts (Direct Access)
 - **Bülent Güler (Goreme - Kervan):** [Chat via WhatsApp](https://wa.me/905367602165)
 - **Hüseyin Özer (Ortahisar - Punto):** [Chat via WhatsApp](https://wa.me/905324970321)
 - **Halil Koksal (Guide - FR/ES):** [Chat via WhatsApp](https://wa.me/905322478674)
 
+---
+[Return to Dashboard](../)
 ---
 [Return to Dashboard](../)
 
