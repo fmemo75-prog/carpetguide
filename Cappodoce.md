@@ -181,7 +181,7 @@ title: Global Cappadocia Guide - Polyglot Edition
 </style>
 
 <div style="text-align: center; font-family: 'Georgia', serif; padding: 10px;">
-    <h1 style="color: #8b0000;">🏺 Cappadocia Master Polyglot Guide</h1>
+    <h1 id="interactive-map" style="color: #8b0000;">🏺 Cappadocia Master Polyglot Guide</h1>
     <p><i>Insider Tips, VIP Contacts & Interactive Map</i></p>
 </div>
 
