@@ -1,14 +1,32 @@
----
-layout: default
-title: Cappadocia Ultimate Insider Guide
----
+<!-- SECTION: THE CURATOR'S ROOTS -->
+<h2 style="color: #8b0000;">🏠 My Cappadocia: The Triad of My Life</h2>
 
-# 🌋 Cappadocia: The Definitive Local Guide
-**Curated by Fatih Mehmet Canıtez - Local Expert & Educator**
+<table border="0" style="width:100%; background-color: #fdf5e6; border-radius: 15px; padding: 20px; border-collapse: collapse;">
+  <tr>
+    <!-- SOL SÜTUN: KİŞİSEL HİKAYE -->
+    <td style="width: 50%; vertical-align: top; padding-right: 20px;">
+      <p>Cappadocia is not just a destination for me; it is my timeline. As you can see on the map, my life follows the path of the <strong>Kızılırmak (Red River)</strong>.</p>
+      
+      <ul style="line-height: 1.8;">
+        <li><strong>Bayramhacı (The Source):</strong> My birthplace. Located by the dam, it's famous for its thermal springs. This is where I learned the value of nature and healing waters.</li>
+        <li><strong>Avanos (The Mold):</strong> Where I grew up. The river's red clay shaped my childhood. It's the center of pottery and traditional Turkish handicrafts.</li>
+        <li><strong>Göreme (The Heart):</strong> My current home and professional center. The pinnacle of rock-cut history where I now guide visitors as a local expert.</li>
+      </ul>
+      <p><i>This map shows the 40km circle where I have spent my life, learning every valley and every knot of our culture.</i></p>
+    </td>
 
-Welcome to my home. This guide is designed to answer every question a traveler has, from logistics to the secret gems of the valleys.
+    <!-- SAĞ SÜTUN: HARİTA GÖRSELİ -->
+    <td style="width: 50%; text-align: center; vertical-align: middle;">
+      <a href="./cappadocia-map.jpg" target="_blank" title="Click to enlarge my life map">
+        <img src="./cappadocia-map.jpg" alt="Fatih's Cappadocia Map" style="width: 100%; border-radius: 10px; border: 2px solid #d4af37; box-shadow: 0 8px 15px rgba(0,0,0,0.2); cursor: zoom-in;">
+      </a>
+      <br>
+      <small style="color: #666;">(Click map to see full details of my region)</small>
+    </td>
+  </tr>
+</table>
 
-<hr>
+<hr style="margin: 40px 0;">
 
 <!-- SECTION 1: LOGISTICS & DISTANCES -->
 <h2 style="color: #1a2a6c;">✈️ Getting Here & Around</h2>
