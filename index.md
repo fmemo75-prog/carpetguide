@@ -2,7 +2,7 @@
 layout: default
 title: Global Carpet Guide
 ---
-<a href="/cappodoce/#interactive-map" style="background: #8b0000; color: white !important; padding: 12px 20px; border-radius: 50px; text-decoration: none; font-weight: bold;">
+<a href="/carpetguide/cappodoce/#interactive-map">Click for Interactive Map</a> style="background: #8b0000; color: white !important; padding: 12px 20px; border-radius: 50px; text-decoration: none; font-weight: bold;">
     📍 Go to Interactive Map
 </a>
 <!-- Mobil Uyumluluk İçin Küçük Bir Stil Dokunuşu -->
