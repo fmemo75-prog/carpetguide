@@ -1,60 +1,43 @@
 ---
 layout: default
-title: Carpet Materials - Technical Guide
+title: Materials - Wool & Silk
 ---
 
-# Classification of Carpets by Material
+# Technical Analysis: The Materials of Fine Carpets
 
-In the world of hand-knotted carpets, the combination of "Pile" and "Warp/Weft" materials determines the character, durability, and value of the piece.
+The quality of a hand-knotted carpet is fundamentally determined by the fibers used and the precision of the knots.
 
-<table border="1" style="width:100%; border-collapse: collapse; margin-top: 20px;">
-  <tr style="background-color: #f4f4f4;">
-    <th style="padding: 15px; width: 30%;">Category</th>
-    <th style="padding: 15px;">Technical Details</th>
-    <th style="padding: 15px; width: 25%;">Common Usage</th>
-  </tr>
-  
-  <!-- Wool on Wool -->
+<hr>
+
+<!-- SECTION 1: WOOL JOURNEY -->
+<table border="0" style="width:100%; margin-bottom: 30px; background-color: #fdf5e6; padding: 20px; border-radius: 10px;">
   <tr>
-    <td style="padding: 15px; text-align: center;">
-      <strong>Wool on Wool</strong><br>
-      <small>(Yün üstü yün)</small><br><br>
-      [Image Placeholder]
+    <td style="vertical-align: top;">
+      <h2 style="color: #8b0000; margin-top: 0;">1. The Journey of Wool (Yünün Yolculuğu)</h2>
+      <p>Wool is the most traditional material in Anatolian weaving. High-quality wool is resilient, durable, and holds natural dyes perfectly. The process involves cleaning, carding, spinning by hand, and dyeing with natural roots.</p>
+      <img src="./wool-journey.png" alt="Wool Journey" style="width: 100%; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);" loading="lazy">
+      <p style="font-size: 14px; font-style: italic; text-align: center; margin-top: 10px;">The traditional preparation of wool from sheep to yarn.</p>
     </td>
-    <td style="padding: 15px;">
-      Both the foundation (warp/weft) and the knots (pile) are made of wool. This makes the carpet more flexible and slightly more "rustic."
-    </td>
-    <td style="padding: 15px;">Nomadic and Tribal carpets (e.g., Kurdish, Yoruk, Turkmen).</td>
-  </tr>
-
-  <!-- Wool on Cotton -->
-  <tr>
-    <td style="padding: 15px; text-align: center;">
-      <strong>Wool on Cotton</strong><br>
-      <small>(Yün üstü pamuk)</small><br><br>
-      [Image Placeholder]
-    </td>
-    <td style="padding: 15px;">
-      The pile is wool, but the foundation is cotton. Cotton allows for tighter knotting and keeps the carpet's shape more rigid over time.
-    </td>
-    <td style="padding: 15px;">Village and City carpets (e.g., Uşak, Gördes, Sparta).</td>
-  </tr>
-
-  <!-- Silk on Silk -->
-  <tr>
-    <td style="padding: 15px; text-align: center;">
-      <strong>Silk on Silk</strong><br>
-      <small>(İpek üstü ipek)</small><br><br>
-      [Image Placeholder]
-    </td>
-    <td style="padding: 15px;">
-      Both the pile and foundation are pure silk. This allows for the highest knot density and the most intricate details.
-    </td>
-    <td style="padding: 15px;">Palace quality masterpieces (e.g., Hereke, Kayseri Silk).</td>
   </tr>
 </table>
 
-<br>
-<p style="text-align: center;">
-  <a href="./handknotted">← Back to Carpet World</a> | <a href="./">Return Home</a>
-</p>
+<!-- SECTION 2: SILK WEAVING -->
+<table border="0" style="width:100%; margin-bottom: 30px; background-color: #fcfcfc; padding: 20px; border-radius: 10px; border: 1px solid #eee;">
+  <tr>
+    <td style="vertical-align: top;">
+      <h2 style="color: #1a2a6c; margin-top: 0;">2. The Art of Silk Weaving (İpek Dokuma)</h2>
+      <p>Silk is the most luxurious fiber, allowing weavers to achieve extreme knot density (often over 1 million knots per sqm). Silk carpets are prized for their shimmering luster and surgical precision in patterns, most notably seen in Hereke masterpieces.</p>
+      <img src="./silk-weaving.png" alt="Silk Weaving" style="width: 100%; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);" loading="lazy">
+    </td>
+  </tr>
+</table>
+
+<!-- SECTION 3: KNOT COMPARISON -->
+<h2 id="knots" style="color: #2c3e50; margin-top: 0;">3. Knot Structure: The Foundation</h2>
+<p>The strength of a rug lies in its knots...</p>
+<img src="/carpetguide/en/rug-knots-comparison.png" alt="Knot Comparison" style="width:100%; border-radius: 8px;" loading="lazy">
+<hr>
+
+<div style="text-align: center;">
+  <a href="./handknotted" style="font-weight: bold; color: #8b0000; text-decoration: none;">🔍 View Regional Weaving Styles (Uşak & Bergama)</a>
+</div>

@@ -33,7 +33,7 @@ The origins of Kilim symbols reach back to the **Neolithic era** (approx. 7000 B
 A Kilim is created on a traditional wooden loom called a **"Tezgah."** There are no digital blueprints; the weaver translates ancestral patterns directly from her mind to her fingers.
 
 <div align="center">
-  <img src="./kilim_loom.png" width="90%" style="border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.3);" alt="Woman weaving a Kilim">
+  <img src="./kilim_loom.jpg" width="90%" style="border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.3);" alt="Woman weaving a Kilim">
   <p><i>The weaver using the "Kirkit" (heavy comb) to beat the threads into a lifetime of durability.</i></p>
 </div>
 
