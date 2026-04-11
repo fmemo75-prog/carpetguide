@@ -27,7 +27,50 @@
 </table>
 
 <hr style="margin: 40px 0;">
+---
+layout: default
+title: Cappadocia Map
+---
 
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<div style="text-align: center; padding: 20px;">
+    <h2 style="color: #8b0000;">Cappadocia Interactive Map</h2>
+    <p>Click on the pins to see details in English and French.</p>
+</div>
+
+<!-- Harita Alanı -->
+<div id="map" style="height: 500px; width: 100%; border: 3px solid #8b0000; border-radius: 15px;"></div>
+
+<!-- Bilgi Paneli -->
+<div id="info" style="margin-top:20px; padding:20px; background:#fdf5e6; border-left:5px solid #8b0000; min-height:100px;">
+    <h3 id="t" style="margin-top:0;">Select a point on the map</h3>
+    <p id="d">Information will appear here.</p>
+</div>
+
+<script>
+// Haritayı başlat
+var map = L.map('map').setView([38.6, 34.8], 10);
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
+
+// Veriler
+var data = [
+    { c: [38.37, 34.63], t: "Derinkuyu", d: "World's deepest underground city. / La cité souterraine la plus profonde." },
+    { c: [38.64, 34.82], t: "Goreme", d: "Heart of the National Park. / Le coeur du parc national." },
+    { c: [38.86, 34.96], t: "Bayramhaci", d: "Curator's birthplace & Thermal springs. / Lieu de naissance et eaux thermales." },
+    { c: [38.29, 34.45], t: "Ihlara", d: "Amazing canyon with rock churches. / Canyon magnifique avec églises." }
+];
+
+// Pinleri ekle
+data.forEach(function(item) {
+    var marker = L.marker(item.c).addTo(map);
+    marker.on('click', function() {
+        document.getElementById('t').innerText = item.t;
+        document.getElementById('d').innerText = item.d;
+    });
+});
+</script>
 
 <!-- SECTION 1: LOGISTICS & DISTANCES -->
 <h2 style="color: #1a2a6c;">✈️ Getting Here & Around</h2>
