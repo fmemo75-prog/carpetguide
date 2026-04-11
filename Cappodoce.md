@@ -68,20 +68,7 @@
     }
 </style>
 
-<div class="welcome-letter">
-    <h2>A Personal Note from Your Guide</h2>
-    
-    <p>Dear traveller, welcome to Cappadocia — one of the most extraordinary places on earth.</p>
-    
-    <p>I have been walking these valleys, visiting these workshops, and sharing this land with visitors from every corner of the world for <b>over 50 years</b>. As a teacher by profession and a passionate guide by heart, I have seen what makes a journey here truly memorable — and what leads people astray.</p>
-    
-    <p>The places and people I have marked on this map are not random recommendations. They are the result of half a century of friendship, trust, and personal experience. When I point you to a carpet shop or a local expert, I do so as a friend who has sat at their table, drunk their tea, and watched them work with my own eyes.</p>
-    
-    <p>Explore with curiosity, shop with confidence, and let Cappadocia touch your heart the way it has touched mine.</p>
 
-    <div class="signature">
-        Your Guide & Teacher 
-        Fatih Mehmet CANITEZ
         <span>50 Years of Cappadocia Experience</span>
     </div>
 </div>
@@ -203,6 +190,7 @@ title: Global Cappadocia Guide - Polyglot Edition
         I have been walking these valleys, visiting these workshops, and sharing this land with visitors from every corner of the world for over <strong>50 years</strong>. As a teacher by profession and a passionate guide by heart, I have seen what makes a journey here truly memorable — and what leads people astray.<br><br>
         The places and people I have marked on this map are not random recommendations. They are the result of half a century of friendship, trust, and personal experience. When I point you to a carpet shop or a local expert, I do so as a friend who has sat at their table, drunk their tea, and watched them work with my own eyes.<br><br>
         <em>Explore with curiosity, shop with confidence, and let Cappadocia touch your heart the way it has touched mine.</em>
+      Fatih Mehmet CANITEZ
     </p>
 </div>
 
