@@ -18,7 +18,7 @@
     <!-- SAĞ SÜTUN: HARİTA GÖRSELİ -->
     <td style="width: 50%; text-align: center; vertical-align: middle;">
       <a href="./ben_.jpg" target="_blank" title="Click to enlarge my life map">
-        <img src="./cappadocia-map.jpg" alt="Fatih's Cappadocia Map" style="width: 100%; border-radius: 10px; border: 2px solid #d4af37; box-shadow: 0 8px 15px rgba(0,0,0,0.2); cursor: zoom-in;">
+        <img src="./ben_.jpg" alt="Fatih's Cappadocia Map" style="width: 100%; border-radius: 10px; border: 2px solid #d4af37; box-shadow: 0 8px 15px rgba(0,0,0,0.2); cursor: zoom-in;">
       </a>
       <br>
       <small style="color: #666;">(Click map to see full details of my region)</small>
