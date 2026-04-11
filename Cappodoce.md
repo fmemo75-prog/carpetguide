@@ -14,6 +14,76 @@
       </ul>
       <p><i>This map shows the 40km circle where I have spent my life, learning every valley and every knot of our culture.</i></p>
     </td>
+<style>
+    .welcome-letter {
+        background: #fdfaf6; /* Hafif parşömen rengi */
+        border: 1px solid #e0d5c5;
+        border-left: 5px solid #8b0000;
+        padding: 30px;
+        margin: 20px auto;
+        max-width: 800px;
+        border-radius: 8px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        font-family: 'Georgia', serif;
+        line-height: 1.8;
+        color: #444;
+        position: relative;
+    }
+
+    .welcome-letter::before {
+        content: "“";
+        position: absolute;
+        top: 10px;
+        left: 20px;
+        font-size: 60px;
+        color: #8b0000;
+        opacity: 0.1;
+    }
+
+    .welcome-letter h2 {
+        color: #8b0000;
+        margin-top: 0;
+        font-size: 22px;
+        border-bottom: 1px solid #eee;
+        padding-bottom: 10px;
+    }
+
+    .welcome-letter p {
+        margin-bottom: 15px;
+        font-style: italic;
+    }
+
+    .signature {
+        text-align: right;
+        margin-top: 20px;
+        font-weight: bold;
+        color: #8b0000;
+    }
+
+    .signature span {
+        display: block;
+        font-size: 14px;
+        color: #666;
+        font-weight: normal;
+    }
+</style>
+
+<div class="welcome-letter">
+    <h2>A Personal Note from Your Guide</h2>
+    
+    <p>Dear traveller, welcome to Cappadocia — one of the most extraordinary places on earth.</p>
+    
+    <p>I have been walking these valleys, visiting these workshops, and sharing this land with visitors from every corner of the world for <b>over 50 years</b>. As a teacher by profession and a passionate guide by heart, I have seen what makes a journey here truly memorable — and what leads people astray.</p>
+    
+    <p>The places and people I have marked on this map are not random recommendations. They are the result of half a century of friendship, trust, and personal experience. When I point you to a carpet shop or a local expert, I do so as a friend who has sat at their table, drunk their tea, and watched them work with my own eyes.</p>
+    
+    <p>Explore with curiosity, shop with confidence, and let Cappadocia touch your heart the way it has touched mine.</p>
+
+    <div class="signature">
+        Your Guide & Teacher
+        <span>50 Years of Cappadocia Experience</span>
+    </div>
+</div>
 ---
 layout: default
 title: Global Cappadocia Guide - Polyglot Edition
