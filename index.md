@@ -35,7 +35,7 @@ title: Global Carpet Guide
     <!-- SAĞ: Profil (carpet.jpeg) -->
     <div class="header-cell" style="width: 18%; text-align: center;">
       <img src="./carpet.jpeg" class="profile-img" alt="Curator" style="width: 110px; height: 110px; border-radius: 50%; border: 3px solid #d4af37; object-fit: cover; display: block; margin: 0 auto;">
-    </td>
+   
 </div>
 
 <div style="clear: both;"></div>
