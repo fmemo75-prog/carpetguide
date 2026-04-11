@@ -35,7 +35,7 @@ The quality of a hand-knotted carpet is fundamentally determined by the fibers u
 <!-- SECTION 3: KNOT COMPARISON -->
 <h2 id="knots" style="color: #2c3e50; margin-top: 0;">3. Knot Structure: The Foundation</h2>
 <p>The strength of a rug lies in its knots...</p>
-<img src="./rug-knots-comparison.png" alt="Knot Comparison" ...
+<img src="/carpetguide/en/rug-knots-comparison.png" alt="Knot Comparison" style="width:100%; border-radius: 8px;" loading="lazy">
 <hr>
 
 <div style="text-align: center;">
