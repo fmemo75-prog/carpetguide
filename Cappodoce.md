@@ -17,7 +17,7 @@
 
     <!-- SAĞ SÜTUN: HARİTA GÖRSELİ -->
     <td style="width: 50%; text-align: center; vertical-align: middle;">
-      <a href="./cappadocia-map.jpg" target="_blank" title="Click to enlarge my life map">
+      <a href="./ben_.jpg" target="_blank" title="Click to enlarge my life map">
         <img src="./cappadocia-map.jpg" alt="Fatih's Cappadocia Map" style="width: 100%; border-radius: 10px; border: 2px solid #d4af37; box-shadow: 0 8px 15px rgba(0,0,0,0.2); cursor: zoom-in;">
       </a>
       <br>
@@ -27,6 +27,7 @@
 </table>
 
 <hr style="margin: 40px 0;">
+
 
 <!-- SECTION 1: LOGISTICS & DISTANCES -->
 <h2 style="color: #1a2a6c;">✈️ Getting Here & Around</h2>
