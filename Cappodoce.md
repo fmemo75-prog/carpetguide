@@ -114,7 +114,32 @@
 </div>
 
 <hr>
+<hr style="margin: 40px 0;">
 
+<!-- SECTION: COMPREHENSIVE CULTURAL MAP -->
+<div style="text-align: center; background-color: #fffaf0; padding: 30px; border-radius: 20px; border: 1px solid #d4af37;">
+  <h2 style="color: #8b0000; margin-top: 0;">🗺️ Cappadocia: Cultural & Activity Roadmap</h2>
+  <p style="font-size: 16px; color: #555; max-width: 800px; margin: 10px auto 25px auto;">
+    This illustrative map highlights the essential "Cultural Nodes" of our region. From the pottery wheels of <b>Avanos</b> to the underground mysteries of <b>Derinkuyu</b>, every icon represents a thousand-year-old tradition.
+  </p>
+
+  <!-- Haritaya tıklandığında tam boyutta yeni sekmede açılır -->
+  <a href="./map_.jpg" target="_blank" title="Click to view full-size cultural map">
+    <img src="./map_.jpg" alt="Cappadocia Cultural Map" style="width: 100%; max-width: 900px; border-radius: 15px; box-shadow: 0 12px 25px rgba(0,0,0,0.25); cursor: zoom-in;" loading="lazy">
+  </a>
+
+  <div style="margin-top: 20px; display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+    <span style="background: #fdf5e6; padding: 5px 15px; border-radius: 50px; font-size: 14px; border: 1px solid #eee;">🏺 <b>Artisan Workshops</b></span>
+    <span style="background: #fdf5e6; padding: 5px 15px; border-radius: 50px; font-size: 14px; border: 1px solid #eee;">⛪ <b>Historical Sites</b></span>
+    <span style="background: #fdf5e6; padding: 5px 15px; border-radius: 50px; font-size: 14px; border: 1px solid #eee;">🐎 <b>Outdoor Adventure</b></span>
+  </div>
+  
+  <p style="margin-top: 15px; font-size: 13px; color: #8b0000;">
+    <strong>💡 Insider Tip:</strong> Click on the map to enlarge and see the specific locations of carpet workshops and secret valleys.
+  </p>
+</div>
+
+<hr style="margin: 40px 0;">
 <!-- SECTION 4: MUSEUMS & HIDDEN GEMS -->
 <h2 style="color: #d4af37;">🏛️ Museums & Valleys</h2>
 <ul>
