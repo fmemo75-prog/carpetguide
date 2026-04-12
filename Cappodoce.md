@@ -477,8 +477,6 @@ function setLang(lang) {
 
 <hr>
 
-
-
 <!-- SECTION 2: THE BALLOON BIBLE -->
 <h2 style="color: #8b0000;">🎈 The Hot Air Balloon Bible</h2>
 <p>The #1 question everyone asks. Let's be honest about how it works:</p>
