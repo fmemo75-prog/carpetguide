@@ -6,196 +6,203 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ page.title }} | Carpet Guide</title>
-    <style>/* FACEBOOK & MOBİL ÇAKIŞMA ÖNLEYİCİ */
+    
+    <style>
+        /* 1. FACEBOOK & MOBİL ÇAKIŞMA ÖNLEYİCİ VE GENEL YERLEŞİM */
+        * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+        
+        html, body { 
+            overflow-x: hidden; 
+            width: 100%; margin: 0; padding: 0; 
+            -webkit-text-size-adjust: 100%; 
+            background-color: #fdf5e6; /* Cream BG */
+            font-family: 'Georgia', serif; line-height: 1.8; color: #2c3e50;
+        }
 
-/* 1. Yan yana dizilen kutuların (Grid/Flex) birbirine girmesini engelle */
-.grid, .flex, [style*="display: flex"], [style*="display: grid"] {
-    display: flex !important;
-    flex-wrap: wrap !important; /* Kutular sığmazsa aşağı kaysın (Üst üste binmeyi önler) */
-    gap: 15px !important;      /* Kutular arasında boşluk bırak */
-    justify-content: center !important;
-}
+        :root { 
+            --primary-red: #8b0000; 
+            --carpet-gold: #d4af37; 
+            --deep-navy: #1a2a6c; 
+            --cream-bg: #fdf5e6; 
+        }
 
-/* 2. İçerideki her bir link/ikon kutusuna nefes aldır */
-.grid > *, .flex > *, [style*="display: flex"] > * {
-    flex: 1 1 140px !important; /* Minimum 140px genişlik ver, sığmazsa alt satıra at */
-    max-width: 100% !important;
-    min-width: 120px !important; /* Yazıların iç içe geçmesini engeller */
-    text-align: center !important;
-    margin-bottom: 10px !important;
-}
+        /* Grid/Flex Yapıları İçin Facebook Düzeltmesi */
+        .grid, .flex, [style*="display: flex"], [style*="display: grid"] {
+            display: flex !important;
+            flex-wrap: wrap !important;
+            gap: 15px !important;
+            justify-content: center !important;
+        }
 
-/* 3. Facebook Tarayıcısı İçin Özel "Zorlayıcı" Düzenleme */
-@media screen and (max-width: 600px) {
-    /* Başlıkların birbirine girmemesi için satır aralığını aç */
-    h1, h2, h3 {
-        line-height: 1.4 !important;
-        margin-top: 20px !important;
-        margin-bottom: 10px !important;
-        word-wrap: break-word !important;
-    }
+        .grid > *, .flex > *, [style*="display: flex"] > * {
+            flex: 1 1 140px !important;
+            max-width: 100% !important;
+            min-width: 120px !important;
+            text-align: center !important;
+            margin-bottom: 10px !important;
+        }
 
-    /* Görseldeki o karışan ikonları alt alta dizmeye zorla */
-    .historical-deep-dives, .icon-grid, .menu-container { 
-        flex-direction: column !important; 
-        align-items: center !important;
-    }
-}
+        /* Sayfa Bölümlerinin Karışmaması İçin */
+        article, section, header, footer {
+            width: 100%; position: relative; clear: both;
+        }
 
-/* 4. Butonların (Cappadocia Guide gibi) kaymasını engelle */
-a[href*="cappodoce"] {
-    display: block !important;
-    width: fit-content !important;
-    margin: 20px auto !important;
-    padding: 15px 25px !important;
-    white-space: normal !important; /* Uzun başlıklar butonun dışına taşmasın */
-}
-        :root { --primary-red: #8b0000; --carpet-gold: #d4af37; --deep-navy: #1a2a6c; --cream-bg: #fdf5e6; }
-        body { background-color: var(--cream-bg); font-family: 'Georgia', serif; line-height: 1.8; color: #2c3e50; margin: 0; }
-        .container { max-width: 1000px; margin: 30px auto; background-color: white; padding: 40px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); border-top: 8px solid var(--primary-red); }
-        .translate-bar { background: linear-gradient(to right, var(--deep-navy), #2a4858); padding: 12px 25px; display: flex; justify-content: flex-end; align-items: center; }
+        /* 2. TASARIM ÖGELERİ (Container, Navbar vs.) */
+        .container { 
+            max-width: 1000px; margin: 30px auto; 
+            background-color: white; padding: 40px; 
+            border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); 
+            border-top: 8px solid var(--primary-red); 
+        }
+
+        .translate-bar { 
+            background: linear-gradient(to right, var(--deep-navy), #2a4858); 
+            padding: 12px 25px; display: flex; justify-content: flex-end; align-items: center; 
+        }
+
         .translate-label { font-size: 14px; margin-right: 15px; font-weight: bold; color: white; }
-        .goog-te-gadget-simple { border: 1px solid #ccc !important; border-radius: 4px !important; padding: 4px !important; }
+        
         .back-home-container { margin-top: 50px; text-align: center; border-top: 1px solid #eee; padding-top: 20px; }
-        .back-home-btn { display: inline-block; padding: 12px 30px; background: var(--primary-red); color: white !important; text-decoration: none; border-radius: 50px; font-weight: bold; }
+        .back-home-btn { 
+            display: inline-block; padding: 12px 30px; 
+            background: var(--primary-red); color: white !important; 
+            text-decoration: none; border-radius: 50px; font-weight: bold; 
+        }
+
         img { max-width: 100%; height: auto; border-radius: 8px; }
-    </style><style>
-  /* FACEBOOK & MOBİL YERLEŞİM DÜZELTME */
-  * {
-    box-sizing: border-box; /* Bölümlerin genişliğini sabitler, taşmayı önler */
-    -webkit-tap-highlight-color: transparent;
-  }
 
-  html, body {
-    overflow-x: hidden; /* Sağa kaymayı kesin olarak engeller */
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    -webkit-text-size-adjust: 100%; /* Facebook'un fontları kafasına göre büyütmesini engeller */
-  }
+        /* 3. GOOGLE TRANSLATE MOBİL DÜZENLEMELERİ */
+        .goog-te-gadget-simple { border: 1px solid #ccc !important; border-radius: 4px !important; padding: 4px !important; }
+        
+        @media screen and (max-width: 768px) {
+            .content, .post, .page-content { padding: 15px !important; }
+            
+            .goog-te-combo {
+                width: 90% !important;
+                max-width: 300px !important;
+                margin: 0 auto !important;
+            }
+            
+            body { top: 0 !important; }
+            .goog-te-banner-frame.skiptranslate { display: none !important; }
+            #google_translate_element b { display: none !important; }
+        }
 
-  /* Görsellerin ve Videoların kutularından taşmasını engeller */
-  img, video, audio, iframe {
-    max-width: 100% !important;
-    height: auto !important;
-    display: block;
-  }
+        @media screen and (max-width: 600px) {
+            h1, h2, h3 {
+                line-height: 1.4 !important;
+                margin-top: 20px !important;
+                margin-bottom: 10px !important;
+                word-wrap: break-word !important;
+            }
+            .historical-deep-dives, .icon-grid, .menu-container { 
+                flex-direction: column !important; align-items: center !important;
+            }
+        }
 
-  /* Sayfa bölümlerinin (section) karışmaması için zorunlu düzenleme */
-  article, section, header, footer {
-    width: 100%;
-    float: left; /* Flexbox hatası olan eski tarayıcılar için yedek düzen */
-    position: relative;
-    clear: both;
-  }
+        a[href*="cappodoce"] {
+            display: block !important; width: fit-content !important;
+            margin: 20px auto !important; padding: 15px 25px !important;
+            white-space: normal !important;
+        }
 
-  /* Mobilde (Facebook Explorer) bölümlerin arasına otomatik nefes payı bırakır */
-  @media screen and (max-width: 768px) {
-    .content, .post, .page-content {
-      padding: 15px !important;
-    }
-  }
-</style>
+        /* 4. RESİM BÜYÜTME (LIGHTBOX) STİLLERİ */
+        article img:not(.leaflet-marker-icon):not(.leaflet-tile), 
+        .content img:not(.leaflet-marker-icon):not(.leaflet-tile), 
+        p img:not(.leaflet-marker-icon):not(.leaflet-tile) {
+            cursor: zoom-in; transition: 0.3s;
+        }
+
+        #img-lightbox-overlay {
+            display: none; position: fixed; z-index: 1000000;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background-color: rgba(0,0,0,0.9); backdrop-filter: blur(8px);
+            cursor: zoom-out; justify-content: center; align-items: center;
+        }
+
+        #img-lightbox-overlay img {
+            max-width: 90%; max-height: 90%;
+            box-shadow: 0 0 30px rgba(0,0,0,0.5);
+            border: 4px solid #fff; border-radius: 4px;
+            transform: scale(0.9); transition: transform 0.25s ease-out;
+        }
+
+        #img-lightbox-overlay.active { display: flex; }
+        #img-lightbox-overlay.active img { transform: scale(1); }
+    </style>
 </head>
 <body>
+    <!-- Üst Dil Çubuğu -->
     <div class="translate-bar">
       <span class="translate-label">🌍 Select Language:</span>
       <div id="google_translate_element"></div>
     </div>
 
+    <!-- Google Translate Scriptleri -->
     <script type="text/javascript">
       function googleTranslateElementInit() {
-        new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'tr,en,fr,de,it,es,ja', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+        new google.translate.TranslateElement({
+            pageLanguage: 'en', 
+            includedLanguages: 'tr,en,fr,de,it,es,ja', 
+            layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+        }, 'google_translate_element');
       }
     </script>
     <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit&hl=en"></script>
 
+    <!-- Ana İçerik Alanı -->
     <div class="container">
-      {{ content }} <!-- Sayfa içeriği buraya bir kez basılır -->
+      {{ content }}
 
-      <!-- Sadece ana sayfa olmayanlarda butonu göster -->
+      <!-- Ana Sayfa Değilse Geri Dön Butonu -->
       {% if page.url != "/" and page.url != "/index.html" %}
       <div class="back-home-container">
         <a href="{{ site.baseurl }}/" class="back-home-btn">🏠 Back to Dashboard</a>
       </div>
       {% endif %}
     </div>
+
+    <!-- Resim Büyütme (Lightbox) HTML Yapısı -->
+    <div id="img-lightbox-overlay" onclick="closeLightbox()">
+      <img id="enlarged-img" src="" alt="View">
+    </div>
+
+    <!-- Resim Büyütme (Lightbox) JS Kodları -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        const validExtensions = ['.jpg', '.jpeg', '.png', '.webp', '.gif'];
+        const allImages = document.querySelectorAll('img');
+        
+        allImages.forEach(img => {
+          const src = img.getAttribute('src') ? img.getAttribute('src').toLowerCase() : "";
+          const isInsideMap = img.closest('#map') || img.closest('.leaflet-container');
+          const hasImageExtension = validExtensions.some(ext => src.endsWith(ext) || src.includes(ext + "?"));
+
+          if (!isInsideMap && hasImageExtension && !img.closest('a')) {
+            img.addEventListener('click', function() {
+              openLightbox(this.src);
+            });
+          }
+        });
+      });
+
+      function openLightbox(src) {
+        const overlay = document.getElementById('img-lightbox-overlay');
+        const fullImg = document.getElementById('enlarged-img');
+        fullImg.src = src;
+        overlay.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeLightbox() {
+        const overlay = document.getElementById('img-lightbox-overlay');
+        overlay.classList.remove('active');
+        document.body.style.overflow = 'auto';
+      }
+
+      document.addEventListener('keydown', function(e) {
+        if (e.key === "Escape") closeLightbox();
+      });
+    </script>
 </body>
 </html>
-<!-- 1. RESİM BÜYÜTME (LIGHTBOX) STİLLERİ -->
-<style>
-  /* Sayfadaki tüm resimlere 'tıklanabilir' işareti ekler */
-  article img, .content img, p img {
-    cursor: zoom-in;
-    transition: transform 0.3s ease;
-  }
-
-  /* Büyütüldüğünde arkada açılan siyah ekran */
-  #image-overlay {
-    display: none;
-    position: fixed;
-    z-index: 99999;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
-    background-color: rgba(0,0,0,0.9);
-    backdrop-filter: blur(5px);
-    cursor: zoom-out;
-    justify-content: center;
-    align-items: center;
-  }
-
-  /* Büyütülmüş resim stili */
-  #image-overlay img {
-    max-width: 90%;
-    max-height: 90%;
-    box-shadow: 0 0 30px rgba(0,0,0,0.5);
-    border: 3px solid white;
-    border-radius: 5px;
-    transform: scale(0.9);
-    transition: transform 0.3s ease;
-  }
-
-  #image-overlay.active { display: flex; }
-  #image-overlay.active img { transform: scale(1); }
-</style>
-
-<!-- 2. GEREKLİ HTML YAPISI (GİZLİ KUTU) -->
-<div id="image-overlay" onclick="closeImage()">
-  <img id="enlarged-image" src="" alt="Enlarged view">
-</div>
-
-<!-- 3. ÇALIŞTIRICI JAVASCRIPT -->
-<script>
-  // Sayfadaki tüm resimleri bul ve tıklama özelliği ekle
-  document.addEventListener("DOMContentLoaded", function() {
-    const images = document.querySelectorAll('img');
-    
-    images.forEach(img => {
-      // Eğer resim bir butonun veya linkin içinde değilse büyütme ekle
-      if (!img.closest('a')) { 
-        img.addEventListener('click', function() {
-          openImage(this.src);
-        });
-      }
-    });
-  });
-
-  function openImage(src) {
-    const overlay = document.getElementById('image-overlay');
-    const enlargedImg = document.getElementById('enlarged-image');
-    enlargedImg.src = src;
-    overlay.classList.add('active');
-    document.body.style.overflow = 'hidden'; // Arka plan kaymasını engeller
-  }
-
-  function closeImage() {
-    const overlay = document.getElementById('image-overlay');
-    overlay.classList.remove('active');
-    document.body.style.overflow = 'auto'; // Kaydırmayı geri açar
-  }
-
-  // ESC tuşuna basınca kapatma özelliği
-  document.addEventListener('keydown', function(e) {
-    if (e.key === "Escape") closeImage();
-  });
-</script>
