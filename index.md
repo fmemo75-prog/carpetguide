@@ -2,7 +2,11 @@
 layout: default
 title: Global Carpet & Kilim Guide — Fatih Mehmet Canıtez
 ---
-
+<div style="text-align: center; margin: 30px 0;">
+  <a href="./gallery" style="background: #8b0000; color: white !important; padding: 15px 30px; border-radius: 50px; text-decoration: none; font-weight: bold; font-size: 1.2em; box-shadow: 0 5px 15px rgba(139,0,0,0.3);">
+    📸 View My Personal Photo Gallery
+  </a>
+</div>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
 <style>
