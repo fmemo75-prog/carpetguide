@@ -6,7 +6,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ page.title }} | Carpet Guide</title>
-    <style>
+    <style>/* FACEBOOK & MOBİL ÇAKIŞMA ÖNLEYİCİ */
+
+/* 1. Yan yana dizilen kutuların (Grid/Flex) birbirine girmesini engelle */
+.grid, .flex, [style*="display: flex"], [style*="display: grid"] {
+    display: flex !important;
+    flex-wrap: wrap !important; /* Kutular sığmazsa aşağı kaysın (Üst üste binmeyi önler) */
+    gap: 15px !important;      /* Kutular arasında boşluk bırak */
+    justify-content: center !important;
+}
+
+/* 2. İçerideki her bir link/ikon kutusuna nefes aldır */
+.grid > *, .flex > *, [style*="display: flex"] > * {
+    flex: 1 1 140px !important; /* Minimum 140px genişlik ver, sığmazsa alt satıra at */
+    max-width: 100% !important;
+    min-width: 120px !important; /* Yazıların iç içe geçmesini engeller */
+    text-align: center !important;
+    margin-bottom: 10px !important;
+}
+
+/* 3. Facebook Tarayıcısı İçin Özel "Zorlayıcı" Düzenleme */
+@media screen and (max-width: 600px) {
+    /* Başlıkların birbirine girmemesi için satır aralığını aç */
+    h1, h2, h3 {
+        line-height: 1.4 !important;
+        margin-top: 20px !important;
+        margin-bottom: 10px !important;
+        word-wrap: break-word !important;
+    }
+
+    /* Görseldeki o karışan ikonları alt alta dizmeye zorla */
+    .historical-deep-dives, .icon-grid, .menu-container { 
+        flex-direction: column !important; 
+        align-items: center !important;
+    }
+}
+
+/* 4. Butonların (Cappadocia Guide gibi) kaymasını engelle */
+a[href*="cappodoce"] {
+    display: block !important;
+    width: fit-content !important;
+    margin: 20px auto !important;
+    padding: 15px 25px !important;
+    white-space: normal !important; /* Uzun başlıklar butonun dışına taşmasın */
+}
         :root { --primary-red: #8b0000; --carpet-gold: #d4af37; --deep-navy: #1a2a6c; --cream-bg: #fdf5e6; }
         body { background-color: var(--cream-bg); font-family: 'Georgia', serif; line-height: 1.8; color: #2c3e50; margin: 0; }
         .container { max-width: 1000px; margin: 30px auto; background-color: white; padding: 40px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); border-top: 8px solid var(--primary-red); }
