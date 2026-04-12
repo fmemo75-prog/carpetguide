@@ -13,9 +13,10 @@ As a professional polyglot educator, I offer structured language courses:
 
 | Course | Target Audience | Language of Instruction |
 | :--- | :--- | :--- |
-| 🇹🇷 **Turkish** | Foreigners & Travelers | English / French / Italian |
-| 🇫🇷 **French** | All Levels | Turkish / English / Italian |
+| 🇹🇷 **Turkish** | Foreigners & Travelers | English / French / Italian / Spanish |
+| 🇫🇷 **French** | All Levels | Turkish / English / Italian / Spanish |
 | 🇮🇹 **Italian** | Beginners & Intermediate | Turkish / French / English |
+| 🇪🇸 **Spanish** | Beginners & Intermediate | Turkish / French / English |
 
 > **[🚀 Explore Lessons & Resources (Dersleri Keşfedin)](https://fmemo75-prog.github.io/turkce-ders/index.html)**
 
