@@ -97,8 +97,4 @@ title: Global Carpet Guide
 <div style="text-align: center; margin-top: 30px;">
   <a href="./me" style="color: #7f8c8d; font-size: 14px; text-decoration: none; border: 1px dashed #ccc; padding: 5px 15px; border-radius: 20px;">👤 Curator Profile & French Lessons</a>
 </div>
-<div style="text-align: center; margin: 20px 0;">
-    <a href="/cappodoce/#map" style="background: #8b0000; color: white !important; padding: 15px 30px; border-radius: 50px; text-decoration: none; font-weight: bold; font-size: 18px; box-shadow: 0 4px 15px rgba(139,0,0,0.3); display: inline-block;">
-        🗺️ Click for Interactive Map
-    </a>
-</div>
+
