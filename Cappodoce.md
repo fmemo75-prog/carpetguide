@@ -3,6 +3,25 @@ layout: default
 title: Cappadocia Complete Guide — Fatih Mehmet Canıtez
 ---
 
+# 🌄 Cappadocia Discovery Guide / Guide de Découverte
+
+Welcome! Please explore our comprehensive guide to the valleys, museums, and history of Cappadocia.
+
+**Note:** The guide is in English. Please use the **"Select Language"** menu at the top of the page to read in French, Italian, Spanish, or Turkish.
+
+---
+
+### 🚀 [CLICK HERE: Where to Go & What to See in Cappadocia](./en/cappadocia-guide)
+
+---
+
+### 🏠 Quick Navigation
+*   [🧶 Return to Rug & Kilim Guide](./en/guide)
+*   [👤 About Fatih (Curator Profile)](./me)
+*   [🏠 Back to Home Page](./README)
+
+---
+<p align="center"><i>"Explore the timeless beauty of the valleys."</i></p>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 
