@@ -2,7 +2,9 @@
 layout: default
 title: Global Carpet Guide
 ---
-
+<a href="/carpetguide/Cappodoce.html#interactive-map" style="display: inline-block; background: #8b0000; color: white !important; padding: 12px 25px; border-radius: 50px; text-decoration: none; font-weight: bold;">
+    🗺️ View Interactive Map
+</a>
 <!-- Mobil Uyumluluk İçin Küçük Bir Stil Dokunuşu -->
 <style>
   .header-table { width: 100%; border-collapse: collapse; }
@@ -70,6 +72,12 @@ title: Global Carpet Guide
   </tr>
 </table>
 
+<div style="text-align: center; margin-top: 20px;">
+  <a href="./Cappodoce" style="font-size: 1.5em; font-weight: bold; color: #8b0000; text-decoration: none; border: 2px solid #8b0000; padding: 10px 20px; border-radius: 10px;">
+    🌄 Explore My Cappadocia Guide (Insider Tips)
+  </a>
+</div>
+
 <!-- LİNK BÖLÜMÜ 2: KİLİM VE DOKUMA TÜRLERİ -->
 <h3 style="text-align: center; color: #2e8b57; margin-top: 20px; font-family: 'Georgia', serif;">📐 Kilim & Flat-Weave Masterpieces</h3>
 <table border="0" style="width:100%; text-align: center; table-layout: fixed;">
@@ -80,7 +88,11 @@ title: Global Carpet Guide
     <td style="padding:10px;"><a href="./en/zili" style="text-decoration:none; color:#2e8b57; font-weight:bold;">🏗️ Zili Tech</a></td>
   </tr>
 </table>
+<div style="text-align: center; margin: 20px 0;">
+ <a href="/carpetguide/Cappodoce.html#interactive-map" style="display: inline-block; background: #8b0000; color: white !important; padding: 12px 25px; border-radius: 50px; text-decoration: none; font-weight: bold;">
+    🗺️ View Interactive Map
 
 <div style="text-align: center; margin-top: 30px;">
   <a href="./me" style="color: #7f8c8d; font-size: 14px; text-decoration: none; border: 1px dashed #ccc; padding: 5px 15px; border-radius: 20px;">👤 Curator Profile & French Lessons</a>
 </div>
+
