@@ -16,7 +16,43 @@
         .back-home-container { margin-top: 50px; text-align: center; border-top: 1px solid #eee; padding-top: 20px; }
         .back-home-btn { display: inline-block; padding: 12px 30px; background: var(--primary-red); color: white !important; text-decoration: none; border-radius: 50px; font-weight: bold; }
         img { max-width: 100%; height: auto; border-radius: 8px; }
-    </style>
+    </style><style>
+  /* FACEBOOK & MOBİL YERLEŞİM DÜZELTME */
+  * {
+    box-sizing: border-box; /* Bölümlerin genişliğini sabitler, taşmayı önler */
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  html, body {
+    overflow-x: hidden; /* Sağa kaymayı kesin olarak engeller */
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    -webkit-text-size-adjust: 100%; /* Facebook'un fontları kafasına göre büyütmesini engeller */
+  }
+
+  /* Görsellerin ve Videoların kutularından taşmasını engeller */
+  img, video, audio, iframe {
+    max-width: 100% !important;
+    height: auto !important;
+    display: block;
+  }
+
+  /* Sayfa bölümlerinin (section) karışmaması için zorunlu düzenleme */
+  article, section, header, footer {
+    width: 100%;
+    float: left; /* Flexbox hatası olan eski tarayıcılar için yedek düzen */
+    position: relative;
+    clear: both;
+  }
+
+  /* Mobilde (Facebook Explorer) bölümlerin arasına otomatik nefes payı bırakır */
+  @media screen and (max-width: 768px) {
+    .content, .post, .page-content {
+      padding: 15px !important;
+    }
+  }
+</style>
 </head>
 <body>
     <div class="translate-bar">
