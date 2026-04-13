@@ -39,20 +39,11 @@ Select a specialized collection to explore the cultural heritage of Anatolia.
   </a>
 <!-- Mevcut album-container içine ekle -->
   
-  <!-- ALBÜM 3: AİLE VE HATIRALAR -->
-  <a href="./gallery-family" class="album-card">
-    <img src="{{ site.baseurl }}/<!-- Mevcut album-container içine ekle -->
-  
-  <!-- ALBÜM 3: AİLE VE HATIRALAR -->
+   <!-- ALBÜM 3: AİLE VE HATIRALAR -->
   <a href="./gallery-family" class="album-card">
     <img src="{{ site.baseurl }}/images/aile-1.jpg" class="album-cover" alt="Family Collection">
     <div class="album-body">
       <div class="album-title">👨‍👩‍👧‍👦 Family & Memories</div>
       <div class="album-desc">Personal captures with family, friends, and dear colleagues.</div>
     </div>
-  </a>" class="album-cover" alt="Family Collection">
-    <div class="album-body">
-      <div class="album-title">👨‍👩‍👧‍👦 Family & Memories</div>
-      <div class="album-desc">Personal captures with family, friends, and dear colleagues.</div>
-    </div>
-  </a>
+  
