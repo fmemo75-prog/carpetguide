@@ -206,3 +206,54 @@
     </script>
 </body>
 </html>
+---
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google Analytics (GA4) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QD3P6MVTKQ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX'); // BURAYA KENDİ KODUNU YAPIŞTIR
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} | Carpet Guide</title>
+    <style>
+        :root { --primary-red: #8b0000; --deep-navy: #1a2a6c; --cream-bg: #fdf5e6; }
+        body { background-color: var(--cream-bg); font-family: 'Georgia', serif; margin: 0; padding: 0; overflow-x: hidden; }
+        header { background: var(--deep-navy); padding: 10px 20px; display: flex; justify-content: space-between; align-items: center; min-height: 60px; }
+        .header-title { color: white; font-size: 1.2rem; font-weight: bold; text-decoration: none; }
+        #google_translate_element { transform: scale(0.9); transform-origin: right; }
+        .container { max-width: 1000px; margin: 20px auto; background: white; padding: 20px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); border-top: 6px solid var(--primary-red); box-sizing: border-box; }
+        img { max-width: 100%; height: auto; border-radius: 8px; }
+        @media (max-width: 600px) { .container { margin: 10px; padding: 15px; width: calc(100% - 20px); } header { flex-direction: column; text-align: center; gap: 10px; } }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="{{ site.baseurl }}/" class="header-title">🌍 Global Carpet Guide</a>
+        <div id="google_translate_element"></div>
+    </header>
+
+    <div class="container">
+      {{ content }}
+      {% if page.url != "/" and page.url != "/index.html" %}
+        <div style="text-align:center; margin-top:30px; border-top:1px solid #eee; padding-top:20px;">
+            <a href="{{ site.baseurl }}/" style="background:var(--primary-red); color:white; padding:10px 20px; text-decoration:none; border-radius:50px; font-weight:bold;">🏠 Back to Home</a>
+        </div>
+      {% endif %}
+    </div>
+
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+      }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>
