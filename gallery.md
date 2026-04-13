@@ -29,13 +29,11 @@ Select a specialized collection to explore the cultural heritage of Anatolia.
     </div>
   </a>
 
-  <!-- ALBÜM 2: MANZARALAR (Gelecekte dolacak) -->
-  <a href="#" class="album-card" style="opacity: 0.7; cursor: not-allowed;">
+ <!-- ALBÜM 2: MANZARALAR (ARTIK AKTİF) -->
+  <a href="./gallery-landscapes" class="album-card">
     <img src="{{ site.baseurl }}/images/cappadocia-balloons.jpg" class="album-cover" alt="Landscapes">
     <div class="album-body">
       <div class="album-title">🌄 Landscapes & Valleys</div>
-      <div class="album-desc">Coming soon: Captures from the heart of Cappadocia.</div>
+      <div class="album-desc">Magical sunrises, fairy chimneys, and secret trails through my lens.</div>
     </div>
   </a>
-
-</div>
