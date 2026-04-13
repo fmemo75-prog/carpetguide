@@ -1,37 +1,41 @@
 ---
 layout: default
-title: Cappadocia Collections
+title: Digital Collections
 ---
 
 <style>
-  .album-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); grid-gap: 30px; margin-top: 30px; }
-  .album-card { background: #fff; border-radius: 15px; overflow: hidden; box-shadow: 0 10px 20px rgba(0,0,0,0.1); border-bottom: 5px solid #8b0000; text-decoration: none; color: inherit; transition: 0.3s; }
-  .album-card:hover { transform: translateY(-10px); }
-  .album-cover { width: 100%; height: 200px; object-fit: cover; }
-  .album-title { padding: 20px; text-align: center; font-weight: bold; font-size: 1.2em; color: #8b0000; }
+  .album-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); grid-gap: 30px; margin-top: 30px; }
+  .album-card { background: #fff; border-radius: 15px; overflow: hidden; box-shadow: 0 10px 25px rgba(0,0,0,0.1); border-bottom: 6px solid #8b0000; text-decoration: none; color: inherit; transition: 0.3s; }
+  .album-card:hover { transform: translateY(-10px); box-shadow: 0 15px 35px rgba(0,0,0,0.2); }
+  .album-cover { width: 100%; height: 220px; object-fit: cover; }
+  .album-body { padding: 20px; text-align: center; }
+  .album-title { font-size: 1.4em; color: #8b0000; font-weight: bold; margin-bottom: 10px; }
+  .album-desc { font-size: 0.95em; color: #666; }
 </style>
 
-# 📸 Cappadocia & Carpet Collections
-**Curated by Fatih Mehmet Canıtez**
+# 📸 Cappadocia & Carpet Digital Collections
+**A Professional Archive by Fatih Mehmet Canıtez**
 
-Please select a collection to explore the details through my lens.
+Select a specialized collection to explore the cultural heritage of Anatolia.
 
-<div class="album-grid">
-  <!-- ALBÜM 1 -->
-  <a href="./gallery-landscapes" class="album-card">
-    <img src="{{ site.baseurl }}/images/cappadocia-balloons.jpg" class="album-cover">
-    <div class="album-title">🌄 The Spirit of Valleys (Landscapes)</div>
-  </a>
-
-  <!-- ALBÜM 2 -->
+<div class="album-container">
+  
+  <!-- ALBÜM 1: HALILAR -->
   <a href="./gallery-carpets" class="album-card">
-    <img src="{{ site.baseurl }}/images/loom.jpg" class="album-cover">
-    <div class="album-title">🧶 The Art of Weaving (Carpets)</div>
+    <img src="{{ site.baseurl }}/images/hali-10.jpg" class="album-cover" alt="Carpet Collection">
+    <div class="album-body">
+      <div class="album-title">🧶 Carpet & Weaving Art</div>
+      <div class="album-desc">Technical details, silk masterpieces, and traditional motifs.</div>
+    </div>
   </a>
 
-  <!-- ALBÜM 3 -->
-  <a href="./gallery-people" class="album-card">
-    <img src="{{ site.baseurl }}/images/bilo.jpg" class="album-cover">
-    <div class="album-title">👤 Locals & Master Craftsmen</div>
+  <!-- ALBÜM 2: MANZARALAR (Gelecekte dolacak) -->
+  <a href="#" class="album-card" style="opacity: 0.7; cursor: not-allowed;">
+    <img src="{{ site.baseurl }}/images/cappadocia-balloons.jpg" class="album-cover" alt="Landscapes">
+    <div class="album-body">
+      <div class="album-title">🌄 Landscapes & Valleys</div>
+      <div class="album-desc">Coming soon: Captures from the heart of Cappadocia.</div>
+    </div>
   </a>
+
 </div>
