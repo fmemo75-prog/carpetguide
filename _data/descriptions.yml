@@ -4,22 +4,4 @@ hali-bilo.jpg: 'A cherished memory with my dear friend Bulent from Avanos. A 3rd
 
 hali-10.jpg: 'Hand-woven recreation of Leonardo da Vinci’s Salvator Mundi. Pure Silk on Silk, displayed at the Anatolian Art Museum in Goreme. <br><a href="./en/handknotted" style="color: #8b0000; font-weight: bold;">Learn about Silk on Silk</a>'
 
-## 🐑 Tülü Rug Details
-tulu:
-  title: "Authentic Anatolian Tülü"
-  subtitle: "The Shaggy Soul of Anatolia"
-  origin: "Central Anatolia (Konya / Karapınar)"
-  material: "100% extra-long wool pile for primitive warmth"
-  dyes: "100% natural root dyes (Madder & Indigo)"
-  aura: "A minimalist, expressionist masterpiece that bridges nomadic necessity and modern art."
-  image_path: "/images/hali-20220713_115740.jpg"
-  history: "Traditionally used by shepherds as portable beds and insulators against harsh winters."
-
-# 🎨 Kilim Details (Örnek olarak ekledim, genişletebilirsin)
-kilim:
-  title: "Nomadic Kilim"
-  subtitle: "Woven Poems of the Steppe"
-  origin: "Various Anatolian Regions"
-  material: "Flat-woven wool"
-  dyes: "Natural pigments"
-  aura: "Geometric storytelling through 9000-year-old symbols."
+hali-20220713_115826.jpg: "An authentic <b>Tülü rug</b>, a nomadic masterpiece from the Karapınar region of Central Anatolia. The term 'Tülü' refers to its distinctive long and lustrous wool pile, which provides a fur-like texture. Traditionally crafted by Yoruk nomads for warmth and insulation during harsh winters, these rugs serve as both artistic floor coverings and cozy bedding. This specific piece showcases vibrant <b>natural dyes (kök boya)</b>, demonstrating the timeless brilliance of traditional Anatolian pigments."
