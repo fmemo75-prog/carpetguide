@@ -3,3 +3,15 @@ hali-8.jpg: 'For professional photography at Galerie Ikman, drone shots, and exp
 hali-bilo.jpg: 'A cherished memory with my dear friend Bulent from Avanos. A 3rd generation carpet expert at Kervan Carpet in Goreme. <br><a href="https://wa.me/905367602165" target="_blank" style="color: #25D366; font-weight: bold;">🟢 Contact via WhatsApp</a>'
 
 hali-10.jpg: 'Hand-woven recreation of Leonardo da Vinci’s Salvator Mundi. Pure Silk on Silk, displayed at the Anatolian Art Museum in Goreme. <br><a href="./en/handknotted" style="color: #8b0000; font-weight: bold;">Learn about Silk on Silk</a>'
+
+# 🐑 Tülü Rug Details
+tulu:
+  title: "Authentic Anatolian Tülü"
+  subtitle: "The Shaggy Soul of Anatolia"
+  origin: "Central Anatolia (Konya / Karapınar)"
+  material: "100% extra-long wool pile for primitive warmth"
+  dyes: "100% natural root dyes (Madder & Indigo)"
+  aura: "A minimalist, expressionist masterpiece that bridges nomadic necessity and modern art."
+  image_path: "/images/hali-20220713_115740.jpg"
+  history: "Traditionally used by shepherds as portable beds and insulators against harsh winters."
+
