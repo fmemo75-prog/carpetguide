@@ -1,43 +1,78 @@
-# 1. GRUP: KADİM DOSTLAR (Bülent Bey)
+# 1. BÜLENT GÜLER (BİLO) - EN ÜSTTE
 - file: "hali-bilo.jpg"
-  text: "3rd generation expert <b>Bülent Güler</b> at Kervan Carpet. A true master and dear friend. <br><a href='https://wa.me/905367602165' target='_blank' style='color:#25D366; font-weight:bold;'>🟢 WhatsApp Bülent</a>"
+  tag: "Bülent Güler"
+  type: "bilo"
+  text: "3rd generation expert <b>Bülent Güler</b> at Kervan Carpet. A true master and dear friend. His 5.0 Google rating is a testament to his honesty. <br><a href='https://wa.me/905367602165' target='_blank' style='color:#25D366; font-weight:bold;'>🟢 WhatsApp Bülent</a>"
 
-# 2. GRUP: KÜRATOR ANALİZLERİ & HİBRİT ÇALIŞMALAR (b, bg, ba)
-- file: "hali-11b.jpg"
-  text: "<b>Curator Analysis:</b> Technical study of Elibelinde and Pıtrak motifs. Ancient symbols of fertility."
-- file: "hali-20220713_115826b.jpg"
-  text: "<b>Curator Analysis:</b> Authentic <b>Tülü rug</b>. Note the long wool pile used for winter insulation."
-- file: "hali-20220713_132921b.jpg"
-  text: "<b>Curator Analysis:</b> <b>Sumak technique</b> featuring the 'Water Way' pattern. Technical research."
-- file: "hali-7bg.jpg"
-  text: "<b>Collaborative Research:</b> Curator Fatih Mehmet and Bilal Hoca reviewing rare pieces at Galerie Ikman."
-- file: "hali-12bg.jpg"
-  text: "<b>Gallery Session:</b> Expert discussion on traditional color palettes in Göreme."
-- file: "hali-9ba.jpg"
-  text: "<b>Museum Research:</b> Curator at Anatolian Art Museum, analyzing 19th-century weaving patterns."
+# 2. KÜRATÖR ANALİZLERİ (Senin açıklamaların ve içinde 'b' olanlar)
+- file: "hali-20220713_132921.jpg"
+  tag: "Curator Analysis"
+  type: "b"
+  text: "<b>Sumak (Soumak) technique</b> featuring the <b>Su Yolu</b> (Water Way) pattern. Note the embossed texture created by wrapping decorative threads around the warp. Technical research by Fatih Mehmet Canıtez."
+
+- file: "hali-11.jpg"
+  tag: "Curator Analysis"
+  type: "b"
+  text: "A technical study of the <b>Elibelinde</b> (Hands-on-Hips) and <b>Pıtrak</b> (Burdock) motifs. These ancient symbols represent fertility and protection. Private collection analysis."
+
 - file: "hali-b506047632_10162745708087094_8074213994208374708_n.jpg"
-  text: "<b>Field Study:</b> Deep analysis of nomadic carpet structures and tribal stamps."
+  tag: "Curator Fieldwork"
+  type: "b"
+  text: "Investigating rare nomadic weaving structures. Every knot tells a story of the Anatolian plateau and tribal migration."
+
 - file: "hali-IMG_20170628_190520b.jpg"
-  text: "<b>Curator Selection:</b> Vivid example of traditional <b>kök boya</b> (natural dyes)."
+  tag: "Curator Selection"
+  type: "b"
+  text: "Vivid example of traditional <b>kök boya</b> (natural dyes). Field study on the transition of organic colors over decades."
 
-# 3. GRUP: GALERİ İKMAN (g)
-- file: "hali-8g.jpg"
-  text: "<b>Galerie Ikman:</b> Specialized carpet consultancy and professional drone photography by <b>Mr. Bilal</b>."
+# 3. HİBRİT VE GALERİ İKMAN (İçinde 'g' olanlar)
+- file: "hali-7bg.jpg"
+  tag: "Curator & Ikman"
+  type: "bg"
+  text: "<b>Collaborative Research:</b> Fatih Mehmet and Bilal Hoca at Galerie Ikman reviewing rare pieces in the heart of Göreme."
+
+- file: "hali-12bg.jpg"
+  tag: "Curator & Ikman"
+  type: "bg"
+  text: "<b>Gallery Session:</b> Reviewing the vibrant color palette and high-quality wool selection at Bilal Hoca's gallery."
+
+- file: "hali-8.jpg"
+  tag: "Galerie Ikman"
+  type: "g"
+  text: "<b>Mr. Bilal</b> at Galerie Ikman. Expert advice on antique and new carpets. Join his 20.8k followers for drone photography! <br><a href='https://www.instagram.com/galerieikman/' target='_blank' style='color:#E1306C; font-weight:bold;'>📸 Instagram Ikman</a>"
+
 - file: "hali-g20220713_115826.jpg"
-  text: "<b>Gallery Highlights:</b> A fine selection showing the geometric mastery of Anatolian kilims."
+  tag: "Galerie Ikman"
+  type: "g"
+  text: "An authentic <b>Tülü rug</b> from Karapınar. 'Tülü' means hairy, referring to the long wool pile used by nomads for winter insulation."
 
-# 4. GRUP: ANATOLIAN ART MUSEUM (a)
-- file: "hali-13a.jpg"
-  text: "<b>Museum Masterpiece:</b> Pure Silk on Silk Mihrab design. Peak of Hereke tradition in Goreme."
-- file: "hali-10a.jpg"
-  text: "<b>Museum Piece:</b> Leonardo da Vinci’s <b>Salvator Mundi</b> recreated in pure silk."
+# 4. ANATOLIAN ART MUSEUM (Müze parçaları ve 'a' olanlar)
+- file: "hali-13.jpg"
+  tag: "Museum Piece"
+  type: "a"
+  text: "<b>Pure Silk on Silk</b> masterpiece featuring a classic <b>Mihrab</b> design. Exhibited at the <b>Anatolian Art Museum in Göreme</b>."
+
+- file: "hali-10.jpg"
+  tag: "Museum Piece"
+  type: "a"
+  text: "Hand-woven <b>Silk on Silk</b> recreation of Leonardo da Vinci’s <b>Salvator Mundi</b>. Exhibited at the Anatolian Art Museum."
+
 - file: "haliba-16.jpg"
-  text: "<b>Museum Selection:</b> Rare framed silk work from the 2025 high-collection."
-- file: "hali-a540983234_10163136243957094_8592199730672497828_nba.jpg"
-  text: "<b>Imperial Archive:</b> A study on the surgical precision of Ottoman palace-style weaving."
+  tag: "Curator & Museum"
+  type: "ba"
+  text: "A rare museum highlight from the 2025 silk collection. This piece represents the peak of high-density imperial knotting."
 
-# 5. GRUP: DİĞERLERİ
+- file: "hali-a540983234_10163136243957094_8592199730672497828_nba.jpg"
+  tag: "Museum Archive"
+  type: "ba"
+  text: "Technical study of imperial Ottoman palace-style patterns at the museum archive. Surgical precision in every loop."
+
+# 5. GERİYE KALANLAR (Açıklamasızlar)
 - file: "hali-2.jpg"
+  tag: "Collection"
+  type: "none"
   text: "Traditional hand-knotted Anatolian masterpiece."
 - file: "hali-3.jpg"
-  text: "Wool on cotton foundation rug."
+  tag: "Collection"
+  type: "none"
+  text: "Fine wool rug with geometric motifs."
