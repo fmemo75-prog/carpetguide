@@ -1,13 +1,63 @@
-hali-8.jpg: 'For professional photography at Galerie Ikman, drone shots, and expert advice on carpets, you can fully trust Mr. Bilal (English Teacher). <br><a href="https://www.instagram.com/galerieikman/" target="_blank" style="color: #E1306C; font-weight: bold;">Join his 20.8k followers on Instagram!</a>'
+# =============================================================
+# 1. GRUP: KADİM DOSTLAR & GÜVENİLİR DURAKLAR (Bülent Güler)
+# =============================================================
+- file: "hali-bilo.jpg"
+  text: "3rd generation expert <b>Bülent Güler</b> at <b>Kervan Carpet</b>. A true master of the craft and a dear friend. His 5.0 Google rating is a testament to his honesty. <br><a href='https://wa.me/905367602165' target='_blank' style='color:#25D366; font-weight:bold;'>🟢 Contact Bülent via WhatsApp</a>"
 
-hali-bilo.jpg: 'A cherished memory with my dear friend Bulent from Avanos. A 3rd generation carpet expert at Kervan Carpet in Goreme. <br><a href="https://wa.me/905367602165" target="_blank" style="color: #25D366; font-weight: bold;">🟢 Contact via WhatsApp</a>'
+# =============================================================
+# 2. GRUP: KÜRATÖR ANALİZLERİ (Fatih Mehmet Canıtez - b)
+# =============================================================
+- file: "hali-11b.jpg"
+  text: "<b>Curator Analysis:</b> A close-up of a Central Anatolian Kilim showcasing the <b>Elibelinde</b> and <b>Pıtrak</b> motifs. These ancient symbols represent fertility and protection against the evil eye."
 
-hali-10.jpg: 'Hand-woven recreation of Leonardo da Vinci’s Salvator Mundi. Pure Silk on Silk, displayed at the Anatolian Art Museum in Goreme. <br><a href="./en/handknotted" style="color: #8b0000; font-weight: bold;">Learn about Silk on Silk</a>'
+- file: "hali-20220713_115826b.jpg"
+  text: "<b>Curator Analysis:</b> Authentic <b>Tülü rug</b> from Karapınar. 'Tülü' means hairy, referring to the long wool pile used by nomads for warmth and insulation during harsh winters."
 
-hali-20220713_115826.jpg: 'An authentic <b>Tülü rug</b>, a nomadic masterpiece from the Karapınar region of Central Anatolia. The term Tülü refers to its distinctive long and lustrous wool pile. Traditionally crafted by Yoruk nomads for warmth and insulation. This specific piece showcases vibrant <b>natural dyes (kök boya)</b>.'
+- file: "hali-20220713_132921b.jpg"
+  text: "<b>Curator Analysis:</b> Stunning <b>Sumak (Soumak)</b> technique featuring the <b>Su Yolu</b> (Water Way) pattern. Note the embossed texture created by wrapping threads around the warp."
 
-hali-11.jpg: 'A close-up of a Central Anatolian Kilim showcasing the <b>Elibelinde</b> (Hands-on-Hips) and <b>Pıtrak</b> (Burdock) motifs. These ancient symbols represent fertility and protection against the evil eye. The vibrant <b>kök boya</b> colors and hand-spun wool reflect authentic nomadic heritage. <br><a href="./en/kilim" style="color: #8b0000; font-weight: bold;">Read the Full Kilim Guide</a>'
+- file: "hali-b506047632_10162745708087094_8074213994208374708_n.jpg"
+  text: "<b>Curator Fieldwork:</b> Investigating rare nomadic weaving structures. Every knot tells a story of the Anatolian plateau."
 
-hali-20220713_132921.jpg: 'A stunning example of the <b>Sumak (Soumak)</b> technique, featuring a dynamic <b>Su Yolu</b> (Water Way) or Chevron pattern. The Sumak technique involves wrapping decorative threads around the warp, creating a rich, embossed texture. <br><a href="./en/sumak" style="color: #8b0000; font-weight: bold;">Learn the Sumak Weaving Technique</a>'
+- file: "hali-IMG_20170628_190520b.jpg"
+  text: "<b>Curator Selection:</b> Detailed look at hand-spun wool and the vibrant results of traditional <b>kök boya</b> (natural dyes)."
 
-hali-13.jpg: 'A magnificent <b>Pure Silk on Silk</b> masterpiece featuring a classic <b>Mihrab</b> design and elegant calligraphy. This framed treasure is exhibited at the <b>Anatolian Art Museum in Göreme</b>, representing the pinnacle of the "Palace Style" in Turkish weaving. It showcases the incredible knot density and golden luster characteristic of the finest <b>Hereke</b> tradition. <br><a href="./en/hereke" style="color: #8b0000; font-weight: bold;">Learn more about Imperial Silk Carpets</a>'
+# =============================================================
+# 3. GRUP: GALERİ İKMAN & BİLAL HOCA (g)
+# =============================================================
+- file: "hali-8g.jpg"
+  text: "<b>Mr. Bilal</b> at the legendary <b>Galerie Ikman</b>. You can trust him for professional drone photography and expert advice on both antique and new carpets. <br><a href='https://www.instagram.com/galerieikman/' target='_blank' style='color:#E1306C; font-weight:bold;'>📸 Join his 20.8k followers</a>"
+
+- file: "hali-7bg.jpg"
+  text: "A special moment at Galerie Ikman. Where academic research meets local expertise in the heart of Göreme."
+
+- file: "hali-12bg.jpg"
+  text: "Reviewing a unique selection at Bilal Hoca's gallery. These pieces represent the vibrant color palette of Cappadocia."
+
+- file: "hali-g20220713_115826.jpg"
+  text: "Exquisite craftsmanship from the Galerie Ikman collection. A perfect example of high-density knotting."
+
+# =============================================================
+# 4. GRUP: ANATOLIAN ART MUSEUM (a)
+# =============================================================
+- file: "hali-13a.jpg"
+  text: "<b>Museum Piece:</b> A <b>Pure Silk on Silk</b> masterpiece with a classic <b>Mihrab</b> design. Exhibited at the <b>Anatolian Art Museum</b> in Göreme. A peak of Hereke style."
+
+- file: "hali-10a.jpg"
+  text: "<b>Museum Piece:</b> Hand-woven <b>Silk on Silk</b> recreation of Leonardo da Vinci’s <b>Salvator Mundi</b>. Where Renaissance genius meets Anatolian weaving excellence."
+
+- file: "haliba-16.jpg"
+  text: "<b>Museum Highlight:</b> A rare silk work from the 2025 collection. The interplay of light on the silk fibers is truly museum-worthy."
+
+- file: "hali-a540983234_10163136243957094_8592199730672497828_nba.jpg"
+  text: "<b>Museum Archive:</b> A technical study of imperial patterns. This piece demonstrates the surgical precision of late Ottoman weaving."
+
+# =============================================================
+# 5. GRUP: DİĞERLERİ (Sırasıyla devam eder)
+# =============================================================
+- file: "hali-2.jpg"
+  text: "Traditional Anatolian rug featuring earth-toned natural dyes."
+- file: "hali-3.jpg"
+  text: "Wool-on-cotton foundation rug, ideal for classic interior decor."
+- file: "hali-4.jpg"
+  text: "Hand-knotted masterpiece focusing on geometric symmetry."
