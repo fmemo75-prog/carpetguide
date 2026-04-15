@@ -97,17 +97,7 @@
   map: "https://www.google.com/maps/search/?api=1&query=Goreme+Cappadocia"
   text: "Traditional hand-knotted Anatolian masterpiece from our archive."
 
-- file: "hali-3.jpg"
-  tag: "Collection"
-  type: "none"
-  map: "https://www.google.com/maps/search/?api=1&query=Goreme+Cappadocia"
-  text: "Geometric pattern study. Fine wool on cotton foundation."
-
-- file: "hali-4.jpg"
-  tag: "Collection"
-  type: "none"
-  map: "https://www.google.com/maps/search/?api=1&query=Goreme+Cappadocia"
-  text: "Authentic nomadic design featuring tribal symbols."
+- 
 
 - file: "hali-5.jpg"
   tag: "Collection"
