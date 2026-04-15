@@ -1,178 +1,160 @@
-# ==========================================
-# 1. BÖLÜM: BÜLENT GÜLER (BİLO)
-# ==========================================
+# 1. BÜLENT GÜLER (BİLO) - EN ÖNCELİKLİ
 - file: "hali-bilo.jpg"
   tag: "Bülent Güler"
   type: "bilo"
   map: "https://www.google.com/maps/search/?api=1&query=Kervan+Carpet+Goreme"
-  text: "3rd generation expert <b>Bülent Güler</b> at Kervan Carpet. A true master of the craft and a dear friend. <br><a href='https://wa.me/905367602165' target='_blank' style='color:#25D366; font-weight:bold;'>🟢 Contact via WhatsApp</a>"
+  text: "3rd generation expert <b>Bülent Güler</b> at Kervan Carpet. A true master and dear friend. <br><a href='https://wa.me/905367602165' target='_blank' style='color:#25D366; font-weight:bold;'>🟢 WhatsApp Bülent</a>"
 
-# ==========================================
-# 2. BÖLÜM: KÜRATÖR ANALİZLERİ (SENİN ÖZEL KOLEKSİYONUN)
-# ==========================================
+# 2. ÖNEMLİ TEKNİK ANALİZLER (Tülü, Sumak, Salvatore, Bilal, Motif)
+- file: "hali-g20220713_115826.jpg"
+  tag: "Galerie Ikman / Tülü"
+  type: "g"
+  map: "https://www.google.com/maps/search/?api=1&query=Galerie+Ikman+Goreme"
+  text: "<b>Tülü Rug Analysis:</b> Long wool pile used by nomads for winter insulation. From Galerie Ikman collection."
+
 - file: "hali-20220713_132921.jpg"
   tag: "Curator Analysis"
   type: "b"
   map: "https://www.google.com/maps/search/?api=1&query=Goreme+Cappadocia"
-  text: "<b>Sumak technique</b> featuring the 'Water Way' pattern. Note the embossed texture created by wrapping threads around the warp."
+  text: "<b>Sumak Technique:</b> Featuring the 'Water Way' pattern. Note the embossed texture created by wrapping threads around the warp."
 
 - file: "hali-11.jpg"
   tag: "Curator Analysis"
   type: "b"
   map: "https://www.google.com/maps/search/?api=1&query=Goreme+Cappadocia"
-  text: "Technical study of <b>Elibelinde</b> and <b>Pıtrak</b> motifs. Ancient symbols representing fertility and protection."
-
-- file: "hali-b506047632_10162745708087094_8074213994208374708_n.jpg"
-  tag: "Curator Fieldwork"
-  type: "b"
-  map: "https://www.google.com/maps/search/?api=1&query=Goreme+Cappadocia"
-  text: "Investigating rare nomadic weaving structures. Every knot tells a story of the Anatolian plateau."
-
-- file: "hali-IMG_20170628_190520b.jpg"
-  tag: "Curator Selection"
-  type: "b"
-  map: "https://www.google.com/maps/search/?api=1&query=Goreme+Cappadocia"
-  text: "Vivid example of traditional <b>kök boya</b> (natural dyes). Field study on organic color aging."
-
-# ==========================================
-# 3. BÖLÜM: GALERİ İKMAN & BİLAL HOCA (g)
-# ==========================================
-- file: "hali-7bg.jpg"
-  tag: "Curator & Ikman"
-  type: "bg"
-  map: "https://www.google.com/maps/search/?api=1&query=Galerie+Ikman+Goreme"
-  text: "<b>Collaborative Research:</b> Fatih Mehmet and Bilal Hoca reviewing rare pieces in Göreme."
-
-- file: "hali-12bg.jpg"
-  tag: "Curator & Ikman"
-  type: "bg"
-  map: "https://www.google.com/maps/search/?api=1&query=Galerie+Ikman+Goreme"
-  text: "<b>Gallery Session:</b> Reviewing the vibrant color palette and high-quality wool at Galerie Ikman."
-
-- file: "hali-8.jpg"
-  tag: "Galerie Ikman"
-  type: "g"
-  map: "https://www.google.com/maps/search/?api=1&query=Galerie+Ikman+Goreme"
-  text: "<b>Mr. Bilal</b> at Galerie Ikman. Expert advice on antique and new carpets. <br><a href='https://www.instagram.com/galerieikman/' target='_blank' style='color:#E1306C; font-weight:bold;'>📸 Instagram Ikman</a>"
-
-- file: "hali-g20220713_115826.jpg"
-  tag: "Galerie Ikman"
-  type: "g"
-  map: "https://www.google.com/maps/search/?api=1&query=Galerie+Ikman+Goreme"
-  text: "Exquisite craftsmanship from the Galerie Ikman collection. A perfect example of high-density knotting."
-
-# ==========================================
-# 4. BÖLÜM: ANATOLIAN ART MUSEUM (a)
-# ==========================================
-- file: "hali-13.jpg"
-  tag: "Museum Piece"
-  type: "a"
-  map: "https://www.google.com/maps/search/?api=1&query=Anatolian+Art+Museum+Goreme"
-  text: "<b>Pure Silk on Silk</b> masterpiece with Mihrab design. Exhibited at the Anatolian Art Museum."
+  text: "Technical study of <b>Elibelinde</b> and <b>Pıtrak</b> motifs. Symbols of fertility and protection."
 
 - file: "hali-10.jpg"
   tag: "Museum Piece"
   type: "a"
   map: "https://www.google.com/maps/search/?api=1&query=Anatolian+Art+Museum+Goreme"
-  text: "Leonardo da Vinci’s <b>Salvator Mundi</b> in Silk. A masterpiece exhibited at the museum."
+  text: "Leonardo da Vinci’s <b>Salvator Mundi</b> recreated in pure silk. Anatolian Art Museum."
+
+- file: "hali-13.jpg"
+  tag: "Museum Piece"
+  type: "a"
+  map: "https://www.google.com/maps/search/?api=1&query=Anatolian+Art+Museum+Goreme"
+  text: "<b>Pure Silk on Silk</b> masterpiece with Mihrab design. Imperial Hereke style."
+
+- file: "hali-8.jpg"
+  tag: "Galerie Ikman"
+  type: "g"
+  map: "https://www.google.com/maps/search/?api=1&query=Galerie+Ikman+Goreme"
+  text: "Expert photography and consultancy by <b>Mr. Bilal</b>. <br><a href='https://www.instagram.com/galerieikman/' target='_blank' style='color:#E1306C; font-weight:bold;'>📸 Instagram</a>"
+
+# 3. YENİ İSİMLİ / HİBRİT KODLULAR (b, bg, ba, nba)
+- file: "hali-7bg.jpg"
+  tag: "Curator & Ikman"
+  type: "bg"
+  map: "https://www.google.com/maps/search/?api=1&query=Galerie+Ikman+Goreme"
+  text: "Collaborative moment: Curator and Bilal Hoca reviewing rare kilims at Galerie Ikman."
+
+- file: "hali-12bg.jpg"
+  tag: "Curator & Ikman"
+  type: "bg"
+  map: "https://www.google.com/maps/search/?api=1&query=Galerie+Ikman+Goreme"
+  text: "Reviewing traditional color palettes and hand-spun wool at Galerie Ikman."
+
+- file: "hali-9ba.jpg"
+  tag: "Curator & Museum"
+  type: "ba"
+  map: "https://www.google.com/maps/search/?api=1&query=Anatolian+Art+Museum+Goreme"
+  text: "Museum research: Analyzing 19th-century weaving patterns at the Anatolian Art Museum."
 
 - file: "haliba-16.jpg"
   tag: "Curator & Museum"
   type: "ba"
   map: "https://www.google.com/maps/search/?api=1&query=Anatolian+Art+Museum+Goreme"
-  text: "A rare museum highlight from the 2025 silk collection. High-density imperial knotting."
+  text: "Technical analysis of a rare museum silk work from the 2025 collection."
+
+- file: "hali-b506047632_10162745708087094_8074213994208374708_n.jpg"
+  tag: "Curator Fieldwork"
+  type: "b"
+  map: "https://www.google.com/maps/search/?api=1&query=Goreme+Cappadocia"
+  text: "Investigating nomadic weaving structures and tribal stamps in the field."
 
 - file: "hali-a540983234_10163136243957094_8592199730672497828_nba.jpg"
   tag: "Museum Archive"
   type: "ba"
   map: "https://www.google.com/maps/search/?api=1&query=Anatolian+Art+Museum+Goreme"
-  text: "Technical study of imperial Ottoman patterns at the museum archive."
+  text: "Surgical precision of imperial palace-style patterns. Museum technical archive."
 
-# ==========================================
-# 5. BÖLÜM: DİĞER ARŞİV (LİSTEYE YENİ EKLENENLER)
-# ==========================================
+- file: "hali-IMG_20170628_190520b.jpg"
+  tag: "Curator Selection"
+  type: "b"
+  map: "https://www.google.com/maps/search/?api=1&query=Goreme+Cappadocia"
+  text: "Vivid example of organic dyes and the aging process of traditional Anatolian wool."
+
+# 4. GERİYE KALAN NUMARALI ARŞİV (Sirayla)
 - file: "hali-2.jpg"
   tag: "Collection"
   type: "none"
-  map: "https://www.google.com/maps/search/?api=1&query=Goreme+Cappadocia"
-  text: "Traditional hand-knotted Anatolian masterpiece from our archive."
-
-- 
-
+  text: "Traditional hand-knotted Anatolian masterpiece."
+- file: "hali-3.jpg"
+  tag: "Collection"
+  type: "none"
+  text: "Wool on cotton foundation rug sample."
+- file: "hali-4.jpg"
+  tag: "Collection"
+  type: "none"
+  text: "Authentic geometric nomadic design."
 - file: "hali-5.jpg"
   tag: "Collection"
   type: "none"
-  map: "https://www.google.com/maps/search/?api=1&query=Goreme+Cappadocia"
-  text: "Classical Anatolian palette with natural dyes."
-
+  text: "Central Anatolian motif focus."
 - file: "hali-7.jpg"
   tag: "Collection"
   type: "none"
-  map: "https://www.google.com/maps/search/?api=1&query=Goreme+Cappadocia"
-  text: "Traditional weaving sample from Central Anatolia."
-
+  text: "Classic earth-toned traditional weaving."
 - file: "hali-9.jpg"
   tag: "Collection"
   type: "none"
-  map: "https://www.google.com/maps/search/?api=1&query=Goreme+Cappadocia"
-  text: "Detailed study of border motifs and symmetry."
-
+  text: "Fine wool rug with tribal symbols."
 - file: "hali-12.jpg"
   tag: "Collection"
   type: "none"
-  map: "https://www.google.com/maps/search/?api=1&query=Goreme+Cappadocia"
-  text: "High-quality hand-spun wool rug selection."
-
+  text: "Expert select: High knot density rug."
 - file: "hali-14.jpg"
   tag: "Collection"
   type: "none"
-  map: "https://www.google.com/maps/search/?api=1&query=Goreme+Cappadocia"
-  text: "Rare antique-style reproduction masterpiece."
-
+  text: "Artistic composition analysis."
 - file: "hali-15.jpg"
   tag: "Collection"
   type: "none"
-  map: "https://www.google.com/maps/search/?api=1&query=Goreme+Cappadocia"
-  text: "Artistic composition with traditional medallion."
-
+  text: "Symmetry study in hand-knotted art."
 - file: "hali-17.jpg"
   tag: "Collection"
   type: "none"
-  map: "https://www.google.com/maps/search/?api=1&query=Goreme+Cappadocia"
-  text: "Nomadic art focus: symbols of protection."
-
+  text: "Anatolian weaving tradition document."
 - file: "hali-18.jpg"
   tag: "Collection"
   type: "none"
-  map: "https://www.google.com/maps/search/?api=1&query=Goreme+Cappadocia"
-  text: "Traditional Turkish Ghiordes knot analysis."
-
+  text: "Traditional color palette research."
 - file: "hali-19.jpg"
   tag: "Collection"
   type: "none"
-  map: "https://www.google.com/maps/search/?api=1&query=Goreme+Cappadocia"
-  text: "Vibrant madder-root red selection."
-
+  text: "Authentic village rug archive."
 - file: "hali-20.jpg"
   tag: "Collection"
   type: "none"
-  map: "https://www.google.com/maps/search/?api=1&query=Goreme+Cappadocia"
-  text: "Anatolian village-style weaving heritage."
-
+  text: "Study of 19th-century motifs."
 - file: "hali-21.jpg"
   tag: "Collection"
   type: "none"
-  map: "https://www.google.com/maps/search/?api=1&query=Goreme+Cappadocia"
-  text: "Hand-picked expert selection from the region."
-
+  text: "Hand-spun wool analysis."
 - file: "hali-22.jpg"
   tag: "Collection"
   type: "none"
-  map: "https://www.google.com/maps/search/?api=1&query=Goreme+Cappadocia"
-  text: "Deep indigo blue and cream contrast study."
-
+  text: "Rare antique-style reproduction."
 - file: "hali-23.jpg"
   tag: "Collection"
   type: "none"
-  map: "https://www.google.com/maps/search/?api=1&query=Goreme+Cappadocia"
-  text: "Final masterpiece: The peak of hand-knotted art."
+  text: "Final masterpiece: Technical peak."
+- file: "hali-20190719_214400.jpg"
+  tag: "Collection"
+  type: "none"
+  text: "Historical document of tribal weaving."
+- file: "hali-20220713_115740.jpg"
+  tag: "Collection"
+  type: "none"
+  text: "Contemporary expert selection."
