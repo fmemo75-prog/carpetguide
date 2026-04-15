@@ -16,12 +16,14 @@ title: Expert Carpet Collection
   .tag-ba { background: linear-gradient(to right, #8b4513, #1a2a6c); }
   .tag-none { background: #95a5a6; }
 
-  .gallery-img { width: 100%; height: 300px; object-fit: cover; cursor: zoom-in; }
+  .gallery-img { width: 100%; height: 320px; object-fit: cover; cursor: zoom-in; }
   .gallery-info { padding: 15px; text-align: center; font-size: 14px; background: #fdf5e6; flex-grow: 1; display: flex; align-items: center; justify-content: center; line-height: 1.5; flex-direction: column; }
-  .map-btn { display: inline-block; margin-top: 10px; padding: 6px 15px; background: #fff; border: 1px solid #ddd; border-radius: 50px; text-decoration: none; color: #333; font-weight: bold; font-size: 11px; }
+  .map-btn { display: inline-block; margin-top: 10px; padding: 8px 18px; background: #fff; border: 1px solid #ddd; border-radius: 50px; text-decoration: none; color: #333; font-weight: bold; font-size: 11px; transition: 0.3s; }
+  .map-btn:hover { background: #8b0000; color: #fff !important; }
 </style>
 
-# 🧶 Expert Select: Organized Collection
+# 🧶 Expert Curation: Organized Gallery
+**Organized by Expertise, Provenance & Partnership**
 
 <div class="gallery-grid">
   {% for item in site.data.descriptions %}
@@ -38,4 +40,9 @@ title: Expert Carpet Collection
       </div>
     </div>
   {% endfor %}
+</div>
+
+<hr style="margin-top: 50px;">
+<div style="text-align: center;">
+  <a href="./gallery" style="font-weight: bold; color: #8b0000; text-decoration: none;">⬅️ Back to All Collections</a>
 </div>
