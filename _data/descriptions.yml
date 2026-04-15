@@ -1,63 +1,43 @@
-# =============================================================
-# 1. GRUP: KADİM DOSTLAR & GÜVENİLİR DURAKLAR (Bülent Güler)
-# =============================================================
+# 1. GRUP: KADİM DOSTLAR (Bülent Bey)
 - file: "hali-bilo.jpg"
-  text: "3rd generation expert <b>Bülent Güler</b> at <b>Kervan Carpet</b>. A true master of the craft and a dear friend. His 5.0 Google rating is a testament to his honesty. <br><a href='https://wa.me/905367602165' target='_blank' style='color:#25D366; font-weight:bold;'>🟢 Contact Bülent via WhatsApp</a>"
+  text: "3rd generation expert <b>Bülent Güler</b> at Kervan Carpet. A true master and dear friend. <br><a href='https://wa.me/905367602165' target='_blank' style='color:#25D366; font-weight:bold;'>🟢 WhatsApp Bülent</a>"
 
-# =============================================================
-# 2. GRUP: KÜRATÖR ANALİZLERİ (Fatih Mehmet Canıtez - b)
-# =============================================================
+# 2. GRUP: KÜRATOR ANALİZLERİ & HİBRİT ÇALIŞMALAR (b, bg, ba)
 - file: "hali-11b.jpg"
-  text: "<b>Curator Analysis:</b> A close-up of a Central Anatolian Kilim showcasing the <b>Elibelinde</b> and <b>Pıtrak</b> motifs. These ancient symbols represent fertility and protection against the evil eye."
-
+  text: "<b>Curator Analysis:</b> Technical study of Elibelinde and Pıtrak motifs. Ancient symbols of fertility."
 - file: "hali-20220713_115826b.jpg"
-  text: "<b>Curator Analysis:</b> Authentic <b>Tülü rug</b> from Karapınar. 'Tülü' means hairy, referring to the long wool pile used by nomads for warmth and insulation during harsh winters."
-
+  text: "<b>Curator Analysis:</b> Authentic <b>Tülü rug</b>. Note the long wool pile used for winter insulation."
 - file: "hali-20220713_132921b.jpg"
-  text: "<b>Curator Analysis:</b> Stunning <b>Sumak (Soumak)</b> technique featuring the <b>Su Yolu</b> (Water Way) pattern. Note the embossed texture created by wrapping threads around the warp."
-
-- file: "hali-b506047632_10162745708087094_8074213994208374708_n.jpg"
-  text: "<b>Curator Fieldwork:</b> Investigating rare nomadic weaving structures. Every knot tells a story of the Anatolian plateau."
-
-- file: "hali-IMG_20170628_190520b.jpg"
-  text: "<b>Curator Selection:</b> Detailed look at hand-spun wool and the vibrant results of traditional <b>kök boya</b> (natural dyes)."
-
-# =============================================================
-# 3. GRUP: GALERİ İKMAN & BİLAL HOCA (g)
-# =============================================================
-- file: "hali-8g.jpg"
-  text: "<b>Mr. Bilal</b> at the legendary <b>Galerie Ikman</b>. You can trust him for professional drone photography and expert advice on both antique and new carpets. <br><a href='https://www.instagram.com/galerieikman/' target='_blank' style='color:#E1306C; font-weight:bold;'>📸 Join his 20.8k followers</a>"
-
+  text: "<b>Curator Analysis:</b> <b>Sumak technique</b> featuring the 'Water Way' pattern. Technical research."
 - file: "hali-7bg.jpg"
-  text: "A special moment at Galerie Ikman. Where academic research meets local expertise in the heart of Göreme."
-
+  text: "<b>Collaborative Research:</b> Curator Fatih Mehmet and Bilal Hoca reviewing rare pieces at Galerie Ikman."
 - file: "hali-12bg.jpg"
-  text: "Reviewing a unique selection at Bilal Hoca's gallery. These pieces represent the vibrant color palette of Cappadocia."
+  text: "<b>Gallery Session:</b> Expert discussion on traditional color palettes in Göreme."
+- file: "hali-9ba.jpg"
+  text: "<b>Museum Research:</b> Curator at Anatolian Art Museum, analyzing 19th-century weaving patterns."
+- file: "hali-b506047632_10162745708087094_8074213994208374708_n.jpg"
+  text: "<b>Field Study:</b> Deep analysis of nomadic carpet structures and tribal stamps."
+- file: "hali-IMG_20170628_190520b.jpg"
+  text: "<b>Curator Selection:</b> Vivid example of traditional <b>kök boya</b> (natural dyes)."
 
+# 3. GRUP: GALERİ İKMAN (g)
+- file: "hali-8g.jpg"
+  text: "<b>Galerie Ikman:</b> Specialized carpet consultancy and professional drone photography by <b>Mr. Bilal</b>."
 - file: "hali-g20220713_115826.jpg"
-  text: "Exquisite craftsmanship from the Galerie Ikman collection. A perfect example of high-density knotting."
+  text: "<b>Gallery Highlights:</b> A fine selection showing the geometric mastery of Anatolian kilims."
 
-# =============================================================
 # 4. GRUP: ANATOLIAN ART MUSEUM (a)
-# =============================================================
 - file: "hali-13a.jpg"
-  text: "<b>Museum Piece:</b> A <b>Pure Silk on Silk</b> masterpiece with a classic <b>Mihrab</b> design. Exhibited at the <b>Anatolian Art Museum</b> in Göreme. A peak of Hereke style."
-
+  text: "<b>Museum Masterpiece:</b> Pure Silk on Silk Mihrab design. Peak of Hereke tradition in Goreme."
 - file: "hali-10a.jpg"
-  text: "<b>Museum Piece:</b> Hand-woven <b>Silk on Silk</b> recreation of Leonardo da Vinci’s <b>Salvator Mundi</b>. Where Renaissance genius meets Anatolian weaving excellence."
-
+  text: "<b>Museum Piece:</b> Leonardo da Vinci’s <b>Salvator Mundi</b> recreated in pure silk."
 - file: "haliba-16.jpg"
-  text: "<b>Museum Highlight:</b> A rare silk work from the 2025 collection. The interplay of light on the silk fibers is truly museum-worthy."
-
+  text: "<b>Museum Selection:</b> Rare framed silk work from the 2025 high-collection."
 - file: "hali-a540983234_10163136243957094_8592199730672497828_nba.jpg"
-  text: "<b>Museum Archive:</b> A technical study of imperial patterns. This piece demonstrates the surgical precision of late Ottoman weaving."
+  text: "<b>Imperial Archive:</b> A study on the surgical precision of Ottoman palace-style weaving."
 
-# =============================================================
-# 5. GRUP: DİĞERLERİ (Sırasıyla devam eder)
-# =============================================================
+# 5. GRUP: DİĞERLERİ
 - file: "hali-2.jpg"
-  text: "Traditional Anatolian rug featuring earth-toned natural dyes."
+  text: "Traditional hand-knotted Anatolian masterpiece."
 - file: "hali-3.jpg"
-  text: "Wool-on-cotton foundation rug, ideal for classic interior decor."
-- file: "hali-4.jpg"
-  text: "Hand-knotted masterpiece focusing on geometric symmetry."
+  text: "Wool on cotton foundation rug."
