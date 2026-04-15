@@ -9,46 +9,37 @@ title: Expert Carpet Collection
   
   .tag { position: absolute; top: 12px; left: 12px; padding: 5px 12px; border-radius: 15px; font-size: 10px; font-weight: bold; color: white; text-transform: uppercase; z-index: 10; box-shadow: 0 2px 5px rgba(0,0,0,0.2); }
   
-  /* RENK KODLARI */
-  .tag-bilo { background: #27ae60; }   /* Bülent - Yeşil */
-  .tag-b { background: #8b4513; }      /* Curator - Kahve */
-  .tag-g { background: #E1306C; }      /* Ikman - Pembe */
-  .tag-a { background: #1a2a6c; }      /* Museum - Lacivert */
-  .tag-bg { background: linear-gradient(to right, #8b4513, #E1306C); } /* Hibrit b+g */
-  .tag-ba { background: linear-gradient(to right, #8b4513, #1a2a6c); } /* Hibrit b+a */
-  .tag-none { background: #95a5a6; }   /* Diğerleri - Gri */
+  .tag-bilo { background: #27ae60; }
+  .tag-b { background: #8b4513; }
+  .tag-g { background: #E1306C; }
+  .tag-a { background: #1a2a6c; }
+  .tag-bg { background: linear-gradient(to right, #8b4513, #E1306C); }
+  .tag-ba { background: linear-gradient(to right, #8b4513, #1a2a6c); }
+  .tag-none { background: #95a5a6; }
 
-  .gallery-img { width: 100%; height: 320px; object-fit: cover; cursor: zoom-in; }
-  .gallery-info { padding: 15px; text-align: center; font-size: 14px; background: #fdf5e6; flex-grow: 1; display: flex; align-items: center; justify-content: center; line-height: 1.5; color: #2c3e50; }
+  .gallery-img { width: 100%; height: 300px; object-fit: cover; cursor: zoom-in; }
+  .gallery-info { padding: 15px; text-align: center; font-size: 14px; background: #fdf5e6; flex-grow: 1; display: flex; align-items: center; justify-content: center; line-height: 1.5; flex-direction: column; }
   
-  .map-link { display: inline-block; margin-top: 10px; padding: 5px 12px; background: #fff; border: 1px solid #ddd; border-radius: 50px; text-decoration: none; color: #333; font-weight: bold; font-size: 11px; }
+  .map-btn { display: inline-block; margin-top: 12px; padding: 8px 18px; background: #fff; border: 1px solid #ddd; border-radius: 50px; text-decoration: none; color: #333; font-weight: bold; font-size: 12px; transition: 0.3s; }
+  .map-btn:hover { background: #8b0000; color: #fff !important; border-color: #8b0000; }
 </style>
 
-# 🧶 Expert Curation: Halı & Kilim Collection
+# 🧶 Expert Select: Halı & Kilim Collection
 
 <div class="gallery-grid">
   {% for item in site.data.descriptions %}
     <div class="gallery-item">
-      <!-- Otomatik Etiket -->
       <span class="tag tag-{{ item.type }}">{{ item.tag }}</span>
 
-      <!-- Resim -->
       <img src="{{ site.baseurl }}/images/{{ item.file }}" class="gallery-img" loading="lazy">
       
-      <!-- Detaylı Açıklama (Emeğin burası hocam!) -->
       <div class="gallery-info">
-        <div>
-          <p style="margin:0;">{{ item.text }}</p>
-          
-          <!-- Otomatik Konum Butonları -->
-          {% if item.type contains 'bilo' %}
-            <a href="https://maps.app.goo.gl/ZisXv6iX3L6XG6y4A" target="_blank" class="map-link">📍 Kervan Maps</a>
-          {% elsif item.type contains 'g' %}
-            <a href="https://maps.app.goo.gl/HqSgYhS5v6eB2Zq19" target="_blank" class="map-link">📍 Ikman Maps</a>
-          {% else %}
-            <a href="https://maps.app.goo.gl/96uW6NfB9eK2Xq9A7" target="_blank" class="map-link">📍 Exhibition Location</a>
-          {% endif %}
-        </div>
+        <p style="margin:0;">{{ item.text }}</p>
+        
+        <!-- YER TARİFİ BUTONU (LİSTEDEKİ MAP VERİSİNİ KULLANIR) -->
+        {% if item.map %}
+          <a href="{{ item.map }}" target="_blank" class="map-btn">📍 View Location / Get Directions</a>
+        {% endif %}
       </div>
     </div>
   {% endfor %}
