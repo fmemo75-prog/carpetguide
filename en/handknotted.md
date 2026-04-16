@@ -63,37 +63,27 @@ A hand-knotted carpet tells a story through its symbols. Below is a technical an
   <strong>Explore further:</strong><br>
   <a href="./materials">View Material Classification</a> | <a href="./">Return to Dashboard</a>
 </p>
-<!-- SECTION 3: KAYSERİ (BÜNYAN & SILK) -->
-<table border="0" style="width:100%; margin-bottom: 30px; background-color: #f0f7ff; padding: 15px; border-radius: 10px;">
+
+<!-- SECTION: KAYSERİ (BÜNYAN & YAHYALI) -->
+<table border="0" style="width:100%; margin-bottom: 40px; background-color: #f0f7ff; padding: 20px; border-radius: 15px; border: 1px solid #d1e3f8;">
   <tr>
-    <td style="width: 40%; text-align: center; vertical-align: middle;">
-      <img src="{{ site.baseurl }}/images/hali-kayseri.jpg" alt="Kayseri Silk Carpet" style="width: 100%; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
-      <br><em>Fine Silk and Wool Art</em>
-    </td>
-    <td style="width: 60%; padding-left: 20px; vertical-align: top;">
-      <h2 style="color: #1a2a6c;">3. Kayseri Carpets</h2>
-      <p>Kayseri is a dual center of excellence. <b>Bünyan</b> carpets are famous for their high-quality wool on cotton foundation with floral patterns, while <b>Kayseri Silk</b> rugs are world-renowned for their shimmering detail, often rivaling Hereke in complexity.</p>
-      <ul>
-        <li><strong>Character:</strong> Floral medallions and garden themes (Hayat Ağacı).</li>
-        <li><strong>Technique:</strong> High knot density, very thin and elegant.</li>
-      </ul>
+    <td colspan="2">
+      <h2 style="color: #1a2a6c; margin-top: 0;">3. Kayseri: The Dual Tradition of Fine Weaving</h2>
+      <p>Kayseri is one of Turkey’s most versatile weaving centers, famous for producing both sturdy wool-on-cotton village rugs and world-class silk masterpieces.</p>
     </td>
   </tr>
-</table>
-
-<!-- SECTION 4: GÖRDES (GHIORDES) -->
-<table border="0" style="width:100%; margin-bottom: 30px;">
   <tr>
-    <td style="width: 60%; padding-right: 20px; vertical-align: top;">
-      <h2 style="color: #8b0000;">4. Gördes (Ghiordes)</h2>
-      <p>Historically the most significant center for the <b>Turkish Double Knot</b>. Gördes is legendary for its 18th and 19th-century prayer rugs (Mihrablı), characterized by high arches and distinct stylized floral borders.</p>
-      <ul>
-        <li><strong>Legacy:</strong> It gave its name to the "Ghiordes Knot" used in almost all Anatolian rugs.</li>
-        <li><strong>Colors:</strong> Rich reds, deep blues, and distinctive pastel yellows.</li>
-      </ul>
+    <td style="width: 50%; text-align: center; vertical-align: top; padding: 10px;">
+      <a href="{{ site.baseurl }}/images/hali-kayseri-1.jpg" target="_blank">
+        <img src="{{ site.baseurl }}/images/hali-kayseri-1.jpg" alt="Kayseri Geometric Style" style="width: 100%; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+      </a>
+      <p style="font-size: 14px; margin-top: 10px;"><strong>The Geometric Style (Yahyalı):</strong> Characterized by bold central medallions and geometric borders using rich madder red and indigo blue.</p>
     </td>
-    <td style="width: 40%; text-align: center; vertical-align: middle;">
-      <img src="{{ site.baseurl }}/images/hali-gordes.jpg" alt="Ghiordes Prayer Rug" style="width: 100%; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+    <td style="width: 50%; text-align: center; vertical-align: top; padding: 10px;">
+      <a href="{{ site.baseurl }}/images/hali-kayseri-2.jpg" target="_blank">
+        <img src="{{ site.baseurl }}/images/hali-kayseri-2.jpg" alt="Kayseri Floral Style" style="width: 100%; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+      </a>
+      <p style="font-size: 14px; margin-top: 10px;"><strong>The Floral Style (Bünyan):</strong> Highly sophisticated "Palace" designs with intricate floral scrolls and fine knot density, often in soft, elegant color palettes.</p>
     </td>
   </tr>
 </table>
