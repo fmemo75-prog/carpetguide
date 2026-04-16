@@ -63,3 +63,37 @@ A hand-knotted carpet tells a story through its symbols. Below is a technical an
   <strong>Explore further:</strong><br>
   <a href="./materials">View Material Classification</a> | <a href="./">Return to Dashboard</a>
 </p>
+<!-- SECTION 3: KAYSERİ (BÜNYAN & SILK) -->
+<table border="0" style="width:100%; margin-bottom: 30px; background-color: #f0f7ff; padding: 15px; border-radius: 10px;">
+  <tr>
+    <td style="width: 40%; text-align: center; vertical-align: middle;">
+      <img src="{{ site.baseurl }}/images/hali-kayseri.jpg" alt="Kayseri Silk Carpet" style="width: 100%; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+      <br><em>Fine Silk and Wool Art</em>
+    </td>
+    <td style="width: 60%; padding-left: 20px; vertical-align: top;">
+      <h2 style="color: #1a2a6c;">3. Kayseri Carpets</h2>
+      <p>Kayseri is a dual center of excellence. <b>Bünyan</b> carpets are famous for their high-quality wool on cotton foundation with floral patterns, while <b>Kayseri Silk</b> rugs are world-renowned for their shimmering detail, often rivaling Hereke in complexity.</p>
+      <ul>
+        <li><strong>Character:</strong> Floral medallions and garden themes (Hayat Ağacı).</li>
+        <li><strong>Technique:</strong> High knot density, very thin and elegant.</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+<!-- SECTION 4: GÖRDES (GHIORDES) -->
+<table border="0" style="width:100%; margin-bottom: 30px;">
+  <tr>
+    <td style="width: 60%; padding-right: 20px; vertical-align: top;">
+      <h2 style="color: #8b0000;">4. Gördes (Ghiordes)</h2>
+      <p>Historically the most significant center for the <b>Turkish Double Knot</b>. Gördes is legendary for its 18th and 19th-century prayer rugs (Mihrablı), characterized by high arches and distinct stylized floral borders.</p>
+      <ul>
+        <li><strong>Legacy:</strong> It gave its name to the "Ghiordes Knot" used in almost all Anatolian rugs.</li>
+        <li><strong>Colors:</strong> Rich reds, deep blues, and distinctive pastel yellows.</li>
+      </ul>
+    </td>
+    <td style="width: 40%; text-align: center; vertical-align: middle;">
+      <img src="{{ site.baseurl }}/images/hali-gordes.jpg" alt="Ghiordes Prayer Rug" style="width: 100%; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+    </td>
+  </tr>
+</table>
