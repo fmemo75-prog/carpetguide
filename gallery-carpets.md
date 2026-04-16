@@ -15,16 +15,29 @@ title: Expert Carpet Collection
   .wa-btn { border-color: #25D366; color: #25D366 !important; }
 </style>
 
-# 🧶 Expert Select: Master Gallery
+# 🧶 Expert Curation: Master Gallery
 
 <div class="gallery-grid">
   {% for item in site.data.descriptions %}
-    <!-- Profil bilgisini tipine göre çekiyoruz -->
-    {% assign p = site.data.profiles[item.type] %}
+    
+    <!-- HALI KATEGORİSİNDEKİLERİ FİLTRELE -->
+    {% if item.type == "b" or item.type == "g" or item.type == "a" or item.type == "bilo" or item.type == "bg" or item.type == "ba" %}
     
     <div class="gallery-item">
-      <!-- Etiket (Rengi ve İsmi Otomatik) -->
-      <span class="tag" style="background: {{ p.color }};">{{ p.name }}</span>
+      <!-- Dinamik Etiket Belirleme -->
+      {% if item.type == "bilo" %}
+        <span class="tag" style="background: #27ae60;">Bülent Güler</span>
+      {% elsif item.type == "g" %}
+        <span class="tag" style="background: #E1306C;">Galerie Ikman</span>
+      {% elsif item.type == "a" %}
+        <span class="tag" style="background: #1a2a6c;">Museum Piece</span>
+      {% elsif item.type == "b" %}
+        <span class="tag" style="background: #8b4513;">Curator</span>
+      {% elsif item.type == "bg" %}
+        <span class="tag" style="background: linear-gradient(to right, #8b4513, #E1306C);">Curator & Ikman</span>
+      {% elsif item.type == "ba" %}
+        <span class="tag" style="background: linear-gradient(to right, #8b4513, #1a2a6c);">Curator & Museum</span>
+      {% endif %}
 
       <img src="{{ site.baseurl }}/images/{{ item.file }}" class="gallery-img" loading="lazy">
       
@@ -32,11 +45,27 @@ title: Expert Carpet Collection
         <p style="margin:0;">{{ item.text }}</p>
         
         <div class="btn-group">
-          {% if p.map %}<a href="{{ p.map }}" target="_blank" class="map-btn">📍 Location</a>{% endif %}
-          {% if p.instagram %}<a href="{{ p.instagram }}" target="_blank" class="map-btn ig-btn">📸 Instagram</a>{% endif %}
-          {% if p.whatsapp %}<a href="https://wa.me/{{ p.whatsapp }}" target="_blank" class="map-btn wa-btn">💬 WhatsApp</a>{% endif %}
+          <!-- Butonları Manuel Kontrol Edelim (Hata payı sıfır) -->
+          {% if item.type contains 'bilo' %}
+            <a href="https://www.google.com/maps/search/?api=1&query=Kervan+Carpet+Goreme" target="_blank" class="map-btn">📍 Location</a>
+            <a href="https://wa.me/905367602165" target="_blank" class="map-btn wa-btn">💬 WhatsApp</a>
+          {% endif %}
+
+          {% if item.type contains 'g' %}
+            <a href="https://www.google.com/maps/search/?api=1&query=Galerie+Ikman+Goreme" target="_blank" class="map-btn">📍 Location</a>
+            <a href="https://www.instagram.com/galerieikman/" target="_blank" class="map-btn ig-btn">📸 Instagram</a>
+          {% endif %}
+
+          {% if item.type contains 'a' %}
+            <a href="https://www.google.com/maps/search/?api=1&query=Anatolian+Art+Museum+Goreme" target="_blank" class="map-btn">📍 Museum</a>
+          {% endif %}
+
+          {% if item.type == 'b' %}
+            <a href="https://www.google.com/maps/search/?api=1&query=Goreme+Cappadocia" target="_blank" class="map-btn">📍 Curator View</a>
+          {% endif %}
         </div>
       </div>
     </div>
+    {% endif %}
   {% endfor %}
 </div>
