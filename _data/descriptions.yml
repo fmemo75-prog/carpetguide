@@ -131,4 +131,15 @@
   type: "b"
   map: "https://www.google.com/maps/search/?api=1&query=Goreme+Cappadocia"
   text: "<b>Cicim Texture Close-up:</b> Detailed view of a vintage Cicim weave. Notice the extra weft wrapping that creates the characteristic embroidered look."
+- file: "hali-kayseri-1.jpg"
+  tag: "Curator Analysis"
+  type: "b"
+  map: "https://www.google.com/maps/search/?api=1&query=Kayseri+Turkey"
+  text: "<b>Kayseri Yahyali Style:</b> A geometric masterpiece featuring hand-spun wool and traditional madder-root dyes. Note the strong symmetry of the central medallions."
+
+- file: "hali-kayseri-2.jpg"
+  tag: "Expert Select"
+  type: "b"
+  map: "https://www.google.com/maps/search/?api=1&query=Kayseri+Turkey"
+  text: "<b>Kayseri Bunyan Tradition:</b> A fine example of floral elegance. This style is known for its incredible detail and high knot density on a cotton foundation."
  
