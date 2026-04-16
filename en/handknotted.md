@@ -75,7 +75,22 @@ A hand-knotted carpet tells a story through its symbols. Below is a technical an
   <tr>
     <td style="width: 50%; text-align: center; vertical-align: top; padding: 10px;">
       <a href="{{ site.baseurl }}/images/hali-kayseri-1.jpg" target="_blank">
-        <img src="{{ site.baseurl }}/images/hali-kayseri-1.jpg" alt="Kayseri Geometric Style" style="width: 100%; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+        <img src="{{ site.baseurl }}/images/hali-kayseri-1.jpg" alt="Kayseri Geometric Style" style="width: 100%; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);"> <table border="0" style="width:100%; background-color: #fdf5e6; padding: 15px; border-radius: 10px; border-left: 5px solid #8b4513;">
+  <tr>
+    <td style="width: 40%;">
+      <img src="{{ site.baseurl }}/images/hali-kayseri-1.jpg" style="width: 100%; border-radius: 8px;">
+    </td>
+    <td style="width: 60%; padding-left: 20px; vertical-align: top;">
+      <h3 style="color: #8b4513; margin-top: 0;">Symbolism of the Yahyalı Medallion</h3>
+      <ul>
+        <li><strong>Triple Medallions:</strong> Represents the protection of the family unit across generations.</li>
+        <li><strong>Koçboynuzu (Ram’s Horn):</strong> The jagged hooks on the medallion edges symbolize strength and abundance.</li>
+        <li><strong>Geometric Flowers:</strong> The small squares inside the diamonds are stylized blossoms, reflecting the local flora of the Erciyes foothills.</li>
+        <li><strong>Indigo & Madder:</strong> The contrast between deep navy and madder red is a signature of high-quality Kayseri village weavings.</li>
+      </ul>
+    </td>
+  </tr>
+</table>
       </a>
       <p style="font-size: 14px; margin-top: 10px;"><strong>The Geometric Style (Yahyalı):</strong> Characterized by bold central medallions and geometric borders using rich madder red and indigo blue.</p>
     </td>

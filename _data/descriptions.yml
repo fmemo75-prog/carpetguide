@@ -131,11 +131,12 @@
   type: "b"
   map: "https://www.google.com/maps/search/?api=1&query=Goreme+Cappadocia"
   text: "<b>Cicim Texture Close-up:</b> Detailed view of a vintage Cicim weave. Notice the extra weft wrapping that creates the characteristic embroidered look."
+
 - file: "hali-kayseri-1.jpg"
   tag: "Curator Analysis"
   type: "b"
-  map: "https://www.google.com/maps/search/?api=1&query=Kayseri+Turkey"
-  text: "<b>Kayseri Yahyali Style:</b> A geometric masterpiece featuring hand-spun wool and traditional madder-root dyes. Note the strong symmetry of the central medallions."
+  map: "https://www.google.com/maps/search/?api=1&query=Yahyali+Kayseri+Turkey"
+  text: "<b>Kayseri Yahyalı Analysis:</b> This geometric masterpiece features a prominent <b>Triple Medallion</b> structure. The central <b>Diamond (Baklava)</b> motifs symbolize the hearth and protection of the home. Within these medallions, you can observe stylized <b>Ram’s Horns (Koçboynuzu)</b>, representing fertility and masculine power. The intricate guard borders utilize the <b>Su Yolu</b> (Running Water) pattern, a nomadic symbol for life’s continuity. Woven with 100% hand-spun wool and traditional madder-root dyes."
 
 - file: "hali-kayseri-2.jpg"
   tag: "Expert Select"
