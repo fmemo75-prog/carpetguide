@@ -12,14 +12,51 @@ Unlike a standard Kilim, where the surface is smooth, a Cicim rug has a raised p
    Intricate Details Allows for much finer and more delicate motifs than a regular Kilim.
    Versatility Traditionally used for bridal dowries (çeyiz), wall hangings, and decorative floor covers.
 
----# 📸 Visual Gallery (Examples)
-### 1. The Classic Anatolian Cicim
-![Anatolian Cicim Example](httpsimages.unsplash.comphoto-1576016773942-334520fe3121auto=format&fit=crop&w=800&q=80)
-Example of a vintage Cicim with geometric floral motifs.
-### 2. Geometric Precision
-![Geometric Cicim](httpsraw.githubusercontent.comfmemo75-proghali-rehberi-mainencicim_detail.png)
-(Note You can upload your own close-up photos of Cicim textures here)
-# 🌸 Cicim (Jijim) Gallery: The Language of Geometry
+---
+layout: default
+title: Cicim Weaving Technique
+---
+
+# 🌸 The Art of Cicim (Jijim) Weaving
+
+Cicim is a traditional flat-weave technique where additional decorative threads are wrapped around the warp, creating an embroidered or embossed look on the surface of the kilim.
+
+<hr>
+
+<!-- SECTION 1: FULL VIEW -->
+<div style="background-color: #fffaf0; padding: 20px; border-radius: 15px; border: 1px solid #d4af37; margin-bottom: 30px;">
+  <h2 style="color: #8b0000; margin-top: 0;">1. The Classic Anatolian Cicim</h2>
+  <p>Below is a magnificent full-view example of a traditional Cicim. Notice the repeating geometric diamond-like motifs and the bold use of natural dyes.</p>
+  
+  <div style="text-align: center;">
+    <a href="{{ site.baseurl }}/images/hali-cicim-full.jpg" target="_blank" title="Click to view full size">
+      <img src="{{ site.baseurl }}/images/hali-cicim-full.jpg" alt="Classic Anatolian Cicim" style="width: 100%; max-width: 600px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.15); cursor: zoom-in;" loading="lazy">
+    </a>
+    <br>
+    <small style="color: #666;">(Click image to enlarge details)</small>
+  </div>
+</div>
+
+<!-- SECTION 2: DETAIL VIEW -->
+<div style="background-color: #fdf5e6; padding: 20px; border-radius: 15px; border: 1px solid #8b0000; margin-bottom: 30px;">
+  <h2 style="color: #8b0000; margin-top: 0;">2. Geometric Precision (Texture Detail)</h2>
+  <p>To truly understand the Cicim technique, one must look at the texture. This close-up reveals the extra weft wrapping that creates the distinct raised patterns on the foundation.</p>
+  
+  <div style="text-align: center;">
+    <a href="{{ site.baseurl }}/images/hali-cicim-detail.jpg" target="_blank" title="Click to view full size">
+      <img src="{{ site.baseurl }}/images/hali-cicim-detail.jpg" alt="Cicim Detail" style="width: 100%; max-width: 600px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.15); cursor: zoom-in;" loading="lazy">
+    </a>
+    <br>
+    <small style="color: #666;">(Click image to enlarge details)</small>
+  </div>
+</div>
+
+<hr>
+
+<p style="text-align: center;">
+  <a href="./" style="font-weight: bold; color: #8b0000;">⬅️ Back to Main Guide</a> | <a href="./kilim" style="font-weight: bold; color: #2e8b57;">📐 View Kilim Collection</a>
+
+</p># 🌸 Cicim (Jijim) Gallery: The Language of Geometry
 Cicim weaving is like painting with a needle on a loom. Every line and shape is a "coded message" from the weaver. Let’s analyze these two masterpieces from our collection.
 
 ---

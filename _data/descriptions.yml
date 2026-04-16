@@ -120,4 +120,15 @@
   type: "ba"
   map: "none"
   text: "Museum art Goreme."
+- file: "hali-cicim-full.jpg"
+  tag: "Curator Analysis"
+  type: "b"
+  map: "https://www.google.com/maps/search/?api=1&query=Goreme+Cappadocia"
+  text: "<b>Full Cicim Masterpiece:</b> A classic Anatolian Cicim flat-weave with bold, colorful geometric medallions. The repeating diamond-like motifs symbolize family unity. <br><a href='./en/cicim' style='color: #8b0000; font-weight: bold;'>Read the Full Cicim Guide</a>"
+
+- file: "hali-cicim-detail.jpg"
+  tag: "Curator Analysis"
+  type: "b"
+  map: "https://www.google.com/maps/search/?api=1&query=Goreme+Cappadocia"
+  text: "<b>Cicim Texture Close-up:</b> Detailed view of a vintage Cicim weave. Notice the extra weft wrapping that creates the characteristic embroidered look."
  
