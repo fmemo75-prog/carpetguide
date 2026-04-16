@@ -3,6 +3,9 @@ layout: default
 title: Cappadocia Complete Guide — Fatih Mehmet Canıtez
 ---
 
+### 🚀 [CLICK HERE: Where to Go & What to See in Cappadocia](./en/cappadocia-guide)
+---
+<p align="center"><i>"Explore the timeless beauty of the valleys."</i></p>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 
