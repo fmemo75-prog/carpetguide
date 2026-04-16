@@ -86,6 +86,12 @@
   map: "https://www.google.com/maps/search/?api=1&query=Anatolian+Art+Museum+Goreme"
   text: "Surgical precision of imperial palace-style patterns. A study on Ottoman technical excellence."
 
+- file: "hali-23.jpg"
+  tag: "Museum & Curator"
+  type: "ba"
+  map: "https://www.google.com/maps/search/?api=1&query=Anatolian+Art+Museum+Goreme"
+  text: "<b>Expert Collaboration:</b> Young carpet specialist <b>Semih</b> and the <b>Curator</b> during the summer of 2025, hosting our esteemed Chinese clients. A special moment at the <b>Anatolian Art Museum</b>, sharing our cultural heritage with the world."
+
 # 5. GERİYE KALAN ARŞİV (Numaralılar)
 - file: "hali-2.jpg"
   tag: "Collection"
