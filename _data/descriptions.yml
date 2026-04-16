@@ -114,3 +114,10 @@
   type: "none"
   map: "https://www.google.com/maps/search/?api=1&query=Goreme+Cappadocia"
   text: "Fine wool rug with traditional tribal symbols."
+
+- file: "- file: "hali-22.jpg"
+  tag: "Collection"
+  type: "ba"
+  map: "none"
+  text: "Museum art Goreme."
+ 
