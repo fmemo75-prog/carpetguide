@@ -1,0 +1,33 @@
+# GENEL KİMLİK KARTLARI
+bilo:
+  name: "Bülent Güler"
+  map: "https://www.google.com/maps/search/?api=1&query=Kervan+Carpet+Goreme"
+  whatsapp: "905367602165"
+  color: "#27ae60"
+
+g:
+  name: "Galerie Ikman"
+  map: "https://www.google.com/maps/search/?api=1&query=Galerie+Ikman+Goreme"
+  instagram: "https://www.instagram.com/galerieikman/"
+  color: "#E1306C"
+
+a:
+  name: "Anatolian Art Museum"
+  map: "https://www.google.com/maps/search/?api=1&query=Anatolian+Art+Museum+Goreme"
+  color: "#1a2a6c"
+
+b:
+  name: "Curator Analysis"
+  map: "https://www.google.com/maps/search/?api=1&query=Goreme+Cappadocia"
+  color: "#8b4513"
+
+bg:
+  name: "Curator & Ikman"
+  map: "https://www.google.com/maps/search/?api=1&query=Galerie+Ikman+Goreme"
+  instagram: "https://www.instagram.com/galerieikman/"
+  color: "linear-gradient(to right, #8b4513, #E1306C)"
+
+ba:
+  name: "Curator & Museum"
+  map: "https://www.google.com/maps/search/?api=1&query=Anatolian+Art+Museum+Goreme"
+  color: "linear-gradient(to right, #8b4513, #1a2a6c)"

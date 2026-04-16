@@ -1,0 +1,100 @@
+# 1. BÜLENT GÜLER (BİLO) - EN ÜST
+- file: "hali-bilo.jpg"
+  tag: "Bülent Güler"
+  type: "bilo"
+  map: "https://www.google.com/maps/search/?api=1&query=Kervan+Carpet+Goreme"
+  text: "3rd generation expert <b>Bülent Güler</b> at Kervan Carpet. A true master and dear friend. His 5.0 Google rating is a testament to his honesty. <br><a href='https://wa.me/905367602165' target='_blank' style='color:#25D366; font-weight:bold;'>🟢 Contact via WhatsApp</a>"
+
+# 2. KÜRATÖR ANALİZLERİ (SENİN ÖZEL KOLEKSİYONUN VE ANALİZLERİN)
+- file: "hali-11.jpg"
+  tag: "Curator Analysis"
+  type: "b"
+  map: "https://www.google.com/maps/search/?api=1&query=Goreme+Cappadocia"
+  text: "Technical study of <b>Elibelinde</b> and <b>Pıtrak</b> motifs. These ancient symbols represent fertility and protection from the evil eye."
+
+- file: "hali-20220713_115826.jpg"
+  tag: "Curator Analysis"
+  type: "b"
+  map: "https://www.google.com/maps/search/?api=1&query=Goreme+Cappadocia"
+  text: "<b>Tülü Rug Analysis:</b> Long wool pile used by nomads for winter insulation. Note the fur-like texture and vibrant natural dyes."
+
+- file: "hali-20220713_132921.jpg"
+  tag: "Curator Analysis"
+  type: "b"
+  map: "https://www.google.com/maps/search/?api=1&query=Goreme+Cappadocia"
+  text: "<b>Sumak Technique:</b> High-relief pattern study using the wrapping method. Featuring the symbolic <b>Su Yolu</b> (Water Way) pattern."
+
+- file: "hali-b506047632_10162745708087094_8074213994208374708_n.jpg"
+  tag: "Curator Fieldwork"
+  type: "b"
+  map: "https://www.google.com/maps/search/?api=1&query=Goreme+Cappadocia"
+  text: "Investigating nomadic weaving structures and tribal stamps in the field. Every knot tells a story of the Anatolian plateau."
+
+- file: "hali-IMG_20170628_190520b.jpg"
+  tag: "Curator Selection"
+  type: "b"
+  map: "https://www.google.com/maps/search/?api=1&query=Goreme+Cappadocia"
+  text: "Vivid example of organic dyes and the traditional aging process of hand-spun Anatolian wool."
+
+# 3. GALERİ İKMAN & BİLAL HOCA (g)
+- file: "hali-7.jpg"
+  tag: "Curator & Ikman"
+  type: "bg"
+  map: "https://www.google.com/maps/search/?api=1&query=Galerie+Ikman+Goreme"
+  text: "<b>Collaborative Research:</b> Fatih Mehmet and Bilal Hoca reviewing rare kilims at Galerie Ikman in the heart of Göreme."
+
+- file: "hali-12.jpg"
+  tag: "Curator & Ikman"
+  type: "bg"
+  map: "https://www.google.com/maps/search/?api=1&query=Galerie+Ikman+Goreme"
+  text: "<b>Gallery Session:</b> Technical focus on hand-spun wool and traditional color palettes at Galerie Ikman."
+
+- file: "hali-8.jpg"
+  tag: "Galerie Ikman"
+  type: "g"
+  map: "https://www.google.com/maps/search/?api=1&query=Galerie+Ikman+Goreme"
+  text: "Expert photography and consultancy by <b>Mr. Bilal</b>. Follow him for professional drone shots and carpet education. <br><a href='https://www.instagram.com/galerieikman/' target='_blank' style='color:#E1306C; font-weight:bold;'>📸 Instagram Profile</a>"
+
+# 4. ANATOLIAN ART MUSEUM (a)
+- file: "hali-9.jpg"
+  tag: "Curator & Museum"
+  type: "ba"
+  map: "https://www.google.com/maps/search/?api=1&query=Anatolian+Art+Museum+Goreme"
+  text: "<b>Museum Research:</b> Curator at Anatolian Art Museum, analyzing intricate 19th-century weaving patterns."
+
+- file: "hali-10.jpg"
+  tag: "Museum Piece"
+  type: "a"
+  map: "https://www.google.com/maps/search/?api=1&query=Anatolian+Art+Museum+Goreme"
+  text: "Hand-woven <b>Silk on Silk</b> recreation of Leonardo da Vinci’s <b>Salvator Mundi</b>. Where Renaissance meets Anatolia."
+
+- file: "hali-13.jpg"
+  tag: "Museum Piece"
+  type: "a"
+  map: "https://www.google.com/maps/search/?api=1&query=Anatolian+Art+Museum+Goreme"
+  text: "<b>Pure Silk on Silk</b> masterpiece with Mihrab design. Peak of Hereke tradition exhibited in Göreme."
+
+- file: "haliba-16.jpg"
+  tag: "Curator & Museum"
+  type: "ba"
+  map: "https://www.google.com/maps/search/?api=1&query=Anatolian+Art+Museum+Goreme"
+  text: "<b>High Collection:</b> A rare silk work from the 2025 collection. Exceptional knot density and material quality."
+
+- file: "hali-a540983234_10163136243957094_8592199730672497828_nba.jpg"
+  tag: "Museum Archive"
+  type: "ba"
+  map: "https://www.google.com/maps/search/?api=1&query=Anatolian+Art+Museum+Goreme"
+  text: "Surgical precision of imperial palace-style patterns. A study on Ottoman technical excellence."
+
+- file: "hali-23.jpg"
+  tag: "Museum & Curator"
+  type: "ba"
+  map: "https://www.google.com/maps/search/?api=1&query=Anatolian+Art+Museum+Goreme"
+  text: "<b>Expert Collaboration:</b> Young carpet specialist <b>Semih</b> and the <b>Curator</b> during the summer of 2025, hosting our esteemed Chinese clients. A special moment at the <b>Anatolian Art Museum</b>, sharing our cultural heritage with the world."
+
+# 5. GERİYE KALAN ARŞİV (Numaralılar)
+- file: "hali-2.jpg"
+  tag: "Collection"
+  type: "none"
+  map: "https://www.google.com/maps/search/?api=1&query=Goreme+Cappadocia"
+  text: "Traditional hand-knotted Anatolian masterpiece."
