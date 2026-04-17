@@ -29,7 +29,6 @@
         img { max-width: 100%; height: auto; border-radius: 8px; }
 
         /* LİGHTBOX (ZOOM) STİLLERİ */
-        /* Sadece içerik resimlerinde büyüteç çıksın */
         .container img:not(.leaflet-marker-icon):not(.leaflet-tile) { cursor: zoom-in; transition: 0.3s; }
         
         #img-lightbox-overlay {
@@ -61,7 +60,7 @@
 
       {% if page.url != "/" and page.url != "/index.html" %}
         <div style="text-align:center; margin-top:40px; border-top:1px solid #eee; padding-top:25px;">
-            <a href="{{ site.baseurl }}/" style="background:var(--primary-red); color:white !important; padding:12px 30px; text-decoration:none; border-radius:50px; font-weight:bold; display:inline-block;">🏠 Back to Dashboard</a>
+            <a href="{{ site.baseurl }}/" style="background:var(--primary-red); color:white !important; padding:12px 30px; text-decoration:none; border-radius:50px; font-weight:bold; display:inline-block; box-shadow: 0 4px 10px rgba(139,0,0,0.3);">🏠 Back to Dashboard</a>
         </div>
       {% endif %}
     </div>
@@ -71,10 +70,14 @@
       <img id="enlarged-img" src="" alt="Enlarged">
     </div>
 
-    <!-- Google Translate Script -->
+    <!-- Google Translate Script (30 Seçkin Dil Limiti) -->
     <script type="text/javascript">
       function googleTranslateElementInit() {
-        new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'tr,en,fr,de,it,es,ja,ru,zh', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+        new google.translate.TranslateElement({
+            pageLanguage: 'en', 
+            includedLanguages: 'tr,en,fr,es,it,de,ru,zh-CN,ja,ar,pt,hi,bn,ko,vi,pl,uk,fa,el,nl,sv,th,az,bg,cs,da,fi,hu,no,ro', 
+            layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+        }, 'google_translate_element');
       }
     </script>
     <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
@@ -84,7 +87,6 @@
       document.addEventListener("DOMContentLoaded", function() {
         const images = document.querySelectorAll('.container img');
         images.forEach(img => {
-          // HARİTA KONTROLÜ: Eğer resim harita (Leaflet) içindeyse veya bir linke bağlıysa zoom yapma
           const isMap = img.closest('.leaflet-container') || img.closest('#map');
           const isLink = img.closest('a');
 
