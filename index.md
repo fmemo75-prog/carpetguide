@@ -345,6 +345,12 @@ img { max-width: 100%; height: auto; display: block; }
     </a>
 </div>
 
+<!-- ANA SAYFA BUTONU -->
+<div style="margin-bottom: 15px;">
+  <a href="{{ site.baseurl }}/double-knot" style="display: block; background: linear-gradient(135deg, #8b4513, #b22222); color: white; padding: 15px; border-radius: 10px; text-decoration: none; font-weight: bold; text-align: center; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
+    🧵 Technical: The Double Knot Guide
+  </a>
+</div>
 
 <!-- ════════════════════════════════════════════════════════ -->
 <!--  KILIM & FLAT-WEAVE                                      -->
