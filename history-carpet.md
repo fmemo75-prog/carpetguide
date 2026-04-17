@@ -1,12 +1,75 @@
----
-layout: default
-title: Sayfa Başlığı (Opsiyonel)
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Turkish Carpets in European Art</title>
+  <style>
+    body {
+      font-family: "Georgia", serif;
+      background-color: #f9f9f9;
+      color: #333;
+      margin: 0;
+      padding: 20px;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    p.intro {
+      text-align: center;
+      font-size: 1.1em;
+      margin-bottom: 30px;
+    }
+    .carpet-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .carpet-card {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      width: 320px;
+      padding: 15px;
+      text-align: center;
+    }
+    .carpet-card img {
+      max-width: 100%;
+      border-radius: 6px;
+    }
+    .carpet-card h3 {
+      margin-top: 10px;
+      font-size: 1.2em;
+      color: #444;
+    }
+    .carpet-card p {
+      font-size: 0.95em;
+      margin: 10px 0;
+    }
+    .carpet-card a {
+      display: inline-block;
+      margin-top: 8px;
+      font-size: 0.9em;
+      color: #0066cc;
+      text-decoration: none;
+    }
+    .carpet-card a:hover {
+      text-decoration: underline;
+    }
+    .museum-note {
+      text-align: center;
+      margin-top: 40px;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
 
 <section id="carpet-exhibition">
   <h2>Turkish Carpets in European Art</h2>
-  <p>
-    Explore how <strong>Holbein</strong>, <strong>Lotto</strong>, and <strong>Bellini</strong> carpets 
+  <p class="intro">
+    Discover how <strong>Holbein</strong>, <strong>Lotto</strong>, and <strong>Bellini</strong> carpets 
     became timeless symbols in Renaissance paintings, blending Anatolian craftsmanship with European prestige.
   </p>
 
@@ -14,8 +77,8 @@ title: Sayfa Başlığı (Opsiyonel)
 
     <!-- Holbein Carpet -->
     <div class="carpet-card">
-      <img src="https://commons.wikimedia.org/wiki/File:Small_pattern_Holbein_carpet_Anatolia_16th_century.jpg" 
-           alt="Holbein Carpet, 16th century Anatolia" width="350">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/7/7d/Small_pattern_Holbein_carpet_Anatolia_16th_century.jpg" 
+           alt="Holbein Carpet, 16th century Anatolia">
       <h3>Holbein Carpet</h3>
       <p>
         Geometric medallions and repeating motifs. Immortalized in Hans Holbein’s portraits, 
@@ -26,8 +89,8 @@ title: Sayfa Başlığı (Opsiyonel)
 
     <!-- Lotto Carpet -->
     <div class="carpet-card">
-      <img src="https://commons.wikimedia.org/wiki/File:Lotto_carpet_MET_08.167.1.jpg" 
-           alt="Lotto Carpet, 17th century" width="350">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/Western_Anatolian_knotted_wool_carpet_with_Lotto_pattern%2C_16th_century%2C_Saint_Louis_Art_Museum.jpg" 
+           alt="Lotto Carpet, 16th century">
       <h3>Lotto Carpet</h3>
       <p>
         Star-shaped arabesques on vibrant grounds. Named after Lorenzo Lotto, 
@@ -38,8 +101,8 @@ title: Sayfa Başlığı (Opsiyonel)
 
     <!-- Bellini Carpet -->
     <div class="carpet-card">
-      <img src="https://commons.wikimedia.org/wiki/File:Bellini_carpet_MET_22.100.114.jpg" 
-           alt="Bellini Carpet, 16th–17th century" width="350">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Bellini_carpet_MET_22.100.114.jpg" 
+           alt="Bellini Carpet, 16th–17th century">
       <h3>Bellini Carpet</h3>
       <p>
         Prayer-niche designs influenced by Ottoman art. Associated with Gentile Bellini, 
@@ -57,3 +120,6 @@ title: Sayfa Başlığı (Opsiyonel)
     <a href="https://www.uffizi.it/en" target="_blank">Uffizi Gallery</a>.
   </p>
 </section>
+
+</body>
+</html>
