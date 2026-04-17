@@ -6,8 +6,6 @@ title: The Renaissance Connection: Artists & Carpets
 # 🎨 The Renaissance Masterpieces
 ### When Anatolian Art Inspired European Masters
 
-In the 15th and 16th centuries, Anatolian carpets were so highly valued in Europe that they were considered symbols of ultimate status and wealth. Famous Renaissance painters were so fascinated by these "exotic" masterpieces that they included them in their paintings with incredible detail. Today, these carpet groups are named after those legendary artists.
-
 ---
 
 <!-- SECTION: HOLBEIN -->
@@ -17,13 +15,15 @@ In the 15th and 16th centuries, Anatolian carpets were so highly valued in Europ
   </div>
   <div style="flex: 1.2; min-width: 300px;">
     <h2 style="color: #8b0000; border-bottom: 2px solid #d4af37; padding-bottom: 5px;">1. The Holbein Carpet</h2>
-    <p>Named after <b>Hans Holbein the Younger</b>, who featured these designs in works like <i>"The Ambassadors."</i></p>
+    <p>Featured in works like <i>"The Ambassadors"</i> by Hans Holbein the Younger.</p>
     <ul>
-      <li><strong>Characteristics:</strong> Small-scale geometric patterns, typically octagons set within squares.</li>
-      <li><strong>Style:</strong> Often features intricate "interlace" or "Kufic" borders.</li>
-      <li><strong>Symbolism:</strong> Represents the mathematical precision and infinite nature of Islamic art.</li>
+      <li><strong>Patterns:</strong> Small-scale geometric octagons.</li>
+      <li><strong>Heritage:</strong> Originates from the 15th-century Anatolian weaving centers.</li>
     </ul>
-    <p style="font-style: italic; color: #666;">Legacy: These are among the most famous "export" carpets that reached the courts of Henry VIII.</p>
+    <!-- REFERENCE LINK -->
+    <p style="font-size: 12px; margin-top: 15px;">
+      <a href="https://en.wikipedia.org/wiki/Holbein_carpet" target="_blank" style="color: #d4af37; text-decoration: none;">📖 View Scholarly Article (Wikipedia) →</a>
+    </p>
   </div>
 </div>
 
@@ -34,13 +34,14 @@ In the 15th and 16th centuries, Anatolian carpets were so highly valued in Europ
   </div>
   <div style="flex: 1.2; min-width: 300px;">
     <h2 style="color: #8b0000; border-bottom: 2px solid #d4af37; padding-bottom: 5px;">2. The Lotto Carpet</h2>
-    <p>Named after the Italian painter <b>Lorenzo Lotto</b>, who included them in several religious paintings.</p>
+    <p>Characterized by "yellow lace on a red sea" as seen in Lorenzo Lotto’s paintings.</p>
     <ul>
-      <li><strong>Characteristics:</strong> A vibrant red field covered with an angular, yellow "arabesque" or lace-like pattern.</li>
-      <li><strong>Origin:</strong> Primarily woven in the Uşak region of Anatolia.</li>
-      <li><strong>Visual Impact:</strong> Known for its high contrast and energetic, rhythmic design.</li>
+      <li><strong>Style:</strong> Intricate arabesque designs from Uşak.</li>
     </ul>
-    <p style="font-style: italic; color: #666;">Identification: If you see "yellow lace on a red sea," it is almost certainly a Lotto.</p>
+    <!-- REFERENCE LINK -->
+    <p style="font-size: 12px; margin-top: 15px;">
+      <a href="https://en.wikipedia.org/wiki/Lotto_carpet" target="_blank" style="color: #d4af37; text-decoration: none;">📖 View Scholarly Article (Wikipedia) →</a>
+    </p>
   </div>
 </div>
 
@@ -51,19 +52,16 @@ In the 15th and 16th centuries, Anatolian carpets were so highly valued in Europ
   </div>
   <div style="flex: 1.2; min-width: 300px;">
     <h2 style="color: #8b0000; border-bottom: 2px solid #d4af37; padding-bottom: 5px;">3. The Bellini Carpet</h2>
-    <p>Named after <b>Gentile and Giovanni Bellini</b>. These are often "Prayer" style carpets.</p>
+    <p>Known for the unique "Keyhole" or "Re-entrant" motif.</p>
     <ul>
-      <li><strong>Characteristics:</strong> Recognizable by the "keyhole" or "re-entrant" motif at the bottom of the prayer niche (mihrab).</li>
-      <li><strong>Motif:</strong> The circular element at the base is a unique design specific to 15th-century Anatolia.</li>
-      <li><strong>Context:</strong> Frequently depicted at the feet of the Virgin Mary in Renaissance altarpieces.</li>
+      <li><strong>Famous Example:</strong> Often found in 15th-century religious altarpieces.</li>
     </ul>
-    <p style="font-style: italic; color: #666;">Historical Value: These rugs bridge the gap between sacred Islamic architecture and Christian religious art.</p>
+    <!-- MUSEUM REFERENCE LINK -->
+    <div style="margin-top: 15px; padding: 10px; background: #fdf5e6; border-radius: 5px; border-left: 3px solid #8b0000;">
+      <p style="font-size: 12px; margin: 0; color: #333;">
+        <strong>Museum Exhibit:</strong><br>
+        <a href="https://www.metmuseum.org/art/collection/search/447572" target="_blank" style="color: #8b0000; font-weight: bold; text-decoration: none;">🏛️ View in The Metropolitan Museum of Art (The MET) Collection →</a>
+      </p>
+    </div>
   </div>
-</div>
-
----
-
-<div style="text-align: center; margin-top: 40px;">
-  <a href="./" style="color: #8b4513; font-weight: bold; text-decoration: none;">🏠 Return to Main Gallery</a> | 
-  <a href="./double-knot" style="color: #b22222; font-weight: bold; text-decoration: none;">🧵 Learn the Technique</a>
 </div>
