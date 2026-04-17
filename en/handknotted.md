@@ -120,7 +120,7 @@ A hand-knotted carpet tells a story through its symbols. Below is a technical an
     </td>
     <td style="width: 45%; text-align: center; vertical-align: middle;">
       <a href="{{ site.baseurl }}/images/milas-1.webp" target="_blank">
-        <img src="{{ site.baseurl }}/images/milas-1.jpg" alt="Milas Carpet Analysis" style="width: 100%; border-radius: 5px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+        <img src="{{ site.baseurl }}/images/milas-1.webp" alt="Milas Carpet Analysis" style="width: 100%; border-radius: 5px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
       </a>
       <br><small>(Click to enlarge Milas image)</small>
     </td>
