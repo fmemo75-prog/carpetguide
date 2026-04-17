@@ -1,3 +1,8 @@
+---
+layout: default
+title: Sayfa Başlığı (Opsiyonel)
+---
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
