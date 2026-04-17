@@ -2,6 +2,7 @@
 # 1. BÖLÜM: BÜLENT GÜLER (BİLO)
 # ==========================================
 - file: "hali-bilo.jpg"
+  order: 1
   tag: "Bülent Güler"
   type: "bilo"
   map: "https://www.google.com/maps/search/?api=1&query=Kervan+Carpet+Goreme"
@@ -56,6 +57,7 @@
   text: "<b>Gallery Session:</b> Reviewing the vibrant color palette and high-quality wool selection at Galerie Ikman."
 
 - file: "hali-8.jpg"
+  order: 2
   tag: "Galerie Ikman"
   type: "g"
   map: "https://www.google.com/maps/search/?api=1&query=Galerie+Ikman+Goreme"
@@ -83,6 +85,7 @@
   text: "<b>Pure Silk on Silk</b> masterpiece with Mihrab design. Peak of Hereke tradition exhibited at the Anatolian Art Museum."
 
 - file: "hali-10.jpg"
+  order: 3
   tag: "Museum Piece"
   type: "a"
   map: "https://www.google.com/maps/search/?api=1&query=Anatolian+Art+Museum+Goreme"

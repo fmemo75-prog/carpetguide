@@ -30,7 +30,13 @@ title: Expert Carpet Collection
 # 🧶 Expert Curation: Organized Gallery
 
 <div class="gallery-grid">
-  {% for item in site.data.descriptions %}
+  <!-- 1. ADIM: Listeyi hazırla (Önce numaralılar, sonra diğerleri) -->
+  {% assign ordered = site.data.descriptions | where_exp: "item", "item.order" | sort: "order" %}
+  {% assign unordered = site.data.descriptions | where_exp: "item", "item.order == nil" %}
+  {% assign final_list = ordered | concat: unordered %}
+
+  <!-- 2. ADIM: Döngüyü yeni 'final_list' üzerinden döndür -->
+  {% for item in final_list %}
     <div class="gallery-item">
       <span class="tag tag-{{ item.type }}">{{ item.tag }}</span>
 
@@ -41,15 +47,12 @@ title: Expert Carpet Collection
           <p style="margin:0;">{{ item.text }}</p>
           
           <div class="btn-area">
-            <!-- AKILLI FİLTRE: Eğer link genel Göreme linkiyse Profil sayfasına yönlendir -->
             {% if item.map == "https://www.google.com/maps/search/?api=1&query=Goreme+Cappadocia" %}
               <a href="{{ site.baseurl }}/me" class="action-btn profile-btn">👤 Curator Profile</a>
             {% elsif item.map %}
-              <!-- Diğer tüm özel dükkan ve müze linkleri haritaya gider -->
               <a href="{{ item.map }}" target="_blank" class="action-btn">📍 View Location</a>
             {% endif %}
 
-            <!-- Instagram Butonu (Varsa) -->
             {% if item.instagram %}
               <a href="{{ item.instagram }}" target="_blank" class="action-btn" style="border-color:#E1306C; color:#E1306C;">📸 Instagram</a>
             {% endif %}
@@ -58,9 +61,4 @@ title: Expert Carpet Collection
       </div>
     </div>
   {% endfor %}
-</div>
-
-<hr style="margin-top: 50px;">
-<div style="text-align: center;">
-  <a href="./gallery" style="font-weight: bold; color: #8b0000; text-decoration: none;">⬅️ Back to All Collections</a>
 </div>
