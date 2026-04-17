@@ -293,6 +293,22 @@ img { max-width: 100%; height: auto; display: block; }
     <img src="./loom.jpg" alt="Traditional Anatolian Loom" loading="lazy">
 </div>
 
+<!-- HISTORY SHORTCUT - ELEGANT MINI CARD -->
+<div style="text-align: center; margin-top: 20px;">
+  <a href="{{ site.baseurl }}/history-carpet" style="display: inline-flex; align-items: center; background: #fffcf5; border: 1px solid #d4af37; padding: 10px 20px; border-radius: 50px; text-decoration: none; transition: 0.3s; box-shadow: 0 4px 15px rgba(212, 175, 55, 0.1); max-width: 280px;">
+    
+    <!-- Simge: Antik bir mühür veya parşömen hissi -->
+    <span style="font-size: 22px; margin-right: 12px;">🏛️</span>
+    
+    <div style="text-align: left;">
+      <div style="color: #8b4513; font-weight: bold; font-size: 13px; letter-spacing: 0.5px; text-transform: uppercase;">Carpet History</div>
+      <div style="color: #998542; font-size: 10px; font-style: italic;">From Pazyryk to Palaces</div>
+    </div>
+
+    <!-- Küçük Ok Simgesi -->
+    <span style="color: #d4af37; margin-left: 15px; font-size: 12px;">➔</span>
+  </a>
+</div>
 
 <!-- ════════════════════════════════════════════════════════ -->
 <!--  CAPPADOCIA FEATURED                                     -->
