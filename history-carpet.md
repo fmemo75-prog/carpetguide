@@ -77,7 +77,9 @@
 
     <!-- Holbein Carpet -->
     <div class="carpet-card">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/7/7d/Small_pattern_Holbein_carpet_Anatolia_16th_century.jpg" 
+     <img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/Western_Anatolian_knotted_wool_carpet_with_Lotto_pattern%2C_16th_century%2C_Saint_Louis_Art_Museum.jpg" 
+     alt="Lotto Carpet, 16th century" width="350">
+
            alt="Holbein Carpet, 16th century Anatolia">
       <h3>Holbein Carpet</h3>
       <p>
