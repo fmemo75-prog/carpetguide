@@ -1,7 +1,7 @@
 ---
 layout: default
 
-title: Interactive Flat-Weaving
+title: 
 
 ---
 
