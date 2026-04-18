@@ -426,7 +426,7 @@ img { max-width: 100%; height: auto; display: block; }
     <!-- YOUTUBE VİDEO (Dikey format optimized) -->
     <div style="position: relative; padding-bottom: 177%; height: 0; overflow: hidden; background: #000;">
       <iframe id="heroVideo" 
-              src="https://https://www.youtube.com/shorts/H0-iM_BKA0Q
+              src="https://youtube.com/shorts/H0-iM_BKA0Q?si=82eqzNW2KoCJVyqI"
               style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" 
               allow="autoplay; encrypted-media" 
               allowfullscreen>
