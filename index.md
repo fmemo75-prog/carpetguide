@@ -365,7 +365,7 @@ img { max-width: 100%; height: auto; display: block; }
 <div style="text-align: center; margin: 30px 0; padding: 25px; background: #fdf5e6; border: 2px solid #2e8b57; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
   <h3 style="color: #2e8b57; margin-top: 0; font-family: 'Georgia', serif;">🌍 Master the Art of Weaving</h3>
   <p style="font-size: 15px; color: #444;">Explore our detailed analysis of ancient methods.</p>
-  
+  <a href="./flat-viewing" style="...">🔍 Interactive Kilim & Double Knot Techniques</a>
  
 
 <!-- ════════════════════════════════════════════════════════ -->
