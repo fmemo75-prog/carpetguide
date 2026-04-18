@@ -1,12 +1,10 @@
-\---
+---
 
 layout: default
 
 title: Interactive Flat-Weaving
 
-\---
-
-
+---
 
 <!DOCTYPE html>
 
