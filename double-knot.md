@@ -1001,28 +1001,8 @@ function goTo(n) {
   // Update buttons
   document.getElementById('prevbtn').disabled = n === 0;
   document.getElementById('nextbtn').disabled = n === STEPS.length - 1;
----
-layout: default
-title: The Turkish Double Knot (Ghiordes)
----
 
-# 🧶 The Ghiordes Knot: The Strength of the Turkish Double Knot
-
-As a curator, I emphasize the **Double Knot** (Simetrik Düğüm) as the hallmark of durability. 
-
-<div style="text-align: center; margin: 30px 0;">
-  <!-- Eğer images klasöründe rug-knots-comparison varsa onu çeker -->
-  <img src="{{ site.baseurl }}/images/rug-knots-comparison.png" alt="Double Knot Comparison" style="width: 80%; border-radius: 15px; border: 2px solid #8b0000;">
-  <br><em>Visual analysis of the Symmetrical (Turkish) Knot vs Asymmetrical (Persian) Knot.</em>
-</div>
-
-### Why is it superior?
-1. **Durability:** Tying the yarn around two warp threads instead of one makes the carpet almost impossible to unravel.
-2. **Precision:** Allows for the sharp geometric patterns seen in **Hereke** and **Bergama** carpets.
-
-[⬅️ Return to Technical Guide](./flat-viewing)
-  
-// Update description
+  // Update description
   const descEl = document.getElementById('desctext');
   descEl.parentElement.style.animation = 'none';
   void descEl.parentElement.offsetWidth;
