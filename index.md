@@ -366,7 +366,7 @@ img { max-width: 100%; height: auto; display: block; }
   <h3 style="color: #2e8b57; margin-top: 0; font-family: 'Georgia', serif;">🌍 Master the Art of Weaving</h3>
   <p style="font-size: 15px; color: #444;">Explore our detailed analysis of ancient methods.</p>
   
-  <a href="./flat-viewing" style="display: inline-block; background-color: #2e8b57; color: white !important; text-decoration: none; padding: 12px 25px; border-radius: 50px; font-weight: bold; font-size: 14px; box-shadow: 0 4px 10px rgba(46, 139, 87, 0.3);">
+  <a href="./flat-viewing" style="...">🔍 Interactive Kilim & Double Knot Techniques</a>: inline-block; background-color: #2e8b57; color: white !important; text-decoration: none; padding: 12px 25px; border-radius: 50px; font-weight: bold; font-size: 14px; box-shadow: 0 4px 10px rgba(46, 139, 87, 0.3);">
     🔍 Interactive Kilim, Double Knot & Sumak Techniques
   </a>
 </div>
