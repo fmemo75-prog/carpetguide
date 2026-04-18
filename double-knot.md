@@ -51,9 +51,12 @@ title: Sayfa Başlığı (Opsiyonel)
   /* ── HEADER ── */
   header {
     text-align: center;
-    padding: 4rem 2rem 2.5rem;
+    padding: 3rem 1.25rem 2rem;
     position: relative;
     border-bottom: 1px solid var(--warm);
+  }
+  @media (max-width: 500px) {
+    header { padding: 2rem 1rem 1.5rem; }
   }
   .header-ornament {
     display: flex;
@@ -119,13 +122,16 @@ title: Sayfa Başlığı (Opsiyonel)
     align-items: start;
   }
   @media (max-width: 780px) {
-    main { grid-template-columns: 1fr; gap: 2rem; }
+    main { grid-template-columns: 1fr; gap: 2rem; padding: 1.5rem 1rem 3rem; }
   }
 
   /* ── LEFT: INTERACTIVE DIAGRAM ── */
   .diagram-panel {
     position: sticky;
     top: 2rem;
+  }
+  @media (max-width: 780px) {
+    .diagram-panel { position: static; }
   }
 
   /* Step indicator */
@@ -294,11 +300,22 @@ title: Sayfa Başlığı (Opsiyonel)
   }
 
   /* Comparison table */
+  .table-scroll {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin: 1.5rem 0;
+    border: 1px solid rgba(201,185,154,.4);
+    border-radius: 4px;
+  }
   .compare-table {
     width: 100%;
+    min-width: 420px;
     border-collapse: collapse;
     font-size: .85rem;
-    margin: 1.5rem 0;
+  }
+  @media (max-width: 500px) {
+    .compare-table { font-size: .78rem; }
   }
   .compare-table thead tr {
     border-bottom: 1.5px solid var(--gold);
@@ -311,10 +328,11 @@ title: Sayfa Başlığı (Opsiyonel)
     font-weight: 400;
     padding: .5rem .75rem;
     text-align: left;
+    white-space: nowrap;
   }
-  .compare-table th:first-child { width: 40%; }
+  .compare-table th:first-child { width: 30%; }
   .compare-table td {
-    padding: .6rem .75rem;
+    padding: .55rem .75rem;
     border-bottom: 1px solid rgba(201,185,154,.35);
     color: var(--muted);
     vertical-align: top;
@@ -323,6 +341,7 @@ title: Sayfa Başlığı (Opsiyonel)
   .compare-table td:first-child {
     color: var(--ink);
     font-weight: 400;
+    white-space: nowrap;
   }
   .compare-table .highlight td { background: rgba(184,92,56,.06); }
   .compare-table .highlight td:first-child { color: var(--brick); }
@@ -432,9 +451,47 @@ title: Sayfa Başlığı (Opsiyonel)
 
   /* Responsive tweaks */
   @media (max-width: 500px) {
-    h1 { font-size: 2.4rem; }
-    .fact-strip { grid-template-columns: 1fr 1fr; }
-    .step-tab { font-size: .55rem; }
+    h1 { font-size: 2.2rem; letter-spacing: .02em; }
+    h2 { font-size: 1.6rem; }
+    .fact-strip { grid-template-columns: 1fr 1fr; gap: .5rem; }
+    .fact-card { padding: .7rem .75rem; }
+    .fact-card .fact-val { font-size: 1.35rem; }
+    .step-tab { font-size: .52rem; letter-spacing: .06em; padding: .55rem .25rem; }
+    .step-tab .tab-num { font-size: .48rem; }
+    .nav-btn { padding: .45rem .8rem; font-size: .6rem; }
+    .step-desc { font-size: .85rem; padding: .85rem 1rem; }
+    .pull-quote { padding: 1.2rem 1rem 1.2rem 1.5rem; }
+    .pull-quote p { font-size: 1.1rem; }
+    .anatomy-section h2 { font-size: 1.3rem; }
+    .subtitle { font-size: .82rem; letter-spacing: .04em; }
+    .aka { font-size: .88rem; }
+    .uses-list li { font-size: .82rem; }
+    p { font-size: .88rem; }
+    .anatomy-svg-wrap { padding: .5rem; overflow-x: auto; }
+  }
+  /* Anatomy mobile label list */
+  .anatomy-labels {
+    list-style: none;
+    margin-top: .75rem;
+    padding: 0;
+  }
+  .anatomy-labels li {
+    display: flex;
+    gap: .65rem;
+    align-items: baseline;
+    font-size: .82rem;
+    line-height: 1.6;
+    color: var(--muted);
+    padding: .45rem 0;
+    border-bottom: 1px solid rgba(201,185,154,.3);
+  }
+  .anatomy-labels .alabel {
+    font-family: 'Cinzel', serif;
+    font-size: .62rem;
+    letter-spacing: .06em;
+    color: var(--terracotta);
+    white-space: nowrap;
+    flex-shrink: 0;
   }
 </style>
 </head>
@@ -675,6 +732,7 @@ title: Sayfa Başlığı (Opsiyonel)
     <div class="section-label">Structure</div>
     <h2>Turkish vs. <em>Persian</em></h2>
 
+    <div class="table-scroll">
     <table class="compare-table">
       <thead>
         <tr>
@@ -711,6 +769,7 @@ title: Sayfa Başlığı (Opsiyonel)
         </tr>
       </tbody>
     </table>
+    </div><!-- /.table-scroll -->
 
     <div class="pull-quote">
       <p>The symmetry of the knot is not an accident — it is a philosophy. Both threads held equally, neither neglected.</p>
@@ -736,7 +795,8 @@ title: Sayfa Başlığı (Opsiyonel)
     <h2 style="text-align:center">The completed knot — <em>labelled</em></h2>
 
     <div class="anatomy-svg-wrap">
-      <svg viewBox="0 0 900 220" width="100%" xmlns="http://www.w3.org/2000/svg">
+      <!-- Desktop SVG (hidden on mobile via CSS) -->
+      <svg class="anatomy-desktop" viewBox="0 0 900 240" width="100%" xmlns="http://www.w3.org/2000/svg">
         <defs>
           <marker id="ah2" viewBox="0 0 10 10" refX="8" refY="5"
                   markerWidth="5" markerHeight="5" orient="auto-start-reverse">
@@ -749,84 +809,101 @@ title: Sayfa Başlığı (Opsiyonel)
             <line x1="2" y1="0" x2="2" y2="4" stroke="#c9b99a" stroke-width=".3" opacity=".3"/>
           </pattern>
         </defs>
-
-        <rect width="900" height="220" fill="url(#linen2)"/>
-
+        <rect width="900" height="240" fill="url(#linen2)"/>
         <!-- WARP 1 -->
-        <rect x="375" y="10" width="12" height="200" rx="6" fill="var(--warp-dk)" opacity=".2"/>
-        <rect x="372" y="10" width="12" height="200" rx="6" fill="var(--warp)"/>
-        <rect x="374" y="10" width="3" height="200" rx="1.5" fill="rgba(255,255,255,.28)"/>
+        <rect x="375" y="10" width="12" height="215" rx="6" fill="var(--warp-dk)" opacity=".2"/>
+        <rect x="372" y="10" width="12" height="215" rx="6" fill="var(--warp)"/>
+        <rect x="374" y="10" width="3" height="215" rx="1.5" fill="rgba(255,255,255,.28)"/>
         <!-- WARP 2 -->
-        <rect x="513" y="10" width="12" height="200" rx="6" fill="var(--warp-dk)" opacity=".2"/>
-        <rect x="510" y="10" width="12" height="200" rx="6" fill="var(--warp)"/>
-        <rect x="512" y="10" width="3" height="200" rx="1.5" fill="rgba(255,255,255,.28)"/>
-
-        <!-- Full knot path (anatomy view) -->
-        <!-- incoming left -->
-        <path d="M 80,110 L 370,110" fill="none" stroke="var(--yarn)" stroke-width="5" stroke-linecap="round"/>
-        <!-- loop 1 -->
-        <path d="M 370,110 Q 350,110 350,85 Q 350,35 378,35 Q 410,35 410,72 L 410,125 L 488,125"
+        <rect x="513" y="10" width="12" height="215" rx="6" fill="var(--warp-dk)" opacity=".2"/>
+        <rect x="510" y="10" width="12" height="215" rx="6" fill="var(--warp)"/>
+        <rect x="512" y="10" width="3" height="215" rx="1.5" fill="rgba(255,255,255,.28)"/>
+        <!-- knot paths -->
+        <path d="M 80,115 L 370,115" fill="none" stroke="var(--yarn)" stroke-width="5" stroke-linecap="round"/>
+        <path d="M 370,115 Q 350,115 350,88 Q 350,35 378,35 Q 410,35 410,75 L 410,130 L 488,130"
               fill="none" stroke="var(--yarn)" stroke-width="5" stroke-linecap="round"/>
-        <!-- loop 2 -->
-        <path d="M 488,125 Q 545,125 545,85 Q 545,33 516,33 Q 486,33 486,72 L 486,110 L 820,110"
+        <path d="M 488,130 Q 545,130 545,90 Q 545,33 516,33 Q 486,33 486,75 L 486,115 L 820,115"
               fill="none" stroke="var(--yarn)" stroke-width="5" stroke-linecap="round"/>
-        <!-- left tail -->
-        <path d="M 410,125 L 410,208" fill="none" stroke="var(--yarn)" stroke-width="5" stroke-linecap="round"/>
-        <!-- right tail -->
-        <path d="M 486,125 L 486,208" fill="none" stroke="var(--yarn)" stroke-width="5" stroke-linecap="round"/>
-
-        <!-- outgoing right -->
-        <path d="M 820,110 L 870,110" fill="none" stroke="var(--yarn)" stroke-width="3"
+        <path d="M 410,130 L 410,218" fill="none" stroke="var(--yarn)" stroke-width="5" stroke-linecap="round"/>
+        <path d="M 486,130 L 486,218" fill="none" stroke="var(--yarn)" stroke-width="5" stroke-linecap="round"/>
+        <path d="M 820,115 L 868,115" fill="none" stroke="var(--yarn)" stroke-width="3"
               stroke-linecap="round" marker-end="url(#ah2)" opacity=".4"/>
-
-        <!-- LABELS with leader lines -->
-        <!-- Warp 1 -->
-        <line x1="384" y1="10" x2="290" y2="8" stroke="var(--muted)" stroke-width=".7" stroke-dasharray="3 2"/>
+        <!-- Labels -->
+        <line x1="384" y1="10" x2="295" y2="8" stroke="var(--muted)" stroke-width=".7" stroke-dasharray="3 2"/>
         <circle cx="384" cy="10" r="2" fill="var(--muted)"/>
-        <text x="286" y="6" text-anchor="end" font-family="Cinzel,serif" font-size="9"
-              fill="var(--muted)" letter-spacing=".5">Warp thread 1</text>
-
-        <!-- Warp 2 -->
-        <line x1="516" y1="10" x2="610" y2="8" stroke="var(--muted)" stroke-width=".7" stroke-dasharray="3 2"/>
+        <text x="291" y="8" text-anchor="end" font-family="Cinzel,serif" font-size="9" fill="var(--muted)" letter-spacing=".5">Warp thread 1</text>
+        <line x1="516" y1="10" x2="608" y2="8" stroke="var(--muted)" stroke-width=".7" stroke-dasharray="3 2"/>
         <circle cx="516" cy="10" r="2" fill="var(--muted)"/>
-        <text x="614" y="6" text-anchor="start" font-family="Cinzel,serif" font-size="9"
-              fill="var(--muted)" letter-spacing=".5">Warp thread 2</text>
-
-        <!-- Symmetry brace -->
+        <text x="612" y="8" text-anchor="start" font-family="Cinzel,serif" font-size="9" fill="var(--muted)" letter-spacing=".5">Warp thread 2</text>
         <path d="M 378,22 Q 448,14 516,22" fill="none" stroke="var(--gold)" stroke-width="1" stroke-dasharray="3 2"/>
-        <text x="448" y="12" text-anchor="middle" font-family="Cinzel,serif" font-size="8.5"
-              fill="var(--gold)" letter-spacing=".5">symmetrical wrap</text>
-
-        <!-- Left loop -->
-        <line x1="350" y1="72" x2="240" y2="60" stroke="var(--muted)" stroke-width=".7" stroke-dasharray="3 2"/>
+        <text x="448" y="13" text-anchor="middle" font-family="Cinzel,serif" font-size="8.5" fill="var(--gold)" letter-spacing=".5">symmetrical wrap</text>
+        <line x1="350" y1="72" x2="245" y2="62" stroke="var(--muted)" stroke-width=".7" stroke-dasharray="3 2"/>
         <circle cx="350" cy="72" r="2" fill="var(--muted)"/>
-        <text x="236" y="56" text-anchor="end" font-family="DM Sans,sans-serif" font-size="9.5"
-              font-weight="300" fill="var(--ink)">Loop around</text>
-        <text x="236" y="68" text-anchor="end" font-family="DM Sans,sans-serif" font-size="9.5"
-              font-weight="300" fill="var(--ink)">warp 1</text>
-
-        <!-- Right loop -->
-        <line x1="545" y1="72" x2="650" y2="60" stroke="var(--muted)" stroke-width=".7" stroke-dasharray="3 2"/>
+        <text x="241" y="58" text-anchor="end" font-family="DM Sans,sans-serif" font-size="9.5" font-weight="300" fill="var(--ink)">Loop around</text>
+        <text x="241" y="70" text-anchor="end" font-family="DM Sans,sans-serif" font-size="9.5" font-weight="300" fill="var(--ink)">warp 1</text>
+        <line x1="545" y1="72" x2="648" y2="62" stroke="var(--muted)" stroke-width=".7" stroke-dasharray="3 2"/>
         <circle cx="545" cy="72" r="2" fill="var(--muted)"/>
-        <text x="654" y="56" text-anchor="start" font-family="DM Sans,sans-serif" font-size="9.5"
-              font-weight="300" fill="var(--ink)">Loop around</text>
-        <text x="654" y="68" text-anchor="start" font-family="DM Sans,sans-serif" font-size="9.5"
-              font-weight="300" fill="var(--ink)">warp 2</text>
-
-        <!-- Pile label -->
-        <line x1="448" y1="175" x2="448" y2="210" stroke="var(--muted)" stroke-width=".7" stroke-dasharray="3 2"/>
-        <circle cx="448" cy="175" r="2" fill="var(--muted)"/>
-        <rect x="398" y="210" width="100" height="16" rx="3" fill="rgba(184,92,56,.1)"
-              stroke="var(--terracotta)" stroke-width=".5"/>
-        <text x="448" y="222" text-anchor="middle" font-family="Cinzel,serif" font-size="8.5"
-              fill="var(--terracotta)" letter-spacing=".5">pile (hav)</text>
-
-        <!-- Double-anchor text -->
-        <rect x="358" y="130" width="180" height="20" rx="3"
-              fill="rgba(200,151,26,.1)" stroke="var(--gold)" stroke-width=".5"/>
-        <text x="448" y="144" text-anchor="middle" font-family="Cinzel,serif" font-size="7.5"
-              fill="var(--gold)" letter-spacing=".5">double anchor point</text>
+        <text x="652" y="58" text-anchor="start" font-family="DM Sans,sans-serif" font-size="9.5" font-weight="300" fill="var(--ink)">Loop around</text>
+        <text x="652" y="70" text-anchor="start" font-family="DM Sans,sans-serif" font-size="9.5" font-weight="300" fill="var(--ink)">warp 2</text>
+        <line x1="448" y1="180" x2="448" y2="218" stroke="var(--muted)" stroke-width=".7" stroke-dasharray="3 2"/>
+        <circle cx="448" cy="180" r="2" fill="var(--muted)"/>
+        <rect x="398" y="218" width="100" height="17" rx="3" fill="rgba(184,92,56,.1)" stroke="var(--terracotta)" stroke-width=".5"/>
+        <text x="448" y="230" text-anchor="middle" font-family="Cinzel,serif" font-size="8.5" fill="var(--terracotta)" letter-spacing=".5">pile (hav)</text>
+        <rect x="355" y="138" width="186" height="20" rx="3" fill="rgba(200,151,26,.1)" stroke="var(--gold)" stroke-width=".5"/>
+        <text x="448" y="152" text-anchor="middle" font-family="Cinzel,serif" font-size="7.5" fill="var(--gold)" letter-spacing=".5">double anchor point</text>
       </svg>
+
+      <!-- Mobile SVG (clean, no labels — shown only on small screens) -->
+      <svg class="anatomy-mobile" viewBox="0 0 300 240" width="100%" xmlns="http://www.w3.org/2000/svg" style="display:none">
+        <defs>
+          <marker id="ah3" viewBox="0 0 10 10" refX="8" refY="5"
+                  markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+            <path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke"
+                  stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          </marker>
+          <pattern id="linen3" width="4" height="4" patternUnits="userSpaceOnUse">
+            <rect width="4" height="4" fill="none"/>
+            <line x1="0" y1="2" x2="4" y2="2" stroke="#c9b99a" stroke-width=".3" opacity=".4"/>
+            <line x1="2" y1="0" x2="2" y2="4" stroke="#c9b99a" stroke-width=".3" opacity=".3"/>
+          </pattern>
+        </defs>
+        <rect width="300" height="240" fill="url(#linen3)"/>
+        <!-- WARP 1 -->
+        <rect x="120" y="10" width="12" height="215" rx="6" fill="var(--warp-dk)" opacity=".2"/>
+        <rect x="117" y="10" width="12" height="215" rx="6" fill="var(--warp)"/>
+        <rect x="119" y="10" width="3" height="215" rx="1.5" fill="rgba(255,255,255,.28)"/>
+        <!-- WARP 2 -->
+        <rect x="171" y="10" width="12" height="215" rx="6" fill="var(--warp-dk)" opacity=".2"/>
+        <rect x="168" y="10" width="12" height="215" rx="6" fill="var(--warp)"/>
+        <rect x="170" y="10" width="3" height="215" rx="1.5" fill="rgba(255,255,255,.28)"/>
+        <!-- knot paths -->
+        <path d="M 20,115 L 115,115" fill="none" stroke="var(--yarn)" stroke-width="5" stroke-linecap="round"/>
+        <path d="M 115,115 Q 100,115 100,88 Q 100,38 123,38 Q 148,38 148,75 L 148,130 L 155,130"
+              fill="none" stroke="var(--yarn)" stroke-width="5" stroke-linecap="round"/>
+        <path d="M 155,130 Q 182,130 182,90 Q 182,36 168,36 Q 152,36 152,75 L 152,115 L 280,115"
+              fill="none" stroke="var(--yarn)" stroke-width="5" stroke-linecap="round"/>
+        <path d="M 148,130 L 148,218" fill="none" stroke="var(--yarn)" stroke-width="5" stroke-linecap="round"/>
+        <path d="M 152,130 L 152,218" fill="none" stroke="var(--yarn)" stroke-width="5" stroke-linecap="round"/>
+        <!-- symmetry brace -->
+        <path d="M 123,24 Q 145,16 168,24" fill="none" stroke="var(--gold)" stroke-width="1" stroke-dasharray="3 2"/>
+        <!-- double anchor badge -->
+        <rect x="110" y="138" width="82" height="18" rx="3" fill="rgba(200,151,26,.1)" stroke="var(--gold)" stroke-width=".5"/>
+        <text x="151" y="150" text-anchor="middle" font-family="Cinzel,serif" font-size="7" fill="var(--gold)" letter-spacing=".3">double anchor</text>
+        <!-- pile badge -->
+        <rect x="120" y="220" width="62" height="16" rx="3" fill="rgba(184,92,56,.1)" stroke="var(--terracotta)" stroke-width=".5"/>
+        <text x="151" y="231" text-anchor="middle" font-family="Cinzel,serif" font-size="7" fill="var(--terracotta)" letter-spacing=".3">pile (hav)</text>
+        <!-- W1 W2 labels -->
+        <text x="123" y="8" text-anchor="middle" font-family="Cinzel,serif" font-size="8" fill="var(--muted)" letter-spacing=".5">W1</text>
+        <text x="174" y="8" text-anchor="middle" font-family="Cinzel,serif" font-size="8" fill="var(--muted)" letter-spacing=".5">W2</text>
+      </svg>
+
+      <!-- Mobile label list (shown only on small screens) -->
+      <ul class="anatomy-labels" style="display:none">
+        <li><span class="alabel">Warp threads</span> The two vertical threads under loom tension. Every knot wraps a pair.</li>
+        <li><span class="alabel">Symmetrical wrap</span> The yarn circles behind both warps equally — neither is neglected.</li>
+        <li><span class="alabel">Double anchor</span> Two loops, two warps — the knot cannot be pulled loose from either side.</li>
+        <li><span class="alabel">Pile (hav)</span> The two cut ends that stand upright and form the carpet's surface texture.</li>
+      </ul>
     </div>
   </div>
 
@@ -941,6 +1018,19 @@ document.addEventListener('keydown', e => {
   if (e.key === 'ArrowRight') next();
   if (e.key === 'ArrowLeft')  prev();
 });
+
+// Switch anatomy SVG based on screen size
+function updateAnatomy() {
+  const isMobile = window.innerWidth <= 600;
+  const desktop = document.querySelector('.anatomy-desktop');
+  const mobile  = document.querySelector('.anatomy-mobile');
+  const labels  = document.querySelector('.anatomy-labels');
+  if (desktop) desktop.style.display = isMobile ? 'none' : 'block';
+  if (mobile)  mobile.style.display  = isMobile ? 'block' : 'none';
+  if (labels)  labels.style.display  = isMobile ? 'block' : 'none';
+}
+updateAnatomy();
+window.addEventListener('resize', updateAnatomy);
 
 // Init
 goTo(0);
