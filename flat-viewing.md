@@ -1,7 +1,8 @@
-
+---
 layout: default
 title: Interactive Flat-Weaving
 ---
+
 Flat-weaving is an ancient language spoken through motifs. To understand the difference between a Kilim and a rug, we must look at the foundation of the knots.
 
 <table border="0" style="width:100%; background-color: #fff; border: 1px solid #eee; border-radius: 12px; padding: 20px; margin: 20px 0;">
