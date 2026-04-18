@@ -361,10 +361,13 @@ img { max-width: 100%; height: auto; display: block; }
     </a>
 </div>
 
-<!-- ANA SAYFA BUTONU -->
-<div style="margin-bottom: 15px;">
-  <a href="{{ site.baseurl }}/double-knot" style="display: block; background: linear-gradient(135deg, #8b4513, #b22222); color: white; padding: 15px; border-radius: 10px; text-decoration: none; font-weight: bold; text-align: center; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
-    🧵 Technical: The Double Knot Guide
+<!-- INTERACTIVE TECHNICAL GUIDE SECTION -->
+<div style="text-align: center; margin: 30px 0; padding: 25px; background: #fdf5e6; border: 2px solid #2e8b57; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+  <h3 style="color: #2e8b57; margin-top: 0; font-family: 'Georgia', serif;">🌍 Master the Art of Weaving</h3>
+  <p style="font-size: 15px; color: #444;">Explore our detailed analysis of ancient methods.</p>
+  
+  <a href="./flat-viewing" style="display: inline-block; background-color: #2e8b57; color: white !important; text-decoration: none; padding: 12px 25px; border-radius: 50px; font-weight: bold; font-size: 14px; box-shadow: 0 4px 10px rgba(46, 139, 87, 0.3);">
+    🔍 Interactive Kilim, Double Knot & Sumak Techniques
   </a>
 </div>
 
