@@ -415,3 +415,58 @@ img { max-width: 100%; height: auto; display: block; }
     </div>
     <a href="./me" class="footer-profile">👤 Curator Profile &amp; French Lessons →</a>
 </div>
+<!-- MOBILE-FIRST VIDEO POPUP -->
+<div id="videoPopup" style="display: none; position: fixed; z-index: 10000; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.85); align-items: center; justify-content: center; backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);">
+  
+  <div style="position: relative; width: 85%; max-width: 340px; background: #fff; border-radius: 30px; overflow: hidden; box-shadow: 0 25px 50px rgba(0,0,0,0.6); animation: popupAnim 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);">
+    
+    <!-- KAPATMA BUTONU (Mobil için büyük ve kolay erişilir) -->
+    <button onclick="closeVideo()" style="position: absolute; top: 15px; right: 15px; background: #b22222; color: #fff; border: none; border-radius: 50%; width: 44px; height: 44px; font-size: 24px; cursor: pointer; z-index: 11; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(0,0,0,0.3); -webkit-tap-highlight-color: transparent;">✕</button>
+
+    <!-- YOUTUBE VİDEO (Dikey format optimized) -->
+    <div style="position: relative; padding-bottom: 177%; height: 0; overflow: hidden; background: #000;">
+      <iframe id="heroVideo" 
+              src="https://www.youtube.com/embed/O46EivpT9gI?autoplay=1&mute=1&loop=1&playlist=O46EivpT9gI&controls=0&modestbranding=1&rel=0&playsinline=1" 
+              style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" 
+              allow="autoplay; encrypted-media" 
+              allowfullscreen>
+      </iframe>
+    </div>
+
+    <!-- MOBİL BİLGİ ALANI -->
+    <div style="padding: 15px 20px 20px; text-align: center; background: #fff;">
+      <div style="width: 40px; height: 4px; background: #ddd; border-radius: 10px; margin: 0 auto 15px;"></div>
+      <h3 style="margin: 0; font-size: 16px; color: #8b4513; font-family: sans-serif;">The Double Knot</h3>
+      <p style="margin: 5px 0 0; font-size: 12px; color: #666;">The secret behind 100 years of durability.</p>
+    </div>
+  </div>
+</div>
+
+<style>
+  /* Mobilde giriş animasyonu */
+  @keyframes popupAnim {
+    from { transform: scale(0.8) translateY(50px); opacity: 0; }
+    to { transform: scale(1) translateY(0); opacity: 1; }
+  }
+</style>
+
+<script>
+  // Mobil performansı için 2 saniye bekleyip aç (sayfa önce bir otursun)
+  window.addEventListener('load', function() {
+    setTimeout(function() {
+      document.getElementById('videoPopup').style.display = 'flex';
+    }, 2000);
+  });
+
+  function closeVideo() {
+    var popup = document.getElementById('videoPopup');
+    var iframe = document.getElementById('heroVideo');
+    popup.style.display = 'none';
+    iframe.src = ""; // Videoyu tamamen öldür (kaynak tüketmesin)
+  }
+
+  // Boşluğa tıklayınca da kapansın (Mobil kullanıcı alışkanlığı)
+  document.getElementById('videoPopup').onclick = function(e) {
+    if (e.target == this) closeVideo();
+  };
+</script>
