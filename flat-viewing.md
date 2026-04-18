@@ -2,54 +2,6 @@
 layout: default
 title: Interactive Flat-Weaving
 ---
-# 🧶 Flat-Weaving Techniques
-
-Looking for the secret of the Turkish knot?
-<a href="./double-knot" style="font-weight:bold; color:#8b0000;">➡️ Click for Double-Knot Analysis</a>
-      
-      <p style="margin-top: 15px; font-size: 13px; color: #666;">
-        Discover why the <b>Ghiordes Knot</b> is the secret behind 500-year-old masterpieces.
-      </p>
-    </td>
-  </tr>
-</table>
-
-<hr>
-
-### Other Techniques in this Gallery:
-- [Sumak (Soumak) Wrapping](./en/sumak)
-- [Cicim (Jijim) Embroidery](./en/cicim)
-
-
-# 🧶 Interactive Guide: Flat-Weave Masterpieces
-
-Flat-weaving is an ancient language spoken through motifs. To understand the difference between a Kilim and a rug, we must look at the foundation of the knots.
-
-<table border="0" style="width:100%; background-color: #fff; border: 1px solid #eee; border-radius: 12px; padding: 20px; margin: 20px 0;">
-  <tr>
-    <td style="text-align: center;">
-      <h3 style="color: #8b0000;">Technical Deep Dive: The Foundation</h3>
-      <p>While Kilims are flat, the strength of a Turkish carpet comes from the unique knotting method.</p>
-      
-      <!-- DOUBLE KNOT KISA YOLU -->
-      <a href="./double-knot" style="display: inline-block; background-color: #8b0000; color: white !important; text-decoration: none; padding: 15px 30px; border-radius: 10px; font-weight: bold; font-size: 1.1em; border-bottom: 4px solid #5d0000;">
-        🧶 Click here for Double-Knot Weaving Technique (Analysis)
-      </a>
-      
-      <p style="margin-top: 15px; font-size: 13px; color: #666;">
-        Discover why the <b>Ghiordes Knot</b> is the secret behind 500-year-old masterpieces.
-      </p>
-    </td>
-  </tr>
-</table>
-
-<hr>
-
-### Other Techniques in this Gallery:
-- [Sumak (Soumak) Wrapping](./en/sumak)
-- [Cicim (Jijim) Embroidery](./en/cicim)
-# 🧶 Interactive Guide: Flat-Weave Masterpieces
-
 Flat-weaving is an ancient language spoken through motifs. To understand the difference between a Kilim and a rug, we must look at the foundation of the knots.
 
 <table border="0" style="width:100%; background-color: #fff; border: 1px solid #eee; border-radius: 12px; padding: 20px; margin: 20px 0;">
