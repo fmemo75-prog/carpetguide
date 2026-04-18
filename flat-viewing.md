@@ -1,19 +1,4 @@
----
-layout: default
-title: Interactive Flat-Weaving Guide
----
 
-# 🧶 Interactive Guide: Flat-Weave Masterpieces
-
-Flat-weaving is an ancient language spoken through motifs. To understand the difference between a Kilim and a rug, we must look at the foundation of the knots.
-
-<table border="0" style="width:100%; background-color: #fff; border: 1px solid #eee; border-radius: 12px; padding: 20px; margin: 20px 0;">
-  <tr>
-    <td style="text-align: center;">
-      <h3 style="color: #8b0000;">Technical Deep Dive: The Foundation</h3>
-      <p>While Kilims are flat, the strength of a Turkish carpet comes from the unique knotting method.</p>
-      
-      ---
 layout: default
 title: Interactive Flat-Weaving
 ---
