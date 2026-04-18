@@ -416,36 +416,37 @@ img { max-width: 100%; height: auto; display: block; }
     <a href="./me" class="footer-profile">👤 Curator Profile &amp; French Lessons →</a>
 </div>
 
-<!-- KENDİ SUNUCUNDAN OYNAYAN MOBİL VİDEO POPUP -->
+<!-- BİRLEŞTİRİLMİŞ MOBİL VİDEO POPUP KODU -->
 <div id="videoPopup" style="display: none; position: fixed; z-index: 10000; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.85); align-items: center; justify-content: center; backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);">
   
-  <div style="position: relative; width: 85%; max-width: 320px; background: #fff; border-radius: 30px; overflow: hidden; box-shadow: 0 25px 50px rgba(0,0,0,0.6); animation: popupAnim 0.5s ease-out;">
+  <div style="position: relative; width: 85%; max-width: 340px; background: #fff; border-radius: 30px; overflow: hidden; box-shadow: 0 25px 50px rgba(0,0,0,0.6); animation: popupAnim 0.5s ease-out;">
     
-    <!-- KAPATMA BUTONU -->
+    <!-- KAPATMA BUTONU (Üst Sağ Köşe) -->
     <button onclick="closeVideo()" style="position: absolute; top: 15px; right: 15px; background: rgba(178, 34, 34, 0.9); color: #fff; border: none; border-radius: 50%; width: 40px; height: 40px; font-size: 20px; cursor: pointer; z-index: 11; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 10px rgba(0,0,0,0.3); -webkit-tap-highlight-color: transparent;">✕</button>
 
-    <!-- YEREL VİDEO OYNATICI (MP4) -->
+    <!-- VİDEO OYNATICI (Durdur/Oynat ve Ses Çubuğu Dahil) -->
     <div style="background: #000; display: flex; align-items: center;">
-      <video id="localVideo" width="100%" height="auto" autoplay muted loop playsinline style="display: block;">
+      <video id="localVideo" width="100%" height="auto" autoplay muted loop playsinline controls style="display: block;">
         <source src="{{ site.baseurl }}/images/ghiordes-knot.mp4" type="video/mp4">
-        Your browser does not support the video tag.
+        Tarayıcınız video oynatmayı desteklemiyor.
       </video>
     </div>
 
-    <!-- ALT BİLGİ ALANI -->
+    <!-- BİLGİ VE KREDİ ALANI -->
     <div style="padding: 18px; text-align: center; background: #fff;">
-      <h3 style="margin: 0; font-size: 15px; color: #8b4513; font-family: sans-serif; letter-spacing: 1px;">THE ART OF WEAVING</h3>
-      <p style="margin: 6px 0 0; font-size: 11px; color: #777; line-height: 1.4;">
-        Live Demonstration: The Symmetrical <b>Ghiordes Knot</b> technique.
+      <h3 style="margin: 0; font-size: 15px; color: #8b4513; font-family: sans-serif; letter-spacing: 1px; text-transform: uppercase;">The Art of Weaving</h3>
+      <p style="margin: 6px 0 0; font-size: 11px; color: #555; line-height: 1.4;">
+        Detailed view of the <b>Ghiordes Knot</b> technique.
       </p>
       <div style="margin-top: 10px; font-size: 9px; color: #bbb;">
-        Source: @zarin.carpet_rug
+        Visual source: @zarin.carpet_rug
       </div>
     </div>
   </div>
 </div>
 
 <style>
+  /* Açılış Efekti */
   @keyframes popupAnim {
     from { transform: scale(0.9); opacity: 0; }
     to { transform: scale(1); opacity: 1; }
@@ -453,16 +454,19 @@ img { max-width: 100%; height: auto; display: block; }
 </style>
 
 <script>
-  // Sayfa yüklendikten 1.5 saniye sonra göster
+  // Sayfa yüklendikten 1.5 saniye sonra otomatik göster
   window.addEventListener('load', function() {
     setTimeout(function() {
       var popup = document.getElementById('videoPopup');
       var video = document.getElementById('localVideo');
       popup.style.display = 'flex';
-      video.play(); // Bazı tarayıcılar için manuel başlatma tetikleyici
+      video.play().catch(function(error) {
+        console.log("Otomatik oynatma engellendi, kullanıcı etkileşimi bekleniyor.");
+      });
     }, 1500);
   });
 
+  // Kapatma Fonksiyonu
   function closeVideo() {
     var popup = document.getElementById('videoPopup');
     var video = document.getElementById('localVideo');
@@ -470,7 +474,7 @@ img { max-width: 100%; height: auto; display: block; }
     video.pause(); // Kapatınca video dursun
   }
 
-  // Boşluğa tıklayınca kapat
+  // Boşluğa (arkaya) tıklayınca kapatma özelliği
   document.getElementById('videoPopup').onclick = function(e) {
     if (e.target == this) closeVideo();
   };
