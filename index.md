@@ -415,57 +415,62 @@ img { max-width: 100%; height: auto; display: block; }
     </div>
     <a href="./me" class="footer-profile">👤 Curator Profile &amp; French Lessons →</a>
 </div>
-<!-- MOBILE-FIRST VIDEO POPUP -->
+
+<!-- KENDİ SUNUCUNDAN OYNAYAN MOBİL VİDEO POPUP -->
 <div id="videoPopup" style="display: none; position: fixed; z-index: 10000; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.85); align-items: center; justify-content: center; backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);">
   
-  <div style="position: relative; width: 85%; max-width: 340px; background: #fff; border-radius: 30px; overflow: hidden; box-shadow: 0 25px 50px rgba(0,0,0,0.6); animation: popupAnim 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);">
+  <div style="position: relative; width: 85%; max-width: 320px; background: #fff; border-radius: 30px; overflow: hidden; box-shadow: 0 25px 50px rgba(0,0,0,0.6); animation: popupAnim 0.5s ease-out;">
     
-    <!-- KAPATMA BUTONU (Mobil için büyük ve kolay erişilir) -->
-    <button onclick="closeVideo()" style="position: absolute; top: 15px; right: 15px; background: #b22222; color: #fff; border: none; border-radius: 50%; width: 44px; height: 44px; font-size: 24px; cursor: pointer; z-index: 11; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(0,0,0,0.3); -webkit-tap-highlight-color: transparent;">✕</button>
+    <!-- KAPATMA BUTONU -->
+    <button onclick="closeVideo()" style="position: absolute; top: 15px; right: 15px; background: rgba(178, 34, 34, 0.9); color: #fff; border: none; border-radius: 50%; width: 40px; height: 40px; font-size: 20px; cursor: pointer; z-index: 11; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 10px rgba(0,0,0,0.3); -webkit-tap-highlight-color: transparent;">✕</button>
 
-    <!-- YOUTUBE VİDEO (Dikey format optimized) -->
-    <div style="position: relative; padding-bottom: 177%; height: 0; overflow: hidden; background: #000;">
-      <iframe id="heroVideo" 
-              src="https://youtube.com/shorts/H0-iM_BKA0Q?si=82eqzNW2KoCJVyqI"
-              style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" 
-              allow="autoplay; encrypted-media" 
-              allowfullscreen>
-      </iframe>
+    <!-- YEREL VİDEO OYNATICI (MP4) -->
+    <div style="background: #000; display: flex; align-items: center;">
+      <video id="localVideo" width="100%" height="auto" autoplay muted loop playsinline style="display: block;">
+        <source src="{{ site.baseurl }}/images/ghiordes-knot.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
     </div>
 
-    <!-- MOBİL BİLGİ ALANI -->
-    <div style="padding: 15px 20px 20px; text-align: center; background: #fff;">
-      <div style="width: 40px; height: 4px; background: #ddd; border-radius: 10px; margin: 0 auto 15px;"></div>
-      <h3 style="margin: 0; font-size: 16px; color: #8b4513; font-family: sans-serif;">The Double Knot</h3>
-      <p style="margin: 5px 0 0; font-size: 12px; color: #666;">The secret behind 100 years of durability.</p>
+    <!-- ALT BİLGİ ALANI -->
+    <div style="padding: 18px; text-align: center; background: #fff;">
+      <h3 style="margin: 0; font-size: 15px; color: #8b4513; font-family: sans-serif; letter-spacing: 1px;">THE ART OF WEAVING</h3>
+      <p style="margin: 6px 0 0; font-size: 11px; color: #777; line-height: 1.4;">
+        Live Demonstration: The Symmetrical <b>Ghiordes Knot</b> technique.
+      </p>
+      <div style="margin-top: 10px; font-size: 9px; color: #bbb;">
+        Source: @zarin.carpet_rug
+      </div>
     </div>
   </div>
 </div>
 
 <style>
-  /* Mobilde giriş animasyonu */
   @keyframes popupAnim {
-    from { transform: scale(0.8) translateY(50px); opacity: 0; }
-    to { transform: scale(1) translateY(0); opacity: 1; }
+    from { transform: scale(0.9); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
   }
 </style>
 
 <script>
-  // Mobil performansı için 2 saniye bekleyip aç (sayfa önce bir otursun)
+  // Sayfa yüklendikten 1.5 saniye sonra göster
   window.addEventListener('load', function() {
     setTimeout(function() {
-      document.getElementById('videoPopup').style.display = 'flex';
-    }, 2000);
+      var popup = document.getElementById('videoPopup');
+      var video = document.getElementById('localVideo');
+      popup.style.display = 'flex';
+      video.play(); // Bazı tarayıcılar için manuel başlatma tetikleyici
+    }, 1500);
   });
 
   function closeVideo() {
     var popup = document.getElementById('videoPopup');
-    var iframe = document.getElementById('heroVideo');
+    var video = document.getElementById('localVideo');
     popup.style.display = 'none';
-    iframe.src = ""; // Videoyu tamamen öldür (kaynak tüketmesin)
+    video.pause(); // Kapatınca video dursun
   }
 
-  // Boşluğa tıklayınca da kapansın (Mobil kullanıcı alışkanlığı)
+  // Boşluğa tıklayınca kapat
   document.getElementById('videoPopup').onclick = function(e) {
     if (e.target == this) closeVideo();
   };
