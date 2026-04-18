@@ -1,34 +1,46 @@
 ---
 layout: default
-title: Interactive Flat-Weaving
+title: Interactive Weaving Techniques
 ---
 
-Flat-weaving is an ancient language spoken through motifs. To understand the difference between a Kilim and a rug, we must look at the foundation of the knots.
+# 🧶 Technical Deep Dive: Weaving Methods
 
-<table border="0" style="width:100%; background-color: #fff; border: 1px solid #eee; border-radius: 12px; padding: 20px; margin: 20px 0;">
-  <tr>
-    <td style="text-align: center;">
-      <h3 style="color: #8b0000;">Technical Deep Dive: The Foundation</h3>
-      <p>While Kilims are flat, the strength of a Turkish carpet comes from the unique knotting method.</p>
-      
-      <!-- DOUBLE KNOT KISA YOLU -->
-      <a href="./double-knot" style="display: inline-block; background-color: #8b0000; color: white !important; text-decoration: none; padding: 15px 30px; border-radius: 10px; font-weight: bold; font-size: 1.1em; border-bottom: 4px solid #5d0000;">
-        🧶 Click here for Double-Knot Weaving Technique (Analysis)
-      </a>
-      
-      <p style="margin-top: 15px; font-size: 13px; color: #666;">
-        Discover why the <b>Ghiordes Knot</b> is the secret behind 500-year-old masterpieces.
-      </p>
-    </td>
-  </tr>
-</table>
+While Kilims are flat, the strength and beauty of Anatolian textiles come from the specific technical path chosen by the weaver. 
 
-<hr>
+<div style="background-color: #fdf5e6; padding: 30px; border-radius: 15px; border: 1px solid #ddd; text-align: center; margin: 30px 0;">
+  <h2 style="color: #8b0000; margin-top: 0;">Select a Technique to Explore</h2>
+  <p style="color: #555; margin-bottom: 25px;">Discover the secrets of the loops, knots, and embroidery behind each masterpiece.</p>
 
-### Other Techniques in this Gallery:
-- [Sumak (Soumak) Wrapping](./en/sumak)
-- [Cicim (Jijim) Embroidery](./en/cicim)
+  <div style="display: flex; flex-wrap: wrap; gap: 15px; justify-content: center;">
+    
+    <!-- 1. DOUBLE KNOT (Küçültülmüş Buton) -->
+    <a href="./double-knot" style="flex: 1; min-width: 250px; background-color: #8b0000; color: white !important; padding: 15px 20px; border-radius: 10px; text-decoration: none; font-weight: bold; font-size: 14px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: 0.3s;">
+      🧶 Double-Knot Weaving (Analysis)
+    </a>
 
+    <!-- 2. SUMAK INTERACTIVE -->
+    <a href="./sumak-interactive" style="flex: 1; min-width: 250px; background-color: #1a2a6c; color: white !important; padding: 15px 20px; border-radius: 10px; text-decoration: none; font-weight: bold; font-size: 14px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: 0.3s;">
+      🌀 Sumak (Soumak) Interactive
+    </a>
+
+    <!-- 3. CICIM INTERACTIVE -->
+    <a href="./cicim-interactive" style="flex: 1; min-width: 250px; background-color: #2e8b57; color: white !important; padding: 15px 20px; border-radius: 10px; text-decoration: none; font-weight: bold; font-size: 14px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: 0.3s;">
+      🌸 Cicim (Jijim) Interactive
+    </a>
+
+  </div>
+
+  <p style="margin-top: 25px; font-size: 13px; color: #666; font-style: italic;">
+    Each guide includes technical diagrams and expert analysis of the structural foundation.
+  </p>
+</div>
+
+<hr style="margin: 40px 0;">
+
+### 🔍 Why Technique Matters?
+As a curator, I analyze the **structural integrity** of each piece. Whether it's the wrap-around method of Sumak or the double-warp tie of the Ghiordes knot, the technique determines the "soul" and the lifespan of the rug.
+
+[🏠 Return to Main Dashboard](./)
 
 <!DOCTYPE html>
 <html lang="en">
