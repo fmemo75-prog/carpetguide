@@ -112,3 +112,56 @@
     </footer>
 </body>
 </html>
+<!-- KİLİM DOKUMA YAN ŞERİTLERİ -->
+<style>
+  /* Sayfa genel arka planı */
+  body {
+    background-color: #f4ece4; /* Dokumadaki bej tonlarına yakın fon */
+    margin: 0;
+  }
+
+  /* Kilim Şeritleri (Sol ve Sağ) */
+  .kilim-border {
+    position: fixed;
+    top: 0;
+    width: 70px; /* Şerit genişliği */
+    height: 100%;
+    background-image: url('{{ site.baseurl }}/images/kilim-motif.jpg');
+    background-size: cover; /* Resmi şeride sığdırır */
+    background-repeat: repeat-y; /* Aşağıya doğru sonsuz tekrar eder */
+    z-index: -1; /* İçeriğin arkasında kalması için */
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  }
+
+  .left-border { left: 0; border-right: 2px solid #8b4513; }
+  .right-border { right: 0; border-left: 2px solid #8b4513; }
+
+  /* Ana İçerik Alanı: Şeritlerin üzerine binmemesi için kenar boşluğu */
+  .main-content {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 20px;
+    min-height: 100vh;
+    position: relative;
+    box-shadow: 0 0 30px rgba(0,0,0,0.1);
+  }
+
+  /* MOBİL AYARI: Mobilde ekran dar olduğu için şeritleri gizle veya incelt */
+  @media (max-width: 768px) {
+    .kilim-border {
+      width: 15px; /* Mobilde sadece ince bir renk şeridi olarak kalsın */
+    }
+    .main-content {
+      margin: 0 15px;
+    }
+  }
+</style>
+
+<!-- HTML Yapısı -->
+<div class="kilim-border left-border"></div>
+<div class="kilim-border right-border"></div>
+
+<div class="main-content">
+  <!-- Sitenin mevcut tüm içeriği buraya gelecek -->
+</div>
