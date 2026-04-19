@@ -1,12 +1,9 @@
-\---
 
+---
 layout: default
 
 title: Sayfa Başlığı (Opsiyonel)
-
-\---
-
-
+---
 
 
 
