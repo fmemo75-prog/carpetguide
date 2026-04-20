@@ -416,77 +416,88 @@ img { max-width: 100%; height: auto; display: block; }
     <a href="./me" class="footer-profile">👤 Curator Profile &amp; French Lessons →</a>
 </div>
 
-<!-- SLOW-MOTION & INTERACTIVE VIDEO POPUP -->
-<div id="videoPopup" style="display: none; position: fixed; z-index: 10000; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.85); align-items: center; justify-content: center; backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);">
-  
-  <div style="position: relative; width: 85%; max-width: 320px; background: #fff; border-radius: 30px; overflow: hidden; box-shadow: 0 25px 50px rgba(0,0,0,0.6); animation: popupAnim 0.5s ease-out;">
-    
-    <!-- KAPATMA BUTONU (Üst Sağ) -->
-    <button onclick="closeVideo()" style="position: absolute; top: 15px; right: 15px; background: rgba(0,0,0,0.5); color: #fff; border: none; border-radius: 50%; width: 35px; height: 35px; font-size: 18px; cursor: pointer; z-index: 11; display: flex; align-items: center; justify-content: center;">✕</button>
+<!-- VIDEO ANALİZ BÖLÜMÜ -->
+<div class="card" style="max-width: 450px; margin: 20px auto; border-radius: 20px; overflow: hidden; background: #fff;">
+  <div style="position: relative; line-height: 0;" id="videoContainer">
+    <!-- Video Dosyası (Kendi dosya yolunuzu yazın) -->
+    <video id="slowMoVideo" style="width: 100%; display: block;" playsinline>
+      <source src="images/weaving-video.mp4" type="video/mp4">
+      Tarayıcınız video etiketini desteklemiyor.
+    </video>
 
-    <!-- VİDEO ALANI (Üstüne tıklayınca durur/başlar) -->
-    <div style="background: #000; position: relative; cursor: pointer;" onclick="togglePlay()">
-      <video id="localVideo" width="100%" height="auto" autoplay muted loop playsinline style="display: block;">
-        <source src="{{ site.baseurl }}/images/ghiordes-knot.mp4" type="video/mp4">
-      </video>
+    <!-- ALTTA ÇIKAN OYNAT/DURDUR BUTONU VE OVERLAY -->
+    <div id="videoControls" style="
+      position: absolute; 
+      bottom: 0; 
+      left: 0; 
+      right: 0; 
+      height: 60px; 
+      background: linear-gradient(transparent, rgba(0,0,0,0.7)); 
+      display: flex; 
+      justify-content: center; 
+      align-items: center;
+      transition: opacity 0.3s;
+      cursor: pointer;">
       
-      <!-- SES AÇ/KAPA BUTONU (Videonun sol alt köşesinde yüzer buton) -->
-      <button id="muteBtn" onclick="toggleMute(event)" style="position: absolute; bottom: 15px; left: 15px; background: rgba(0,0,0,0.6); border: none; color: white; padding: 8px; border-radius: 50%; width: 35px; height: 35px; cursor: pointer; z-index: 12;">
-        🔇
+      <button id="playPauseBtn" style="
+        background: rgba(255, 255, 255, 0.9);
+        border: none;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.3);">
+        ▶
       </button>
-
-      <!-- ORTADA ÇIKAN OYNAT SİMGESİ (Sadece durunca görünür) -->
-      <div id="playOverlay" style="display: none; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 50px; color: rgba(255,255,255,0.7); pointer-events: none;">▶️</div>
     </div>
+  </div>
 
-    <!-- BİLGİ ALANI -->
-    <div style="padding: 15px; text-align: center; background: #fff;">
-      <h3 style="margin: 0; font-size: 14px; color: #8b4513; letter-spacing: 1px;">SLOW MOTION ANALYSIS</h3>
-      <p style="margin: 4px 0 0; font-size: 11px; color: #666;">Tap video to Pause/Play</p>
+  <!-- ALT BİLGİ VE REFERANS ALANI -->
+  <div style="padding: 15px; text-align: center; background: #fff;">
+    <h4 style="margin: 0; color: #7d4e00; letter-spacing: 1px; font-size: 0.9rem; text-transform: uppercase;">Slow Motion Analysis</h4>
+    <p style="margin: 5px 0 10px; font-size: 0.75rem; color: #9a957c;">Tap video to Pause/Play</p>
+    
+    <!-- VİDEO REFERANSI (KAYNAK) -->
+    <div style="border-top: 1px solid #eee; pt: 10px; font-size: 0.7rem; color: #5a5641; font-style: italic;">
+      Referans: <a href="https://www.instagram.com/zarin.carpet_rug/" target="_blank" style="color: #1a5fb4; text-decoration: none;">@zarin.carpet_rug</a>
     </div>
   </div>
 </div>
 
-<style>
-  @keyframes popupAnim { from { transform: scale(0.9); opacity: 0; } to { transform: scale(1); opacity: 1; } }
-</style>
-
 <script>
-  var v = document.getElementById('localVideo');
-  var mBtn = document.getElementById('muteBtn');
-  var pOver = document.getElementById('playOverlay');
+  const video = document.getElementById('slowMoVideo');
+  const playPauseBtn = document.getElementById('playPauseBtn');
+  const videoControls = document.getElementById('videoControls');
 
-  // Sayfa yüklendiğinde videoyu hazırla
-  window.addEventListener('load', function() {
-    setTimeout(function() {
-      document.getElementById('videoPopup').style.display = 'flex';
-      v.playbackRate = 0.5; // VİDEOYU YARI HIZDA (SLOW MOTION) OYNATIR
-      v.play();
-    }, 1500);
-  });
+  // Videoyu Slow Motion Yap (0.5x hız)
+  video.playbackRate = 0.5;
 
-  // Durdur / Oynat Fonksiyonu
   function togglePlay() {
-    if (v.paused) {
-      v.play();
-      pOver.style.display = "none";
+    if (video.paused) {
+      video.play();
+      playPauseBtn.innerHTML = "⏸";
+      videoControls.style.opacity = "0"; // Oynarken butonu gizle
     } else {
-      v.pause();
-      pOver.style.display = "block";
+      video.pause();
+      playPauseBtn.innerHTML = "▶";
+      videoControls.style.opacity = "1"; // Durunca butonu göster
     }
   }
 
-  // Ses Aç / Kapa Fonksiyonu (Videonun durmasını engellemek için stopPropagation kullandık)
-  function toggleMute(event) {
-    event.stopPropagation(); 
-    v.muted = !v.muted;
-    mBtn.innerHTML = v.muted ? "🔇" : "🔊";
-  }
+  // Hem butona hem videonun kendisine tıklama özelliği
+  videoControls.addEventListener('click', togglePlay);
+  video.addEventListener('click', togglePlay);
 
-  function closeVideo() {
-    document.getElementById('videoPopup').style.display = 'none';
-    v.pause();
-  }
+  // Video bittiğinde butonu tekrar göster
+  video.addEventListener('ended', () => {
+    playPauseBtn.innerHTML = "▶";
+    videoControls.style.opacity = "1";
+  });
+</script>
 
   // Dışarıya tıklayınca kapat
   document.getElementById('videoPopup').onclick = function(e) {
