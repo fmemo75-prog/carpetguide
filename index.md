@@ -427,7 +427,7 @@ img { max-width: 100%; height: auto; display: block; }
     <!-- VİDEO -->
     <div style="position: relative; background: #000; min-height: 200px;">
       <video id="popupVideo" style="width: 100%; display: block;" playsinline loop muted>
-        <source src="images/weaving-video.mp4" type="video/mp4">
+        <source src="images/ghiordes-knot.mp4" type="video/mp4">
       </video>
 
       <!-- DURDURUNCA ALTA ÇIKAN KONTROL -->
