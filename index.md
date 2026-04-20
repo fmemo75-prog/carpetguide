@@ -414,8 +414,18 @@ img { max-width: 100%; height: auto; display: block; }
     <p>Keep your carpet beautiful for generations to come</p>
 </div>
 
-<div style="max-width: 960px; margin: 0 auto; padding: 0 16px 10px;">
-    <a href="./cleaning" class="card" style="display: flex; align-items: center; gap: 20px; padding: 22px 24px; border-radius: 16px; background: linear-gradient(120deg, #fffbf0, #fdf5e6); border: 1px solid #d4af37; box-shadow: 0 4px 15px rgba(212,175,55,0.15); text-decoration: none; color: inherit;">
+<div style="max-width: 960px; margin: 0 auto; padding: 0 16px 10px; display: flex; flex-direction: column; gap: 12px;">
+
+    <a href="./carpet-map" style="display: flex; align-items: center; gap: 20px; padding: 22px 24px; border-radius: 16px; background: linear-gradient(120deg, #f0f4ff, #e8eeff); border: 1px solid #1a2a6c; box-shadow: 0 4px 15px rgba(26,42,108,0.12); text-decoration: none; color: inherit;">
+        <div style="font-size: 2.5em; flex-shrink: 0;">🗺️</div>
+        <div style="flex: 1;">
+            <div style="font-weight: bold; color: #1a2a6c; font-size: 1.05em; margin-bottom: 5px;">Turkey Carpet &amp; Kilim Map</div>
+            <div style="color: #666; font-size: 0.88em; line-height: 1.6;">Interactive map of 20 weaving regions — Hereke, Yağcıbedir, Döşemealtı, Kars, Niğde and more. Click any marker for details.</div>
+        </div>
+        <div style="color: #1a2a6c; font-size: 1.2em; flex-shrink: 0;">→</div>
+    </a>
+
+    <a href="./cleaning" style="display: flex; align-items: center; gap: 20px; padding: 22px 24px; border-radius: 16px; background: linear-gradient(120deg, #fffbf0, #fdf5e6); border: 1px solid #d4af37; box-shadow: 0 4px 15px rgba(212,175,55,0.15); text-decoration: none; color: inherit;">
         <div style="font-size: 2.5em; flex-shrink: 0;">🧹</div>
         <div style="flex: 1;">
             <div style="font-weight: bold; color: #8b0000; font-size: 1.05em; margin-bottom: 5px;">Carpet &amp; Kilim Care Guide</div>
@@ -423,6 +433,7 @@ img { max-width: 100%; height: auto; display: block; }
         </div>
         <div style="color: #d4af37; font-size: 1.2em; flex-shrink: 0;">→</div>
     </a>
+
 </div>
 
 
