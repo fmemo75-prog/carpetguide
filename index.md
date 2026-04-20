@@ -416,53 +416,61 @@ img { max-width: 100%; height: auto; display: block; }
     <a href="./me" class="footer-profile">👤 Curator Profile &amp; French Lessons →</a>
 </div>
 
-<!-- VİDEO POPUP -->
-<div id="videoPopup" style="display: flex; position: fixed; z-index: 10000; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.9); align-items: center; justify-content: center; backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);">
+<!-- 1. VİDEO POPUP (BAŞLANGIÇTA GİZLİ) -->
+<div id="videoPopup" style="display: none; position: fixed; z-index: 10000; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.9); align-items: center; justify-content: center; backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);">
   
-  <div style="position: relative; width: 90%; max-width: 400px; background: #fff; border-radius: 20px; overflow: hidden; box-shadow: 0 20px 50px rgba(0,0,0,0.5);">
+  <div style="position: relative; width: 90%; max-width: 380px; background: #fff; border-radius: 20px; overflow: hidden; box-shadow: 0 20px 50px rgba(0,0,0,0.5);">
     
-    <!-- ÜST KAPATMA BUTONU (Yeri değişti: Sağ üst köşede daha şık) -->
-    <button onclick="closePopup()" style="position: absolute; top: 15px; right: 15px; z-index: 10; background: rgba(0,0,0,0.5); color: white; border: none; border-radius: 50%; width: 30px; height: 30px; cursor: pointer; font-size: 18px; line-height: 1;">&times;</button>
+    <!-- KAPATMA -->
+    <button onclick="closePopup()" style="position: absolute; top: 10px; right: 10px; z-index: 20; background: rgba(0,0,0,0.6); color: white; border: none; border-radius: 50%; width: 32px; height: 32px; cursor: pointer; font-size: 20px;">&times;</button>
 
-    <!-- VİDEO ALANI -->
-    <div style="position: relative; line-height: 0;">
-      <video id="popupVideo" style="width: 100%; display: block;" playsinline loop>
+    <!-- VİDEO -->
+    <div style="position: relative; background: #000; min-height: 200px;">
+      <video id="popupVideo" style="width: 100%; display: block;" playsinline loop muted>
         <source src="images/weaving-video.mp4" type="video/mp4">
       </video>
 
-      <!-- DURDURUNCA ALTA ÇIKAN BUTON VE ÖRTÜ -->
-      <div id="popupControls" onclick="togglePopupPlay()" style="position: absolute; bottom: 0; left: 0; right: 0; height: 60px; background: linear-gradient(transparent, rgba(0,0,0,0.8)); display: flex; justify-content: center; align-items: center; cursor: pointer; transition: opacity 0.3s;">
-        <div id="pPlayBtn" style="background: white; border-radius: 50%; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; font-size: 16px; box-shadow: 0 4px 10px rgba(0,0,0,0.3);">▶</div>
+      <!-- DURDURUNCA ALTA ÇIKAN KONTROL -->
+      <div id="popupControls" onclick="togglePopupPlay()" style="position: absolute; bottom: 0; left: 0; right: 0; height: 60px; background: linear-gradient(transparent, rgba(0,0,0,0.8)); display: flex; justify-content: center; align-items: center; cursor: pointer; transition: opacity 0.3s; opacity: 1;">
+        <div id="pPlayBtn" style="background: white; border-radius: 50%; width: 45px; height: 45px; display: flex; align-items: center; justify-content: center; font-size: 18px;">▶</div>
       </div>
     </div>
 
-    <!-- ALT BİLGİ VE REFERANS -->
-    <div style="padding: 15px; text-align: center; background: white;">
-      <h4 style="margin: 0; color: #7d4e00; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px;">Slow Motion Analysis</h4>
-      <p style="margin: 4px 0 10px; font-size: 0.7rem; color: #9a957c;">Tap to Pause/Play</p>
-      
-      <!-- REFERANS EKLEMESİ -->
-      <div style="border-top: 1px solid #f0f0f0; padding-top: 10px; font-size: 0.65rem; color: #5a5641;">
+    <!-- ALT BİLGİ & REFERANS -->
+    <div style="padding: 15px; text-align: center;">
+      <h4 style="margin: 0; color: #7d4e00; font-size: 0.8rem; text-transform: uppercase;">Slow Motion Analysis</h4>
+      <div style="margin-top: 10px; border-top: 1px solid #eee; padding-top: 10px; font-size: 0.65rem;">
         Kaynak: <a href="https://www.instagram.com/zarin.carpet_rug/" target="_blank" style="color: #1a5fb4; text-decoration: none; font-weight: bold;">@zarin.carpet_rug</a>
       </div>
     </div>
-
   </div>
 </div>
 
 <script>
+  const pPopup = document.getElementById('videoPopup');
   const pVideo = document.getElementById('popupVideo');
   const pControls = document.getElementById('popupControls');
   const pBtn = document.getElementById('pPlayBtn');
-  const pPopup = document.getElementById('videoPopup');
 
-  // Sayfa açıldığında otomatik başlatma (Sessiz başlamalıdır)
-  window.onload = () => {
-    pVideo.playbackRate = 0.5; // Slow motion
-    pVideo.muted = true;
-    pVideo.play().catch(e => console.log("Otomatik oynatma engellendi, etkileşim bekleniyor."));
-    pControls.style.opacity = "0"; // Oynarken gizle
-  };
+  // SAYFA YÜKLENDİKTEN SONRA POPUP'I GÖSTER (Donmayı engellemek için gecikmeli)
+  window.addEventListener('load', () => {
+    setTimeout(() => {
+      pPopup.style.display = 'flex';
+      pVideo.playbackRate = 0.5; // Yavaş çekim
+      
+      // Videoyu başlatmayı dene
+      const playPromise = pVideo.play();
+      if (playPromise !== undefined) {
+        playPromise.then(() => {
+          // Otomatik başladıysa kontrolleri gizle
+          pControls.style.opacity = "0";
+        }).catch(error => {
+          // Otomatik oynatma engellendiyse (normal bir durum)
+          console.log("Oynatmak için tıklayın.");
+        });
+      }
+    }, 1000); // 1 saniye bekle
+  });
 
   function togglePopupPlay() {
     if (pVideo.paused) {
@@ -476,16 +484,43 @@ img { max-width: 100%; height: auto; display: block; }
     }
   }
 
-  // Videonun kendisine tıklayınca da dursun/oynasın
-  pVideo.onclick = togglePopupPlay;
+  // Videonun kendisine tıklandığında durdur/başlat
+  pVideo.onclick = (e) => {
+    e.stopPropagation();
+    togglePopupPlay();
+  };
 
   function closePopup() {
     pVideo.pause();
     pPopup.style.display = 'none';
   }
 
-  // Popup dışına tıklayınca kapatma
+  // Popup dışına tıklayınca kapat
   pPopup.onclick = (e) => {
     if (e.target === pPopup) closePopup();
   };
+
+  /* SESLENDİRME DÖNGÜSÜNDEKİ HATAYI DÜZELTME (Sistemi yoran setInterval yerine event kullanın) */
+  function playAll() {
+    let i = 0;
+    function runNext() {
+      if (i >= dialogue.length) return;
+      
+      const line = dialogue[i];
+      const gender = line.who === 'Z' ? 'female' : 'male';
+      
+      window.speechSynthesis.cancel();
+      const u = new SpeechSynthesisUtterance(line.tr);
+      u.lang = 'tr-TR';
+      u.rate = 0.8;
+      
+      u.onend = () => {
+        i++;
+        setTimeout(runNext, 600);
+      };
+      
+      window.speechSynthesis.speak(u);
+    }
+    runNext();
+  }
 </script>
