@@ -421,7 +421,7 @@ img { max-width: 100%; height: auto; display: block; }
   <div style="position: relative; line-height: 0;" id="videoContainer">
     <!-- Video Dosyası (Kendi dosya yolunuzu yazın) -->
     <video id="slowMoVideo" style="width: 100%; display: block;" playsinline>
-      <source src="images/weaving-video.mp4" type="video/mp4">
+      <source src="images/ghiordes-knot.mp4" type="video/mp4">
       Tarayıcınız video etiketini desteklemiyor.
     </video>
 
