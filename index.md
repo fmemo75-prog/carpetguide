@@ -366,7 +366,7 @@ img { max-width: 100%; height: auto; display: block; }
   <h3 style="color: #2e8b57; margin-top: 0; font-family: 'Georgia', serif;">🌍 Master the Art of Weaving</h3>
   <p style="font-size: 15px; color: #444;">Explore our detailed analysis of ancient methods.</p>
   <a href="./flat-viewing" style="...">🔍 Interactive Kilim & Double Knot Techniques</a>
- 
+ </div>  <!--
 
 <!-- ════════════════════════════════════════════════════════ -->
 <!--  KILIM & FLAT-WEAVE                                      -->
@@ -416,80 +416,111 @@ img { max-width: 100%; height: auto; display: block; }
     <a href="./me" class="footer-profile">👤 Curator Profile &amp; French Lessons →</a>
 </div>
 
-<!-- SLOW-MOTION & INTERACTIVE VIDEO POPUP -->
-<div id="videoPopup" style="display: none; position: fixed; z-index: 10000; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.85); align-items: center; justify-content: center; backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);">
+<!-- 1. VİDEO POPUP (BAŞLANGIÇTA GİZLİ) -->
+<div id="videoPopup" style="display: none; position: fixed; z-index: 10000; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.9); align-items: center; justify-content: center; backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);">
   
-  <div style="position: relative; width: 85%; max-width: 320px; background: #fff; border-radius: 30px; overflow: hidden; box-shadow: 0 25px 50px rgba(0,0,0,0.6); animation: popupAnim 0.5s ease-out;">
+  <div style="position: relative; width: 90%; max-width: 380px; background: #fff; border-radius: 20px; overflow: hidden; box-shadow: 0 20px 50px rgba(0,0,0,0.5);">
     
-    <!-- KAPATMA BUTONU (Üst Sağ) -->
-    <button onclick="closeVideo()" style="position: absolute; top: 15px; right: 15px; background: rgba(0,0,0,0.5); color: #fff; border: none; border-radius: 50%; width: 35px; height: 35px; font-size: 18px; cursor: pointer; z-index: 11; display: flex; align-items: center; justify-content: center;">✕</button>
+    <!-- KAPATMA -->
+    <button onclick="closePopup()" style="position: absolute; top: 10px; right: 10px; z-index: 20; background: rgba(0,0,0,0.6); color: white; border: none; border-radius: 50%; width: 32px; height: 32px; cursor: pointer; font-size: 20px;">&times;</button>
 
-    <!-- VİDEO ALANI (Üstüne tıklayınca durur/başlar) -->
-    <div style="background: #000; position: relative; cursor: pointer;" onclick="togglePlay()">
-      <video id="localVideo" width="100%" height="auto" autoplay muted loop playsinline style="display: block;">
-        <source src="{{ site.baseurl }}/images/ghiordes-knot.mp4" type="video/mp4">
+    <!-- VİDEO -->
+    <div style="position: relative; background: #000; min-height: 200px;">
+      <video id="popupVideo" style="width: 100%; display: block;" playsinline loop muted>
+        <source src="images/ghiordes-knot.mp4" type="video/mp4">
       </video>
-      
-      <!-- SES AÇ/KAPA BUTONU (Videonun sol alt köşesinde yüzer buton) -->
-      <button id="muteBtn" onclick="toggleMute(event)" style="position: absolute; bottom: 15px; left: 15px; background: rgba(0,0,0,0.6); border: none; color: white; padding: 8px; border-radius: 50%; width: 35px; height: 35px; cursor: pointer; z-index: 12;">
-        🔇
-      </button>
 
-      <!-- ORTADA ÇIKAN OYNAT SİMGESİ (Sadece durunca görünür) -->
-      <div id="playOverlay" style="display: none; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 50px; color: rgba(255,255,255,0.7); pointer-events: none;">▶️</div>
+      <!-- DURDURUNCA ALTA ÇIKAN KONTROL -->
+      <div id="popupControls" onclick="togglePopupPlay()" style="position: absolute; bottom: 0; left: 0; right: 0; height: 60px; background: linear-gradient(transparent, rgba(0,0,0,0.8)); display: flex; justify-content: center; align-items: center; cursor: pointer; transition: opacity 0.3s; opacity: 1;">
+        <div id="pPlayBtn" style="background: white; border-radius: 50%; width: 45px; height: 45px; display: flex; align-items: center; justify-content: center; font-size: 18px;">▶</div>
+      </div>
     </div>
 
-    <!-- BİLGİ ALANI -->
-    <div style="padding: 15px; text-align: center; background: #fff;">
-      <h3 style="margin: 0; font-size: 14px; color: #8b4513; letter-spacing: 1px;">SLOW MOTION ANALYSIS</h3>
-      <p style="margin: 4px 0 0; font-size: 11px; color: #666;">Tap video to Pause/Play</p>
+    <!-- ALT BİLGİ & REFERANS -->
+    <div style="padding: 15px; text-align: center;">
+      <h4 style="margin: 0; color: #7d4e00; font-size: 0.8rem; text-transform: uppercase;">Slow Motion Analysis</h4>
+      <div style="margin-top: 10px; border-top: 1px solid #eee; padding-top: 10px; font-size: 0.65rem;">
+        Kaynak: <a href="https://www.instagram.com/zarin.carpet_rug/" target="_blank" style="color: #1a5fb4; text-decoration: none; font-weight: bold;">@zarin.carpet_rug</a>
+      </div>
     </div>
   </div>
 </div>
 
-<style>
-  @keyframes popupAnim { from { transform: scale(0.9); opacity: 0; } to { transform: scale(1); opacity: 1; } }
-</style>
-
 <script>
-  var v = document.getElementById('localVideo');
-  var mBtn = document.getElementById('muteBtn');
-  var pOver = document.getElementById('playOverlay');
+  const pPopup = document.getElementById('videoPopup');
+  const pVideo = document.getElementById('popupVideo');
+  const pControls = document.getElementById('popupControls');
+  const pBtn = document.getElementById('pPlayBtn');
 
-  // Sayfa yüklendiğinde videoyu hazırla
-  window.addEventListener('load', function() {
-    setTimeout(function() {
-      document.getElementById('videoPopup').style.display = 'flex';
-      v.playbackRate = 0.5; // VİDEOYU YARI HIZDA (SLOW MOTION) OYNATIR
-      v.play();
-    }, 1500);
+  // SAYFA YÜKLENDİKTEN SONRA POPUP'I GÖSTER (Donmayı engellemek için gecikmeli)
+  window.addEventListener('load', () => {
+    setTimeout(() => {
+      pPopup.style.display = 'flex';
+      pVideo.playbackRate = 0.5; // Yavaş çekim
+      
+      // Videoyu başlatmayı dene
+      const playPromise = pVideo.play();
+      if (playPromise !== undefined) {
+        playPromise.then(() => {
+          // Otomatik başladıysa kontrolleri gizle
+          pControls.style.opacity = "0";
+        }).catch(error => {
+          // Otomatik oynatma engellendiyse (normal bir durum)
+          console.log("Oynatmak için tıklayın.");
+        });
+      }
+    }, 1000); // 1 saniye bekle
   });
 
-  // Durdur / Oynat Fonksiyonu
-  function togglePlay() {
-    if (v.paused) {
-      v.play();
-      pOver.style.display = "none";
+  function togglePopupPlay() {
+    if (pVideo.paused) {
+      pVideo.play();
+      pBtn.innerHTML = "⏸";
+      pControls.style.opacity = "0";
     } else {
-      v.pause();
-      pOver.style.display = "block";
+      pVideo.pause();
+      pBtn.innerHTML = "▶";
+      pControls.style.opacity = "1";
     }
   }
 
-  // Ses Aç / Kapa Fonksiyonu (Videonun durmasını engellemek için stopPropagation kullandık)
-  function toggleMute(event) {
-    event.stopPropagation(); 
-    v.muted = !v.muted;
-    mBtn.innerHTML = v.muted ? "🔇" : "🔊";
-  }
-
-  function closeVideo() {
-    document.getElementById('videoPopup').style.display = 'none';
-    v.pause();
-  }
-
-  // Dışarıya tıklayınca kapat
-  document.getElementById('videoPopup').onclick = function(e) {
-    if (e.target == this) closeVideo();
+  // Videonun kendisine tıklandığında durdur/başlat
+  pVideo.onclick = (e) => {
+    e.stopPropagation();
+    togglePopupPlay();
   };
+
+  function closePopup() {
+    pVideo.pause();
+    pPopup.style.display = 'none';
+  }
+
+  // Popup dışına tıklayınca kapat
+  pPopup.onclick = (e) => {
+    if (e.target === pPopup) closePopup();
+  };
+
+  /* SESLENDİRME DÖNGÜSÜNDEKİ HATAYI DÜZELTME (Sistemi yoran setInterval yerine event kullanın) */
+  function playAll() {
+    let i = 0;
+    function runNext() {
+      if (i >= dialogue.length) return;
+      
+      const line = dialogue[i];
+      const gender = line.who === 'Z' ? 'female' : 'male';
+      
+      window.speechSynthesis.cancel();
+      const u = new SpeechSynthesisUtterance(line.tr);
+      u.lang = 'tr-TR';
+      u.rate = 0.8;
+      
+      u.onend = () => {
+        i++;
+        setTimeout(runNext, 600);
+      };
+      
+      window.speechSynthesis.speak(u);
+    }
+    runNext();
+  }
 </script>
