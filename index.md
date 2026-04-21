@@ -359,6 +359,12 @@ img { max-width: 100%; height: auto; display: block; }
         <div class="card-desc">Wool, silk, dyes, knot types and density explained.</div>
         <div class="card-link">Explore →</div>
     </a>
+    <a href="./carpet-map" class="card">
+        <div class="card-icon">🗺️</div>
+        <div class="card-title">Regional Map</div>
+        <div class="card-desc">20 weaving regions on an interactive map — Hereke to Kars.</div>
+        <div class="card-link">Explore →</div>
+    </a>
 </div>
 
 <!-- INTERACTIVE TECHNICAL GUIDE SECTION -->
