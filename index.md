@@ -1,542 +1,244 @@
----
-layout: default
-title: Global Carpet & Kilim Guide — Fatih Mehmet Canıtez
----
-<div style="text-align: center; margin: 30px 0;">
-  <a href="./gallery" style="background: #8b0000; color: white !important; padding: 15px 30px; border-radius: 50px; text-decoration: none; font-weight: bold; font-size: 1.2em; box-shadow: 0 5px 15px rgba(139,0,0,0.3);">
-    📸 View My Personal Photo Gallery
-  </a>
-</div>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RugVision Pro — Cappadocia Edition</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;600&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --accent: #c0392b;
+            --bg: #0a0a0a;
+            --panel: #141414;
+            --text: #f0ede8;
+            --gold: #c9a84c;
+        }
 
-<style>
-/* ── RESET — Facebook in-app browser'da güvenli ───────────── */
-* { box-sizing: border-box; -webkit-box-sizing: border-box; margin: 0; padding: 0; }
-html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
-body { font-family: Georgia, 'Times New Roman', serif; background: #faf8f5; color: #2c2c2c; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
-a { text-decoration: none; -webkit-tap-highlight-color: rgba(139,0,0,0.15); }
-img { max-width: 100%; height: auto; display: block; }
+        body, html { margin: 0; padding: 0; font-family: 'DM Sans', sans-serif; background: var(--bg); color: var(--text); overflow-x: hidden; }
 
-/* ── HERO ──────────────────────────────────────────────────── */
-.hero {
-    width: 100%;
-    background: #3d0000;
-    background: -webkit-linear-gradient(135deg, #1a0a0a 0%, #3d0000 45%, #6b0f0f 100%);
-    background: linear-gradient(135deg, #1a0a0a 0%, #3d0000 45%, #6b0f0f 100%);
-    border-radius: 0 0 24px 24px;
-    padding: 44px 20px 40px;
-    /* inset yerine top/right/bottom/left — FB uyumu */
-}
-/* FB browser ::before pseudo-element desteği kısıtlı olabilir,
-   arka plan görseli doğrudan hero'ya taşıdık */
-.hero-bg-overlay {
-    /* JS ile yüklenen görsel için placeholder — script aşağıda */
-    position: absolute;
-    display: none; /* JS açacak */
-}
-.hero-inner {
-    max-width: 860px;
-    margin: 0 auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    gap: 24px;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-}
-.hero-avatar {
-    width: 90px; height: 90px;
-    border-radius: 50%;
-    border: 3px solid #d4af37;
-    object-fit: cover;
-    -webkit-flex-shrink: 0;
-    flex-shrink: 0;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.5);
-}
-.hero-text { -webkit-box-flex: 1; flex: 1; min-width: 180px; }
-.hero-text h1 {
-    font-size: 22px;
-    color: #fff;
-    line-height: 1.25;
-    margin-bottom: 8px;
-}
-.hero-text h1 span { color: #d4af37; display: block; font-size: 17px; margin-top: 3px; }
-.hero-text p {
-    color: rgba(255,255,255,0.72);
-    font-size: 14px;
-    line-height: 1.6;
-    margin-bottom: 20px;
-}
-.hero-btns {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    gap: 10px;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-}
+        /* ─── LANDING PAGE (GİRİŞ) ─── */
+        .hero {
+            height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center;
+            background: radial-gradient(circle at center, #1a0a0a 0%, #0a0a0a 100%);
+            text-align: center; padding: 20px;
+        }
+        h1 { font-family: 'Cormorant Garamond', serif; font-size: clamp(40px, 8vw, 80px); margin-bottom: 10px; font-weight: 300; }
+        h1 em { color: var(--gold); font-style: italic; }
+        .sub { color: #888; max-width: 600px; margin-bottom: 40px; line-height: 1.6; }
 
-/* ── BUTONLAR — min 44px dokunma alanı (Apple/Google HIG) ─── */
-.btn-gold {
-    display: inline-block;
-    background: #d4af37;
-    color: #1a0a0a !important;
-    padding: 13px 22px;
-    border-radius: 50px;
-    font-weight: bold;
-    font-size: 14px;
-    min-height: 44px;
-    line-height: 1.2;
-    -webkit-appearance: none;
-    box-shadow: 0 3px 10px rgba(212,175,55,0.4);
-}
-.btn-outline {
-    display: inline-block;
-    background: transparent;
-    color: white !important;
-    padding: 12px 22px;
-    border-radius: 50px;
-    font-weight: bold;
-    font-size: 14px;
-    min-height: 44px;
-    line-height: 1.2;
-    border: 1.5px solid rgba(255,255,255,0.5);
-}
+        /* VİDEO ALANI */
+        .video-box {
+            width: min(800px, 90vw); aspect-ratio: 16/9; background: #000; border: 1px solid var(--gold);
+            border-radius: 12px; box-shadow: 0 20px 50px rgba(0,0,0,0.8); display: flex; align-items: center; justify-content: center; position: relative;
+        }
+        .play-overlay { position: absolute; color: var(--gold); font-size: 14px; letter-spacing: 2px; }
 
-/* ── LOOM BANNER ───────────────────────────────────────────── */
-.loom-banner { padding: 28px 16px 0; max-width: 960px; margin: 0 auto; }
-.loom-banner img { width: 100%; border-radius: 16px; box-shadow: 0 6px 24px rgba(0,0,0,0.12); }
+        /* BUTON (VİDEO ALTI) */
+        .cta-container { margin-top: 30px; }
+        .btn-launch {
+            background: var(--accent); color: white; padding: 18px 40px; border: none; border-radius: 4px;
+            font-size: 16px; font-weight: bold; cursor: pointer; transition: 0.3s; letter-spacing: 1px;
+        }
+        .btn-launch:hover { background: #e74c3c; transform: scale(1.05); }
 
-/* ── FEATURED CARD (Cappadocia) ────────────────────────────── */
-.featured-wrap { padding: 28px 16px 0; max-width: 960px; margin: 0 auto; }
-.featured-card {
-    background: #4a0000;
-    background: -webkit-linear-gradient(120deg, #3d0000 0%, #6b1414 100%);
-    background: linear-gradient(120deg, #3d0000 0%, #6b1414 100%);
-    border-radius: 16px;
-    padding: 26px 22px;
-    box-shadow: 0 6px 24px rgba(139,0,0,0.3);
-}
-.featured-card h3 { color: #d4af37; font-size: 18px; margin-bottom: 10px; }
-.featured-card p  { color: rgba(255,255,255,0.78); font-size: 14px; line-height: 1.65; margin-bottom: 18px; }
-.featured-btns {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    gap: 10px;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-}
-.btn-featured-primary {
-    display: inline-block;
-    background: #d4af37;
-    color: #1a0a0a !important;
-    padding: 13px 20px;
-    border-radius: 50px;
-    font-weight: bold;
-    font-size: 14px;
-    min-height: 44px;
-    line-height: 1.2;
-    text-align: center;
-    box-shadow: 0 3px 10px rgba(212,175,55,0.35);
-    -webkit-appearance: none;
-}
-.btn-featured-outline {
-    display: inline-block;
-    background: transparent;
-    color: white !important;
-    padding: 12px 20px;
-    border-radius: 50px;
-    font-weight: bold;
-    font-size: 14px;
-    min-height: 44px;
-    line-height: 1.2;
-    text-align: center;
-    border: 1.5px solid rgba(255,255,255,0.4);
-}
+        /* ─── STUDIO PAGE (STUDYO) ─── */
+        #studio {
+            display: none; position: fixed; inset: 0; z-index: 1000; background: var(--bg);
+            grid-template-columns: 320px 1fr;
+        }
+        .sidebar {
+            background: var(--panel); border-right: 1px solid #333; padding: 25px; overflow-y: auto;
+        }
+        .main-view {
+            background: #000; position: relative; display: flex; align-items: center; justify-content: center; overflow: hidden;
+        }
 
-/* ── SECTION LABEL ─────────────────────────────────────────── */
-.sec-label { text-align: center; padding: 36px 16px 18px; max-width: 960px; margin: 0 auto; }
-.sec-label-bar {
-    width: 50px; height: 3px;
-    background: #8b0000; border-radius: 2px;
-    margin: 0 auto 12px;
-}
-.sec-label h2 { font-size: 17px; color: #8b0000; }
-.sec-label p  { font-size: 13px; color: #999; margin-top: 5px; }
-.sec-label.green .sec-label-bar { background: #2e8b57; }
-.sec-label.green h2 { color: #2e8b57; }
+        .sidebar h2 { font-family: 'Cormorant Garamond'; color: var(--gold); font-size: 24px; margin-bottom: 20px; }
+        .input-box { margin-bottom: 20px; }
+        label { display: block; font-size: 11px; color: #666; text-transform: uppercase; margin-bottom: 8px; }
+        select, input { width: 100%; padding: 12px; background: #222; border: 1px solid #444; color: white; border-radius: 6px; }
 
-/* ── CARD GRID ─────────────────────────────────────────────── */
-.card-grid {
-    max-width: 960px; margin: 0 auto;
-    padding: 0 16px;
-    display: -ms-grid;
-    display: grid;
-    /* Mobilde 2 sütun, masaüstünde 4 */
-    grid-template-columns: repeat(2, 1fr);
-    gap: 12px;
-}
-@media (min-width: 600px) {
-    .card-grid { grid-template-columns: repeat(4, 1fr); }
-}
-.card {
-    background: #fff;
-    border-radius: 14px;
-    padding: 18px 15px;
-    border: 1px solid #ede8df;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    gap: 7px;
-    /* Aktif durumu — hover yerine active (FB/mobil uyumu) */
-    -webkit-tap-highlight-color: rgba(139,0,0,0.08);
-}
-.card:active { background: #fdf5ef; border-color: #c8a06e; }
-.card.green:active { background: #f0faf4; border-color: #2e8b57; }
-.card-icon { font-size: 24px; line-height: 1; }
-.card-title { font-size: 13px; font-weight: bold; color: #2c2c2c; line-height: 1.3; }
-.card-desc  { font-size: 12px; color: #999; line-height: 1.5; -webkit-box-flex: 1; flex: 1; }
-.card-link  { font-size: 12px; font-weight: bold; color: #8b0000; margin-top: 4px; }
-.card.green .card-link { color: #2e8b57; }
+        /* HALI AYARLARI (YAPIŞTIRMA ÇUBUKLARI) */
+        .control-group { background: #1a1a1a; padding: 15px; border-radius: 10px; border: 1px solid #333; margin-top: 20px; }
+        input[type="range"] { accent-color: var(--accent); margin: 10px 0; }
+        .val-text { float: right; color: var(--gold); }
 
-/* ── FOOTER ────────────────────────────────────────────────── */
-.site-footer {
-    max-width: 960px; margin: 40px auto 0;
-    padding: 24px 16px 32px;
-    border-top: 1px solid #ede8df;
-    text-align: center;
-}
-.footer-name { font-size: 14px; color: #555; margin-bottom: 14px; }
-.footer-name strong { color: #8b0000; display: block; font-size: 15px; margin-bottom: 3px; }
-.footer-name span { font-size: 12px; color: #aaa; }
-.footer-profile {
-    display: inline-block;
-    border: 1.5px solid #c8a06e;
-    color: #8b0000 !important;
-    padding: 11px 22px;
-    border-radius: 50px;
-    font-size: 13px;
-    font-weight: bold;
-    min-height: 44px;
-    line-height: 1.2;
-}
-.footer-profile:active { background: #8b0000; color: white !important; }
+        /* HALI NESNESİ */
+        #room-img { max-width: 95%; max-height: 90vh; border-radius: 8px; }
+        #rug-obj {
+            position: absolute; width: 250px; z-index: 100; cursor: move;
+            filter: drop-shadow(0 15px 30px rgba(0,0,0,0.8));
+            transform-origin: center;
+            /* YAPIŞMA EFEKTİ BURADA */
+            transform: translate(-50%, -50%) perspective(1000px) rotateX(65deg);
+        }
 
-/* ── TAM MOBİL (max 480px) ─────────────────────────────────── */
-@media (max-width: 480px) {
-    .hero { padding: 36px 16px 34px; }
-    .hero-inner {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        text-align: center;
-    }
-    .hero-btns {
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-    }
-    .hero-text h1 { font-size: 20px; }
-    .featured-btns {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
-    }
-    .btn-featured-primary,
-    .btn-featured-outline { width: 100%; }
-}
+        .btn-close { position: absolute; top: 20px; right: 20px; background: #333; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; z-index: 1001; }
+        #loader { position: absolute; color: var(--gold); background: rgba(0,0,0,0.9); padding: 20px; border-radius: 10px; display: none; border: 1px solid var(--accent); }
+    </style>
+</head>
+<body>
 
-/* ── FB IN-APP BROWSER ÖZEL DÜZELTMELERİ ──────────────────── */
-/* FB bazı transform ve transition'ları engeller — kullanmıyoruz */
-/* position:fixed yok sayılır — kullanmıyoruz */
-/* vh units hatalı — min-height yerine padding kullandık */
-/* CSS vars desteği kısıtlı — tüm renkler hardcode */
-</style>
+    <!-- GİRİŞ SAYFASI -->
+    <div id="landing">
+        <section class="hero">
+            <div style="font-size: 11px; letter-spacing: 4px; color: var(--gold); margin-bottom: 15px;">AI-POWERED STUDIO</div>
+            <h1>See Your Rug <em>in Any Room</em></h1>
+            <p class="sub">Halıyı dükkanda değil, müşterinizin evindeymiş gibi gösterin. AI ile oda tasarlayın ve halınızı zemine saniyeler içinde "yapıştırın".</p>
+            
+            <div class="video-box">
+                <div class="play-overlay">STUDIO PREVIEW MOVIE</div>
+            </div>
 
+            <div class="cta-container">
+                <button class="btn-launch" onclick="openStudio()">LAUNCH STUDIO NOW</button>
+            </div>
+        </section>
+    </div>
 
-<!-- ════════════════════════════════════════════════════════ -->
-<!--  HERO                                                    -->
-<!-- ════════════════════════════════════════════════════════ -->
-<div class="hero">
-    <div class="hero-inner">
-        <img src="./carpet.jpeg" alt="Fatih Mehmet Canıtez" class="hero-avatar">
-        <div class="hero-text">
-            <h1>
-                🧶 Global Carpet &amp; Kilim Guide
-                <span>by Fatih Mehmet Canıtez</span>
-            </h1>
-            <p>French Language Educator · Expert Curator · 50 years living and studying the carpets, valleys, and culture of Cappadocia.</p>
-            <div class="hero-btns">
-                <a href="./me" class="btn-gold">👤 Curator Profile</a>
-                <a href="./Cappodoce" class="btn-outline">🌄 Cappadocia Guide</a>
+    <!-- STUDIO SAYFASI -->
+    <div id="studio">
+        <button class="btn-close" onclick="closeStudio()">✕ EXIT</button>
+        
+        <div class="sidebar">
+            <h2>Configurator</h2>
+            
+            <div class="input-box">
+                <label>1. Upload Your Rug</label>
+                <input type="file" id="rugInput" accept="image/*" onchange="loadRug(event)">
+            </div>
+
+            <div class="input-box">
+                <label>Room Type</label>
+                <select id="roomType">
+                    <option value="luxury entrance hallway">Entrance (Antre)</option>
+                    <option value="modern spacious living room">Living Room (Salon)</option>
+                    <option value="cozy master bedroom">Bedroom (Yatak Odası)</option>
+                </select>
+            </div>
+
+            <div class="input-box">
+                <label>Furniture Color</label>
+                <select id="sofaColor">
+                    <option value="Cream boucle">Cream (Krem)</option>
+                    <option value="Anthracite grey">Grey (Antrasit)</option>
+                    <option value="Emerald green velvet">Green (Yeşil)</option>
+                    <option value="Cognac leather">Leather (Deri)</option>
+                </select>
+            </div>
+
+            <button class="btn-launch" style="width:100%;" onclick="generateRoom()">2. GENERATE AI ROOM</button>
+
+            <div class="control-group">
+                <label style="color:var(--gold)">3. Floor Alignment (Yapıştırma)</label>
+                
+                <label>Size <span class="val-text" id="v-scale">1.0</span></label>
+                <input type="range" id="scale" min="0.1" max="2.5" step="0.05" value="1" oninput="updateRug()">
+
+                <label>Floor Tilt (Yatırma) <span class="val-text" id="v-tilt">65°</span></label>
+                <input type="range" id="tilt" min="0" max="88" step="1" value="65" oninput="updateRug()">
+
+                <label>Rotate <span class="val-text" id="v-rotate">0°</span></label>
+                <input type="range" id="rotate" min="-180" max="180" step="1" value="0" oninput="updateRug()">
+            </div>
+        </div>
+
+        <div class="main-view">
+            <div id="loader">🎨 AI is drawing the room...</div>
+            <div id="room-wrap" style="position:relative;">
+                <img id="room-img" src="https://via.placeholder.com/1200x800/111/444?text=AI+Room+Area" alt="Room">
+                <img id="rug-obj" src="" style="display:none;">
             </div>
         </div>
     </div>
-</div>
 
+    <script>
+        function openStudio() {
+            document.getElementById('landing').style.display = 'none';
+            document.getElementById('studio').style.display = 'grid';
+        }
 
-<!-- ════════════════════════════════════════════════════════ -->
-<!--  LOOM IMAGE                                              -->
-<!-- ════════════════════════════════════════════════════════ -->
-<div class="loom-banner">
-    <img src="./loom.jpg" alt="Traditional Anatolian Loom" loading="lazy">
-</div>
+        function closeStudio() {
+            document.getElementById('landing').style.display = 'block';
+            document.getElementById('studio').style.display = 'none';
+        }
 
-<!-- HISTORY SHORTCUT - ELEGANT MINI CARD -->
-<div style="text-align: center; margin-top: 20px;">
-  <a href="{{ site.baseurl }}/history-carpet" style="display: inline-flex; align-items: center; background: #fffcf5; border: 1px solid #d4af37; padding: 10px 20px; border-radius: 50px; text-decoration: none; transition: 0.3s; box-shadow: 0 4px 15px rgba(212, 175, 55, 0.1); max-width: 280px;">
-    
-    <!-- Simge: Antik bir mühür veya parşömen hissi -->
-    <span style="font-size: 22px; margin-right: 12px;">🏛️</span>
-    
-    <div style="text-align: left;">
-      <div style="color: #8b4513; font-weight: bold; font-size: 13px; letter-spacing: 0.5px; text-transform: uppercase;">Carpet History</div>
-      <div style="color: #998542; font-size: 10px; font-style: italic;">From Pazyryk to Palaces</div>
-    </div>
+        // AI ODA OLUŞTURMA
+        function generateRoom() {
+            const type = document.getElementById('roomType').value;
+            const sofa = document.getElementById('sofaColor').value;
+            const loader = document.getElementById('loader');
+            const roomImg = document.getElementById('room-img');
 
-    <!-- Küçük Ok Simgesi -->
-    <span style="color: #d4af37; margin-left: 15px; font-size: 12px;">➔</span>
-  </a>
-</div>
+            loader.style.display = "block";
+            roomImg.style.opacity = "0.2";
 
-<!-- ════════════════════════════════════════════════════════ -->
-<!--  CAPPADOCIA FEATURED                                     -->
-<!-- ════════════════════════════════════════════════════════ -->
-<div class="featured-wrap">
-    <div class="featured-card">
-        <h3>🌄 My Cappadocia Insider Guide</h3>
-        <p>50 years of walking these valleys, visiting workshops, and building genuine friendships. Interactive map, VIP contacts, balloon tips, and a personal letter — in 7 languages.</p>
-        <div class="featured-btns">
-            <a href="/carpetguide/Cappodoce.html#interactive-map" class="btn-featured-primary">🗺️ Open Interactive Map</a>
-            <a href="./Cappodoce" class="btn-featured-outline">📖 Full Guide</a>
-        </div>
-    </div>
-</div>
+            const prompt = `Professional photography of a ${type} with ${sofa} furniture, large windows, completely empty wooden floor in the foreground, 8k resolution.`;
+            const seed = Math.floor(Math.random() * 100000);
+            
+            roomImg.onload = () => {
+                loader.style.display = "none";
+                roomImg.style.opacity = "1";
+            };
+            roomImg.src = `https://image.pollinations.ai/prompt/${encodeURIComponent(prompt)}?width=1280&height=800&nologo=true&seed=${seed}&model=flux`;
+        }
 
+        // HALI YÜKLEME
+        function loadRug(event) {
+            const rug = document.getElementById('rug-obj');
+            const file = event.target.files[0];
+            if (file) {
+                rug.src = URL.createObjectURL(file);
+                rug.style.display = "block";
+                rug.style.top = "75%";
+                rug.style.left = "50%";
+                updateRug();
+            }
+        }
 
-<!-- ════════════════════════════════════════════════════════ -->
-<!--  HISTORICAL & TECHNICAL                                  -->
-<!-- ════════════════════════════════════════════════════════ -->
-<div class="sec-label">
-    <div class="sec-label-bar"></div>
-    <h2>🏛️ Historical &amp; Technical Deep-Dives</h2>
-    <p>From imperial looms to ancient techniques — the academic side of the craft</p>
-</div>
+        // ZEMİNE YAPIŞTIRMA (HASSAS PERSPEKTİF)
+        function updateRug() {
+            const rug = document.getElementById('rug-obj');
+            const scale = document.getElementById('scale').value;
+            const tilt = document.getElementById('tilt').value;
+            const rotate = document.getElementById('rotate').value;
 
-<div class="card-grid">
-    <a href="./en/hereke" class="card">
-        <div class="card-icon">🏰</div>
-        <div class="card-title">Imperial Hereke</div>
-        <div class="card-desc">The finest silk carpets ever woven — made for Ottoman palaces.</div>
-        <div class="card-link">Explore →</div>
-    </a>
-    <a href="./en/" class="card">
-        <div class="card-icon">🏺</div>
-        <div class="card-title">Pazyryk Analysis</div>
-        <div class="card-desc">The world's oldest surviving carpet. 2,500 years old.</div>
-        <div class="card-link">Explore →</div>
-    </a>
-    <a href="./en/handknotted" class="card">
-        <div class="card-icon">🌍</div>
-        <div class="card-title">Carpet World</div>
-        <div class="card-desc">Hand-knotted traditions from Persia, Anatolia, Central Asia.</div>
-        <div class="card-link">Explore →</div>
-    </a>
-    <a href="./materials" class="card">
-        <div class="card-icon">📊</div>
-        <div class="card-title">Materials &amp; Techniques</div>
-        <div class="card-desc">Wool, silk, dyes, knot types and density explained.</div>
-        <div class="card-link">Explore →</div>
-    </a>
-    <a href="./carpet-map" class="card">
-        <div class="card-icon">🗺️</div>
-        <div class="card-title">Regional Map</div>
-        <div class="card-desc">20 weaving regions on an interactive map — Hereke to Kars.</div>
-        <div class="card-link">Explore →</div>
-    </a>
-</div>
+            document.getElementById('v-scale').innerText = scale;
+            document.getElementById('v-tilt').innerText = tilt + "°";
+            document.getElementById('v-rotate').innerText = rotate + "°";
 
-<!-- INTERACTIVE TECHNICAL GUIDE SECTION -->
-<div style="text-align: center; margin: 30px 0; padding: 25px; background: #fdf5e6; border: 2px solid #2e8b57; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
-  <h3 style="color: #2e8b57; margin-top: 0; font-family: 'Georgia', serif;">🌍 Master the Art of Weaving</h3>
-  <p style="font-size: 15px; color: #444;">Explore our detailed analysis of ancient methods.</p>
-  <a href="./flat-viewing" style="...">🔍 Interactive Kilim & Double Knot Techniques</a>
- 
+            // Halıyı zemine "stick" (mıhlayan) asıl kod:
+            rug.style.transform = `translate(-50%, -50%) perspective(1200px) rotateX(${tilt}deg) rotateZ(${rotate}deg) scale(${scale})`;
+        }
 
-<!-- ════════════════════════════════════════════════════════ -->
-<!--  KILIM & FLAT-WEAVE                                      -->
-<!-- ════════════════════════════════════════════════════════ -->
-<div class="sec-label green">
-    <div class="sec-label-bar"></div>
-    <h2>📐 Kilim &amp; Flat-Weave Masterpieces</h2>
-    <p>The woven language of Anatolia — symbols, structure, and soul</p>
-</div>
+        // SÜRÜKLEME
+        const rug = document.getElementById('rug-obj');
+        let dragging = false;
 
-<div class="card-grid">
-    <a href="./en/kilim" class="card green">
-        <div class="card-icon">📐</div>
-        <div class="card-title">Kilim Guide</div>
-        <div class="card-desc">Anatolian flat-weave — regions, motifs, how to read them.</div>
-        <div class="card-link">Explore →</div>
-    </a>
-    <a href="./en/cicim" class="card green">
-        <div class="card-icon">🌸</div>
-        <div class="card-title">Cicim Style</div>
-        <div class="card-desc">Embroidery on kilim — a delicate supplementary weft technique.</div>
-        <div class="card-link">Explore →</div>
-    </a>
-    <a href="./en/sumak" class="card green">
-        <div class="card-icon">🌀</div>
-        <div class="card-title">Sumak Technique</div>
-        <div class="card-desc">Wrap-weave without knots — dense, reversible, complex.</div>
-        <div class="card-link">Explore →</div>
-    </a>
-    <a href="./en/zili" class="card green">
-        <div class="card-icon">🏗️</div>
-        <div class="card-title">Zili Technique</div>
-        <div class="card-desc">Bold geometric float-weave of the Caucasus.</div>
-        <div class="card-link">Explore →</div>
-    </a>
-</div>
+        rug.onmousedown = () => dragging = true;
+        window.onmousemove = (e) => {
+            if (dragging) {
+                const wrap = document.getElementById('room-wrap').getBoundingClientRect();
+                let x = ((e.clientX - wrap.left) / wrap.width) * 100;
+                let y = ((e.clientY - wrap.top) / wrap.height) * 100;
+                rug.style.left = x + "%";
+                rug.style.top = y + "%";
+            }
+        };
+        window.onmouseup = () => dragging = false;
 
-
-<!-- ════════════════════════════════════════════════════════ -->
-<!--  CARE & MAINTENANCE                                       -->
-<!-- ════════════════════════════════════════════════════════ -->
-<div class="sec-label" style="padding-top: 10px;">
-    <div class="sec-label-bar" style="background: #c0392b;"></div>
-    <h2>🧹 Care &amp; Maintenance</h2>
-    <p>Keep your carpet beautiful for generations to come</p>
-</div>
-
-<div style="max-width: 960px; margin: 0 auto; padding: 0 16px 10px; display: flex; flex-direction: column; gap: 12px;">
-
-    <a href="./carpet-map" style="display: flex; align-items: center; gap: 20px; padding: 22px 24px; border-radius: 16px; background: linear-gradient(120deg, #f0f4ff, #e8eeff); border: 1px solid #1a2a6c; box-shadow: 0 4px 15px rgba(26,42,108,0.12); text-decoration: none; color: inherit;">
-        <div style="font-size: 2.5em; flex-shrink: 0;">🗺️</div>
-        <div style="flex: 1;">
-            <div style="font-weight: bold; color: #1a2a6c; font-size: 1.05em; margin-bottom: 5px;">Turkey Carpet &amp; Kilim Map</div>
-            <div style="color: #666; font-size: 0.88em; line-height: 1.6;">Interactive map of 20 weaving regions — Hereke, Yağcıbedir, Döşemealtı, Kars, Niğde and more. Click any marker for details.</div>
-        </div>
-        <div style="color: #1a2a6c; font-size: 1.2em; flex-shrink: 0;">→</div>
-    </a>
-<a href="./carpet-sizes" style="display: flex; align-items: center; gap: 20px; padding: 22px 24px; border-radius: 16px; background: linear-gradient(120deg, #f0fff4, #e8f5e8); border: 
-  
-  1px solid #2e8b57; box-shadow: 0 4px 15px rgba(46,139,87,0.12); text-decoration: none; color: inherit;">
-        <div style="font-size: 2.5em; flex-shrink: 0;">📐</div>
-        <div style="flex: 1;">
-            <div style="font-weight: bold; color: #2e8b57; font-size: 1.05em; margin-bottom: 5px;">Carpet Size Guide</div>
-            <div style="color: #666; font-size: 0.88em; line-height: 1.6;">Interactive room planner — 9 standard sizes in cm &amp; inches, with furniture layout.</div>
-        </div>
-        <div style="color: #2e8b57; font-size: 1.2em; flex-shrink: 0;">→</div>
-    </a>
-    <a href="./cleaning" style="display: flex; align-items: center; gap: 20px; padding: 22px 24px; border-radius: 16px; background: linear-gradient(120deg, #fffbf0, #fdf5e6); border: 1px solid #d4af37; box-shadow: 0 4px 15px rgba(212,175,55,0.15); text-decoration: none; color: inherit;">
-        <div style="font-size: 2.5em; flex-shrink: 0;">🧹</div>
-        <div style="flex: 1;">
-            <div style="font-weight: bold; color: #8b0000; font-size: 1.05em; margin-bottom: 5px;">Carpet &amp; Kilim Care Guide</div>
-            <div style="color: #666; font-size: 0.88em; line-height: 1.6;">Stain emergencies, daily care, storage, silk vs wool vs kilim — everything you need to protect your investment.</div>
-        </div>
-        <div style="color: #d4af37; font-size: 1.2em; flex-shrink: 0;">→</div>
-    </a>
-
-</div>
-
-
-<!-- ════════════════════════════════════════════════════════ -->
-<!--  FOOTER                                                  -->
-<!-- ════════════════════════════════════════════════════════ -->
-<div class="site-footer">
-    <div class="footer-name">
-        <strong>Fatih Mehmet Canıtez</strong>
-        <span>French Language Educator · Expert Carpet Curator · Göreme, Cappadocia</span>
-    </div>
-    <a href="./me" class="footer-profile">👤 Curator Profile &amp; French Lessons →</a>
-</div>
-
-<!-- SLOW-MOTION & INTERACTIVE VIDEO POPUP -->
-<div id="videoPopup" style="display: none; position: fixed; z-index: 10000; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.85); align-items: center; justify-content: center; backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);">
-  
-  <div style="position: relative; width: 85%; max-width: 320px; background: #fff; border-radius: 30px; overflow: hidden; box-shadow: 0 25px 50px rgba(0,0,0,0.6); animation: popupAnim 0.5s ease-out;">
-    
-    <!-- KAPATMA BUTONU (Üst Sağ) -->
-    <button onclick="closeVideo()" style="position: absolute; top: 15px; right: 15px; background: rgba(0,0,0,0.5); color: #fff; border: none; border-radius: 50%; width: 35px; height: 35px; font-size: 18px; cursor: pointer; z-index: 11; display: flex; align-items: center; justify-content: center;">✕</button>
-
-    <!-- VİDEO ALANI (Üstüne tıklayınca durur/başlar) -->
-    <div style="background: #000; position: relative; cursor: pointer;" onclick="togglePlay()">
-      <video id="localVideo" width="100%" height="auto" autoplay muted loop playsinline style="display: block;">
-        <source src="{{ site.baseurl }}/images/ghiordes-knot.mp4" type="video/mp4">
-      </video>
-      
-      <!-- SES AÇ/KAPA BUTONU (Videonun sol alt köşesinde yüzer buton) -->
-      <button id="muteBtn" onclick="toggleMute(event)" style="position: absolute; bottom: 15px; left: 15px; background: rgba(0,0,0,0.6); border: none; color: white; padding: 8px; border-radius: 50%; width: 35px; height: 35px; cursor: pointer; z-index: 12;">
-        🔇
-      </button>
-
-      <!-- ORTADA ÇIKAN OYNAT SİMGESİ (Sadece durunca görünür) -->
-      <div id="playOverlay" style="display: none; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 50px; color: rgba(255,255,255,0.7); pointer-events: none;">▶️</div>
-    </div>
-
-    <!-- BİLGİ ALANI -->
-    <div style="padding: 15px; text-align: center; background: #fff;">
-      <h3 style="margin: 0; font-size: 14px; color: #8b4513; letter-spacing: 1px;">SLOW MOTION ANALYSIS</h3>
-      <p style="margin: 4px 0 0; font-size: 11px; color: #666;">Tap video to Pause/Play</p>
-    </div>
-  </div>
-</div>
-
-<style>
-  @keyframes popupAnim { from { transform: scale(0.9); opacity: 0; } to { transform: scale(1); opacity: 1; } }
-</style>
-
-<script>
-  var v = document.getElementById('localVideo');
-  var mBtn = document.getElementById('muteBtn');
-  var pOver = document.getElementById('playOverlay');
-
-  // Sayfa yüklendiğinde videoyu hazırla
-  window.addEventListener('load', function() {
-    setTimeout(function() {
-      document.getElementById('videoPopup').style.display = 'flex';
-      v.playbackRate = 0.5; // VİDEOYU YARI HIZDA (SLOW MOTION) OYNATIR
-      v.play();
-    }, 1500);
-  });
-
-  // Durdur / Oynat Fonksiyonu
-  function togglePlay() {
-    if (v.paused) {
-      v.play();
-      pOver.style.display = "none";
-    } else {
-      v.pause();
-      pOver.style.display = "block";
-    }
-  }
-
-  // Ses Aç / Kapa Fonksiyonu (Videonun durmasını engellemek için stopPropagation kullandık)
-  function toggleMute(event) {
-    event.stopPropagation(); 
-    v.muted = !v.muted;
-    mBtn.innerHTML = v.muted ? "🔇" : "🔊";
-  }
-
-  function closeVideo() {
-    document.getElementById('videoPopup').style.display = 'none';
-    v.pause();
-  }
-
-  // Dışarıya tıklayınca kapat
-  document.getElementById('videoPopup').onclick = function(e) {
-    if (e.target == this) closeVideo();
-  };
-</script>
+        // Dokunmatik (Tablet) desteği
+        rug.ontouchstart = () => dragging = true;
+        window.ontouchmove = (e) => {
+            if (dragging) {
+                const wrap = document.getElementById('room-wrap').getBoundingClientRect();
+                let x = ((e.touches[0].clientX - wrap.left) / wrap.width) * 100;
+                let y = ((e.touches[0].clientY - wrap.top) / wrap.height) * 100;
+                rug.style.left = x + "%";
+                rug.style.top = y + "%";
+            }
+        };
+        window.ontouchend = () => dragging = false;
+    </script>
+</body>
+</html>
