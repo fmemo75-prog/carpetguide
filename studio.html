@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RugVision Studio — Tasarım Paneli</title>
+    <style>
+        :root { --accent: #c0392b; --bg: #0a0a0a; --panel: #141414; --gold: #c9a84c; }
+        body { margin: 0; font-family: sans-serif; background: var(--bg); color: white; display: grid; grid-template-columns: 320px 1fr; height: 100vh; overflow: hidden; }
+        
+        /* Sol Panel */
+        .sidebar { background: var(--panel); padding: 25px; border-right: 1px solid #333; overflow-y: auto; }
+        .sidebar h2 { color: var(--gold); font-size: 22px; margin-bottom: 20px; border-bottom: 1px solid #333; padding-bottom: 10px; }
+        .input-box { margin-bottom: 15px; }
+        label { display: block; font-size: 10px; color: #777; text-transform: uppercase; margin-bottom: 5px; }
+        select, input { width: 100%; padding: 10px; background: #222; border: 1px solid #444; color: white; border-radius: 5px; }
+        
+        .btn-gen { width: 100%; padding: 15px; background: var(--accent); color: white; border: none; border-radius: 5px; font-weight: bold; cursor: pointer; margin-top: 10px; }
+        
+        /* Sağ Panel */
+        .main-view { position: relative; display: flex; align-items: center; justify-content: center; background: #000; overflow: hidden; }
+        #room-wrap { position: relative; max-width: 95%; max-height: 90vh; }
+        #room-img { width: 100%; border-radius: 10px; }
+
+        /* HALI (ZEMİNE YAPIŞTIRMA) */
+        #rug-obj {
+            position: absolute; width: 250px; z-index: 100; cursor: move;
+            filter: drop-shadow(0 15px 30px rgba(0,0,0,0.8));
+            transform: translate(-50%, -50%) perspective(1200px) rotateX(65deg);
+            touch-action: none;
+        }
+
+        .controls { background: #1a1a1a; padding: 15px; border-radius: 8px; margin-top: 20px; border: 1px solid #333; }
+        input[type="range"] { width: 100%; accent-color: var(--accent); }
+        .btn-back { position: absolute; top: 10px; right: 10px; background: #333; color: white; border: none; padding: 8px 15px; border-radius: 4px; cursor: pointer; text-decoration: none; font-size: 12px; }
+    </style>
+</head>
+<body>
+
+    <div class="sidebar">
+        <h2>Studio v2</h2>
+        <div class="input-box">
+            <label>1. Halı Seç</label>
+            <input type="file" onchange="loadRug(event)">
+        </div>
+        <div class="input-box">
+            <label>Oda Tipi</label>
+            <select id="roomType">
+                <option value="luxury entrance hallway">Antre (Hallway)</option>
+                <option value="modern living room">Salon (Living Room)</option>
+                <option value="minimalist bedroom">Yatak Odası</option>
+            </select>
+        </div>
+        <div class="input-box">
+            <label>Koltuk Rengi</label>
+            <select id="sofaColor">
+                <option value="Cream">Krem</option>
+                <option value="Grey">Gri</option>
+                <option value="Green">Yeşil</option>
+                <option value="Leather">Deri</option>
+            </select>
+        </div>
+        <button class="btn-gen" onclick="generateRoom()">2. ODAYI ÇİZ</button>
+
+        <div class="controls">
+            <label style="color:var(--gold)">3. ZEMİNE YAPIŞTIR</label>
+            <label>Boyut</label>
+            <input type="range" id="scale" min="0.1" max="2.5" step="0.05" value="1" oninput="update()">
+            <label>Yatırma (Tilt)</label>
+            <input type="range" id="tilt" min="0" max="85" step="1" value="65" oninput="update()">
+        </div>
+        <a href="index.html" style="color: #555; font-size: 11px; display: block; margin-top: 20px; text-align: center; text-decoration: none;">← Ana Sayfaya Dön</a>
+    </div>
+
+    <div class="main-view">
+        <a href="index.html" class="btn-back">✕ KAPAT</a>
+        <div id="room-wrap">
+            <div id="loader" style="position:absolute; display:none; color:var(--gold); left:50%; top:50%; transform:translate(-50%,-50%);">🎨 Çiziliyor...</div>
+            <img id="room-img" src="https://via.placeholder.com/1200x800/111/333?text=Room+Area">
+            <img id="rug-obj" src="" style="display:none;">
+        </div>
+    </div>
+
+    <script>
+        function generateRoom() {
+            const type = document.getElementById('roomType').value;
+            const sofa = document.getElementById('sofaColor').value;
+            const roomImg = document.getElementById('room-img');
+            const loader = document.getElementById('loader');
+            loader.style.display = "block";
+            roomImg.style.opacity = "0.2";
+            
+            const prompt = `Professional photography of a ${type} with ${sofa} furniture, empty wooden floor in foreground, 8k.`;
+            roomImg.onload = () => { loader.style.display = "none"; roomImg.style.opacity = "1"; };
+            roomImg.src = `https://image.pollinations.ai/prompt/${encodeURIComponent(prompt)}?width=1280&height=800&nologo=true&seed=${Math.random()}&model=flux`;
+        }
+
+        function loadRug(e) {
+            const rug = document.getElementById('rug-obj');
+            rug.src = URL.createObjectURL(e.target.files[0]);
+            rug.style.display = "block";
+            rug.style.top = "70%"; rug.style.left = "50%";
+            update();
+        }
+
+        function update() {
+            const rug = document.getElementById('rug-obj');
+            const scale = document.getElementById('scale').value;
+            const tilt = document.getElementById('tilt').value;
+            rug.style.transform = `translate(-50%, -50%) perspective(1200px) rotateX(${tilt}deg) scale(${scale})`;
+        }
+
+        // Sürükleme
+        const rug = document.getElementById('rug-obj');
+        let dragging = false;
+        rug.onmousedown = () => dragging = true;
+        window.onmousemove = (e) => {
+            if (dragging) {
+                const wrap = document.getElementById('room-wrap').getBoundingClientRect();
+                rug.style.left = ((e.clientX - wrap.left) / wrap.width) * 100 + "%";
+                rug.style.top = ((e.clientY - wrap.top) / wrap.height) * 100 + "%";
+            }
+        };
+        window.onmouseup = () => dragging = false;
+    </script>
+</body>
+</html>
