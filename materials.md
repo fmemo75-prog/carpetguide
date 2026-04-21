@@ -117,9 +117,9 @@ title: Carpet Materials, Tools & Techniques
 
   <!-- YÜN -->
   <div class="mat-card">
-    <img src="{{ site.baseurl }}/images/wool-spinning.jpg"
+    <img src="{{ site.baseurl }}/wool-journey.png"
          onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Wool_fleece.jpg/640px-Wool_fleece.jpg'"
-         class="mat-card-img" alt="Wool">
+         class="mat-card-img" alt="Wool Journey">
     <div class="mat-card-body">
       <h3>🐑 Wool — Yün</h3>
       <span class="mat-badge" style="background:#8b4513;">Most Common</span>
@@ -133,9 +133,9 @@ title: Carpet Materials, Tools & Techniques
 
   <!-- İPEK -->
   <div class="mat-card reverse">
-    <img src="{{ site.baseurl }}/images/silk-thread.jpg"
+    <img src="{{ site.baseurl }}/silk-weaving.png"
          onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Silk_thread.jpg/640px-Silk_thread.jpg'"
-         class="mat-card-img" alt="Silk">
+         class="mat-card-img" alt="Silk Weaving">
     <div class="mat-card-body">
       <h3>🥚 Silk — İpek</h3>
       <span class="mat-badge" style="background:#d4af37; color:#1a0a0a;">Luxury</span>
@@ -370,7 +370,8 @@ title: Carpet Materials, Tools & Techniques
 <!-- ═══════════════════════════════ -->
 <div class="mat-section">
   <h2>🪢 Knot Types — Düğüm Çeşitleri</h2>
-  <p>The knot is the fundamental unit of a hand-knotted carpet. Each knot is a short length of pile yarn tied around one or two warp threads. The type, density, and direction of knots determine the carpet's quality, durability, and pattern sharpness.</p>
+  <p>The strength of a rug lies in its knots. Two primary knot types define Anatolian and Persian traditions — each producing different qualities of durability and pattern precision.</p>
+  <img src="/carpetguide/en/rug-knots-comparison.png" alt="Knot Comparison" style="width:100%; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); margin: 16px 0;" loading="lazy">
 
   <div class="knot-grid">
     <div class="knot-card turkish">
