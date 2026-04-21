@@ -274,6 +274,37 @@ img { max-width: 100%; height: auto; display: block; }
         <img src="./carpet.jpeg" alt="Fatih Mehmet Canıtez" class="hero-avatar">
         <div class="hero-text">
             <h1>
+              <!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RugVision — Kapadokya Halı Stüdyosu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;600&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        body { margin: 0; padding: 0; font-family: 'DM Sans', sans-serif; background: #0a0a0a; color: #f0ede8; display: flex; align-items: center; justify-content: center; height: 100vh; text-align: center; }
+        .hero { padding: 20px; }
+        h1 { font-family: 'Cormorant Garamond', serif; font-size: clamp(40px, 8vw, 80px); font-weight: 300; margin-bottom: 20px; }
+        h1 em { color: #c9a84c; font-style: italic; }
+        p { color: #888; max-width: 500px; margin: 0 auto 40px auto; line-height: 1.6; }
+        .btn-start { 
+            background: #c0392b; color: white; border: none; padding: 20px 50px; 
+            font-size: 18px; font-weight: bold; border-radius: 4px; cursor: pointer; 
+            text-decoration: none; transition: 0.3s; display: inline-block; 
+        }
+        .btn-start:hover { background: #e74c3c; transform: scale(1.05); }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <div style="color: #c9a84c; letter-spacing: 4px; font-size: 12px; margin-bottom: 15px;">AI-POWERED STUDIO</div>
+        <h1>See Your Rug <em>in Any Room</em></h1>
+        <p>Halılarınızı müşterilerinizin evinde canlandırın. Ücretsiz, hızlı ve profesyonel tasarım stüdyosu.</p>
+        <!-- STUDIO SAYFASINA GİDEN KISA YOL -->
+        <a href="studio.html" class="btn-start">STUDYOYU BAŞLAT</a>
+    </div>
+</body>
+</html>
                 🧶 Global Carpet &amp; Kilim Guide
                 <span>by Fatih Mehmet Canıtez</span>
             </h1>
