@@ -353,7 +353,7 @@ img { max-width: 100%; height: auto; display: block; }
         <div class="card-desc">Hand-knotted traditions from Persia, Anatolia, Central Asia.</div>
         <div class="card-link">Explore →</div>
     </a>
-    <a href="./en/materials" class="card">
+    <a href="./materials" class="card">
         <div class="card-icon">📊</div>
         <div class="card-title">Materials &amp; Techniques</div>
         <div class="card-desc">Wool, silk, dyes, knot types and density explained.</div>
