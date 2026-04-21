@@ -430,7 +430,16 @@ img { max-width: 100%; height: auto; display: block; }
         </div>
         <div style="color: #1a2a6c; font-size: 1.2em; flex-shrink: 0;">→</div>
     </a>
-
+<a href="./carpet-sizes" style="display: flex; align-items: center; gap: 20px; padding: 22px 24px; border-radius: 16px; background: linear-gradient(120deg, #f0fff4, #e8f5e8); border: 
+  
+  1px solid #2e8b57; box-shadow: 0 4px 15px rgba(46,139,87,0.12); text-decoration: none; color: inherit;">
+        <div style="font-size: 2.5em; flex-shrink: 0;">📐</div>
+        <div style="flex: 1;">
+            <div style="font-weight: bold; color: #2e8b57; font-size: 1.05em; margin-bottom: 5px;">Carpet Size Guide</div>
+            <div style="color: #666; font-size: 0.88em; line-height: 1.6;">Interactive room planner — 9 standard sizes in cm &amp; inches, with furniture layout.</div>
+        </div>
+        <div style="color: #2e8b57; font-size: 1.2em; flex-shrink: 0;">→</div>
+    </a>
     <a href="./cleaning" style="display: flex; align-items: center; gap: 20px; padding: 22px 24px; border-radius: 16px; background: linear-gradient(120deg, #fffbf0, #fdf5e6); border: 1px solid #d4af37; box-shadow: 0 4px 15px rgba(212,175,55,0.15); text-decoration: none; color: inherit;">
         <div style="font-size: 2.5em; flex-shrink: 0;">🧹</div>
         <div style="flex: 1;">
