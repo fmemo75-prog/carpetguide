@@ -47,7 +47,9 @@ title: Carpet Materials, Tools & Techniques
     border: 1px solid #ede8df; box-shadow: 0 4px 14px rgba(0,0,0,0.07);
     display: flex; flex-direction: column;
   }
-  .tool-card-img { width: 100%; height: 200px; object-fit: cover; }
+  .tool-card-img { width: 100%; height: 200px; object-fit: cover; background: #f5ede0; }
+  .tool-card-img[src=""][style*="display:none"], .tool-card-img[onerror*="display"] { display: block !important; height: 80px; background: #f5ede0; }
+  .img-placeholder { width: 100%; height: 200px; background: linear-gradient(135deg, #fdf5e6, #f0e6d0); display: flex; align-items: center; justify-content: center; font-size: 2.5em; color: #d4af37; }
   .tool-card-body { padding: 16px; flex: 1; }
   .tool-card-body h3 { margin: 0 0 6px; color: #8b0000; font-size: 1em; }
   .tool-card-name-tr { font-size: 0.8em; color: #8b4513; font-style: italic; margin-bottom: 8px; display: block; }
@@ -117,9 +119,8 @@ title: Carpet Materials, Tools & Techniques
 
   <!-- YÜN -->
   <div class="mat-card">
-    <img src="{{ site.baseurl }}/wool-journey.png"
-         onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Wool_fleece.jpg/640px-Wool_fleece.jpg'"
-         class="mat-card-img" alt="Wool Journey">
+    <img src="{{ site.baseurl }}/images/wool-journey.jpg"
+         class="mat-card-img" alt="Wool" style="background:#f5e6c8;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
     <div class="mat-card-body">
       <h3>🐑 Wool — Yün</h3>
       <span class="mat-badge" style="background:#8b4513;">Most Common</span>
@@ -133,9 +134,8 @@ title: Carpet Materials, Tools & Techniques
 
   <!-- İPEK -->
   <div class="mat-card reverse">
-    <img src="{{ site.baseurl }}/silk-weaving.png"
-         onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Silk_thread.jpg/640px-Silk_thread.jpg'"
-         class="mat-card-img" alt="Silk Weaving">
+    <img src="{{ site.baseurl }}/images/silk-weaving.jpg"
+         class="mat-card-img" alt="Silk weaving" onerror="this.style.display='none'">
     <div class="mat-card-body">
       <h3>🥚 Silk — İpek</h3>
       <span class="mat-badge" style="background:#d4af37; color:#1a0a0a;">Luxury</span>
@@ -151,8 +151,7 @@ title: Carpet Materials, Tools & Techniques
   <!-- PAMUK -->
   <div class="mat-card">
     <img src="{{ site.baseurl }}/images/cotton-warp.jpg"
-         onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Cotton_plant.jpg/640px-Cotton_plant.jpg'"
-         class="mat-card-img" alt="Cotton">
+         class="mat-card-img" alt="Cotton" onerror="this.style.display='none'">
     <div class="mat-card-body">
       <h3>🌿 Cotton — Pamuk</h3>
       <span class="mat-badge" style="background:#1a2a6c;">Warp & Weft</span>
@@ -165,8 +164,7 @@ title: Carpet Materials, Tools & Techniques
   <!-- KEÇI KILI -->
   <div class="mat-card reverse">
     <img src="{{ site.baseurl }}/images/goat-hair.jpg"
-         onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Domestic_goat_kid_in_capeweed.jpg/640px-Domestic_goat_kid_in_capeweed.jpg'"
-         class="mat-card-img" alt="Goat hair">
+         class="mat-card-img" alt="Goat hair" onerror="this.style.display='none'">
     <div class="mat-card-body">
       <h3>🐐 Goat Hair & Camel Hair</h3>
       <span class="mat-badge" style="background:#c0392b;">Tribal</span>
@@ -251,8 +249,7 @@ title: Carpet Materials, Tools & Techniques
   <div class="tool-grid">
 
     <div class="tool-card">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Weaving_loom.jpg/640px-Weaving_loom.jpg"
-           onerror="this.src='{{ site.baseurl }}/images/loom.jpg'"
+      <img src="{{ site.baseurl }}/loom.jpg"
            class="tool-card-img" alt="Tezgah">
       <div class="tool-card-body">
         <h3>Loom</h3>
@@ -263,7 +260,7 @@ title: Carpet Materials, Tools & Techniques
 
     <div class="tool-card">
       <img src="{{ site.baseurl }}/images/kirkit.jpg"
-           onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Carpet_weaving_tools.jpg/640px-Carpet_weaving_tools.jpg'"
+           onerror="this.style.display='none'"
            class="tool-card-img" alt="Kirkit">
       <div class="tool-card-body">
         <h3>Weaving Comb / Beater</h3>
@@ -273,8 +270,8 @@ title: Carpet Materials, Tools & Techniques
     </div>
 
     <div class="tool-card">
-      <img src="{{ site.baseurl }}/images/carpet-knife.jpg"
-           onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Rug_weaving_knife.jpg/640px-Rug_weaving_knife.jpg'"
+      <img src="{{ site.baseurl }}/images/weaving-knife.jpg"
+           onerror="this.style.display='none'"
            class="tool-card-img" alt="Bıçak">
       <div class="tool-card-body">
         <h3>Weaving Knife</h3>
@@ -284,8 +281,8 @@ title: Carpet Materials, Tools & Techniques
     </div>
 
     <div class="tool-card">
-      <img src="{{ site.baseurl }}/images/carpet-scissors.jpg"
-           onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Rug_shearing.jpg/640px-Rug_shearing.jpg'"
+      <img src="{{ site.baseurl }}/images/hav-makas.jpg"
+           onerror="this.style.display='none'"
            class="tool-card-img" alt="Makas">
       <div class="tool-card-body">
         <h3>Pile Scissors</h3>
@@ -296,7 +293,7 @@ title: Carpet Materials, Tools & Techniques
 
     <div class="tool-card">
       <img src="{{ site.baseurl }}/images/spindle.jpg"
-           onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Spindles_and_yarn.jpg/640px-Spindles_and_yarn.jpg'"
+           onerror="this.style.display='none'"
            class="tool-card-img" alt="İğ / İğlik">
       <div class="tool-card-body">
         <h3>Drop Spindle</h3>
@@ -307,7 +304,7 @@ title: Carpet Materials, Tools & Techniques
 
     <div class="tool-card">
       <img src="{{ site.baseurl }}/images/varagele.jpg"
-           onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Weaving_shed_stick.jpg/640px-Weaving_shed_stick.jpg'"
+           onerror="this.style.display='none'"
            class="tool-card-img" alt="Varagele">
       <div class="tool-card-body">
         <h3>Shed Stick / Heddle</h3>
@@ -318,7 +315,7 @@ title: Carpet Materials, Tools & Techniques
 
     <div class="tool-card">
       <img src="{{ site.baseurl }}/images/warping-frame.jpg"
-           onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Warping_mill.jpg/640px-Warping_mill.jpg'"
+           onerror="this.style.display='none'"
            class="tool-card-img" alt="Çözgü">
       <div class="tool-card-body">
         <h3>Warping Frame</h3>
@@ -329,7 +326,7 @@ title: Carpet Materials, Tools & Techniques
 
     <div class="tool-card">
       <img src="{{ site.baseurl }}/images/dye-pot.jpg"
-           onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Natural_dye_pot.jpg/640px-Natural_dye_pot.jpg'"
+           onerror="this.style.display='none'"
            class="tool-card-img" alt="Boya Kazanı">
       <div class="tool-card-body">
         <h3>Dye Vat</h3>
@@ -340,7 +337,7 @@ title: Carpet Materials, Tools & Techniques
 
     <div class="tool-card">
       <img src="{{ site.baseurl }}/images/wool-comb.jpg"
-           onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Wool_cards.jpg/640px-Wool_cards.jpg'"
+           onerror="this.style.display='none'"
            class="tool-card-img" alt="Yün Tarağı">
       <div class="tool-card-body">
         <h3>Wool Cards / Comb</h3>
@@ -350,8 +347,8 @@ title: Carpet Materials, Tools & Techniques
     </div>
 
     <div class="tool-card">
-      <img src="{{ site.baseurl }}/images/cartoon-paper.jpg"
-           onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Carpet_design_cartoon.jpg/640px-Carpet_design_cartoon.jpg'"
+      <img src="{{ site.baseurl }}/images/design-cartoon.jpg"
+           onerror="this.style.display='none'"
            class="tool-card-img" alt="Desen Kartonu">
       <div class="tool-card-body">
         <h3>Design Cartoon</h3>
