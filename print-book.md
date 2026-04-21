@@ -1,100 +1,59 @@
-\---
-
+---
 layout: default
-
 title: "THE ANATOLIAN LEGACY: Full Print Version"
-
-\---
-
-
+---
 
 <style>
-
-&#x20; /\* Baskı sırasında butonları ve gereksiz yerleri gizle \*/
-
-&#x20; @media print {
-
-&#x20;   header, footer, .back-home-container, .translate-bar, #google\_translate\_element { display: none !important; }
-
-&#x20;   .container { width: 100% !important; max-width: 100% !important; border: none !important; box-shadow: none !important; margin: 0 !important; padding: 0 !important; }
-
-&#x20;   h1, h2, h3 { page-break-after: avoid; }
-
-&#x20;   img { page-break-inside: avoid; page-break-after: auto; max-width: 100% !important; }
-
-&#x20;   .page-break { page-break-before: always; }
-
-&#x20; }
-
-&#x20; .book-section { margin-bottom: 50px; border-bottom: 1px solid #eee; padding-bottom: 30px; }
-
+  /* Baskı Modu Ayarları */
+  @media print {
+    header, footer, .back-home-container, header, .translate-bar, #google_translate_element { display: none !important; }
+    .container { width: 100% !important; max-width: 100% !important; border: none !important; box-shadow: none !important; margin: 0 !important; padding: 0 !important; }
+    .page-break { page-break-before: always; }
+  }
+  .book-section { margin-bottom: 60px; padding: 20px; border: 1px solid #eee; border-radius: 10px; }
 </style>
 
-
-
-<div style="text-align: center; padding: 50px 0;">
-
-&#x20; <h1>🏛️ THE ANATOLIAN LEGACY</h1>
-
-&#x20; <h2>Carpets, Culture \& Language</h2>
-
-&#x20; <p><b>Curated by Fatih Mehmet Canıtez</b></p>
-
-&#x20; <hr>
-
+<div style="text-align: center; padding: 40px 0;">
+  <h1>🏛️ THE ANATOLIAN LEGACY</h1>
+  <h2>Carpets, Culture & Language</h2>
+  <p><b>Curated by Fatih Mehmet Canıtez</b></p>
+  <hr>
 </div>
-
-
-
-<!-- BÖLÜM 1: KAPADOKYA -->
 
 <div class="book-section">
-
-&#x20; <div class="page-break"></div>
-
-&#x20; {% include\_relative Cappodoce.md %}
-
+  <h3>📖 Table of Contents (İçindekiler)</h3>
+  <ul>
+    <li>Cappadocia Guide</li>
+    <li>Technical Weaving Analysis</li>
+    <li>Imperial Hereke Collection</li>
+    <li>Material World</li>
+  </ul>
 </div>
 
-
-
-<!-- BÖLÜM 2: HALI TEKNİKLERİ -->
+<!-- DİKKAT: Dosyaları çağırırken YAML hatası almamak için 
+     eğer hala 404 alıyorsan aşağıdaki blokları tek tek ekleyerek dene -->
 
 <div class="book-section">
-
-&#x20; <div class="page-break"></div>
-
-&#x20; {% include\_relative flat-viewing.md %}
-
+  <div class="page-break"></div>
+  <!-- Kapadokya Dosyası -->
+  {% capture cap %}{% include_relative Cappodoce.md %}{% endcapture %}
+  {{ cap | split: "---" | last }}
 </div>
-
-
 
 <div class="book-section">
-
-&#x20; <div class="page-break"></div>
-
-&#x20; {% include\_relative en/hereke.md %}
-
+  <div class="page-break"></div>
+  <!-- Halı Teknikleri -->
+  {% capture flat %}{% include_relative flat-viewing.md %}{% endcapture %}
+  {{ flat | split: "---" | last }}
 </div>
-
-
-
-<!-- BÖLÜM 3: ANALİZLER -->
 
 <div class="book-section">
-
-&#x20; <div class="page-break"></div>
-
-&#x20; {% include\_relative en/materials.md %}
-
+  <div class="page-break"></div>
+  <!-- Hereke Dosyası (en klasöründe) -->
+  {% capture hereke %}{% include_relative en/hereke.md %}{% endcapture %}
+  {{ hereke | split: "---" | last }}
 </div>
 
-
-
-<div style="text-align: center; color: #888;">
-
-&#x20; <p>\*\*\* END OF PREVIEW \*\*\*</p>
-
+<div style="text-align: center; color: #888; margin-top: 50px;">
+  <p>*** End of Book Draft ***</p>
 </div>
-
