@@ -1,127 +1,633 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RugVision Studio — Tasarım Paneli</title>
-    <style>
-        :root { --accent: #c0392b; --bg: #0a0a0a; --panel: #141414; --gold: #c9a84c; }
-        body { margin: 0; font-family: sans-serif; background: var(--bg); color: white; display: grid; grid-template-columns: 320px 1fr; height: 100vh; overflow: hidden; }
-        
-        /* Sol Panel */
-        .sidebar { background: var(--panel); padding: 25px; border-right: 1px solid #333; overflow-y: auto; }
-        .sidebar h2 { color: var(--gold); font-size: 22px; margin-bottom: 20px; border-bottom: 1px solid #333; padding-bottom: 10px; }
-        .input-box { margin-bottom: 15px; }
-        label { display: block; font-size: 10px; color: #777; text-transform: uppercase; margin-bottom: 5px; }
-        select, input { width: 100%; padding: 10px; background: #222; border: 1px solid #444; color: white; border-radius: 5px; }
-        
-        .btn-gen { width: 100%; padding: 15px; background: var(--accent); color: white; border: none; border-radius: 5px; font-weight: bold; cursor: pointer; margin-top: 10px; }
-        
-        /* Sağ Panel */
-        .main-view { position: relative; display: flex; align-items: center; justify-content: center; background: #000; overflow: hidden; }
-        #room-wrap { position: relative; max-width: 95%; max-height: 90vh; }
-        #room-img { width: 100%; border-radius: 10px; }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RugVision Studio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --accent: #c0392b;
+      --bg: #0a0a0a;
+      --panel: #141414;
+      --surface: #1e1e1e;
+      --border: rgba(255,255,255,0.07);
+      --text: #f0ede8;
+      --muted: #777;
+      --gold: #c9a84c;
+    }
+    html, body { height: 100%; overflow: hidden; }
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      display: flex;
+      flex-direction: column;
+    }
 
-        /* HALI (ZEMİNE YAPIŞTIRMA) */
-        #rug-obj {
-            position: absolute; width: 250px; z-index: 100; cursor: move;
-            filter: drop-shadow(0 15px 30px rgba(0,0,0,0.8));
-            transform: translate(-50%, -50%) perspective(1200px) rotateX(65deg);
-            touch-action: none;
-        }
+    /* ── TOP NAV ── */
+    .top-nav {
+      height: 48px;
+      background: #0d0d0d;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 18px;
+      flex-shrink: 0;
+      z-index: 10;
+    }
+    .nav-logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 17px;
+      color: var(--gold);
+      letter-spacing: 3px;
+      text-decoration: none;
+    }
+    .nav-home {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      background: none;
+      border: 1px solid rgba(255,255,255,0.1);
+      color: var(--muted);
+      padding: 6px 14px;
+      border-radius: 3px;
+      cursor: pointer;
+      font-size: 12px;
+      font-family: 'DM Sans', sans-serif;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: 0.2s;
+    }
+    .nav-home:hover { color: var(--text); border-color: rgba(255,255,255,0.3); }
 
-        .controls { background: #1a1a1a; padding: 15px; border-radius: 8px; margin-top: 20px; border: 1px solid #333; }
-        input[type="range"] { width: 100%; accent-color: var(--accent); }
-        .btn-back { position: absolute; top: 10px; right: 10px; background: #333; color: white; border: none; padding: 8px 15px; border-radius: 4px; cursor: pointer; text-decoration: none; font-size: 12px; }
-    </style>
+    /* ── LAYOUT ── */
+    .studio-body {
+      display: flex;
+      flex: 1;
+      overflow: hidden;
+      min-height: 0;
+    }
+
+    /* ── SIDEBAR ── */
+    .sidebar {
+      width: 300px;
+      min-width: 300px;
+      background: var(--panel);
+      border-right: 1px solid var(--border);
+      overflow-y: auto;
+      padding: 18px 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .sidebar-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 12px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--gold);
+      font-weight: 400;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--border);
+    }
+    .field { display: flex; flex-direction: column; gap: 5px; }
+    .field label {
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: var(--muted);
+    }
+    .field select,
+    .field input[type="file"] {
+      width: 100%;
+      padding: 9px 11px;
+      background: var(--surface);
+      border: 1px solid rgba(255,255,255,0.09);
+      color: var(--text);
+      border-radius: 4px;
+      font-size: 13px;
+      font-family: 'DM Sans', sans-serif;
+      cursor: pointer;
+    }
+    .field select:focus { outline: none; border-color: var(--accent); }
+
+    /* Rug type toggle */
+    .toggle-row { display: flex; gap: 6px; }
+    .tog {
+      flex: 1;
+      padding: 8px 6px;
+      background: var(--surface);
+      border: 1px solid rgba(255,255,255,0.09);
+      color: var(--muted);
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 11px;
+      font-family: 'DM Sans', sans-serif;
+      transition: 0.15s;
+      text-align: center;
+    }
+    .tog.on { background: var(--accent); color: white; border-color: var(--accent); }
+
+    /* Generate button */
+    .btn-gen {
+      width: 100%;
+      padding: 12px;
+      background: var(--accent);
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+      transition: 0.2s;
+    }
+    .btn-gen:hover { background: #d44; }
+    .btn-gen:active { transform: scale(0.98); }
+
+    /* Divider */
+    .divider {
+      height: 1px;
+      background: var(--border);
+    }
+
+    /* Sliders section */
+    .sliders-title {
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: var(--gold);
+      font-weight: 400;
+    }
+    .sl-row {
+      display: flex;
+      justify-content: space-between;
+      font-size: 11px;
+      color: var(--muted);
+      margin-bottom: 3px;
+    }
+    .sl-row span:last-child { color: var(--text); min-width: 36px; text-align: right; font-variant-numeric: tabular-nums; }
+    input[type="range"] {
+      width: 100%;
+      margin-bottom: 10px;
+      cursor: pointer;
+      accent-color: var(--accent);
+      background: none;
+      border: none;
+      padding: 0;
+      height: 16px;
+    }
+
+    /* Guide toggle */
+    .btn-guide {
+      width: 100%;
+      padding: 8px;
+      background: var(--surface);
+      border: 1px solid rgba(255,255,255,0.09);
+      color: var(--muted);
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 11px;
+      font-family: 'DM Sans', sans-serif;
+      transition: 0.15s;
+    }
+    .btn-guide:hover { color: var(--text); }
+
+    /* ── MAIN VIEW ── */
+    .main-view {
+      flex: 1;
+      background: #050505;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    #room-container {
+      position: relative;
+      display: inline-block;
+      border-radius: 6px;
+      overflow: hidden;
+      max-width: 100%;
+      max-height: 100%;
+      line-height: 0;
+    }
+
+    #room-img {
+      display: block;
+      max-width: 100%;
+      max-height: calc(100vh - 90px);
+      border-radius: 6px;
+      transition: opacity 0.4s;
+    }
+
+    #rug-obj {
+      position: absolute;
+      z-index: 100;
+      cursor: move;
+      transform-origin: center bottom;
+      touch-action: none;
+      display: none;
+      user-select: none;
+      -webkit-user-drag: none;
+    }
+
+    #rug-shadow {
+      position: absolute;
+      z-index: 99;
+      pointer-events: none;
+      border-radius: 50%;
+      background: radial-gradient(ellipse, rgba(0,0,0,0.55) 0%, transparent 70%);
+      display: none;
+    }
+
+    #floor-guide {
+      position: absolute;
+      bottom: 20%;
+      left: 8%; right: 8%;
+      height: 0;
+      border-top: 1px dashed rgba(201,168,76,0.45);
+      pointer-events: none;
+      z-index: 50;
+      display: none;
+    }
+    #floor-guide::before {
+      content: 'Floor Line';
+      position: absolute;
+      top: -16px; left: 50%;
+      transform: translateX(-50%);
+      font-size: 10px;
+      color: rgba(201,168,76,0.6);
+      white-space: nowrap;
+      letter-spacing: 1px;
+      font-family: 'DM Sans', sans-serif;
+    }
+
+    #loading-overlay {
+      display: none;
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.75);
+      z-index: 200;
+      align-items: center;
+      justify-content: center;
+    }
+    #loading-overlay.show { display: flex; }
+    .loading-box {
+      background: #111;
+      border: 1px solid rgba(192,57,43,0.4);
+      border-radius: 6px;
+      padding: 18px 28px;
+      color: var(--gold);
+      font-size: 12px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .spinner {
+      width: 16px; height: 16px;
+      border: 2px solid rgba(201,168,76,0.2);
+      border-top-color: var(--gold);
+      border-radius: 50%;
+      animation: spin 0.7s linear infinite;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    /* Empty state */
+    .empty-state {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      color: #333;
+      pointer-events: none;
+    }
+    .empty-state svg { width: 48px; height: 48px; opacity: 0.3; }
+    .empty-state p { font-size: 13px; letter-spacing: 1px; text-transform: uppercase; }
+    .empty-state.hidden { display: none; }
+  </style>
 </head>
 <body>
 
-    <div class="sidebar">
-        <h2>Studio v2</h2>
-        <div class="input-box">
-            <label>1. Halı Seç</label>
-            <input type="file" onchange="loadRug(event)">
-        </div>
-        <div class="input-box">
-            <label>Oda Tipi</label>
-            <select id="roomType">
-                <option value="luxury entrance hallway">Antre (Hallway)</option>
-                <option value="modern living room">Salon (Living Room)</option>
-                <option value="minimalist bedroom">Yatak Odası</option>
-            </select>
-        </div>
-        <div class="input-box">
-            <label>Koltuk Rengi</label>
-            <select id="sofaColor">
-                <option value="Cream">Krem</option>
-                <option value="Grey">Gri</option>
-                <option value="Green">Yeşil</option>
-                <option value="Leather">Deri</option>
-            </select>
-        </div>
-        <button class="btn-gen" onclick="generateRoom()">2. ODAYI ÇİZ</button>
+<!-- ── NAV ── -->
+<nav class="top-nav">
+  <span class="nav-logo">RUGVISION STUDIO</span>
+  <a href="index.html" class="nav-home">
+    ← Home
+  </a>
+</nav>
 
-        <div class="controls">
-            <label style="color:var(--gold)">3. ZEMİNE YAPIŞTIR</label>
-            <label>Boyut</label>
-            <input type="range" id="scale" min="0.1" max="2.5" step="0.05" value="1" oninput="update()">
-            <label>Yatırma (Tilt)</label>
-            <input type="range" id="tilt" min="0" max="85" step="1" value="65" oninput="update()">
-        </div>
-        <a href="index.html" style="color: #555; font-size: 11px; display: block; margin-top: 20px; text-align: center; text-decoration: none;">← Ana Sayfaya Dön</a>
+<!-- ── STUDIO BODY ── -->
+<div class="studio-body">
+
+  <!-- SIDEBAR -->
+  <div class="sidebar">
+    <div class="sidebar-title">Configuration</div>
+
+    <!-- Room type -->
+    <div class="field">
+      <label>Room Type</label>
+      <select id="roomType">
+        <option value="luxury entrance hallway">Entrance Hallway</option>
+        <option value="modern spacious living room" selected>Living Room</option>
+        <option value="minimalist master bedroom">Bedroom</option>
+        <option value="modern dining room">Dining Room</option>
+        <option value="home office modern">Home Office</option>
+      </select>
     </div>
 
-    <div class="main-view">
-        <a href="index.html" class="btn-back">✕ KAPAT</a>
-        <div id="room-wrap">
-            <div id="loader" style="position:absolute; display:none; color:var(--gold); left:50%; top:50%; transform:translate(-50%,-50%);">🎨 Çiziliyor...</div>
-            <img id="room-img" src="https://via.placeholder.com/1200x800/111/333?text=Room+Area">
-            <img id="rug-obj" src="" style="display:none;">
-        </div>
+    <!-- Furniture color -->
+    <div class="field">
+      <label>Furniture Color</label>
+      <select id="sofaColor">
+        <option value="Cream linen">Cream / Beige</option>
+        <option value="Grey modern">Grey</option>
+        <option value="Anthracite dark grey">Anthracite</option>
+        <option value="Navy blue velvet">Navy Blue</option>
+        <option value="Emerald green velvet">Emerald Green</option>
+        <option value="Mustard yellow fabric">Mustard Yellow</option>
+        <option value="Cognac leather">Cognac Leather</option>
+        <option value="Terracotta warm">Terracotta</option>
+        <option value="Pure white minimalist">White</option>
+      </select>
     </div>
 
-    <script>
-        function generateRoom() {
-            const type = document.getElementById('roomType').value;
-            const sofa = document.getElementById('sofaColor').value;
-            const roomImg = document.getElementById('room-img');
-            const loader = document.getElementById('loader');
-            loader.style.display = "block";
-            roomImg.style.opacity = "0.2";
-            
-            const prompt = `Professional photography of a ${type} with ${sofa} furniture, empty wooden floor in foreground, 8k.`;
-            roomImg.onload = () => { loader.style.display = "none"; roomImg.style.opacity = "1"; };
-            roomImg.src = `https://image.pollinations.ai/prompt/${encodeURIComponent(prompt)}?width=1280&height=800&nologo=true&seed=${Math.random()}&model=flux`;
-        }
+    <!-- Room size -->
+    <div class="field">
+      <label>Room Size</label>
+      <select id="roomSize">
+        <option value="12">Small — 12 m²</option>
+        <option value="20">Medium — 20 m²</option>
+        <option value="35" selected>Large — 35 m²</option>
+        <option value="55">Very Large — 55 m²</option>
+      </select>
+    </div>
 
-        function loadRug(e) {
-            const rug = document.getElementById('rug-obj');
-            rug.src = URL.createObjectURL(e.target.files[0]);
-            rug.style.display = "block";
-            rug.style.top = "70%"; rug.style.left = "50%";
-            update();
-        }
+    <div class="divider"></div>
 
-        function update() {
-            const rug = document.getElementById('rug-obj');
-            const scale = document.getElementById('scale').value;
-            const tilt = document.getElementById('tilt').value;
-            rug.style.transform = `translate(-50%, -50%) perspective(1200px) rotateX(${tilt}deg) scale(${scale})`;
-        }
+    <!-- Rug type -->
+    <div class="field">
+      <label>Rug Type</label>
+      <div class="toggle-row">
+        <button class="tog on" id="tog-area" onclick="setMode('area')">▪ Area Rug</button>
+        <button class="tog" id="tog-runner" onclick="setMode('runner')">▬ Runner</button>
+      </div>
+    </div>
 
-        // Sürükleme
-        const rug = document.getElementById('rug-obj');
-        let dragging = false;
-        rug.onmousedown = () => dragging = true;
-        window.onmousemove = (e) => {
-            if (dragging) {
-                const wrap = document.getElementById('room-wrap').getBoundingClientRect();
-                rug.style.left = ((e.clientX - wrap.left) / wrap.width) * 100 + "%";
-                rug.style.top = ((e.clientY - wrap.top) / wrap.height) * 100 + "%";
-            }
-        };
-        window.onmouseup = () => dragging = false;
-    </script>
+    <!-- Upload -->
+    <div class="field">
+      <label>Upload Rug Image</label>
+      <input type="file" id="rugFile" accept="image/*" onchange="loadRug(event)">
+    </div>
+
+    <!-- Generate room -->
+    <button class="btn-gen" onclick="generateRoom()">Generate AI Room ✦</button>
+
+    <div class="divider"></div>
+
+    <!-- Sliders -->
+    <div class="sliders-title">Floor Placement</div>
+
+    <div>
+      <div class="sl-row"><span>Scale</span><span id="v-scale">1.00</span></div>
+      <input type="range" id="sl-scale" min="0.1" max="3.0" step="0.05" value="1" oninput="updateRug()">
+
+      <div class="sl-row"><span>Floor Tilt</span><span id="v-tilt">62°</span></div>
+      <input type="range" id="sl-tilt" min="45" max="85" step="1" value="62" oninput="updateRug()">
+
+      <div class="sl-row"><span>Rotation</span><span id="v-rotate">0°</span></div>
+      <input type="range" id="sl-rotate" min="-45" max="45" step="1" value="0" oninput="updateRug()">
+
+      <div id="runner-extra" style="display:none;">
+        <div class="sl-row"><span>Runner Length</span><span id="v-length">3.0×</span></div>
+        <input type="range" id="sl-length" min="1.5" max="6" step="0.1" value="3" oninput="updateRug()">
+      </div>
+
+      <div class="sl-row"><span>Shadow</span><span id="v-shadow">50</span></div>
+      <input type="range" id="sl-shadow" min="0" max="100" step="5" value="50" oninput="updateRug()">
+    </div>
+
+    <button class="btn-guide" onclick="toggleGuide()">Toggle Floor Guide</button>
+
+  </div><!-- /sidebar -->
+
+  <!-- MAIN VIEW -->
+  <div class="main-view">
+
+    <div id="loading-overlay">
+      <div class="loading-box">
+        <div class="spinner"></div>
+        Generating room…
+      </div>
+    </div>
+
+    <div id="room-container">
+      <div class="empty-state" id="empty-state">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+          <rect x="3" y="3" width="18" height="18" rx="2"/>
+          <path d="M3 9h18M9 21V9"/>
+        </svg>
+        <p>Upload a rug · Generate a room · Drag to place</p>
+      </div>
+
+      <img id="room-img" src="" alt="Room" style="display:none; max-width:100%; max-height:calc(100vh - 90px);">
+      <div id="rug-shadow"></div>
+      <div id="floor-guide"></div>
+      <img id="rug-obj" src="" alt="Rug" draggable="false">
+    </div>
+
+  </div>
+
+</div><!-- /studio-body -->
+
+<script>
+  // ── STATE ──
+  let mode = 'area';
+  let natW = 1, natH = 1;
+  let posX = 50, posY = 72;
+  let dragging = false;
+
+  // ── RUG MODE ──
+  function setMode(m) {
+    mode = m;
+    document.getElementById('tog-area').classList.toggle('on', m === 'area');
+    document.getElementById('tog-runner').classList.toggle('on', m === 'runner');
+    document.getElementById('runner-extra').style.display = m === 'runner' ? 'block' : 'none';
+    updateRug();
+  }
+
+  // ── GENERATE ROOM ──
+  function generateRoom() {
+    const type   = document.getElementById('roomType').value;
+    const sofa   = document.getElementById('sofaColor').value;
+    const size   = document.getElementById('roomSize').value;
+    const img    = document.getElementById('room-img');
+    const loader = document.getElementById('loading-overlay');
+    const empty  = document.getElementById('empty-state');
+
+    loader.classList.add('show');
+    img.style.opacity = '0.15';
+
+    const prompt = `Professional interior photography, ${size} sqm ${type}, ${sofa} furniture, wide empty wooden floor in foreground, natural daylight, 8k photorealistic, no people`;
+    const seed   = Math.floor(Math.random() * 999999);
+    const url    = `https://image.pollinations.ai/prompt/${encodeURIComponent(prompt)}?width=1280&height=800&nologo=true&seed=${seed}&model=flux`;
+
+    const tmp = new Image();
+    tmp.onload = () => {
+      img.src = url;
+      img.style.display = 'block';
+      img.style.opacity = '1';
+      loader.classList.remove('show');
+      empty.classList.add('hidden');
+      // reposition rug after image loads & container resizes
+      setTimeout(updateRug, 100);
+    };
+    tmp.onerror = () => {
+      loader.classList.remove('show');
+      img.style.opacity = '1';
+    };
+    tmp.src = url;
+  }
+
+  // ── LOAD RUG ──
+  function loadRug(e) {
+    const file = e.target.files[0];
+    if (!file) return;
+    const reader = new FileReader();
+    reader.onload = ev => {
+      const src = ev.target.result;
+      const probe = new Image();
+      probe.onload = () => {
+        natW = probe.naturalWidth;
+        natH = probe.naturalHeight;
+        const rugEl = document.getElementById('rug-obj');
+        rugEl.src = src;
+        rugEl.style.display = 'block';
+        posX = 50;
+        posY = 72;
+        updateRug();
+      };
+      probe.src = src;
+    };
+    reader.readAsDataURL(file);
+  }
+
+  // ── UPDATE RUG TRANSFORM ──
+  function updateRug() {
+    const rugEl  = document.getElementById('rug-obj');
+    const shadow = document.getElementById('rug-shadow');
+    if (!rugEl.src || rugEl.style.display === 'none') return;
+
+    const scale  = parseFloat(document.getElementById('sl-scale').value);
+    const tilt   = parseInt(document.getElementById('sl-tilt').value);
+    const rotate = parseInt(document.getElementById('sl-rotate').value);
+    const shStr  = parseInt(document.getElementById('sl-shadow').value) / 100;
+
+    // Update labels
+    document.getElementById('v-scale').textContent  = scale.toFixed(2);
+    document.getElementById('v-tilt').textContent   = tilt + '°';
+    document.getElementById('v-rotate').textContent = rotate + '°';
+    document.getElementById('v-shadow').textContent = Math.round(shStr * 100);
+
+    const container = document.getElementById('room-container');
+    const cw = container.offsetWidth  || 900;
+    const ch = container.offsetHeight || 600;
+
+    // Base width as % of container
+    let bw, aspect;
+    if (mode === 'runner') {
+      const lm = parseFloat(document.getElementById('sl-length').value);
+      document.getElementById('v-length').textContent = lm.toFixed(1) + '×';
+      bw     = cw * 0.11 * scale;
+      aspect = lm * (natH / natW);
+    } else {
+      bw     = cw * 0.30 * scale;
+      aspect = natH / natW;
+    }
+    const bh = bw * aspect;
+
+    // Position
+    rugEl.style.position        = 'absolute';
+    rugEl.style.width           = bw + 'px';
+    rugEl.style.height          = bh + 'px';
+    rugEl.style.left            = posX + '%';
+    rugEl.style.top             = posY + '%';
+    rugEl.style.transformOrigin = 'center bottom';
+
+    // The key: translate(-50%,-100%) so bottom-center anchors to the floor point,
+    // then rotateX for perspective, rotateZ for rotation
+    rugEl.style.transform = `translate(-50%, -100%) perspective(1400px) rotateX(${tilt}deg) rotateZ(${rotate}deg)`;
+
+    // Shadow
+    const tiltRad   = tilt * Math.PI / 180;
+    const perspScY  = Math.cos(tiltRad);
+    const sw = bw * 1.1;
+    const sh = bh * perspScY * 0.35;
+
+    shadow.style.display        = 'block';
+    shadow.style.position       = 'absolute';
+    shadow.style.width          = sw + 'px';
+    shadow.style.height         = sh + 'px';
+    shadow.style.left           = posX + '%';
+    shadow.style.top            = posY + '%';
+    shadow.style.transform      = `translate(-50%, -${sh * 0.25}px) rotateZ(${rotate}deg)`;
+    shadow.style.opacity        = (shStr * 0.65).toFixed(2);
+  }
+
+  // ── FLOOR GUIDE ──
+  function toggleGuide() {
+    const g = document.getElementById('floor-guide');
+    g.style.display = g.style.display === 'block' ? 'none' : 'block';
+  }
+
+  // ── DRAG ──
+  const rugEl = document.getElementById('rug-obj');
+
+  function getXY(e) {
+    return e.touches
+      ? { x: e.touches[0].clientX, y: e.touches[0].clientY }
+      : { x: e.clientX, y: e.clientY };
+  }
+
+  function onDown(e) {
+    dragging = true;
+    e.preventDefault();
+  }
+  function onUp() { dragging = false; }
+  function onMove(e) {
+    if (!dragging) return;
+    const c   = document.getElementById('room-container').getBoundingClientRect();
+    const { x, y } = getXY(e);
+    posX = Math.max(3, Math.min(97, ((x - c.left)  / c.width)  * 100));
+    posY = Math.max(5, Math.min(98, ((y - c.top)   / c.height) * 100));
+    rugEl.style.left = posX + '%';
+    rugEl.style.top  = posY + '%';
+    const shadow = document.getElementById('rug-shadow');
+    shadow.style.left = posX + '%';
+    shadow.style.top  = posY + '%';
+  }
+
+  rugEl.addEventListener('mousedown',  onDown);
+  rugEl.addEventListener('touchstart', onDown, { passive: false });
+  window.addEventListener('mousemove',  onMove);
+  window.addEventListener('touchmove',  onMove, { passive: false });
+  window.addEventListener('mouseup',    onUp);
+  window.addEventListener('touchend',   onUp);
+
+  // Prevent image drag ghost
+  rugEl.addEventListener('dragstart', e => e.preventDefault());
+</script>
 </body>
 </html>
