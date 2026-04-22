@@ -102,3 +102,27 @@ A hand-knotted carpet tells a story through its symbols. Below is a technical an
     </td>
   </tr>
 </table>
+<!-- SECTION: MİLAS -->
+<table border="0" style="width:100%; margin-bottom: 40px; background-color: #fff9e6; padding: 15px; border-radius: 10px; border: 1px solid #eee8aa;">
+  <tr>
+    <td style="width: 55%; padding-right: 25px; vertical-align: top;">
+      <h2 style="color: #8b4513; margin-top: 0;">4. The Milas Tradition</h2>
+      <p>Originating from the Aegean coast, Milas carpets are world-renowned for their unique color palette and distinct geometric-floral hybrid style.</p>
+      
+      <h3>Key Motifs in this Tradition:</h3>
+      <ul>
+        <li><strong>Tobacco Yellow (Tütün Sarısı):</strong> The signature color of Milas, derived from local plant dyes, representing the sun-drenched Aegean landscape.</li>
+        <li><strong>The 'Ada' (Island) Motif:</strong> A stylized rectangular medallion that symbolizes the stability of home and rootedness.</li>
+        <li><strong>Carnations (Karanfil):</strong> Stylized floral borders representing the gardens of paradise and spiritual renewal.</li>
+        <li><strong>Tree of Life:</strong> Often found in simpler forms, symbolizing the connection between earth and heaven.</li>
+      </ul>
+      <p><i>Technical Note: Milas carpets are traditionally "Wool on Wool" with a distinctive soft, slightly loose knotting style that gives them a characteristic velvet-like handle.</i></p>
+    </td>
+    <td style="width: 45%; text-align: center; vertical-align: middle;">
+      <a href="{{ site.baseurl }}/images/milas-1.webp" target="_blank">
+        <img src="{{ site.baseurl }}/images/milas-1.webp" alt="Milas Carpet Analysis" style="width: 100%; border-radius: 5px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+      </a>
+      <br><small>(Click to enlarge Milas image)</small>
+    </td>
+  </tr>
+</table>

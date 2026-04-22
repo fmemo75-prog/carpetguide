@@ -1,11 +1,13 @@
 # ==========================================
 # 1. BÖLÜM: BÜLENT GÜLER (BİLO)
 # ==========================================
+# 1. BÜLENT GÜLER (BİLO)
 - file: "hali-bilo.jpg"
   tag: "Bülent Güler"
   type: "bilo"
   map: "https://www.google.com/maps/search/?api=1&query=Kervan+Carpet+Goreme"
-  text: "3rd generation expert <b>Bülent Güler</b> at Kervan Carpet. A true master of the craft and a dear friend. His 5.0 Google rating is a testament to his honesty. <br><a href='https://wa.me/905367602165' target='_blank' style='color:#25D366; font-weight:bold;'>🟢 Contact via WhatsApp</a>"
+  instagram: "https://www.instagram.com/anatolian_kilim_cappadocia?igsh=MTkxaTlwdzJtbnZxOA=="
+  text: "3rd generation expert <b>Bülent Güler</b> at Kervan Carpet. A true master and dear friend. His 5.0 Google rating is a testament to his honesty. <br><a href='https://wa.me/905367602165' target='_blank' style='color:#25D366; font-weight:bold;'>🟢 WhatsApp Bülent</a>"
 
 # ==========================================
 # 2. BÖLÜM: KÜRATÖR ANALİZLERİ (FATİH MEHMET CANITEZ)
@@ -18,7 +20,7 @@
 
 - file: "hali-20220713_132921.jpg"
   tag: "Curator Analysis"
-  type: "b"
+  type: "bg"
   map: "https://www.google.com/maps/search/?api=1&query=Goreme+Cappadocia"
   text: "<b>Sumak Technique:</b> High-relief pattern study using the wrapping method. Featuring the symbolic <b>Su Yolu</b> (Water Way) pattern. Technical research by Fatih Mehmet Canıtez."
 
@@ -56,6 +58,7 @@
   text: "<b>Gallery Session:</b> Reviewing the vibrant color palette and high-quality wool selection at Galerie Ikman."
 
 - file: "hali-8.jpg"
+  order: 2
   tag: "Galerie Ikman"
   type: "g"
   map: "https://www.google.com/maps/search/?api=1&query=Galerie+Ikman+Goreme"
@@ -83,6 +86,7 @@
   text: "<b>Pure Silk on Silk</b> masterpiece with Mihrab design. Peak of Hereke tradition exhibited at the Anatolian Art Museum."
 
 - file: "hali-10.jpg"
+  order: 3
   tag: "Museum Piece"
   type: "a"
   map: "https://www.google.com/maps/search/?api=1&query=Anatolian+Art+Museum+Goreme"

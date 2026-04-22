@@ -20,17 +20,52 @@
         :root { --primary-red: #8b0000; --deep-navy: #1a2a6c; --cream-bg: #fdf5e6; }
         * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
         body { background-color: var(--cream-bg); font-family: 'Georgia', serif; line-height: 1.8; color: #2c3e50; margin: 0; padding: 0; overflow-x: hidden; }
-        
-        header { background: linear-gradient(to right, var(--deep-navy), #2a4858); padding: 10px 20px; display: flex; justify-content: space-between; align-items: center; min-height: 60px; box-shadow: 0 2px 10px rgba(0,0,0,0.2); }
+
+        /* ── KİLİM BORDÜR ──────────────────────────────────────── */
+        .kilim-border {
+            position: fixed; top: 0; width: 150px; height: 100%;
+            background-image: url('{{ site.baseurl }}/images/kilim-motif.jpg');
+            background-size: 150px auto; background-repeat: repeat-y;
+            z-index: 1;
+            box-shadow: inset -10px 0 20px rgba(0,0,0,0.1);
+        }
+        .left-border  { left: 0; border-right: 2px solid #8b4513; }
+        .right-border { right: 0; border-left: 2px solid #8b4513; box-shadow: inset 10px 0 20px rgba(0,0,0,0.1); }
+
+        @media (max-width: 1200px) {
+            .kilim-border { width: 60px; background-size: 60px auto; }
+        }
+        @media (max-width: 800px) {
+            .kilim-border { display: none; }
+        }
+
+        /* ── HEADER ────────────────────────────────────────────── */
+        header { 
+            position: relative; z-index: 10;
+            background: linear-gradient(to right, var(--deep-navy), #2a4858); 
+            padding: 10px 20px; display: flex; justify-content: space-between; 
+            align-items: center; min-height: 60px; 
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2); 
+        }
         .header-title { color: white; font-size: 1.1rem; font-weight: bold; text-decoration: none; }
         #google_translate_element { transform: scale(0.9); transform-origin: right; }
 
-        .container { max-width: 1000px; margin: 25px auto; background: white; padding: 35px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); border-top: 8px solid var(--primary-red); }
+        /* ── ANA İÇERİK ────────────────────────────────────────── */
+        .page-wrap {
+            position: relative; z-index: 10;
+            max-width: 1000px;
+            margin: 25px auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border-top: 8px solid var(--primary-red);
+            padding: 35px;
+        }
+
         img { max-width: 100%; height: auto; border-radius: 8px; }
 
-        /* LİGHTBOX (ZOOM) STİLLERİ */
-        /* Sadece içerik resimlerinde büyüteç çıksın */
-        .container img:not(.leaflet-marker-icon):not(.leaflet-tile) { cursor: zoom-in; transition: 0.3s; }
+        /* ── LİGHTBOX ──────────────────────────────────────────── */
+        .page-wrap img:not(.leaflet-marker-icon):not(.leaflet-tile) { cursor: zoom-in; transition: 0.3s; }
         
         #img-lightbox-overlay {
             display: none; position: fixed; z-index: 999999;
@@ -42,26 +77,31 @@
         #img-lightbox-overlay.active { display: flex; }
         #img-lightbox-overlay.active img { transform: scale(1); }
 
+        /* ── MOBİL ─────────────────────────────────────────────── */
         @media (max-width: 768px) {
             header { flex-direction: column; text-align: center; gap: 10px; padding: 15px; }
-            .container { margin: 10px; padding: 20px; width: calc(100% - 20px); }
+            .page-wrap { margin: 10px; padding: 20px; width: calc(100% - 20px); }
             #google_translate_element { transform: scale(1); transform-origin: center; }
         }
     </style>
 </head>
 <body>
 
+    <!-- Kilim Şeritleri -->
+    <div class="kilim-border left-border"></div>
+    <div class="kilim-border right-border"></div>
+
     <header>
         <a href="{{ site.baseurl }}/" class="header-title">🌍 Global Carpet Guide</a>
         <div id="google_translate_element"></div>
     </header>
 
-    <div class="container">
+    <div class="page-wrap">
       {{ content }}
 
       {% if page.url != "/" and page.url != "/index.html" %}
         <div style="text-align:center; margin-top:40px; border-top:1px solid #eee; padding-top:25px;">
-            <a href="{{ site.baseurl }}/" style="background:var(--primary-red); color:white !important; padding:12px 30px; text-decoration:none; border-radius:50px; font-weight:bold; display:inline-block;">🏠 Back to Dashboard</a>
+            <a href="{{ site.baseurl }}/" style="background:var(--primary-red); color:white !important; padding:12px 30px; text-decoration:none; border-radius:50px; font-weight:bold; display:inline-block; box-shadow: 0 4px 10px rgba(139,0,0,0.3);">🏠 Back to Dashboard</a>
         </div>
       {% endif %}
     </div>
@@ -71,23 +111,25 @@
       <img id="enlarged-img" src="" alt="Enlarged">
     </div>
 
-    <!-- Google Translate Script -->
+    <!-- Google Translate -->
     <script type="text/javascript">
       function googleTranslateElementInit() {
-        new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'tr,en,fr,de,it,es,ja,ru,zh', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+        new google.translate.TranslateElement({
+            pageLanguage: 'en', 
+            includedLanguages: 'tr,en,fr,es,it,de,ru,zh-CN,ja,ar,pt,hi,bn,ko,vi,pl,uk,fa,el,nl,sv,th,az,bg,cs,da,fi,hu,no,ro', 
+            layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+        }, 'google_translate_element');
       }
     </script>
     <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
-    <!-- AKILLI ZOOM SCRİPTİ (Harita Hariç) -->
+    <!-- Zoom Scripti -->
     <script>
       document.addEventListener("DOMContentLoaded", function() {
-        const images = document.querySelectorAll('.container img');
+        const images = document.querySelectorAll('.page-wrap img');
         images.forEach(img => {
-          // HARİTA KONTROLÜ: Eğer resim harita (Leaflet) içindeyse veya bir linke bağlıysa zoom yapma
           const isMap = img.closest('.leaflet-container') || img.closest('#map');
           const isLink = img.closest('a');
-
           if (!isMap && !isLink) {
             img.addEventListener('click', function() {
               const overlay = document.getElementById('img-lightbox-overlay');
@@ -105,7 +147,7 @@
       }
     </script>
 
-    <footer style="text-align: center; padding: 20px; color: #888; font-size: 12px;">
+    <footer style="text-align: center; padding: 20px; color: #888; font-size: 12px; position: relative; z-index: 10;">
         © {{ site.time | date: '%Y' }} Carpet Guide | Curator: Fatih Mehmet Canıtez
     </footer>
 </body>
