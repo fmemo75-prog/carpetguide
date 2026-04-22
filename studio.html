@@ -274,33 +274,63 @@
       display: none;
       position: absolute;
       inset: 0;
-      background: rgba(0,0,0,0.75);
+      background: rgba(0,0,0,0.55);
+      backdrop-filter: blur(2px);
       z-index: 200;
-      align-items: center;
+      align-items: flex-end;
       justify-content: center;
+      padding-bottom: 28px;
     }
     #loading-overlay.show { display: flex; }
     .loading-box {
-      background: #111;
-      border: 1px solid rgba(192,57,43,0.4);
-      border-radius: 6px;
-      padding: 18px 28px;
-      color: var(--gold);
-      font-size: 12px;
-      letter-spacing: 2px;
-      text-transform: uppercase;
+      background: #0e0e0e;
+      border: 1px solid rgba(201,168,76,0.18);
+      border-radius: 8px;
+      padding: 18px 22px;
+      width: min(380px, 88%);
       display: flex;
-      align-items: center;
+      flex-direction: column;
       gap: 12px;
     }
+    .loading-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+    }
+    .loading-left { display: flex; align-items: center; gap: 9px; }
     .spinner {
-      width: 16px; height: 16px;
-      border: 2px solid rgba(201,168,76,0.2);
+      width: 13px; height: 13px;
+      border: 2px solid rgba(201,168,76,0.12);
       border-top-color: var(--gold);
       border-radius: 50%;
       animation: spin 0.7s linear infinite;
+      flex-shrink: 0;
     }
     @keyframes spin { to { transform: rotate(360deg); } }
+    .loading-status {
+      font-size: 11px; color: var(--gold);
+      letter-spacing: 1.5px; text-transform: uppercase;
+    }
+    .loading-time { font-size: 11px; color: #444; font-variant-numeric: tabular-nums; }
+    .progress-track {
+      width: 100%; height: 3px;
+      background: #1c1c1c; border-radius: 2px; overflow: hidden;
+    }
+    .progress-bar {
+      height: 100%; width: 0%;
+      background: linear-gradient(90deg, var(--accent), var(--gold));
+      border-radius: 2px;
+      transition: width 0.5s ease;
+    }
+    .loading-hint { font-size: 11px; color: #3a3a3a; text-align: center; }
+    .btn-cancel {
+      background: none; border: 1px solid #2a2a2a; color: #444;
+      padding: 4px 10px; border-radius: 3px; cursor: pointer;
+      font-size: 10px; font-family: 'DM Sans', sans-serif;
+      letter-spacing: 0.5px; text-transform: uppercase; transition: 0.15s; flex-shrink: 0;
+    }
+    .btn-cancel:hover { border-color: #444; color: #777; }
 
     /* Empty state */
     .empty-state {
@@ -428,8 +458,18 @@
 
     <div id="loading-overlay">
       <div class="loading-box">
-        <div class="spinner"></div>
-        Generating room…
+        <div class="loading-top">
+          <div class="loading-left">
+            <div class="spinner"></div>
+            <span class="loading-status" id="loading-status">Generating room…</span>
+          </div>
+          <span class="loading-time" id="loading-time">0s</span>
+          <button class="btn-cancel" onclick="cancelGenerate()">Cancel</button>
+        </div>
+        <div class="progress-track">
+          <div class="progress-bar" id="progress-bar"></div>
+        </div>
+        <div class="loading-hint" id="loading-hint">AI is rendering your room — usually 8–15 seconds</div>
       </div>
     </div>
 
@@ -469,36 +509,100 @@
   }
 
   // ── GENERATE ROOM ──
+  let currentImg = null;
+  let loadTimer = null;
+  let progressTimer = null;
+  let elapsedSec = 0;
+
+  const statusMessages = [
+    [0,  'Starting AI engine…'],
+    [3,  'Composing the room…'],
+    [7,  'Adding lighting…'],
+    [11, 'Rendering floor…'],
+    [15, 'Finishing details…'],
+    [20, 'Almost there…'],
+  ];
+
+  function cancelGenerate() {
+    if (currentImg) { currentImg.onload = null; currentImg.onerror = null; currentImg.src = ''; }
+    clearInterval(loadTimer);
+    clearInterval(progressTimer);
+    document.getElementById('loading-overlay').classList.remove('show');
+    document.getElementById('room-img').style.opacity = '1';
+  }
+
   function generateRoom() {
-    const type   = document.getElementById('roomType').value;
-    const sofa   = document.getElementById('sofaColor').value;
-    const size   = document.getElementById('roomSize').value;
-    const img    = document.getElementById('room-img');
-    const loader = document.getElementById('loading-overlay');
-    const empty  = document.getElementById('empty-state');
+    // cancel any in-flight request
+    cancelGenerate();
+
+    const type  = document.getElementById('roomType').value;
+    const sofa  = document.getElementById('sofaColor').value;
+    const size  = document.getElementById('roomSize').value;
+    const img   = document.getElementById('room-img');
+    const loader= document.getElementById('loading-overlay');
+    const empty = document.getElementById('empty-state');
+    const bar   = document.getElementById('progress-bar');
+    const statusEl = document.getElementById('loading-status');
+    const timeEl   = document.getElementById('loading-time');
+    const hintEl   = document.getElementById('loading-hint');
+
+    // Reset UI
+    bar.style.width = '0%';
+    bar.style.transition = 'none';
+    statusEl.textContent = 'Starting AI engine…';
+    timeEl.textContent = '0s';
+    hintEl.textContent = 'AI is rendering your room — usually 8–15 seconds';
+    elapsedSec = 0;
 
     loader.classList.add('show');
-    img.style.opacity = '0.15';
+    if (img.src) img.style.opacity = '0.25';
 
     const prompt = `Professional interior photography, ${size} sqm ${type}, ${sofa} furniture, wide empty wooden floor in foreground, natural daylight, 8k photorealistic, no people`;
     const seed   = Math.floor(Math.random() * 999999);
     const url    = `https://image.pollinations.ai/prompt/${encodeURIComponent(prompt)}?width=1280&height=800&nologo=true&seed=${seed}&model=flux`;
 
-    const tmp = new Image();
-    tmp.onload = () => {
-      img.src = url;
-      img.style.display = 'block';
-      img.style.opacity = '1';
-      loader.classList.remove('show');
-      empty.classList.add('hidden');
-      // reposition rug after image loads & container resizes
-      setTimeout(updateRug, 100);
+    // Animated progress — fake but reassuring: reaches ~85% then waits
+    setTimeout(() => { bar.style.transition = 'width 0.5s ease'; }, 50);
+    progressTimer = setInterval(() => {
+      elapsedSec++;
+      timeEl.textContent = elapsedSec + 's';
+      // Ease toward 85% over ~18s, then slow crawl
+      const target = elapsedSec < 18
+        ? Math.min(85, elapsedSec * 4.7)
+        : Math.min(92, 85 + (elapsedSec - 18) * 0.5);
+      bar.style.width = target + '%';
+      // Status messages
+      for (const [t, msg] of statusMessages) {
+        if (elapsedSec === t) { statusEl.textContent = msg; break; }
+      }
+      if (elapsedSec > 25) hintEl.textContent = 'Server is busy — hang tight…';
+    }, 1000);
+
+    currentImg = new Image();
+    currentImg.onload = () => {
+      clearInterval(progressTimer);
+      bar.style.width = '100%';
+      statusEl.textContent = 'Done!';
+      setTimeout(() => {
+        img.src = url;
+        img.style.display = 'block';
+        img.style.opacity = '1';
+        loader.classList.remove('show');
+        empty.classList.add('hidden');
+        setTimeout(updateRug, 80);
+      }, 350);
     };
-    tmp.onerror = () => {
-      loader.classList.remove('show');
-      img.style.opacity = '1';
+    currentImg.onerror = () => {
+      clearInterval(progressTimer);
+      statusEl.textContent = 'Failed — try again';
+      hintEl.textContent = 'Server may be busy. Click Generate again.';
+      bar.style.background = 'var(--accent)';
+      setTimeout(() => {
+        loader.classList.remove('show');
+        img.style.opacity = '1';
+      }, 2000);
     };
-    tmp.src = url;
+    currentImg.src = url;
   }
 
   // ── LOAD RUG ──
