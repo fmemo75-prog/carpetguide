@@ -127,6 +127,7 @@ A hand-knotted carpet tells a story through its symbols. Below is a technical an
   </tr>
 </table>
 
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -161,11 +162,71 @@ A hand-knotted carpet tells a story through its symbols. Below is a technical an
     }
     .item-details {
         flex: 1;
+=======
+<style>
+    .carpet-wrapper {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        max-width: 1000px;
+        margin: 10px auto;
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.95);
+        border-radius: 12px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    }
+    .carpet-header-title {
+        border-bottom: 3px solid #8b0000;
+        padding-bottom: 10px;
+        margin-bottom: 25px;
+        color: #8b0000;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+    .general-desc {
+        background-color: #f9f9f9;
+        padding: 20px;
+        border-left: 6px solid #8b0000;
+        margin-bottom: 35px;
+    }
+    .item-box {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+        background: #fff;
+        padding: 0;
+        border: 1px solid #ddd;
+        overflow: hidden;
+        border-radius: 8px;
+        transition: transform 0.3s ease;
+    }
+    .item-box:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    }
+    .item-image {
+        flex: 1;
+        min-width: 300px;
+        max-height: 400px;
+        overflow: hidden;
+        background: #eee;
+    }
+    .item-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+    .item-details {
+        flex: 1.5;
+        padding: 25px;
+>>>>>>> 9f83d38f401ab3acadb5582ca33ebf231bc52cea
         min-width: 300px;
     }
     .item-details h3 {
         color: #b22222;
         margin-top: 0;
+<<<<<<< HEAD
         border-bottom: 1px dashed #ccc;
         padding-bottom: 5px;
     }
@@ -221,10 +282,73 @@ A hand-knotted carpet tells a story through its symbols. Below is a technical an
                 <li><strong>Border:</strong> Geometric "Crenelated" inner guard with star-patterned main border.</li>
                 <li><strong>Description:</strong> A quintessential nomadic piece featuring strong geometric definition. The blue field offers a striking contrast to the terracotta borders.</li>
                 <li><strong>Usage:</strong> Ideal for living spaces and traditional decor settings.</li>
+=======
+        font-size: 1.4em;
+        border-bottom: 1px solid #eee;
+        padding-bottom: 10px;
+    }
+    .info-table {
+        list-style: none;
+        padding: 0;
+        margin-top: 15px;
+    }
+    .info-table li {
+        margin-bottom: 10px;
+        font-size: 0.95em;
+    }
+    .info-table strong {
+        color: #444;
+        display: inline-block;
+        width: 130px;
+    }
+    
+    /* Mobil Uyumluluk */
+    @media (max-width: 768px) {
+        .item-box {
+            flex-direction: column;
+        }
+        .item-image {
+            max-height: 300px;
+        }
+    }
+</style>
+
+<div class="carpet-wrapper">
+    
+    <div class="carpet-header-title">
+        <h2>Döşemealtı Hand-Knotted Carpets</h2>
+    </div>
+
+    <div class="general-desc">
+        <h3>General Information</h3>
+        <p><strong>Döşemealtı carpets</strong> are iconic nomadic weavings from the Antalya region of Southern Turkey, traditionally crafted by the <strong>Teke Yörüks</strong>. These rugs are distinguished by their geometric patterns, high-quality hand-spun wool, and deep palettes achieved through natural madder root and indigo dyes.</p>
+        <ul class="info-table">
+            <li><strong>Origin:</strong> Antalya / Döşemealtı, Turkey</li>
+            <li><strong>Knot Type:</strong> Symmetrical (Turkish) Knot</li>
+            <li><strong>Material:</strong> 100% Wool on Wool</li>
+            <li><strong>Style:</strong> Nomadic / Tribal Geometric</li>
+        </ul>
+    </div>
+
+    <!-- Halı 01: Yaygı -->
+    <div class="item-box">
+        <div class="item-image">
+            <!-- Buradaki dosya ismini klasörünüzdeki isimle değiştirin -->
+            <img src="images/dosemealti-yaygi.jpg" alt="Döşemealtı Classic Area Rug">
+        </div>
+        <div class="item-details">
+            <h3>Item 01: Classic Area Rug</h3>
+            <ul class="info-table">
+                <li><strong>Design:</strong> "Güllü" (Cruciform) Pattern</li>
+                <li><strong>Central Field:</strong> Deep Indigo Blue.</li>
+                <li><strong>Border:</strong> Geometric "Crenelated" star-pattern.</li>
+                <li><strong>Description:</strong> A quintessential nomadic piece featuring three primary medallions. The indigo field offers a striking contrast to the terracotta borders, reflecting the classic Döşemealtı aesthetic.</li>
+>>>>>>> 9f83d38f401ab3acadb5582ca33ebf231bc52cea
             </ul>
         </div>
     </div>
 
+<<<<<<< HEAD
     <!-- Item 02 Section -->
     <div class="item-section">
         <div class="item-details">
@@ -235,11 +359,29 @@ A hand-knotted carpet tells a story through its symbols. Below is a technical an
                 <li><strong>Border:</strong> Classic Ivory "Yörük" border with floral motifs.</li>
                 <li><strong>Description:</strong> An elegant elongated runner showcasing vertical symmetry. Its ivory borders frame the deep red field perfectly, highlighting the fine knotting.</li>
                 <li><strong>Usage:</strong> Perfect for hallways, corridors, or narrow entryways.</li>
+=======
+    <!-- Halı 02: Yolluk -->
+    <div class="item-box">
+        <div class="item-image">
+            <!-- Buradaki dosya ismini klasörünüzdeki isimle değiştirin -->
+            <img src="images/dosemealti-yolluk.jpg" alt="Döşemealtı Geometric Runner">
+        </div>
+        <div class="item-details">
+            <h3>Item 02: Geometric Runner (Yolluk)</h3>
+            <ul class="info-table">
+                <li><strong>Design:</strong> Vertical Repeating Medallion</li>
+                <li><strong>Central Field:</strong> Rich Madder Red / Burgundy.</li>
+                <li><strong>Border:</strong> Classic Ivory "Yörük" border with floral motifs.</li>
+                <li><strong>Description:</strong> An elegant elongated runner showcasing perfect vertical symmetry. The ivory borders frame the deep red field, a design often seen in prestigious nomadic hallway rugs.</li>
+>>>>>>> 9f83d38f401ab3acadb5582ca33ebf231bc52cea
             </ul>
         </div>
     </div>
 
 </div>
+<<<<<<< HEAD
 
 </body>
 </html>
+=======
+>>>>>>> 9f83d38f401ab3acadb5582ca33ebf231bc52cea
