@@ -631,7 +631,7 @@ footer{
       <!-- ── CARD 2 ── -->
       <div class="photo-card">
         <div class="photo-wrap" onclick="openLightbox('photo2.jpg','Example 2 — Döşemealtı Prayer Rug')">
-          <img src="photo2.jpg" alt="Döşemealtı carpet example 2 — prayer rug composition"
+          <img src="images/photo2.jpg" alt="Döşemealtı carpet example 2 — prayer rug composition"
                onerror="this.parentElement.style.background='var(--bg3)';this.style.display='none'"/>
           <span class="zoom-hint">Click to enlarge</span>
         </div>
