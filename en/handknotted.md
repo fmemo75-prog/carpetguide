@@ -162,7 +162,7 @@ A hand-knotted carpet tells a story through its symbols. Below is a technical an
     }
     .item-details {
         flex: 1;
-=======
+
 <style>
     .carpet-wrapper {
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -282,7 +282,7 @@ A hand-knotted carpet tells a story through its symbols. Below is a technical an
                 <li><strong>Border:</strong> Geometric "Crenelated" inner guard with star-patterned main border.</li>
                 <li><strong>Description:</strong> A quintessential nomadic piece featuring strong geometric definition. The blue field offers a striking contrast to the terracotta borders.</li>
                 <li><strong>Usage:</strong> Ideal for living spaces and traditional decor settings.</li>
-=======
+
         font-size: 1.4em;
         border-bottom: 1px solid #eee;
         padding-bottom: 10px;
@@ -343,12 +343,12 @@ A hand-knotted carpet tells a story through its symbols. Below is a technical an
                 <li><strong>Central Field:</strong> Deep Indigo Blue.</li>
                 <li><strong>Border:</strong> Geometric "Crenelated" star-pattern.</li>
                 <li><strong>Description:</strong> A quintessential nomadic piece featuring three primary medallions. The indigo field offers a striking contrast to the terracotta borders, reflecting the classic Döşemealtı aesthetic.</li>
->>>>>>> 9f83d38f401ab3acadb5582ca33ebf231bc52cea
+
             </ul>
         </div>
     </div>
 
-<<<<<<< HEAD
+
     <!-- Item 02 Section -->
     <div class="item-section">
         <div class="item-details">
@@ -359,7 +359,7 @@ A hand-knotted carpet tells a story through its symbols. Below is a technical an
                 <li><strong>Border:</strong> Classic Ivory "Yörük" border with floral motifs.</li>
                 <li><strong>Description:</strong> An elegant elongated runner showcasing vertical symmetry. Its ivory borders frame the deep red field perfectly, highlighting the fine knotting.</li>
                 <li><strong>Usage:</strong> Perfect for hallways, corridors, or narrow entryways.</li>
-=======
+
     <!-- Halı 02: Yolluk -->
     <div class="item-box">
         <div class="item-image">
@@ -373,15 +373,15 @@ A hand-knotted carpet tells a story through its symbols. Below is a technical an
                 <li><strong>Central Field:</strong> Rich Madder Red / Burgundy.</li>
                 <li><strong>Border:</strong> Classic Ivory "Yörük" border with floral motifs.</li>
                 <li><strong>Description:</strong> An elegant elongated runner showcasing perfect vertical symmetry. The ivory borders frame the deep red field, a design often seen in prestigious nomadic hallway rugs.</li>
->>>>>>> 9f83d38f401ab3acadb5582ca33ebf231bc52cea
+
             </ul>
         </div>
     </div>
 
 </div>
-<<<<<<< HEAD
+
 
 </body>
 </html>
 =======
->>>>>>> 9f83d38f401ab3acadb5582ca33ebf231bc52cea
+
