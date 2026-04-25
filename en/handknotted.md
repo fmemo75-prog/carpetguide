@@ -334,7 +334,7 @@ A hand-knotted carpet tells a story through its symbols. Below is a technical an
     <div class="item-box">
         <div class="item-image">
             <!-- Buradaki dosya ismini klasörünüzdeki isimle değiştirin -->
-            <img src="images/dosemealti-yaygi.jpg" alt="Döşemealtı Classic Area Rug">
+            <img src="../images/dosemealti-yaygi.jpg" alt="Döşemealtı Classic Area Rug">
         </div>
         <div class="item-details">
             <h3>Item 01: Classic Area Rug</h3>
@@ -364,7 +364,7 @@ A hand-knotted carpet tells a story through its symbols. Below is a technical an
     <div class="item-box">
         <div class="item-image">
             <!-- Buradaki dosya ismini klasörünüzdeki isimle değiştirin -->
-            <img src="images/dosemealti-yolluk.jpg" alt="Döşemealtı Geometric Runner">
+            <img src="../images/dosemealti-yolluk.jpg" alt="Döşemealtı Geometric Runner">
         </div>
         <div class="item-details">
             <h3>Item 02: Geometric Runner (Yolluk)</h3>
