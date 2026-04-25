@@ -884,7 +884,7 @@ footer{
       <!-- ── CARD 1 ── -->
       <div class="photo-card">
         <div class="photo-wrap" onclick="openLightbox('photo1.jpg','Example 1 — Döşemealtı Village Carpet')">
-          <img src="photo1.jpg" alt="Döşemealtı carpet example 1 — geometric field design"
+          <img src="images/photo1.jpg" alt="Döşemealtı carpet example 1 — geometric field design"
                onerror="this.parentElement.style.background='var(--bg3)';this.style.display='none'"/>
           <span class="zoom-hint">Click to enlarge</span>
         </div>
