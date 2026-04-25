@@ -1,0 +1,296 @@
+---
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 1. Google Analytics (GA4) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZNNP61J8Q8"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-ZNNP61J8Q8');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} | Carpet Guide</title>
+    
+    <style>
+        :root { --primary-red: #8b0000; --deep-navy: #1a2a6c; --cream-bg: #fdf5e6; }
+        * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+        body { background-color: var(--cream-bg); font-family: 'Georgia', serif; line-height: 1.8; color: #2c3e50; margin: 0; padding: 0; overflow-x: hidden; }
+
+        /* ── KİLİM BORDÜR ──────────────────────────────────────── */
+        .kilim-border {
+            position: fixed; top: 0; width: 150px; height: 100%;
+            background-image: url('{{ site.baseurl }}/images/kilim-motif.jpg');
+            background-size: 150px auto; background-repeat: repeat-y;
+            z-index: 1;
+            box-shadow: inset -10px 0 20px rgba(0,0,0,0.1);
+        }
+        .left-border  { left: 0; border-right: 2px solid #8b4513; }
+        .right-border { right: 0; border-left: 2px solid #8b4513; box-shadow: inset 10px 0 20px rgba(0,0,0,0.1); }
+
+        @media (max-width: 1200px) {
+            .kilim-border { width: 60px; background-size: 60px auto; }
+        }
+        @media (max-width: 800px) {
+            .kilim-border { display: none; }
+        }
+
+        /* ── HEADER ────────────────────────────────────────────── */
+        header { 
+            position: relative; z-index: 10;
+            background: linear-gradient(to right, var(--deep-navy), #2a4858); 
+            padding: 0 20px; display: flex; justify-content: space-between; 
+            align-items: center; min-height: 60px; height: 60px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            overflow: hidden;
+        }
+        .header-title { color: white; font-size: 1.1rem; font-weight: bold; text-decoration: none; flex-shrink: 0; }
+        .header-right { display: flex; align-items: center; gap: 12px; flex-shrink: 0; overflow: hidden; max-width: 200px; }
+
+        /* Google Translate — sabit küçük kutu */
+        #google_translate_element { max-width: 120px; overflow: hidden; transform: scale(0.82); transform-origin: right center; }
+        .goog-te-gadget { white-space: nowrap; }
+        .goog-te-gadget img { display: none !important; }
+        .goog-te-gadget span { display: none !important; }
+
+        /* Hamburger butonu */
+        #nav-hamburger { background: none; border: none; cursor: pointer; padding: 8px 4px; display: flex; flex-direction: column; gap: 5px; flex-shrink: 0; z-index: 11; }
+        #nav-hamburger span { display: block; width: 22px; height: 2px; background: rgba(255,255,255,0.9); border-radius: 1px; transition: 0.25s; }
+        #nav-hamburger:hover span { background: #d4af37; }
+
+        /* ── ANA İÇERİK ────────────────────────────────────────── */
+        .page-wrap {
+            position: relative; z-index: 10;
+            max-width: 1000px;
+            margin: 25px auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border-top: 8px solid var(--primary-red);
+            padding: 35px;
+        }
+
+        img { max-width: 100%; height: auto; border-radius: 8px; }
+
+        /* ── LİGHTBOX ──────────────────────────────────────────── */
+        .page-wrap img:not(.leaflet-marker-icon):not(.leaflet-tile) { cursor: zoom-in; transition: 0.3s; }
+        
+        #img-lightbox-overlay {
+            display: none; position: fixed; z-index: 999999;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background-color: rgba(0,0,0,0.9); backdrop-filter: blur(5px);
+            cursor: zoom-out; justify-content: center; align-items: center;
+        }
+        #img-lightbox-overlay img { max-width: 90%; max-height: 90%; border: 3px solid #fff; transform: scale(0.9); transition: transform 0.25s ease-out; }
+        #img-lightbox-overlay.active { display: flex; }
+        #img-lightbox-overlay.active img { transform: scale(1); }
+
+        /* ── MOBİL ─────────────────────────────────────────────── */
+        @media (max-width: 768px) {
+            header { flex-direction: column; text-align: center; gap: 10px; padding: 15px; }
+            .page-wrap { margin: 10px; padding: 20px; width: calc(100% - 20px); }
+            #google_translate_element { transform: scale(1); transform-origin: center; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Kilim Şeritleri -->
+    <div class="kilim-border left-border"></div>
+    <div class="kilim-border right-border"></div>
+
+    <header>
+        <a href="{{ site.baseurl }}/" class="header-title">🌍 Global Carpet Guide</a>
+        <div class="header-right">
+            <div id="google_translate_element"></div>
+            <button id="nav-hamburger" onclick="toggleNavDrawer()" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- NAV DRAWER OVERLAY -->
+    <div id="nav-overlay" onclick="closeNavDrawer()" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.6); z-index:99000;"></div>
+
+    <!-- NAV DRAWER -->
+    <div id="nav-drawer" style="
+        position:fixed; top:0; right:-310px; width:290px; height:100%;
+        background:#130d08; z-index:99001; overflow-y:auto;
+        transition:right 0.28s cubic-bezier(0.4,0,0.2,1);
+        box-shadow:-6px 0 40px rgba(0,0,0,0.7);
+        font-family:Georgia, serif;
+    ">
+        <!-- Drawer Header -->
+        <div style="padding:18px 18px 14px; border-bottom:1px solid rgba(255,255,255,0.08); display:flex; justify-content:space-between; align-items:center; position:sticky; top:0; background:#1a0a0a; z-index:1;">
+            <span style="font-size:10px; letter-spacing:3px; text-transform:uppercase; color:#d4af37;">Navigation</span>
+            <button onclick="closeNavDrawer()" style="background:rgba(255,255,255,0.07); border:none; color:#aaa; width:28px; height:28px; border-radius:50%; cursor:pointer; font-size:15px; display:flex; align-items:center; justify-content:center;">✕</button>
+        </div>
+
+        <!-- HOME -->
+        <a href="{{ site.baseurl }}/" style="display:flex; align-items:center; gap:12px; padding:14px 18px; background:rgba(139,0,0,0.2); border-bottom:1px solid rgba(139,0,0,0.25); text-decoration:none;">
+            <span style="font-size:16px; width:22px; text-align:center;">🏠</span>
+            <span style="font-size:13px; color:#d4af37; font-weight:bold;">Home</span>
+        </a>
+
+        <!-- CARPET KNOWLEDGE -->
+        <div style="padding:10px 18px 4px; font-size:9px; letter-spacing:2px; text-transform:uppercase; color:#555; margin-top:6px;">Carpet Knowledge</div>
+        <a href="{{ site.baseurl }}/en/hereke" style="display:flex; align-items:center; gap:12px; padding:11px 18px; text-decoration:none; border-bottom:1px solid rgba(255,255,255,0.04);">
+            <span style="font-size:15px; width:22px; text-align:center;">🏰</span>
+            <div><div style="font-size:13px; color:#e0ddd8;">Imperial Hereke</div><div style="font-size:10px; color:#555; margin-top:1px;">Ottoman palace carpets</div></div>
+        </a>
+        <a href="{{ site.baseurl }}/materials" style="display:flex; align-items:center; gap:12px; padding:11px 18px; text-decoration:none; border-bottom:1px solid rgba(255,255,255,0.04);">
+            <span style="font-size:15px; width:22px; text-align:center;">🧵</span>
+            <div><div style="font-size:13px; color:#e0ddd8;">Materials &amp; Techniques</div><div style="font-size:10px; color:#555; margin-top:1px;">Wool, silk, dyes, knots</div></div>
+        </a>
+        <a href="{{ site.baseurl }}/history-carpet" style="display:flex; align-items:center; gap:12px; padding:11px 18px; text-decoration:none; border-bottom:1px solid rgba(255,255,255,0.04);">
+            <span style="font-size:15px; width:22px; text-align:center;">🏛️</span>
+            <div><div style="font-size:13px; color:#e0ddd8;">Carpet History</div><div style="font-size:10px; color:#555; margin-top:1px;">Pazyryk to palaces</div></div>
+        </a>
+        <a href="{{ site.baseurl }}/en/handknotted" style="display:flex; align-items:center; gap:12px; padding:11px 18px; text-decoration:none; border-bottom:1px solid rgba(255,255,255,0.04);">
+            <span style="font-size:15px; width:22px; text-align:center;">🌍</span>
+            <div><div style="font-size:13px; color:#e0ddd8;">Carpet World</div><div style="font-size:10px; color:#555; margin-top:1px;">Persia, Anatolia, Central Asia</div></div>
+        </a>
+        <a href="{{ site.baseurl }}/carpet-map" style="display:flex; align-items:center; gap:12px; padding:11px 18px; text-decoration:none; border-bottom:1px solid rgba(255,255,255,0.06);">
+            <span style="font-size:15px; width:22px; text-align:center;">🗺️</span>
+            <div><div style="font-size:13px; color:#e0ddd8;">Regional Map</div><div style="font-size:10px; color:#555; margin-top:1px;">20 weaving regions</div></div>
+        </a>
+
+        <!-- KILIM -->
+        <div style="padding:10px 18px 4px; font-size:9px; letter-spacing:2px; text-transform:uppercase; color:#555; margin-top:6px;">Kilim &amp; Flat-weave</div>
+        <a href="{{ site.baseurl }}/en/kilim" style="display:flex; align-items:center; gap:12px; padding:11px 18px; text-decoration:none; border-bottom:1px solid rgba(255,255,255,0.04);">
+            <span style="font-size:15px; width:22px; text-align:center;">📐</span>
+            <div><div style="font-size:13px; color:#e0ddd8;">Kilim Guide</div><div style="font-size:10px; color:#555; margin-top:1px;">Regions, motifs, how to read them</div></div>
+        </a>
+        <a href="{{ site.baseurl }}/en/sumak" style="display:flex; align-items:center; gap:12px; padding:11px 18px; text-decoration:none; border-bottom:1px solid rgba(255,255,255,0.04);">
+            <span style="font-size:15px; width:22px; text-align:center;">🌀</span>
+            <div><div style="font-size:13px; color:#e0ddd8;">Sumak Technique</div></div>
+        </a>
+        <a href="{{ site.baseurl }}/en/cicim" style="display:flex; align-items:center; gap:12px; padding:11px 18px; text-decoration:none; border-bottom:1px solid rgba(255,255,255,0.04);">
+            <span style="font-size:15px; width:22px; text-align:center;">🌸</span>
+            <div><div style="font-size:13px; color:#e0ddd8;">Cicim Style</div></div>
+        </a>
+        <a href="{{ site.baseurl }}/en/zili" style="display:flex; align-items:center; gap:12px; padding:11px 18px; text-decoration:none; border-bottom:1px solid rgba(255,255,255,0.06);">
+            <span style="font-size:15px; width:22px; text-align:center;">🏗️</span>
+            <div><div style="font-size:13px; color:#e0ddd8;">Zili Technique</div></div>
+        </a>
+
+        <!-- TOOLS -->
+        <div style="padding:10px 18px 4px; font-size:9px; letter-spacing:2px; text-transform:uppercase; color:#555; margin-top:6px;">Tools &amp; Guides</div>
+        <a href="{{ site.baseurl }}/carpet-sizes" style="display:flex; align-items:center; gap:12px; padding:11px 18px; text-decoration:none; border-bottom:1px solid rgba(255,255,255,0.04);">
+            <span style="font-size:15px; width:22px; text-align:center;">📏</span>
+            <div><div style="font-size:13px; color:#e0ddd8;">Size Guide</div><div style="font-size:10px; color:#555; margin-top:1px;">cm &amp; inches, room planner</div></div>
+        </a>
+        <a href="{{ site.baseurl }}/cleaning" style="display:flex; align-items:center; gap:12px; padding:11px 18px; text-decoration:none; border-bottom:1px solid rgba(255,255,255,0.04);">
+            <span style="font-size:15px; width:22px; text-align:center;">🧹</span>
+            <div><div style="font-size:13px; color:#e0ddd8;">Care Guide</div><div style="font-size:10px; color:#555; margin-top:1px;">Cleaning, storage, stain tips</div></div>
+        </a>
+        <a href="{{ site.baseurl }}/flat-viewing" style="display:flex; align-items:center; gap:12px; padding:11px 18px; text-decoration:none; border-bottom:1px solid rgba(255,255,255,0.04);">
+            <span style="font-size:15px; width:22px; text-align:center;">🔍</span>
+            <div><div style="font-size:13px; color:#e0ddd8;">Interactive Kilim &amp; Knots</div><div style="font-size:10px; color:#555; margin-top:1px;">Double knot techniques</div></div>
+        </a>
+        <a href="{{ site.baseurl }}/" onclick="setTimeout(()=>{ if(window.openPopup) openPopup(); },300); closeNavDrawer();" style="display:flex; align-items:center; gap:12px; padding:11px 18px; text-decoration:none; border-bottom:1px solid rgba(255,255,255,0.06); background:rgba(192,57,43,0.1);">
+            <span style="font-size:15px; width:22px; text-align:center;">🖼️</span>
+            <div><div style="font-size:13px; color:#e0ddd8;">RugVision Studio</div><div style="font-size:10px; color:#c0392b; margin-top:1px;">See your rug in any room</div></div>
+        </a>
+
+        <!-- PERSONAL -->
+        <div style="padding:10px 18px 4px; font-size:9px; letter-spacing:2px; text-transform:uppercase; color:#555; margin-top:6px;">Personal</div>
+        <a href="{{ site.baseurl }}/Cappodoce" style="display:flex; align-items:center; gap:12px; padding:11px 18px; text-decoration:none; border-bottom:1px solid rgba(255,255,255,0.04);">
+            <span style="font-size:15px; width:22px; text-align:center;">🌄</span>
+            <div><div style="font-size:13px; color:#e0ddd8;">Cappadocia Guide</div><div style="font-size:10px; color:#555; margin-top:1px;">Interactive map, insider tips</div></div>
+        </a>
+        <a href="{{ site.baseurl }}/gallery" style="display:flex; align-items:center; gap:12px; padding:11px 18px; text-decoration:none; border-bottom:1px solid rgba(255,255,255,0.04);">
+            <span style="font-size:15px; width:22px; text-align:center;">📸</span>
+            <div><div style="font-size:13px; color:#e0ddd8;">Photo Gallery</div><div style="font-size:10px; color:#555; margin-top:1px;">Carpets, landscapes, memories</div></div>
+        </a>
+        <a href="{{ site.baseurl }}/me" style="display:flex; align-items:center; gap:12px; padding:11px 18px; text-decoration:none; border-bottom:1px solid rgba(255,255,255,0.04);">
+            <span style="font-size:15px; width:22px; text-align:center;">👤</span>
+            <div><div style="font-size:13px; color:#e0ddd8;">Curator Profile</div><div style="font-size:10px; color:#555; margin-top:1px;">French lessons &amp; contact</div></div>
+        </a>
+
+        <div style="height:40px;"></div>
+    </div>
+
+    <script>
+    function toggleNavDrawer() {
+        const drawer = document.getElementById('nav-drawer');
+        const overlay = document.getElementById('nav-overlay');
+        const isOpen = drawer.style.right === '0px';
+        if (isOpen) {
+            closeNavDrawer();
+        } else {
+            drawer.style.right = '0px';
+            overlay.style.display = 'block';
+            document.body.style.overflow = 'hidden';
+        }
+    }
+    function closeNavDrawer() {
+        document.getElementById('nav-drawer').style.right = '-310px';
+        document.getElementById('nav-overlay').style.display = 'none';
+        document.body.style.overflow = '';
+    }
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') closeNavDrawer();
+    });
+    </script>
+
+    <div class="page-wrap">
+      {{ content }}
+
+      {% if page.url != "/" and page.url != "/index.html" %}
+        <div style="text-align:center; margin-top:40px; border-top:1px solid #eee; padding-top:25px;">
+            <a href="{{ site.baseurl }}/" style="background:var(--primary-red); color:white !important; padding:12px 30px; text-decoration:none; border-radius:50px; font-weight:bold; display:inline-block; box-shadow: 0 4px 10px rgba(139,0,0,0.3);">🏠 Back to Dashboard</a>
+        </div>
+      {% endif %}
+    </div>
+
+    <!-- Zoom Yapısı -->
+    <div id="img-lightbox-overlay" onclick="closeLightbox()">
+      <img id="enlarged-img" src="" alt="Enlarged">
+    </div>
+
+    <!-- Google Translate -->
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+            pageLanguage: 'en', 
+            includedLanguages: 'tr,en,fr,es,it,de,ru,zh-CN,ja,ar,pt,hi,bn,ko,vi,pl,uk,fa,el,nl,sv,th,az,bg,cs,da,fi,hu,no,ro', 
+            layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+        }, 'google_translate_element');
+      }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    <!-- Zoom Scripti -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        const images = document.querySelectorAll('.page-wrap img');
+        images.forEach(img => {
+          const isMap = img.closest('.leaflet-container') || img.closest('#map');
+          const isLink = img.closest('a');
+          if (!isMap && !isLink) {
+            img.addEventListener('click', function() {
+              const overlay = document.getElementById('img-lightbox-overlay');
+              const fullImg = document.getElementById('enlarged-img');
+              fullImg.src = this.src;
+              overlay.classList.add('active');
+              document.body.style.overflow = 'hidden';
+            });
+          }
+        });
+      });
+      function closeLightbox() {
+        document.getElementById('img-lightbox-overlay').classList.remove('active');
+        document.body.style.overflow = 'auto';
+      }
+    </script>
+
+    <footer style="text-align: center; padding: 20px; color: #888; font-size: 12px; position: relative; z-index: 10;">
+        © {{ site.time | date: '%Y' }} Carpet Guide | Curator: Fatih Mehmet Canıtez
+    </footer>
+</body>
+</html>
