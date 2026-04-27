@@ -215,27 +215,32 @@
         <div style="height:40px;"></div>
     </div>
 
-    <script>
+   <script>
+    let navDrawerOpen = false;
+
     function toggleNavDrawer() {
-        const drawer = document.getElementById('nav-drawer');
-        const overlay = document.getElementById('nav-overlay');
-        const isOpen = drawer.style.right === '0px';
-        if (isOpen) {
-            closeNavDrawer();
-        } else {
-            drawer.style.right = '0px';
-            overlay.style.display = 'block';
-            document.body.style.overflow = 'hidden';
-        }
+        navDrawerOpen ? closeNavDrawer() : openNavDrawer();
+    }
+    function openNavDrawer() {
+        navDrawerOpen = true;
+        document.getElementById('nav-drawer').style.right = '0px';
+        document.getElementById('nav-overlay').style.display = 'block';
+        document.body.classList.add('nav-open');
     }
     function closeNavDrawer() {
+        navDrawerOpen = false;
         document.getElementById('nav-drawer').style.right = '-310px';
         document.getElementById('nav-overlay').style.display = 'none';
-        document.body.style.overflow = '';
+        document.body.classList.remove('nav-open');
     }
     document.addEventListener('keydown', function(e) {
         if (e.key === 'Escape') closeNavDrawer();
     });
+    </script>
+
+    <style>
+    body.nav-open { overflow: hidden; }
+    </style>
     </script>
 
     <div class="page-wrap">
@@ -285,7 +290,7 @@
       });
       function closeLightbox() {
         document.getElementById('img-lightbox-overlay').classList.remove('active');
-        document.body.style.overflow = 'auto';
+       if (!navDrawerOpen) document.body.style.overflow = 'auto';
       }
     </script>
 
