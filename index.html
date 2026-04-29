@@ -60,6 +60,11 @@ img { max-width: 100%; height: auto; display: block; }
   border: none; width: 100%; padding: 12px 0; font-size: 15px;
   outline: none; background: transparent; font-family: Georgia, serif;
 }
+/* FIX: Arama sonucu bulunamadı mesajı */
+#no-results {
+  display: none; text-align: center; padding: 20px;
+  color: #999; font-size: 14px; font-style: italic;
+}
 
 /* ── GALLERY BUTTON ── */
 .gallery-btn-wrap { text-align: center; margin: 28px 0 0; }
@@ -275,9 +280,14 @@ img { max-width: 100%; height: auto; display: block; }
 <div class="search-wrap">
   <div class="search-box">
     <span class="search-icon">🔍</span>
-    <input type="text" id="carpetSearch" placeholder="Search for Hereke, Kilim, Cappadocia, Materials..." onkeyup="filterCarpets()">
+    <!-- FIX 1: onkeyup → oninput (mobil klavye, paste, ses girişi desteği) -->
+    <input type="text" id="carpetSearch" placeholder="Search for Hereke, Kilim, Cappadocia, Materials..." oninput="filterCarpets()">
   </div>
 </div>
+<!-- FIX 2: "Sonuç bulunamadı" mesajı eklendi -->
+<p id="no-results" style="display:none; text-align:center; padding:16px; color:#999; font-size:14px; font-style:italic;">
+  No results found. Try a different keyword.
+</p>
 
 <!-- CAPPADOCIA FEATURED -->
 <div class="featured-wrap">
@@ -298,14 +308,15 @@ img { max-width: 100%; height: auto; display: block; }
   <p>From imperial looms to ancient techniques</p>
 </div>
 
-<div class="card-grid">
+<div class="card-grid" id="grid-historical">
   <a href="./en/hereke" class="card">
     <div class="card-icon">🏰</div>
     <div class="card-title">Imperial Hereke</div>
     <div class="card-desc">The finest silk carpets ever woven — made for Ottoman palaces.</div>
     <div class="card-link">Explore →</div>
   </a>
-  <a href="./en/" class="card">
+  <!-- FIX 3: Boş href "./en/" → doğru sayfa "./en/pazyryk" olarak düzeltildi -->
+  <a href="./en/pazyryk" class="card">
     <div class="card-icon">🏺</div>
     <div class="card-title">Pazyryk Analysis</div>
     <div class="card-desc">The world's oldest surviving carpet. 2,500 years old.</div>
@@ -339,7 +350,7 @@ img { max-width: 100%; height: auto; display: block; }
   <p>The woven language of Anatolia — symbols and soul</p>
 </div>
 
-<div class="card-grid">
+<div class="card-grid" id="grid-kilim">
   <a href="./en/kilim" class="card green">
     <div class="card-icon">📐</div>
     <div class="card-title">Kilim Guide</div>
@@ -423,32 +434,56 @@ img { max-width: 100%; height: auto; display: block; }
 </div>
 
 <script>
-/* ── SEARCH LOGIC ── */
+/* ══════════════════════════════════════════
+   FIX: SEARCH LOGIC — Tamamen yeniden yazıldı
+   Sorunlar:
+   1. onkeyup → oninput ile değiştirildi (mobil + paste desteği)
+   2. textContent kullanımı normalize edildi (innerText bazen undefined döner)
+   3. Görünür kart sayısı takip edilerek "sonuç yok" mesajı gösteriliyor
+   4. Arama temizlenince tüm kartlar yeniden görünür hale geliyor
+   ══════════════════════════════════════════ */
 function filterCarpets() {
-  let input = document.getElementById('carpetSearch').value.toLowerCase();
-  let cards = document.getElementsByClassName('card');
-  for (let i = 0; i < cards.length; i++) {
-    let title = cards[i].querySelector('.card-title').innerText.toLowerCase();
-    let desc = cards[i].querySelector('.card-desc').innerText.toLowerCase();
-    if (title.includes(input) || desc.includes(input)) {
-      cards[i].style.display = "";
+  var input = document.getElementById('carpetSearch').value.toLowerCase().trim();
+  var cards = document.getElementsByClassName('card');
+  var visibleCount = 0;
+
+  for (var i = 0; i < cards.length; i++) {
+    var titleEl = cards[i].querySelector('.card-title');
+    var descEl  = cards[i].querySelector('.card-desc');
+
+    var title = titleEl ? (titleEl.textContent || titleEl.innerText || '').toLowerCase() : '';
+    var desc  = descEl  ? (descEl.textContent  || descEl.innerText  || '').toLowerCase() : '';
+
+    if (input === '' || title.indexOf(input) !== -1 || desc.indexOf(input) !== -1) {
+      cards[i].style.display = '';
+      visibleCount++;
     } else {
-      cards[i].style.display = "none";
+      cards[i].style.display = 'none';
     }
+  }
+
+  /* "Sonuç bulunamadı" mesajını göster/gizle */
+  var noResults = document.getElementById('no-results');
+  if (noResults) {
+    noResults.style.display = (input !== '' && visibleCount === 0) ? 'block' : 'none';
   }
 }
 
 /* ── VIDEO POPUP LOGIC ── */
 var v = document.getElementById('localVideo');
-window.addEventListener('load', function() { 
-    setTimeout(function() { 
-        let pop = document.getElementById('videoPopup');
-        if(pop) { pop.style.display = 'flex'; v.play(); }
-    }, 1500); 
+window.addEventListener('load', function() {
+  setTimeout(function() {
+    var pop = document.getElementById('videoPopup');
+    if (pop) { pop.style.display = 'flex'; if (v) v.play(); }
+  }, 1500);
 });
-function closeVideo() { document.getElementById('videoPopup').style.display='none'; v.pause(); }
+function closeVideo() {
+  var pop = document.getElementById('videoPopup');
+  if (pop) pop.style.display = 'none';
+  if (v) v.pause();
+}
 
 /* ── RUGVISION POPUP LOGIC ── */
-function openPopup() { document.getElementById('rv-popup-overlay').style.display = 'flex'; }
+function openPopup()  { document.getElementById('rv-popup-overlay').style.display = 'flex'; }
 function closePopup() { document.getElementById('rv-popup-overlay').style.display = 'none'; }
 </script>
