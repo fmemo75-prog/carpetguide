@@ -71,8 +71,36 @@ img { max-width: 100%; height: auto; display: block; }
 .history-shortcut .hs-sub { color: #998542; font-size: 10px; font-style: italic; }
 .history-shortcut .hs-arrow { color: #d4af37; margin-left: 15px; font-size: 12px; }
 
+/* ── NEW: HANDMADE VS MACHINE BOX ── */
+.comparison-promo-box {
+    text-align: center; 
+    padding: 35px 20px; 
+    background: #ffffff; 
+    border: 1px solid #e0e0e0; 
+    margin: 30px auto; 
+    max-width: 860px; 
+    border-radius: 16px; 
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+.comparison-promo-box h3 { color: #333; margin-bottom: 10px; font-size: 1.5em; }
+.comparison-promo-box p { color: #666; margin-bottom: 22px; font-size: 14px; line-height: 1.6; max-width: 500px; margin-left: auto; margin-right: auto; }
+.btn-comparison {
+    display: inline-block;
+    background: #8b0000; 
+    color: white !important; 
+    padding: 12px 28px; 
+    border-radius: 50px; 
+    font-weight: bold;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(139, 0, 0, 0.2);
+}
+.btn-comparison:hover { background: #a52a2a; transform: translateY(-2px); }
+
 /* ── FEATURED CARD (Cappadocia) ── */
-.featured-wrap { padding: 28px 16px 0; max-width: 960px; margin: 0 auto; }
+.featured-wrap { padding: 10px 16px 0; max-width: 960px; margin: 0 auto; }
 .featured-card {
   background: linear-gradient(120deg, #3d0000 0%, #6b1414 100%);
   border-radius: 16px; padding: 26px 22px;
@@ -219,6 +247,13 @@ img { max-width: 100%; height: auto; display: block; }
   transform: perspective(300px) rotateX(30deg);
   position: relative; margin-top: 40%;
 }
+.rv-floor-big {
+  width: 80%; height: 40%;
+  background: linear-gradient(180deg, #5c3a1e 0%, #3d2810 100%);
+  border-radius: 2px;
+  transform: perspective(400px) rotateX(30deg);
+  position: relative;
+}
 .rv-rug-art {
   position: absolute; width: 55%; height: 60%;
   left: 50%; top: 15%; transform: translateX(-50%);
@@ -310,11 +345,13 @@ img { max-width: 100%; height: auto; display: block; }
   </a>
 </div>
 
-<!-- index.html içindeki uygun bir yere (örneğin menünün altına) ekle -->
-<div style="text-align:center; padding:20px; background:#f9f9f9; border:1px solid #ddd; margin:20px;">
+<!-- ════════════════════════════════════
+     NEW: HANDMADE VS MACHINE PROMO
+     ════════════════════════════════════ -->
+<div class="comparison-promo-box">
     <h3>Do you know the difference?</h3>
-    <p>Learn how to distinguish between a real hand-knotted carpet and a machine-made one.</p>
-    <a href="en/handmade-vs-machinemade.html" style="background:#8b0000; color:white; padding:10px 20px; text-decoration:none; border-radius:5px;">
+    <p>Learn how to distinguish between a real hand-knotted carpet and a machine-made one with our expert visual guide.</p>
+    <a href="en/handmade-vs-machinemade.html" class="btn-comparison">
         READ THE GUIDE
     </a>
 </div>
