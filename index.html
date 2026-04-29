@@ -48,8 +48,8 @@ img { max-width: 100%; height: auto; display: block; }
   min-height: 44px; line-height: 1.2; border: 1.5px solid rgba(255,255,255,0.5);
 }
 
-/* ── SEARCH SECTION ── */
-.search-wrap { max-width: 860px; margin: 20px auto 30px; padding: 0 16px; }
+/* ── NEW: SEARCH BOX STYLE ── */
+.search-wrap { max-width: 860px; margin: 20px auto 10px; padding: 0 16px; }
 .search-box {
   background: #fff; border: 1.5px solid #d4af37; border-radius: 50px;
   display: flex; align-items: center; padding: 2px 20px;
@@ -176,9 +176,7 @@ img { max-width: 100%; height: auto; display: block; }
 .care-card-arrow { font-size: 1.2em; flex-shrink: 0; }
 
 /* ── RUGVISION PROMO ── */
-.rugvision-promo {
-  max-width: 960px; margin: 28px auto 0; padding: 0 16px;
-}
+.rugvision-promo { max-width: 960px; margin: 28px auto 0; padding: 0 16px; }
 .rugvision-card {
   position: relative; overflow: hidden;
   background: linear-gradient(135deg, #0a0a0a 0%, #1a0800 50%, #0a0a0a 100%);
@@ -199,54 +197,25 @@ img { max-width: 100%; height: auto; display: block; }
   color: #c9a84c; margin-bottom: 14px; position: relative;
   border: 1px solid rgba(201,168,76,0.3); padding: 5px 14px; border-radius: 20px;
 }
-.rv-badge::before {
-  content: ''; width: 6px; height: 6px; background: #c9a84c;
-  border-radius: 50%; animation: rvPulse 2s infinite;
-}
+.rv-badge::before { content: ''; width: 6px; height: 6px; background: #c9a84c; border-radius: 50%; animation: rvPulse 2s infinite; }
 @keyframes rvPulse { 0%,100%{opacity:1} 50%{opacity:0.3} }
-.rv-title {
-  font-size: 26px; font-weight: 300; color: #f0ede8;
-  line-height: 1.2; margin-bottom: 10px; position: relative;
-  letter-spacing: -0.5px;
-}
+.rv-title { font-size: 26px; font-weight: 300; color: #f0ede8; line-height: 1.2; margin-bottom: 10px; position: relative; letter-spacing: -0.5px; }
 .rv-title em { color: #c9a84c; font-style: italic; }
-.rv-desc {
-  font-size: 14px; color: rgba(255,255,255,0.55);
-  line-height: 1.7; margin-bottom: 24px; position: relative;
-  max-width: 460px;
-}
+.rv-desc { font-size: 14px; color: rgba(255,255,255,0.55); line-height: 1.7; margin-bottom: 24px; position: relative; max-width: 460px; }
 .rv-features { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; position: relative; }
-.rv-feat {
-  font-size: 11px; letter-spacing: 1px; text-transform: uppercase;
-  color: rgba(255,255,255,0.4); border: 1px solid rgba(255,255,255,0.1);
-  padding: 5px 12px; border-radius: 20px;
-}
+.rv-feat { font-size: 11px; letter-spacing: 1px; text-transform: uppercase; color: rgba(255,255,255,0.4); border: 1px solid rgba(255,255,255,0.1); padding: 5px 12px; border-radius: 20px; }
 .rv-actions { display: flex; gap: 12px; flex-wrap: wrap; position: relative; }
-.rv-btn-primary {
-  display: inline-flex; align-items: center; gap: 8px;
-  background: #c0392b; color: white !important;
-  padding: 14px 28px; border-radius: 6px; font-weight: 500;
-  font-size: 14px; letter-spacing: 0.3px; border: none; cursor: pointer;
-  font-family: Georgia, serif;
-}
+.rv-btn-primary { display: inline-flex; align-items: center; gap: 8px; background: #c0392b; color: white !important; padding: 14px 28px; border-radius: 6px; font-weight: 500; font-size: 14px; letter-spacing: 0.3px; border: none; cursor: pointer; font-family: Georgia, serif; }
 .rv-room-art { position: absolute; right: 24px; top: 50%; transform: translateY(-50%); width: 140px; height: 100px; opacity: 0.25; }
 .rv-floor { width: 100%; height: 60%; background: linear-gradient(180deg, #5c3a1e 0%, #3d2810 100%); border-radius: 2px; transform: perspective(300px) rotateX(30deg); position: relative; margin-top: 40%; }
 .rv-rug-art { position: absolute; width: 55%; height: 60%; left: 50%; top: 15%; transform: translateX(-50%); background: linear-gradient(135deg, #8b1a1a 0%, #c0392b 50%, #8b1a1a 100%); border-radius: 2px; }
 
 /* ── FOOTER ── */
-.site-footer {
-  max-width: 960px; margin: 40px auto 0;
-  padding: 24px 16px 32px;
-  border-top: 1px solid #ede8df; text-align: center;
-}
+.site-footer { max-width: 960px; margin: 40px auto 0; padding: 24px 16px 32px; border-top: 1px solid #ede8df; text-align: center; }
 .footer-name { font-size: 14px; color: #555; margin-bottom: 14px; }
 .footer-name strong { color: #8b0000; display: block; font-size: 15px; margin-bottom: 3px; }
 .footer-name span { font-size: 12px; color: #aaa; }
-.footer-profile {
-  display: inline-block; border: 1.5px solid #c8a06e; color: #8b0000 !important;
-  padding: 11px 22px; border-radius: 50px; font-size: 13px;
-  font-weight: bold; min-height: 44px; line-height: 1.2;
-}
+.footer-profile { display: inline-block; border: 1.5px solid #c8a06e; color: #8b0000 !important; padding: 11px 22px; border-radius: 50px; font-size: 13px; font-weight: bold; min-height: 44px; line-height: 1.2; }
 
 /* ── MOBILE ── */
 @media (max-width: 480px) {
@@ -260,18 +229,13 @@ img { max-width: 100%; height: auto; display: block; }
 </style>
 
 
-<!-- ════════════════════════════════════
-     HERO
-     ════════════════════════════════════ -->
+<!-- ════════════════ HERO ════════════════ -->
 <div class="hero">
   <div class="hero-inner">
     <img src="./carpet.jpeg" alt="Fatih Mehmet Canıtez" class="hero-avatar">
     <div class="hero-text">
-      <h1>
-        🧶 Global Carpet &amp; Kilim Guide
-        <span>by Fatih Mehmet Canıtez</span>
-      </h1>
-      <p>French Language Educator · Expert Curator · 50 years living and studying the carpets, valleys, and culture of Cappadocia.</p>
+      <h1>🧶 Global Carpet &amp; Kilim Guide<span>by Fatih Mehmet Canıtez</span></h1>
+      <p>French Language Educator · Expert Curator · 50 years studying the culture of Cappadocia.</p>
       <div class="hero-btns">
         <a href="./me" class="btn-gold">👤 Curator Profile</a>
         <a href="./Cappodoce" class="btn-outline">🌄 Cappadocia Guide</a>
@@ -285,7 +249,7 @@ img { max-width: 100%; height: auto; display: block; }
   <a href="./gallery" class="gallery-btn">📸 View My Personal Photo Gallery</a>
 </div>
 
-<!-- LOOM IMAGE -->
+<!-- LOOM BANNER -->
 <div class="loom-banner">
   <img src="./loom.jpg" alt="Traditional Anatolian Loom" loading="lazy">
 </div>
@@ -305,13 +269,11 @@ img { max-width: 100%; height: auto; display: block; }
 <!-- HANDMADE VS MACHINE PROMO -->
 <div class="comparison-promo-box">
     <h3>Do you know the difference?</h3>
-    <p>Learn how to distinguish between a real hand-knotted carpet and a machine-made one with our expert visual guide.</p>
+    <p>Learn how to distinguish between a real hand-knotted carpet and a machine-made one.</p>
     <a href="en/handmade-vs-machinemade.html" class="btn-comparison">READ THE GUIDE</a>
 </div>
 
-<!-- ════════════════════════════════════
-     SEARCH SECTION (NEW)
-     ════════════════════════════════════ -->
+<!-- ════════════════ SEARCH SECTION ════════════════ -->
 <div class="search-wrap">
   <div class="search-box">
     <span class="search-icon">🔍</span>
@@ -323,7 +285,7 @@ img { max-width: 100%; height: auto; display: block; }
 <div class="featured-wrap">
   <div class="featured-card">
     <h3>🌄 My Cappadocia Insider Guide</h3>
-    <p>50 years of walking bu valleys, visiting workshops, and building genuine friendships. Interactive map, VIP contacts, balloon tips, and a personal letter.</p>
+    <p>50 years of walking these valleys. Interactive map, VIP contacts, and more.</p>
     <div class="featured-btns">
       <a href="/carpetguide/Cappodoce.html#interactive-map" class="btn-featured-primary">🗺️ Open Interactive Map</a>
       <a href="./Cappodoce" class="btn-featured-outline">📖 Full Guide</a>
@@ -406,7 +368,7 @@ img { max-width: 100%; height: auto; display: block; }
   </a>
 </div>
 
-<!-- RUGVISION STUDIO PROMO -->
+<!-- RUGVISION PROMO -->
 <div class="rugvision-promo">
   <div class="rugvision-card">
     <div class="rv-room-art"><div class="rv-floor"><div class="rv-rug-art"></div></div></div>
@@ -429,12 +391,12 @@ img { max-width: 100%; height: auto; display: block; }
 <div class="care-cards">
   <a href="./carpet-map" class="care-card" style="background: #f0f4ff; border: 1px solid #1a2a6c;">
     <div class="care-card-icon">🗺️</div>
-    <div style="flex:1;"><div class="care-card-title" style="color:#1a2a6c;">Turkey Carpet Map</div><div class="care-card-desc">Interactive map of 20 weaving regions.</div></div>
+    <div style="flex:1;"><div class="care-card-title" style="color:#1a2a6c;">Turkey Carpet Map</div><div class="care-card-desc">Interactive map of 20 regions.</div></div>
     <div class="care-card-arrow" style="color:#1a2a6c;">→</div>
   </a>
   <a href="./cleaning" class="care-card" style="background: #fffbf0; border: 1px solid #d4af37;">
     <div class="care-card-icon">🧹</div>
-    <div style="flex:1;"><div class="care-card-title" style="color:#8b0000;">Care Guide</div><div class="care-card-desc">Stain emergencies, daily care, storage.</div></div>
+    <div style="flex:1;"><div class="care-card-title" style="color:#8b0000;">Care Guide</div><div class="care-card-desc">Stain emergencies, storage.</div></div>
     <div class="care-card-arrow" style="color:#d4af37;">→</div>
   </a>
 </div>
@@ -448,9 +410,18 @@ img { max-width: 100%; height: auto; display: block; }
 <!-- VIDEO POPUP -->
 <div id="videoPopup" style="display:none; position:fixed; z-index:10000; left:0; top:0; width:100%; height:100%; background:rgba(0,0,0,0.85); align-items:center; justify-content:center; backdrop-filter:blur(8px);">
   <div style="position:relative; width:85%; max-width:320px; background:#fff; border-radius:30px; overflow:hidden;">
-    <button onclick="closeVideo()" style="position:absolute; top:15px; right:15px; background:rgba(0,0,0,0.5); color:#fff; border:none; border-radius:50%; width:35px; height:35px; cursor:pointer; z-index:11;">✕</button>
+    <button onclick="closeVideo()" style="position:absolute; top:15px; right:15px; background:rgba(0,0,0,0.5); color:#fff; border:none; border-radius:50%; width:35px; height:35px; font-size:18px; cursor:pointer; z-index:11;">✕</button>
     <video id="localVideo" width="100%" height="auto" autoplay muted loop playsinline><source src="{{ site.baseurl }}/images/ghiordes-knot.mp4" type="video/mp4"></video>
   </div>
+</div>
+
+<!-- RUGVISION STUDIO POPUP & LOGIC (EKSİK OLAN KISIM BURASIYDI) -->
+<div id="rv-popup-overlay" style="display:none; position:fixed; inset:0; z-index:1000; background:rgba(0,0,0,0.9); align-items:center; justify-content:center;">
+    <div style="background:#141414; padding:30px; border-radius:10px; color:white; text-align:center; max-width:400px;">
+        <h3>RugVision Studio</h3>
+        <p>This is a demo. In the full version, you can upload your own rug photo.</p>
+        <button onclick="closePopup()" style="background:#c0392b; color:white; border:none; padding:10px 20px; border-radius:5px; cursor:pointer;">Close Demo</button>
+    </div>
 </div>
 
 <script>
@@ -469,8 +440,17 @@ function filterCarpets() {
   }
 }
 
-/* ── OTHER SCRIPTS ── */
+/* ── VIDEO & POPUP LOGIC ── */
 var v = document.getElementById('localVideo');
-window.addEventListener('load', function() { setTimeout(function() { document.getElementById('videoPopup').style.display = 'flex'; v.play(); }, 1500); });
+window.addEventListener('load', function() { 
+    setTimeout(function() { 
+        document.getElementById('videoPopup').style.display = 'flex'; 
+        v.play(); 
+    }, 1500); 
+});
 function closeVideo() { document.getElementById('videoPopup').style.display='none'; v.pause(); }
+
+/* ── RUGVISION POPUP LOGIC ── */
+function openPopup() { document.getElementById('rv-popup-overlay').style.display = 'flex'; }
+function closePopup() { document.getElementById('rv-popup-overlay').style.display = 'none'; }
 </script>
