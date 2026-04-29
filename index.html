@@ -48,7 +48,7 @@ img { max-width: 100%; height: auto; display: block; }
   min-height: 44px; line-height: 1.2; border: 1.5px solid rgba(255,255,255,0.5);
 }
 
-/* ── NEW: SEARCH BOX STYLE ── */
+/* ── SEARCH BOX ── */
 .search-wrap { max-width: 860px; margin: 20px auto 10px; padding: 0 16px; }
 .search-box {
   background: #fff; border: 1.5px solid #d4af37; border-radius: 50px;
@@ -223,8 +223,6 @@ img { max-width: 100%; height: auto; display: block; }
   .hero-inner { flex-direction: column; text-align: center; }
   .hero-btns { justify-content: center; }
   .hero-text h1 { font-size: 20px; }
-  .featured-btns { flex-direction: column; }
-  .btn-featured-primary, .btn-featured-outline { width: 100%; }
 }
 </style>
 
@@ -410,12 +408,12 @@ img { max-width: 100%; height: auto; display: block; }
 <!-- VIDEO POPUP -->
 <div id="videoPopup" style="display:none; position:fixed; z-index:10000; left:0; top:0; width:100%; height:100%; background:rgba(0,0,0,0.85); align-items:center; justify-content:center; backdrop-filter:blur(8px);">
   <div style="position:relative; width:85%; max-width:320px; background:#fff; border-radius:30px; overflow:hidden;">
-    <button onclick="closeVideo()" style="position:absolute; top:15px; right:15px; background:rgba(0,0,0,0.5); color:#fff; border:none; border-radius:50%; width:35px; height:35px; font-size:18px; cursor:pointer; z-index:11;">✕</button>
+    <button onclick="closeVideo()" style="position:absolute; top:15px; right:15px; background:rgba(0,0,0,0.5); color:#fff; border:none; border-radius:50%; width:35px; height:35px; cursor:pointer; z-index:11;">✕</button>
     <video id="localVideo" width="100%" height="auto" autoplay muted loop playsinline><source src="{{ site.baseurl }}/images/ghiordes-knot.mp4" type="video/mp4"></video>
   </div>
 </div>
 
-<!-- RUGVISION STUDIO POPUP & LOGIC (EKSİK OLAN KISIM BURASIYDI) -->
+<!-- RUGVISION POPUP OVERLAY -->
 <div id="rv-popup-overlay" style="display:none; position:fixed; inset:0; z-index:1000; background:rgba(0,0,0,0.9); align-items:center; justify-content:center;">
     <div style="background:#141414; padding:30px; border-radius:10px; color:white; text-align:center; max-width:400px;">
         <h3>RugVision Studio</h3>
@@ -440,12 +438,12 @@ function filterCarpets() {
   }
 }
 
-/* ── VIDEO & POPUP LOGIC ── */
+/* ── VIDEO POPUP LOGIC ── */
 var v = document.getElementById('localVideo');
 window.addEventListener('load', function() { 
     setTimeout(function() { 
-        document.getElementById('videoPopup').style.display = 'flex'; 
-        v.play(); 
+        let pop = document.getElementById('videoPopup');
+        if(pop) { pop.style.display = 'flex'; v.play(); }
     }, 1500); 
 });
 function closeVideo() { document.getElementById('videoPopup').style.display='none'; v.pause(); }
