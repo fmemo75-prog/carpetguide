@@ -104,6 +104,12 @@
   map: "https://www.google.com/maps/search/?api=1&query=Anatolian+Art+Museum+Goreme"
   text: "Technical study of imperial Ottoman palace-style patterns. Museum technical archive."
 
+<p style="font-family: serif; color: #2c3e50; text-align: center; margin-top: 10px; font-size: 0.95em;">
+    Technical study of Ottoman imperial palace style motifs. Museum technical archives.<br>
+    <span style="color: #8b0000; font-weight: bold; font-size: 0.9em; display: block; margin-top: 5px;">
+        📍 Current Location: Montreal, Canada
+    </span>
+</p>
 # ==========================================
 # 5. BÖLÜM: DİĞER ARŞİV
 # ==========================================
