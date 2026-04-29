@@ -1,0 +1,28 @@
+<!-- ════════════════ SEARCH JS ════════════════ -->
+<!-- Dosya: _includes/carpet-search-js.html -->
+<script>
+function filterCarpets() {
+  var input = document.getElementById('carpetSearch').value.toLowerCase().trim();
+  var cards = document.getElementsByClassName('card');
+  var visibleCount = 0;
+
+  for (var i = 0; i < cards.length; i++) {
+    var titleEl = cards[i].querySelector('.card-title');
+    var descEl  = cards[i].querySelector('.card-desc');
+    var title = titleEl ? (titleEl.textContent || titleEl.innerText || '').toLowerCase() : '';
+    var desc  = descEl  ? (descEl.textContent  || descEl.innerText  || '').toLowerCase() : '';
+
+    if (input === '' || title.indexOf(input) !== -1 || desc.indexOf(input) !== -1) {
+      cards[i].style.display = '';
+      visibleCount++;
+    } else {
+      cards[i].style.display = 'none';
+    }
+  }
+
+  var noResults = document.getElementById('no-results');
+  if (noResults) {
+    noResults.style.display = (input !== '' && visibleCount === 0) ? 'block' : 'none';
+  }
+}
+</script>
