@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handmade vs Machine-Made Rugs | Global Carpet Guide</title>
+    <style>
+        /* Önceki verdiğim stiller buraya gelecek */
+        body { background-color: #f4f4f4; margin: 0; padding: 0; }
+        .guide-wrapper {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+        .guide-header { text-align: center; border-bottom: 3px solid #b22222; margin-bottom: 30px; padding-bottom: 15px; }
+        .guide-header h1 { color: #8b0000; margin: 0; text-transform: uppercase; }
+        .comparison-table { width: 100%; border-collapse: collapse; margin-bottom: 40px; }
+        .comparison-table th, .comparison-table td { border: 1px solid #ddd; padding: 15px; text-align: left; }
+        .comparison-table th { background-color: #8b0000; color: white; }
+        .comparison-table tr:nth-child(even) { background-color: #f9f9f9; }
+        .comparison-grid { display: flex; flex-direction: column; gap: 40px; }
+        .comparison-row { display: flex; flex-wrap: wrap; gap: 20px; align-items: center; border-bottom: 1px solid #eee; padding-bottom: 30px; }
+        .comparison-img-container { flex: 1; min-width: 300px; border: 2px solid #eee; border-radius: 8px; overflow: hidden; }
+        .comparison-img-container img { width: 100%; display: block; }
+        .comparison-text { flex: 1; min-width: 300px; }
+        .comparison-text h3 { color: #b22222; margin-top: 0; }
+        .label-box { display: flex; justify-content: space-between; margin-bottom: 5px; font-weight: bold; font-size: 0.9em; color: #666; padding: 0 5px; }
+        @media (max-width: 768px) { .comparison-row { flex-direction: column; } }
+    </style>
+</head>
+<body>
+
+<div class="guide-wrapper">
+    <div class="guide-header">
+        <h1>Handmade vs. Machine-Made Rugs</h1>
+        <p>Expert Guide to Identifying Authentic Carpets</p>
+    </div>
+
+    <table class="comparison-table">
+        <thead>
+            <tr>
+                <th>Feature</th>
+                <th>Handmade (Hand-Knotted)</th>
+                <th>Machine-Made</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Back Side</strong></td>
+                <td>Uneven knots, unique patterns, visible individual loops.</td>
+                <td>Perfect grid, repetitive, often covered by a mesh.</td>
+            </tr>
+            <tr>
+                <td><strong>Fringe</strong></td>
+                <td>Part of the foundation (warp threads).</td>
+                <td>Sewn or glued on as an after-thought.</td>
+            </tr>
+            <tr>
+                <td><strong>Edges</strong></td>
+                <td>Hand-stitched, slightly uneven and organic.</td>
+                <td>Machine-stitched, perfectly straight and uniform.</td>
+            </tr>
+            <tr>
+                <td><strong>Flexibility</strong></td>
+                <td>Easy to fold or roll in any direction.</td>
+                <td>Often stiff due to plastic/glue backing.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="comparison-grid">
+        <div class="comparison-row">
+            <div class="comparison-img-container">
+                <div class="label-box"><span>Handmade</span><span>Machine</span></div>
+                <img src="../images/comparison-1.jpg" alt="Flexibility">
+            </div>
+            <div class="comparison-text">
+                <h3>1. Flexibility & Construction</h3>
+                <p>Handmade rugs are woven on a loom by hand, making them flexible. Machine rugs use synthetic backings and glue, making them stiff.</p>
+            </div>
+        </div>
+
+        <div class="comparison-row">
+            <div class="comparison-text">
+                <h3>2. The Fringe Test</h3>
+                <p>In a real hand-knotted rug, the fringe is part of the rug itself. In machine-made rugs, the fringe is a separate piece attached later.</p>
+            </div>
+            <div class="comparison-img-container">
+                <div class="label-box"><span>Handmade</span><span>Machine</span></div>
+                <img src="../images/comparison-2.jpg" alt="Fringe">
+            </div>
+        </div>
+
+        <div class="comparison-row">
+            <div class="comparison-img-container">
+                <div class="label-box"><span>Handmade</span><span>Machine</span></div>
+                <img src="../images/comparison-3.jpg" alt="Back Side">
+            </div>
+            <div class="comparison-text">
+                <h3>3. Back Side Patterns</h3>
+                <p>The back of a handmade rug mirrors the top pattern with slight human imperfections. Machine rugs have a perfect, plastic-like grid.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
