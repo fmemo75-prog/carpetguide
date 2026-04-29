@@ -99,12 +99,11 @@
   text: "<b>High Collection:</b> A rare silk work from the 2025 collection. Exceptional knot density and material quality."
 
 - file: "hali-a540983234_10163136243957094_8592199730672497828_nba.jpg"
-tag: "Museum Archive"
-type: "ba"
-map: "https://www.google.com/maps/search/?api=1&query=Montreal+Canada"
-text: "Technical study of imperial Ottoman palace-style patterns. Museum technical archive. <br><span style='color:#8b0000; font-weight:bold;'>📍 Current Location: Montreal, Canada</span>"
+  tag: "Museum Archive"
+  type: "ba"
+  map: "https://www.google.com/maps/search/?api=1&query=Montreal+Canada"
+  text: "Technical study of imperial Ottoman palace-style patterns. Museum technical archive. <br><span style='color:#8b0000; font-weight:bold;'>📍 Current Location: Montreal, Canada</span>"# ==========================================
 
-# ==========================================
 # 5. BÖLÜM: DİĞER ARŞİV
 # ==========================================
 - file: "hali-2.jpg"
