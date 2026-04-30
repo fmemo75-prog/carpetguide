@@ -243,11 +243,17 @@
     </style>
     </script>
 
-    <div class="page-wrap">
-      {{ content }}
+   {% if page.url == "/" or page.url == "/index.html" %}
+  {{ content }}
+{% else %}
+  <div class="page-wrap">
+    {{ content }}
+{% endif %}
 
       {% if page.url != "/" and page.url != "/index.html" %}
-        <div style="text-align:center; margin-top:40px; border-top:1px solid #eee; padding-top:25px;">
+       {% unless page.url == "/" or page.url == "/index.html" %}
+  </div>
+  {% endunless %}
             <a href="{{ site.baseurl }}/" style="background:var(--primary-red); color:white !important; padding:12px 30px; text-decoration:none; border-radius:50px; font-weight:bold; display:inline-block; box-shadow: 0 4px 10px rgba(139,0,0,0.3);">🏠 Back to Dashboard</a>
         </div>
       {% endif %}
