@@ -1,10 +1,7 @@
-/* ══════════════════════════════════════════════
-   _sass/_carpet.scss
-   CARPET GUIDE — TÜM STİLLER
-   Değişiklik yapmak için bu dosyayı düzenle.
-   ══════════════════════════════════════════════ */
-
-/* ── RESET & BASE ── */
+<!-- ════════════════ TÜM CSS STİLLER ════════════════ -->
+<!-- Dosya: _includes/carpet-styles.html -->
+<!-- Bu dosyayı düzenleyerek tüm stilleri değiştirebilirsin -->
+<style>
 * { box-sizing: border-box; -webkit-box-sizing: border-box; margin: 0; padding: 0; }
 html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 body { font-family: Georgia, 'Times New Roman', serif; background: #faf8f5; color: #2c2c2c; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
@@ -83,7 +80,7 @@ img { max-width: 100%; height: auto; display: block; }
 .card.green .card-link { color: #2e8b57; }
 
 /* ── WEAVING GUIDE BOX ── */
-.weaving-box { text-align: center; margin: 30px 16px; padding: 25px; background: #fdf5e6; border: 2px solid #2e8b57; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); max-width: 960px; margin-left: auto; margin-right: auto; }
+.weaving-box { text-align: center; margin: 30px auto; padding: 25px; background: #fdf5e6; border: 2px solid #2e8b57; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); max-width: 960px; }
 .weaving-box h3 { color: #2e8b57; margin: 0 0 8px; font-size: 16px; }
 .weaving-box p { font-size: 14px; color: #444; margin-bottom: 14px; }
 .weaving-box a { display: inline-block; background: #2e8b57; color: white !important; padding: 12px 24px; border-radius: 50px; font-weight: bold; font-size: 14px; }
@@ -117,7 +114,7 @@ img { max-width: 100%; height: auto; display: block; }
 .rv-rug-art::before { content: ''; position: absolute; inset: 4px; border: 1px solid rgba(201,168,76,0.5); border-radius: 1px; }
 @media (max-width: 500px) { .rv-room-art { display: none; } }
 
-/* ── RUGVISION APP STİLLERİ ── */
+/* ── RUGVISION APP ── */
 :root { --rv-accent: #c0392b; --rv-bg: #0a0a0a; --rv-panel: #141414; --rv-border: rgba(255,255,255,0.08); --rv-text: #f0ede8; --rv-muted: #888; --rv-gold: #c9a84c; }
 #rv-landing-page, #rv-studio-page { font-family: 'DM Sans', sans-serif; color: var(--rv-text); overflow-x: hidden; }
 .rv-nav { position: fixed; top: 0; left: 0; right: 0; z-index: 900; display: flex; align-items: center; justify-content: space-between; padding: 20px 48px; background: linear-gradient(to bottom, rgba(0,0,0,0.75), transparent); }
@@ -245,3 +242,4 @@ img { max-width: 100%; height: auto; display: block; }
   .btn-featured-primary, .btn-featured-outline { width: 100%; }
   .rv-title { font-size: 21px; }
 }
+</style>
