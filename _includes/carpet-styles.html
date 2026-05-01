@@ -28,23 +28,24 @@ img { max-width: 100%; height: auto; display: block; }
 /* ── LOOM & CARDS MERKEZİ YERLEŞİM ── */
 .loom-layout-container {
     max-width: 1100px;
-    margin: 0 auto;
-    padding: 20px 16px;
+    margin: 10px auto 50px; /* Üst boşluğu azalttık, bölümü yukarı çektik */
+    padding: 0 16px;
     display: flex;
-    align-items: center;
+    align-items: flex-start; /* KARTLARI YUKARI (TEPEYE) HİZALAR */
     justify-content: center;
-    gap: 20px;
+    gap: 25px;
 }
 
 .loom-side-column {
     flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 15px; /* Kartlar arası boşluk */
+    margin-top: 10px; /* Resimle tam sıfıra sıfır olmasın diye çok az boşluk */
 }
 
 .loom-center-column {
-    flex: 1.2;
+    flex: 1.3;
     text-align: center;
 }
 
@@ -52,44 +53,34 @@ img { max-width: 100%; height: auto; display: block; }
     width: 100%;
     max-width: 420px;
     border-radius: 15px;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
     display: block;
     margin: 0 auto;
 }
 
-/* Kartları bu bölüme özel daraltıyoruz */
+/* Kartların içindeki Explore yazısını mobilde gizleyip yer kazanabiliriz */
 .mini-card {
     padding: 12px 15px !important;
-    min-height: 110px;
+    min-height: 100px;
     margin: 0 !important;
 }
 
-.mini-card .card-title { font-size: 13px; }
-.mini-card .card-desc { font-size: 11px; line-height: 1.3; }
-
-/* 📱 MOBİL VE TABLET AYARI (850px altı) */
+/* 📱 MOBİL AYARI */
 @media (max-width: 850px) {
     .loom-layout-container {
-        flex-direction: column; /* Her şeyi alt alta diz */
-        gap: 25px;
+        flex-direction: column;
+        align-items: center; /* Mobilde tekrar merkeze alalım */
     }
-
     .loom-center-column {
-        order: -1; /* Tezgahı en üste taşı */
+        order: -1;
         width: 100%;
     }
-
     .loom-side-column {
         width: 100%;
-        display: grid; /* Kartları yan yana getir */
-        grid-template-columns: 1fr 1fr; /* 2 kolon yap (2x2 kare dizilimi) */
-        gap: 12px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 0;
     }
-
-    .mini-card {
-        min-height: 120px;
-    }
-}
 
 /* 📱 ÇOK KÜÇÜK TELEFONLAR (500px altı) */
 @media (max-width: 500px) {
