@@ -51,11 +51,15 @@
         .header-title { color: white; font-size: 1.1rem; font-weight: bold; text-decoration: none; flex-shrink: 0; }
         .header-right { display: flex; align-items: center; gap: 12px; flex-shrink: 0; overflow: hidden; max-width: 200px; }
 
-        /* Google Translate — sabit küçük kutu */
-        #google_translate_element { max-width: 120px; overflow: hidden; transform: scale(0.82); transform-origin: right center; }
+        /* Google Translate — header küçük kutu */
+        #google_translate_element { max-width: 140px; overflow: hidden; transform: scale(0.85); transform-origin: right center; }
         .goog-te-gadget { white-space: nowrap; }
         .goog-te-gadget img { display: none !important; }
         .goog-te-gadget span { display: none !important; }
+        .goog-te-gadget-simple { background: rgba(255,255,255,0.12) !important; border: 1px solid rgba(212,175,55,0.6) !important; border-radius: 20px !important; padding: 4px 10px !important; }
+        .goog-te-gadget-simple span { color: white !important; }
+        .goog-te-banner-frame.skiptranslate { display: none !important; }
+        body { top: 0 !important; }
 
         /* Hamburger butonu */
         #nav-hamburger { background: none; border: none; cursor: pointer; padding: 8px 4px; display: flex; flex-direction: column; gap: 5px; flex-shrink: 0; z-index: 11; }
@@ -264,32 +268,18 @@
       <img id="enlarged-img" src="" alt="Enlarged">
     </div>
 
-  <!-- Google Translate Widget -->
-<div id="google_translate_element" style="text-align:right; padding:10px;"></div>
-
+  <!-- Google Translate Script (25 dil) -->
 <script type="text/javascript">
 function googleTranslateElementInit() {
   new google.translate.TranslateElement({
-    pageLanguage: 'en', 
+    pageLanguage: 'en',
+    includedLanguages: 'fr,de,es,it,pt,nl,pl,ru,ar,zh-CN,ja,ko,tr,sv,da,fi,no,el,cs,hu,ro,uk,vi,id,hi',
     layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
     autoDisplay: false
   }, 'google_translate_element');
 }
 </script>
 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
-<style>
-  /* Google Translate stilini sitenize uyduralım */
-  .goog-te-gadget-simple {
-    background-color: #fff !important;
-    border: 1px solid #d4af37 !important;
-    padding: 5px 10px !important;
-    border-radius: 20px !important;
-    font-family: Georgia, serif !important;
-  }
-  .goog-te-banner-frame.skiptranslate { display: none !important; }
-  body { top: 0 !important; }
-</style>
 
     <!-- Zoom Scripti -->
     <script>
