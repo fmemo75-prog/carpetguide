@@ -14,41 +14,42 @@
         }
     }
 
-    // 2. Lightbox Kapatma Fonksiyonu (Global kapsamda tanımlıyoruz)
+    // 2. Resim Kapatma Fonksiyonu (Dışarıda olmalı ki HTML görebilsin)
     function closeLightbox() {
         const overlay = document.getElementById('img-lightbox-overlay');
         if (overlay) {
             overlay.style.display = 'none';
-            document.body.style.overflow = 'auto'; // Kaydırmayı geri aç
+            document.body.style.overflow = 'auto';
         }
     }
 
-    // 3. Resim Büyütme ve Olay Dinleyicileri
+    // 3. Resim Büyütme Ayarları
     document.addEventListener("DOMContentLoaded", function() {
-        const allImages = document.querySelectorAll('img');
+        const images = document.querySelectorAll('img');
         const overlay = document.getElementById('img-lightbox-overlay');
-        const fullImg = document.getElementById('enlarged-img');
-        
-        allImages.forEach(img => {
-            // Harita kontrolü
+        const enlargedImg = document.getElementById('enlarged-img');
+
+        images.forEach(img => {
+            // Harita resimlerini ayıkla (Leaflet haritası içindeyse büyümesin)
             const isMap = img.closest('.leaflet-container') || 
                           img.closest('#map') || 
-                          img.classList.contains('leaflet-marker-icon') ||
-                          img.classList.contains('leaflet-tile');
+                          img.classList.contains('leaflet-marker-icon');
 
             if (!isMap) {
                 img.style.cursor = 'zoom-in';
-                img.addEventListener('click', function() {
-                    if (overlay && fullImg) {
-                        fullImg.src = this.src;
+                
+                // Tıklama olayını ekle
+                img.onclick = function() {
+                    if (overlay && enlargedImg) {
+                        enlargedImg.src = this.src;
                         overlay.style.display = 'flex';
                         document.body.style.overflow = 'hidden';
                     }
-                });
+                };
             }
         });
 
-        // ESC tuşuna basınca kapatma desteği
+        // ESC tuşu ile kapatma
         document.addEventListener('keydown', function(e) {
             if (e.key === "Escape") closeLightbox();
         });
