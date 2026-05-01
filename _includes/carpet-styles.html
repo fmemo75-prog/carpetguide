@@ -26,49 +26,34 @@ img { max-width: 100%; height: auto; display: block; }
 .gallery-btn { display: inline-block; background: #8b0000; color: white !important; padding: 15px 30px; border-radius: 50px; font-weight: bold; font-size: 1.1em; box-shadow: 0 5px 15px rgba(139,0,0,0.3); }
 
 /* ── LOOM & CARDS YERLEŞİM AYARI ── */
+/* ── TEZGAHI DAHA YUKARI ALMA ── */
 .loom-layout-container {
-    max-width: 1000px;
-    margin: 40px auto 20px; /* Üstten 40px boşluk bırakarak Hero'dan ayırdık */
-    padding: 0 16px;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    gap: 25px;
+    margin: -10px auto 30px !important; /* Negatif margin ile Hero'ya iyice yaklaştırdık */
 }
 
-/* Yeşil başlığın (Kilim Masterpieces) üst boşluğunu da ayarlayalım */
-.sec-label.green {
-    padding-top: 50px; /* Hero'dan sonra gelen ilk başlık olduğu için biraz nefes alsın */
+/* ── KUTUYU KÜÇÜLTME (Mini Versiyon) ── */
+.comparison-promo-box.mini-version {
+    max-width: 700px; /* Genişliği daralttık */
+    padding: 20px;    /* İç boşluğu azalttık */
+    margin: 20px auto;
+    background: #fff;
+    border: 1px solid #eee;
 }
 
-.loom-side-column {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    margin-top: 5px; /* Resmin üst hizasıyla dengeler */
+.comparison-promo-box.mini-version h3 {
+    font-size: 1.2rem; /* Başlığı küçülttük */
+    margin-bottom: 5px;
 }
 
-.loom-center-column {
-    flex: 1.4;
-    text-align: center;
+.comparison-promo-box.mini-version p {
+    font-size: 13px;   /* Yazıyı küçülttük */
+    margin-bottom: 15px;
 }
 
-.loom-img-fixed {
-    width: 100%;
-    max-width: 420px;
-    border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-    display: block;
-    margin: 0 auto;
-}
-
-.mini-card {
-    padding: 12px 15px !important;
-    min-height: 95px;
-    margin: 0 !important;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05) !important;
-}
+.mini-version .btn-comparison {
+    padding: 8px 20px; /* Butonu küçülttük */
+    font-size: 11px;
+}}
 
 /* 📱 MOBİL AYARI (Bozulmaması için) */
 @media (max-width: 850px) {
