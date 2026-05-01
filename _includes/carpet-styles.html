@@ -26,9 +26,22 @@ img { max-width: 100%; height: auto; display: block; }
 .gallery-btn { display: inline-block; background: #8b0000; color: white !important; padding: 15px 30px; border-radius: 50px; font-weight: bold; font-size: 1.1em; box-shadow: 0 5px 15px rgba(139,0,0,0.3); }
 
 /* ── LOOM BANNER ── */
-.loom-banner { padding: 28px 16px 0; max-width: 960px; margin: 0 auto; }
-.loom-banner img { width: 100%; border-radius: 16px; box-shadow: 0 6px 24px rgba(0,0,0,0.12); }
-
+.loom-banner { 
+    padding: 20px 16px; 
+    max-width: 480px; /* Genişliği yarıya indirdik (960px -> 480px) */
+    margin: 0 auto; 
+    text-align: center;
+}
+.loom-banner img { 
+    width: 100%; 
+    border-radius: 12px; 
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1); 
+    cursor: zoom-in; /* Tıklanabilir olduğunu gösteren imleç */
+    transition: transform 0.3s ease;
+}
+.loom-banner img:hover {
+    transform: scale(1.02); /* Üzerine gelince hafif büyüme efekti */
+}
 /* ── HISTORY SHORTCUT ── */
 .history-shortcut { text-align: center; margin-top: 20px; }
 .history-shortcut a { display: inline-flex; align-items: center; background: #fffcf5; border: 1px solid #d4af37; padding: 10px 20px; border-radius: 50px; box-shadow: 0 4px 15px rgba(212,175,55,0.1); max-width: 280px; }
