@@ -1,0 +1,51 @@
+<div id="google_translate_element"></div>
+
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+    pageLanguage: 'en',
+    includedLanguages: 'fr,de,es,it,pt,nl,pl,ru,tr,ja,ko,zh-CN,ar,hi,vi,id,el,cs,hu,ro,uk,sv,da,fi,no,he,th,bn,fa,bg',
+    layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+    autoDisplay: false
+  }, 'google_translate_element');
+
+  function fixTranslateText() {
+    var el = document.querySelector('.goog-te-gadget-simple span');
+    if (el) {
+      // Mobilde sadece ikon, masaüstünde metin göster
+      if (window.innerWidth < 768) {
+        el.innerHTML = '🌐'; 
+      } else {
+        el.innerHTML = '🌐 Language';
+      }
+    } else {
+      setTimeout(fixTranslateText, 100);
+    }
+  }
+  fixTranslateText();
+}
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+<style>
+  #google_translate_element {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .goog-te-gadget-simple {
+    background: rgba(255,255,255,0.1) !important;
+    border: 1px solid #d4af37 !important;
+    border-radius: 20px !important;
+    padding: 4px 8px !important;
+  }
+  .goog-te-gadget-simple span {
+    color: white !important;
+    font-size: 13px !important;
+  }
+  /* Mobilde menünün düzgün açılması için */
+  .goog-te-menu-frame {
+    max-width: 100% !important;
+    left: 0 !important;
+    top: 60px !important;
+  }
+</style>
