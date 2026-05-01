@@ -25,15 +25,20 @@ img { max-width: 100%; height: auto; display: block; }
 .gallery-btn-wrap { text-align: center; margin: 28px 0 0; }
 .gallery-btn { display: inline-block; background: #8b0000; color: white !important; padding: 15px 30px; border-radius: 50px; font-weight: bold; font-size: 1.1em; box-shadow: 0 5px 15px rgba(139,0,0,0.3); }
 
-/* ── LOOM & CARDS YENİ YERLEŞİM ── */
+/* ── LOOM & CARDS YERLEŞİM AYARI ── */
 .loom-layout-container {
     max-width: 1000px;
-    margin: 20px auto 50px;
+    margin: 40px auto 20px; /* Üstten 40px boşluk bırakarak Hero'dan ayırdık */
     padding: 0 16px;
     display: flex;
-    align-items: flex-start; /* KARTLARI YUKARI HİZALAR */
+    align-items: flex-start;
     justify-content: center;
     gap: 25px;
+}
+
+/* Yeşil başlığın (Kilim Masterpieces) üst boşluğunu da ayarlayalım */
+.sec-label.green {
+    padding-top: 50px; /* Hero'dan sonra gelen ilk başlık olduğu için biraz nefes alsın */
 }
 
 .loom-side-column {
