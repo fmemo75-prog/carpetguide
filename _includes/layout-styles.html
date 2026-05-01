@@ -26,19 +26,28 @@
     .border-note-label { font-size: 8px; letter-spacing: 2px; text-transform: uppercase; color: var(--gold); display: block; }
     .border-note-text { font-size: 10px; color: rgba(255,255,255,0.7); line-height: 1.4; }
 
-    /* HEADER */
+    /* HEADER - Çeviri menüsü için overflow: visible yapıldı */
     header { 
         position: sticky; top: 0; z-index: 1000;
         background: linear-gradient(to right, var(--deep-navy), #2a4858); 
         padding: 0 20px; display: flex; justify-content: space-between; 
-        align-items: center; height: 60px; box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        align-items: center; min-height: 60px; height: 60px; 
+        box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        overflow: visible !important; /* Menünün aşağı sarkması için kritik */
     }
     .header-title { color: white; font-size: 1.1rem; font-weight: bold; text-decoration: none; }
-    #google_translate_element { transform: scale(0.9); }
-    .goog-te-gadget-simple { background: rgba(255,255,255,0.1) !important; border: 1px solid var(--gold) !important; border-radius: 20px !important; padding: 5px 10px !important; }
+    
+    /* Translate Widget Ayarları */
+    #google_translate_element { display: inline-block; }
+    .goog-te-gadget-simple { 
+        background: rgba(255,255,255,0.1) !important; 
+        border: 1px solid var(--gold) !important; 
+        border-radius: 20px !important; 
+        padding: 4px 10px !important; 
+    }
     .goog-te-gadget-simple span { color: white !important; font-size: 12px !important; }
 
-    /* İÇERİK KUTUSU (Alt Sayfalar İçin) */
+    /* İÇERİK KUTUSU */
     .page-wrap {
         position: relative; z-index: 10;
         max-width: 900px; margin: 30px auto;
@@ -48,7 +57,30 @@
         padding: 40px;
     }
 
-    /* MOBİL AYARLAR */
-    @media (max-width: 1200px) { .kilim-border { width: 80px; } .border-note-text { display: none; } }
-    @media (max-width: 1000px) { .kilim-border { display: none; } .page-wrap { margin: 15px; padding: 20px; } }
+    /* MOBİL AYARLAR (768px ve altı için özel düzenleme) */
+    @media (max-width: 1200px) { 
+        .kilim-border { width: 80px; } 
+        .border-note-text { display: none; } 
+    }
+
+    @media (max-width: 1000px) { 
+        .kilim-border { display: none; } 
+        .page-wrap { margin: 15px; padding: 20px; } 
+    }
+
+    @media (max-width: 768px) {
+        header {
+            height: auto !important; /* Sabit 60px yüksekliği kaldırdık */
+            padding: 10px 15px !important;
+            flex-wrap: nowrap; /* Elemanların yan yana kalmasını zorla */
+        }
+        .header-title {
+            font-size: 0.9rem !important; /* Başlığı küçülttük */
+            max-width: 140px;
+        }
+        #google_translate_element {
+            transform: scale(0.85); /* Widget'ı biraz küçülttük */
+            margin-right: 5px;
+        }
+    }
 </style>
