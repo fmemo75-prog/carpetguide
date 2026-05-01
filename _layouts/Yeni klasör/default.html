@@ -21,53 +21,19 @@
         * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
         body { background-color: var(--cream-bg); font-family: 'Georgia', serif; line-height: 1.8; color: #2c3e50; margin: 0; padding: 0; overflow-x: hidden; }
 
-        /* ── BİLGİ ŞERITLERI ──────────────────────────────────── */
+        /* ── KİLİM BORDÜR ──────────────────────────────────────── */
         .kilim-border {
-            position: fixed; top: 0; width: 140px; height: 100%;
-            background: linear-gradient(180deg, #1a0a0a 0%, #2d1205 50%, #1a0a0a 100%);
+            position: fixed; top: 0; width: 150px; height: 100%;
+            background-image: url('{{ site.baseurl }}/images/kilim-motif.jpg');
+            background-size: 150px auto; background-repeat: repeat-y;
             z-index: 1;
-            overflow: hidden;
-            display: flex; flex-direction: column;
+            box-shadow: inset -10px 0 20px rgba(0,0,0,0.1);
         }
-        .left-border  { left: 0; border-right: 1px solid rgba(212,175,55,0.2); }
-        .right-border { right: 0; border-left: 1px solid rgba(212,175,55,0.2); }
-
-        .border-notes {
-            position: absolute; top: 0; left: 0; right: 0; bottom: 0;
-            display: flex; flex-direction: column; justify-content: space-around;
-            padding: 80px 0; overflow: hidden;
-        }
-        .border-note {
-            padding: 14px 10px; text-align: center;
-            border-bottom: 1px solid rgba(212,175,55,0.1);
-        }
-        .border-note:last-child { border-bottom: none; }
-        .border-note-icon { font-size: 18px; margin-bottom: 6px; }
-        .border-note-label {
-            font-size: 8px; letter-spacing: 2px; text-transform: uppercase;
-            color: #d4af37; margin-bottom: 5px; display: block;
-        }
-        .border-note-text {
-            font-size: 9.5px; color: rgba(255,255,255,0.55);
-            line-height: 1.5; font-family: Georgia, serif;
-        }
-        .border-note-text strong { color: rgba(255,255,255,0.8); }
-
-        /* Dekoratif üst/alt çizgi */
-        .kilim-border::before {
-            content: ''; position: absolute; top: 60px; left: 12px; right: 12px;
-            height: 1px; background: linear-gradient(90deg, transparent, #d4af37, transparent);
-        }
-        .kilim-border::after {
-            content: ''; position: absolute; bottom: 60px; left: 12px; right: 12px;
-            height: 1px; background: linear-gradient(90deg, transparent, #d4af37, transparent);
-        }
+        .left-border  { left: 0; border-right: 2px solid #8b4513; }
+        .right-border { right: 0; border-left: 2px solid #8b4513; box-shadow: inset 10px 0 20px rgba(0,0,0,0.1); }
 
         @media (max-width: 1200px) {
-            .kilim-border { width: 70px; }
-            .border-note-text { font-size: 8px; }
-            .border-note-label { font-size: 7px; }
-            .border-note-icon { font-size: 14px; }
+            .kilim-border { width: 60px; background-size: 60px auto; }
         }
         @media (max-width: 800px) {
             .kilim-border { display: none; }
@@ -137,67 +103,9 @@
 </head>
 <body>
 
-    <!-- Sol Bilgi Şeridi -->
-    <div class="kilim-border left-border">
-      <div class="border-notes">
-        <div class="border-note">
-          <div class="border-note-icon">🧶</div>
-          <span class="border-note-label">Knot Density</span>
-          <div class="border-note-text">Fine carpets have <strong>up to 1,000</strong> knots per dm²</div>
-        </div>
-        <div class="border-note">
-          <div class="border-note-icon">🌿</div>
-          <span class="border-note-label">Natural Dyes</span>
-          <div class="border-note-text"><strong>Madder root</strong> for red, <strong>indigo</strong> for blue, <strong>weld</strong> for yellow</div>
-        </div>
-        <div class="border-note">
-          <div class="border-note-icon">⏳</div>
-          <span class="border-note-label">Oldest Carpet</span>
-          <div class="border-note-text">The <strong>Pazyryk</strong> carpet dates to <strong>500 BCE</strong> — found in Siberia</div>
-        </div>
-        <div class="border-note">
-          <div class="border-note-icon">✂️</div>
-          <span class="border-note-label">Pile Height</span>
-          <div class="border-note-text">Typically <strong>5–15 mm</strong> — cut after each row of knots</div>
-        </div>
-        <div class="border-note">
-          <div class="border-note-icon">🏔️</div>
-          <span class="border-note-label">Cappadocia</span>
-          <div class="border-note-text">Weaving tradition going back <strong>over 800 years</strong> in this region</div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Sağ Bilgi Şeridi -->
-    <div class="kilim-border right-border">
-      <div class="border-notes">
-        <div class="border-note">
-          <div class="border-note-icon">🐑</div>
-          <span class="border-note-label">Best Wool</span>
-          <div class="border-note-text"><strong>Spring-shorn</strong> wool is softest — taken before summer heat</div>
-        </div>
-        <div class="border-note">
-          <div class="border-note-icon">👐</div>
-          <span class="border-note-label">Master Weaver</span>
-          <div class="border-note-text">Ties up to <strong>10,000 knots</strong> per day by hand</div>
-        </div>
-        <div class="border-note">
-          <div class="border-note-icon">🗺️</div>
-          <span class="border-note-label">Turkish Regions</span>
-          <div class="border-note-text"><strong>20 distinct</strong> weaving regions — each with unique patterns</div>
-        </div>
-        <div class="border-note">
-          <div class="border-note-icon">🪢</div>
-          <span class="border-note-label">Ghiordes Knot</span>
-          <div class="border-note-text">The <strong>Turkish double knot</strong> — stronger than Persian single knot</div>
-        </div>
-        <div class="border-note">
-          <div class="border-note-icon">🕌</div>
-          <span class="border-note-label">Hereke Silk</span>
-          <div class="border-note-text">Woven for <strong>Ottoman palaces</strong> — finest carpets in the world</div>
-        </div>
-      </div>
-    </div>
+    <!-- Kilim Şeritleri -->
+    <div class="kilim-border left-border"></div>
+    <div class="kilim-border right-border"></div>
 
     <header>
         <a href="{{ site.baseurl }}/" class="header-title">🌍 Global Carpet Guide</a>
@@ -360,32 +268,15 @@
       <img id="enlarged-img" src="" alt="Enlarged">
     </div>
 
-  <!-- Google Translate Script (25 dil, İngilizce arayüz) -->
-<script type="text/javascript">
-  // Tarayıcı dilinden bağımsız olarak arayüzü İngilizce yap
-  window._googTranslateInit = true;
-  document.documentElement.lang = 'en';
-</script>
+  <!-- Google Translate Script (25 dil) -->
 <script type="text/javascript">
 function googleTranslateElementInit() {
   new google.translate.TranslateElement({
     pageLanguage: 'en',
     includedLanguages: 'fr,de,es,it,pt,nl,pl,ru,ar,zh-CN,ja,ko,tr,sv,da,fi,no,el,cs,hu,ro,uk,vi,id,hi',
     layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
-    autoDisplay: false,
-    gaTrack: false
+    autoDisplay: false
   }, 'google_translate_element');
-  // Widget metnini İngilizce olarak zorla
-  setTimeout(function() {
-    var sel = document.querySelector('.goog-te-gadget-simple');
-    if (sel) {
-      var spans = sel.querySelectorAll('span');
-      spans.forEach(function(s) {
-        if (s.textContent.includes('Dil') || s.textContent.includes('Seç') || s.textContent.trim() === '') return;
-        if (!s.querySelector('span')) s.textContent = 'Select Language';
-      });
-    }
-  }, 800);
 }
 </script>
 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
