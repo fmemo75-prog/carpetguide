@@ -1,7 +1,5 @@
-<!-- 1. Kutu -->
-<div id="google_translate_element" style="display: inline-block; vertical-align: middle;"></div>
+<div id="google_translate_element"></div>
 
-<!-- 2. Ayarlar -->
 <script type="text/javascript">
 function googleTranslateElementInit() {
   new google.translate.TranslateElement({
@@ -11,37 +9,58 @@ function googleTranslateElementInit() {
     autoDisplay: false
   }, 'google_translate_element');
 
-  // Yazıyı Language olarak sabitleyen güvenli fonksiyon
-  var checkExist = setInterval(function() {
-    var translateSpan = document.querySelector('.goog-te-gadget-simple span');
-    if (translateSpan) {
-      translateSpan.innerHTML = (window.innerWidth < 768) ? '🌐' : '🌐 Language';
-      clearInterval(checkExist);
+  // Yazıyı oraya zorla yazdıran fonksiyon
+  function forceLanguageText() {
+    var container = document.querySelector('.goog-te-gadget-simple');
+    if (container) {
+      // Google'ın varsayılan içeriğini temizle ve kendi istediğimizi yaz
+      var span = container.querySelector('span');
+      if (span) {
+        span.innerHTML = '🌐 Language';
+        span.style.display = 'inline-block';
+        span.style.visibility = 'visible';
+      }
+    } else {
+      // Yüklenene kadar her 100ms'de bir dene
+      setTimeout(forceLanguageText, 100);
     }
-  }, 100);
+  }
+  forceLanguageText();
 }
 </script>
-
-<!-- 3. Google Dış Kaynak (Bu satır en altta olmalı) -->
 <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 <style>
-  /* Google'ın kendi ikonlarını ve yazılarını gizle */
-  .goog-te-gadget img, .goog-te-gadget span { display: none !important; }
-  .goog-te-gadget-simple { 
-    background: rgba(255,255,255,0.1) !important; 
-    border: 1px solid #d4af37 !important; 
-    border-radius: 20px !important; 
-    padding: 4px 10px !important;
+  /* Widget'ın genel kutusu */
+  .goog-te-gadget-simple {
+    background: rgba(255,255,255,0.1) !important;
+    border: 1px solid #d4af37 !important;
+    border-radius: 20px !important;
+    padding: 5px 15px !important; /* Genişliği artırdık */
+    cursor: pointer !important;
     display: flex !important;
-    align-items: center;
+    align-items: center !important;
+    text-decoration: none !important;
   }
-  /* Bizim eklediğimiz Language yazısı görünsün */
-  .goog-te-gadget-simple span:first-child { 
-    display: inline-block !important; 
-    color: white !important; 
-    font-size: 13px !important; 
+
+  /* İçindeki yazının stili */
+  .goog-te-gadget-simple span {
+    color: white !important;
+    font-size: 12px !important;
+    font-family: 'Georgia', serif !important;
+    display: inline-block !important;
+    opacity: 1 !important;
   }
+
+  /* Google'ın kendi ok işaretini ve ikonunu gizle (kalabalık yapmasın) */
+  .goog-te-gadget-simple img, 
+  .goog-te-menu-value img, 
+  .goog-te-menu-value span:nth-child(3),
+  .goog-te-gadget-icon {
+    display: none !important;
+  }
+
+  /* Üstteki Google barını gizle */
   .goog-te-banner-frame.skiptranslate { display: none !important; }
   body { top: 0 !important; }
 </style>
