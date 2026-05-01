@@ -335,6 +335,55 @@ img { max-width: 100%; height: auto; display: block; }
     body {
         margin: 0 100px; /* Motif genişliğinden biraz fazla boşluk */
     }
+}/* ── GENEL DÜZENLEME ── */
+.loom-layout-container {
+    max-width: 1000px;
+    margin: 0 auto 40px;
+    display: flex;
+    align-items: flex-start; /* Kartları yukarı çeker */
+    justify-content: center;
+    gap: 20px;
+    clear: both;
+}
+
+.loom-side-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.loom-center-column {
+    flex: 1.4;
+    text-align: center;
+}
+
+.loom-img-fixed {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* ── KÜÇÜLTÜLMÜŞ KUTU STİLİ ── */
+.comparison-promo-box.mini-version {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 25px;
+    background: #fff;
+    border: 1px solid #eee;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.comparison-promo-box.mini-version h3 { font-size: 1.3rem; margin-bottom: 8px; }
+.comparison-promo-box.mini-version p { font-size: 14px; color: #666; margin-bottom: 15px; }
+
+/* 📱 MOBİL AYARI */
+@media (max-width: 850px) {
+    .loom-layout-container { flex-direction: column; align-items: center; }
+    .loom-center-column { order: -1; width: 100%; }
+    .loom-side-column { width: 100%; display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
 }
 </style>
 
