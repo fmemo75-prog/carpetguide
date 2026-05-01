@@ -7,7 +7,129 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title }} | Carpet Guide</title>
     
+ HEAD
     {% include layout-styles.html %}
+
+    <style>
+        :root { --primary-red: #8b0000; --deep-navy: #1a2a6c; --cream-bg: #fdf5e6; }
+        * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+        body { background-color: var(--cream-bg); font-family: 'Georgia', serif; line-height: 1.8; color: #2c3e50; margin: 0; padding: 0; overflow-x: hidden; }
+
+        /* ── BİLGİ ŞERITLERI ──────────────────────────────────── */
+        .kilim-border {
+            position: fixed; top: 0; width: 140px; height: 100%;
+            background: linear-gradient(180deg, #1a0a0a 0%, #2d1205 50%, #1a0a0a 100%);
+            z-index: 1;
+            overflow: hidden;
+            display: flex; flex-direction: column;
+        }
+        .left-border  { left: 0; border-right: 1px solid rgba(212,175,55,0.2); }
+        .right-border { right: 0; border-left: 1px solid rgba(212,175,55,0.2); }
+
+        .border-notes {
+            position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+            display: flex; flex-direction: column; justify-content: space-around;
+            padding: 80px 0; overflow: hidden;
+        }
+        .border-note {
+            padding: 14px 10px; text-align: center;
+            border-bottom: 1px solid rgba(212,175,55,0.1);
+        }
+        .border-note:last-child { border-bottom: none; }
+        .border-note-icon { font-size: 18px; margin-bottom: 6px; }
+        .border-note-label {
+            font-size: 8px; letter-spacing: 2px; text-transform: uppercase;
+            color: #d4af37; margin-bottom: 5px; display: block;
+        }
+        .border-note-text {
+            font-size: 9.5px; color: rgba(255,255,255,0.55);
+            line-height: 1.5; font-family: Georgia, serif;
+        }
+        .border-note-text strong { color: rgba(255,255,255,0.8); }
+
+        /* Dekoratif üst/alt çizgi */
+        .kilim-border::before {
+            content: ''; position: absolute; top: 60px; left: 12px; right: 12px;
+            height: 1px; background: linear-gradient(90deg, transparent, #d4af37, transparent);
+        }
+        .kilim-border::after {
+            content: ''; position: absolute; bottom: 60px; left: 12px; right: 12px;
+            height: 1px; background: linear-gradient(90deg, transparent, #d4af37, transparent);
+        }
+
+        @media (max-width: 1200px) {
+            .kilim-border { width: 70px; }
+            .border-note-text { font-size: 8px; }
+            .border-note-label { font-size: 7px; }
+            .border-note-icon { font-size: 14px; }
+        }
+        @media (max-width: 800px) {
+            .kilim-border { display: none; }
+        }
+
+        /* ── HEADER ────────────────────────────────────────────── */
+        header { 
+            position: relative; z-index: 10;
+            background: linear-gradient(to right, var(--deep-navy), #2a4858); 
+            padding: 0 20px; display: flex; justify-content: space-between; 
+            align-items: center; min-height: 60px; height: 60px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            overflow: hidden;
+        }
+        .header-title { color: white; font-size: 1.1rem; font-weight: bold; text-decoration: none; flex-shrink: 0; }
+        .header-right { display: flex; align-items: center; gap: 12px; flex-shrink: 0; overflow: hidden; max-width: 200px; }
+
+        /* Google Translate — header küçük kutu */
+        #google_translate_element { max-width: 140px; overflow: hidden; transform: scale(0.85); transform-origin: right center; }
+        .goog-te-gadget { white-space: nowrap; }
+        .goog-te-gadget img { display: inline !important; width: 16px; height: 16px; }
+        .goog-te-gadget span { display: none !important; }
+        .goog-te-gadget-simple { background: rgba(255,255,255,0.12) !important; border: 1px solid rgba(212,175,55,0.6) !important; border-radius: 20px !important; padding: 4px 10px !important; }
+        .goog-te-gadget-simple span { color: white !important; }
+        .goog-te-banner-frame.skiptranslate { display: none !important; }
+        body { top: 0 !important; }
+
+      
+ /* Hamburger butonu */
+        #nav-hamburger { background: none; border: none; cursor: pointer; padding: 8px 4px; display: flex; flex-direction: column; gap: 5px; flex-shrink: 0; z-index: 11; }
+        #nav-hamburger span { display: block; width: 22px; height: 2px; background: rgba(255,255,255,0.9); border-radius: 1px; transition: 0.25s; }
+        #nav-hamburger:hover span { background: #d4af37; }
+
+        /* ── ANA İÇERİK ────────────────────────────────────────── */
+        .page-wrap {
+            position: relative; z-index: 10;
+            max-width: 1000px;
+            margin: 25px auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border-top: 8px solid var(--primary-red);
+            padding: 35px;
+        }
+
+        img { max-width: 100%; height: auto; border-radius: 8px; }
+
+        /* ── LİGHTBOX ──────────────────────────────────────────── */
+        .page-wrap img:not(.leaflet-marker-icon):not(.leaflet-tile) { cursor: zoom-in; transition: 0.3s; }
+        
+        #img-lightbox-overlay {
+            display: none; position: fixed; z-index: 999999;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background-color: rgba(0,0,0,0.9); backdrop-filter: blur(5px);
+            cursor: zoom-out; justify-content: center; align-items: center;
+        }
+        #img-lightbox-overlay img { max-width: 90%; max-height: 90%; border: 3px solid #fff; transform: scale(0.9); transition: transform 0.25s ease-out; }
+        #img-lightbox-overlay.active { display: flex; }
+        #img-lightbox-overlay.active img { transform: scale(1); }
+
+        /* ── MOBİL ─────────────────────────────────────────────── */
+        @media (max-width: 768px) {
+            header { flex-direction: column; text-align: center; gap: 10px; padding: 15px; }
+            .page-wrap { margin: 10px; padding: 20px; width: calc(100% - 20px); }
+            #google_translate_element { transform: scale(1); transform-origin: center; }
+        }
+    </style>
+>>>>>>> 6687ecafe85a310ac50ec46dfe5ddea0f3c4a05b
 </head>
 <body>
 
