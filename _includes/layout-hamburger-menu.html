@@ -1,0 +1,48 @@
+<!-- NAV DRAWER OVERLAY -->
+<div id="nav-overlay" onclick="toggleNavDrawer()" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.6); z-index:99000;"></div>
+
+<!-- NAV DRAWER -->
+<div id="nav-drawer" style="position:fixed; top:0; right:-310px; width:290px; height:100%; background:#130d08; z-index:99001; overflow-y:auto; transition:right 0.3s cubic-bezier(0.4,0,0.2,1); box-shadow:-6px 0 40px rgba(0,0,0,0.7); font-family:Georgia, serif;">
+    
+    <!-- Menü Başlığı -->
+    <div style="padding:20px; border-bottom:1px solid rgba(255,255,255,0.08); display:flex; justify-content:space-between; align-items:center; position:sticky; top:0; background:#1a0a0a; z-index:1;">
+        <span style="font-size:10px; letter-spacing:3px; text-transform:uppercase; color:#d4af37;">Navigation</span>
+        <button onclick="toggleNavDrawer()" style="background:rgba(255,255,255,0.07); border:none; color:#aaa; width:28px; height:28px; border-radius:50%; cursor:pointer; font-size:15px; display:flex; align-items:center; justify-content:center;">✕</button>
+    </div>
+
+    <!-- Linkler -->
+    <nav style="padding:5px 0;">
+        <a href="{{ site.baseurl }}/" style="display:flex; align-items:center; gap:12px; padding:14px 18px; background:rgba(139,0,0,0.15); border-bottom:1px solid rgba(139,0,0,0.2); text-decoration:none;">
+            <span style="font-size:16px; width:22px; text-align:center;">🏠</span>
+            <span style="font-size:13px; color:#d4af37; font-weight:bold;">Home</span>
+        </a>
+
+        <div style="padding:15px 18px 5px; font-size:9px; letter-spacing:2px; text-transform:uppercase; color:#555;">Knowledge</div>
+        <a href="{{ site.baseurl }}/materials" style="display:flex; align-items:center; gap:12px; padding:12px 18px; text-decoration:none; border-bottom:1px solid rgba(255,255,255,0.04);">
+            <span style="font-size:15px; width:22px; text-align:center;">🧵</span>
+            <span style="font-size:13px; color:#e0ddd8;">Materials</span>
+        </a>
+        <a href="{{ site.baseurl }}/history-carpet" style="display:flex; align-items:center; gap:12px; padding:12px 18px; text-decoration:none; border-bottom:1px solid rgba(255,255,255,0.04);">
+            <span style="font-size:15px; width:22px; text-align:center;">🏛️</span>
+            <span style="font-size:13px; color:#e0ddd8;">History</span>
+        </a>
+        <a href="{{ site.baseurl }}/carpet-map" style="display:flex; align-items:center; gap:12px; padding:12px 18px; text-decoration:none; border-bottom:1px solid rgba(255,255,255,0.04);">
+            <span style="font-size:15px; width:22px; text-align:center;">🗺️</span>
+            <span style="font-size:13px; color:#e0ddd8;">Regional Map</span>
+        </a>
+
+        <div style="padding:15px 18px 5px; font-size:9px; letter-spacing:2px; text-transform:uppercase; color:#555;">Guide</div>
+        <a href="{{ site.baseurl }}/Cappodoce" style="display:flex; align-items:center; gap:12px; padding:12px 18px; text-decoration:none; border-bottom:1px solid rgba(255,255,255,0.04);">
+            <span style="font-size:15px; width:22px; text-align:center;">🌄</span>
+            <span style="font-size:13px; color:#e0ddd8;">Cappadocia</span>
+        </a>
+        <a href="{{ site.baseurl }}/gallery" style="display:flex; align-items:center; gap:12px; padding:12px 18px; text-decoration:none; border-bottom:1px solid rgba(255,255,255,0.04);">
+            <span style="font-size:15px; width:22px; text-align:center;">📸</span>
+            <span style="font-size:13px; color:#e0ddd8;">Gallery</span>
+        </a>
+        <a href="{{ site.baseurl }}/me" style="display:flex; align-items:center; gap:12px; padding:12px 18px; text-decoration:none; border-bottom:1px solid rgba(255,255,255,0.04);">
+            <span style="font-size:15px; width:22px; text-align:center;">👤</span>
+            <span style="font-size:13px; color:#e0ddd8;">Profile</span>
+        </a>
+    </nav>
+</div>
