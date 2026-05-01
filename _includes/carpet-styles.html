@@ -242,3 +242,40 @@ img { max-width: 100%; height: auto; display: block; }
   .rv-title { font-size: 21px; }
 }
 </style>
+/* Yanlardaki Dikey Motifler */
+.side-motif {
+    position: fixed;
+    top: 0;
+    width: 80px; /* Motifin genişliği - görselinize göre ayarlayabilirsiniz */
+    height: 100%;
+    z-index: -1; /* İçeriğin arkasında kalması için */
+    background-image: url('./motif.jpg'); /* Görselin adı ve yolu doğru olmalı */
+    background-repeat: repeat-y;
+    background-size: contain;
+    opacity: 0.6; /* Sayfa okunabilirliği için hafif şeffaflık */
+}
+
+.left-motif {
+    left: 0;
+}
+
+.right-motif {
+    right: 0;
+}
+
+/* Mobil ekranlarda motifleri gizle (içeriği kapatmaması için) */
+@media (max-width: 1100px) {
+    .side-motif {
+        display: none;
+    }
+    body {
+        margin: 0;
+    }
+}
+
+/* Masaüstünde içeriği ortalamak ve motiflere yer açmak için */
+@media (min-width: 1101px) {
+    body {
+        margin: 0 100px; /* Motif genişliğinden biraz fazla boşluk */
+    }
+}
