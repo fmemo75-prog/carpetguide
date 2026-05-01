@@ -95,7 +95,13 @@
         .goog-te-banner-frame.skiptranslate { display: none !important; }
         body { top: 0 !important; }
 
-        /* Hamburger butonu */
+{% if page.url == "/" or page.url == "/index.html" %}
+<img src="{{ site.baseurl }}/images/elibelinde.jpg" 
+     alt="Elibelinde" 
+     style="width:36px; opacity:0.8; filter:brightness(10); margin-top:6px; display:block; margin-left:auto; margin-right:auto;">
+{% endif %}
+       
+ /* Hamburger butonu */
         #nav-hamburger { background: none; border: none; cursor: pointer; padding: 8px 4px; display: flex; flex-direction: column; gap: 5px; flex-shrink: 0; z-index: 11; }
         #nav-hamburger span { display: block; width: 22px; height: 2px; background: rgba(255,255,255,0.9); border-radius: 1px; transition: 0.25s; }
         #nav-hamburger:hover span { background: #d4af37; }
