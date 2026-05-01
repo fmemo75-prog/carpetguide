@@ -1,0 +1,39 @@
+<script>
+    // Menü Aç/Kapat
+    function toggleNavDrawer() {
+        const drawer = document.getElementById('nav-drawer');
+        const overlay = document.getElementById('nav-overlay');
+        if (drawer.style.right === '0px') {
+            drawer.style.right = '-310px';
+            overlay.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        } else {
+            drawer.style.right = '0px';
+            overlay.style.display = 'block';
+            document.body.style.overflow = 'hidden';
+        }
+    }
+
+    // Resim Büyütme (Lightbox)
+    document.addEventListener("DOMContentLoaded", function() {
+        const images = document.querySelectorAll('.page-wrap img');
+        images.forEach(img => {
+            img.addEventListener('click', function() {
+                const overlay = document.getElementById('img-lightbox-overlay');
+                document.getElementById('enlarged-img').src = this.src;
+                overlay.classList.add('active');
+            });
+        });
+    });
+
+    // Google Translate
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+            pageLanguage: 'en',
+            includedLanguages: 'fr,de,es,it,pt,nl,pl,ru,tr,ja,ko,zh-CN',
+            layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+            autoDisplay: false
+        }, 'google_translate_element');
+    }
+</script>
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
