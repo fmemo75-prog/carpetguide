@@ -45,16 +45,9 @@
         {% endif %}
     </main>
 
-    <!-- Resim Büyütme Kutusu -->
-    <div id="img-lightbox-overlay" onclick="this.classList.remove('active')" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.9); z-index:100000; justify-content:center; align-items:center;">
-        <img id="enlarged-img" src="" style="max-width:90%; max-height:90%; border:3px solid white; border-radius:5px;">
-    </div>
-
-    <!-- Alt Bilgi -->
-    {% include layout-footer.html %}
-
-    <!-- JavaScript Kodları -->
-    {% include layout-scripts.html %}
-
-</body>
-</html>
+  <!-- Resim Büyütme Kutusu -->
+<div id="img-lightbox-overlay" onclick="closeLightbox()" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.9); z-index:100000; justify-content:center; align-items:center; cursor:zoom-out;">
+    <img id="enlarged-img" src="" style="max-width:90%; max-height:90%; border:3px solid white; border-radius:5px; box-shadow: 0 0 30px rgba(0,0,0,0.5);">
+    <!-- Kapatma ipucu (isteğe bağlı) -->
+    <div style="position:absolute; top:20px; right:20px; color:white; font-size:24px; cursor:pointer;">✕</div>
+</div>

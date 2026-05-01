@@ -3,55 +3,56 @@
     function toggleNavDrawer() {
         const drawer = document.getElementById('nav-drawer');
         const overlay = document.getElementById('nav-overlay');
-        if (drawer.style.right === '0px') {
+        if (drawer && drawer.style.right === '0px') {
             drawer.style.right = '-320px';
-            overlay.style.display = 'none';
+            if(overlay) overlay.style.display = 'none';
             document.body.style.overflow = 'auto';
-        } else {
+        } else if(drawer) {
             drawer.style.right = '0px';
-            overlay.style.display = 'block';
+            if(overlay) overlay.style.display = 'block';
             document.body.style.overflow = 'hidden';
         }
     }
 
-    // 2. Akıllı Resim Büyütme (Lightbox) - Harita Hariç
+    // 2. Lightbox Kapatma Fonksiyonu (Global kapsamda tanımlıyoruz)
+    function closeLightbox() {
+        const overlay = document.getElementById('img-lightbox-overlay');
+        if (overlay) {
+            overlay.style.display = 'none';
+            document.body.style.overflow = 'auto'; // Kaydırmayı geri aç
+        }
+    }
+
+    // 3. Resim Büyütme ve Olay Dinleyicileri
     document.addEventListener("DOMContentLoaded", function() {
-        // Sayfadaki TÜM resimleri seç
         const allImages = document.querySelectorAll('img');
+        const overlay = document.getElementById('img-lightbox-overlay');
+        const fullImg = document.getElementById('enlarged-img');
         
         allImages.forEach(img => {
-            // Resmin haritaya ait olup olmadığını kontrol et
+            // Harita kontrolü
             const isMap = img.closest('.leaflet-container') || 
                           img.closest('#map') || 
                           img.classList.contains('leaflet-marker-icon') ||
                           img.classList.contains('leaflet-tile');
 
-            // Eğer harita resmi DEĞİLSE tıklama özelliği ekle
             if (!isMap) {
-                img.style.cursor = 'zoom-in'; // Tıklanabilir olduğunu göster
-                
+                img.style.cursor = 'zoom-in';
                 img.addEventListener('click', function() {
-                    const overlay = document.getElementById('img-lightbox-overlay');
-                    const fullImg = document.getElementById('enlarged-img');
-                    
                     if (overlay && fullImg) {
                         fullImg.src = this.src;
                         overlay.style.display = 'flex';
-                        document.body.style.overflow = 'hidden'; // Arka plan kaymasını durdur
+                        document.body.style.overflow = 'hidden';
                     }
                 });
             }
         });
-    });
 
-    // Lightbox Kapatma Fonksiyonu
-    function closeLightbox() {
-        const overlay = document.getElementById('img-lightbox-overlay');
-        if (overlay) {
-            overlay.style.display = 'none';
-            document.body.style.overflow = 'auto';
-        }
-    }
+        // ESC tuşuna basınca kapatma desteği
+        document.addEventListener('keydown', function(e) {
+            if (e.key === "Escape") closeLightbox();
+        });
+    });
 </script>
 
 <!-- Google Translate Modülü -->
