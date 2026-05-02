@@ -16,6 +16,8 @@ title: Cappadocia Complete Guide — Fatih Mehmet Canıtez
 
 &nbsp;
 
+&nbsp;
+
 <style>
 /* ── GENEL ─────────────────────────────────────────────────────────── */
 body { font-family: Georgia, serif; color: #333; }
@@ -111,20 +113,24 @@ hr.divider { border: none; border-top: 1px solid #e8d5c0; margin: 40px 0; }
 
 &nbsp;
 
+&nbsp;
+
 <div style="text-align:center; padding: 10px 0 4px;">
     <h1 style="color:#8b0000; margin-bottom:4px;">🏺 Cappadocia Complete Guide</h1>
     <p style="color:#888; font-size:14px; margin:0;"><i>Insider Tips · VIP Contacts · Interactive Map · 7 Languages</i></p>
 </div>
 
 <div class="lang-box">
-    <button id="en-btn" class="lang-btn active" onclick="setLang('en')">🇺🇸 English</button><p></p>
-    <button id="fr-btn" class="lang-btn" onclick="setLang('fr')">🇫🇷 Français</button><p></p>
-    <button id="es-btn" class="lang-btn" onclick="setLang('es')">🇪🇸 Español</button><p></p>
-    <button id="it-btn" class="lang-btn" onclick="setLang('it')">🇮🇹 Italiano</button><p></p>
-    <button id="ru-btn" class="lang-btn" onclick="setLang('ru')">🇷🇺 Русский</button><p></p>
-    <button id="zh-btn" class="lang-btn" onclick="setLang('zh')">🇨🇳 中文</button><p></p>
-    <button id="ja-btn" class="lang-btn" onclick="setLang('ja')">🇯🇵 日本語</button><p></p>
+    <button id="en-btn" class="lang-btn active" onclick="setLang('en')">🇺🇸 English</button><p></p><p></p>
+    <button id="fr-btn" class="lang-btn" onclick="setLang('fr')">🇫🇷 Français</button><p></p><p></p>
+    <button id="es-btn" class="lang-btn" onclick="setLang('es')">🇪🇸 Español</button><p></p><p></p>
+    <button id="it-btn" class="lang-btn" onclick="setLang('it')">🇮🇹 Italiano</button><p></p><p></p>
+    <button id="ru-btn" class="lang-btn" onclick="setLang('ru')">🇷🇺 Русский</button><p></p><p></p>
+    <button id="zh-btn" class="lang-btn" onclick="setLang('zh')">🇨🇳 中文</button><p></p><p></p>
+    <button id="ja-btn" class="lang-btn" onclick="setLang('ja')">🇯🇵 日本語</button><p></p><p></p>
 </div>
+
+&nbsp;
 
 &nbsp;
 
@@ -137,7 +143,7 @@ hr.divider { border: none; border-top: 1px solid #e8d5c0; margin: 40px 0; }
 <div id="map"></div>
 <div id="scroll-hint">👆 Scroll up to read more</div>
 <div id="info-card">
-<button id="close-btn" onclick="closePanel()">✕</button><p></p>
+<button id="close-btn" onclick="closePanel()">✕</button><p></p><p></p>
 <h3 id="place-name"></h3>
 <div class="info-section">
 <span class="info-label" id="label-worth"></span>
@@ -201,7 +207,11 @@ hr.divider { border: none; border-top: 1px solid #e8d5c0; margin: 40px 0; }
 
 &nbsp;
 
+&nbsp;
+
 ---
+
+&nbsp;
 
 &nbsp;
 
@@ -229,7 +239,11 @@ hr.divider { border: none; border-top: 1px solid #e8d5c0; margin: 40px 0; }
 
 &nbsp;
 
+&nbsp;
+
 ---
+
+&nbsp;
 
 &nbsp;
 
@@ -249,7 +263,11 @@ If the SHGM cancels the flight, you receive a <strong>100% full refund</strong>.
 
 &nbsp;
 
+&nbsp;
+
 ---
+
+&nbsp;
 
 &nbsp;
 
@@ -276,7 +294,11 @@ If the SHGM cancels the flight, you receive a <strong>100% full refund</strong>.
 
 &nbsp;
 
+&nbsp;
+
 ---
+
+&nbsp;
 
 &nbsp;
 
@@ -303,7 +325,11 @@ If the SHGM cancels the flight, you receive a <strong>100% full refund</strong>.
 
 &nbsp;
 
+&nbsp;
+
 ---
+
+&nbsp;
 
 &nbsp;
 
@@ -326,6 +352,8 @@ If the SHGM cancels the flight, you receive a <strong>100% full refund</strong>.
 
 &nbsp;
 
+&nbsp;
+
 ---
 
 <div class="footer-cta">
@@ -339,6 +367,8 @@ If the SHGM cancels the flight, you receive a <strong>100% full refund</strong>.
     &nbsp;|&nbsp;
     <a href="./en/handknotted" style="color:#8b0000;">🧶 Technical Carpet Guide</a>
 </p>
+
+&nbsp;
 
 &nbsp;
 
@@ -551,5 +581,7 @@ function setLang(lang) {
     updateUI();
 }
 </script>
+
+&nbsp;
 
 &nbsp;
