@@ -434,3 +434,4 @@ function closeCard() {
   <a href="{{ site.baseurl }}/en/sumak"    style="background:#fdf5e6; border:1px solid #d4af37; color:#8b4513; padding:10px 20px; border-radius:50px; text-decoration:none; font-weight:bold; font-size:0.9em;">🌀 Sumak Technique →</a>
   <a href="{{ site.baseurl }}/cleaning"    style="background:#fdf5e6; border:1px solid #d4af37; color:#8b4513; padding:10px 20px; border-radius:50px; text-decoration:none; font-weight:bold; font-size:0.9em;">🧹 Care Guide →</a>
 </div>
+

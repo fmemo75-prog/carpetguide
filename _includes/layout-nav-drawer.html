@@ -1,0 +1,19 @@
+<!-- NAV DRAWER OVERLAY -->
+<div id="nav-overlay" onclick="toggleNavDrawer()" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.6); z-index:99000;"></div>
+
+<!-- NAV DRAWER -->
+<div id="nav-drawer" style="position:fixed; top:0; right:-310px; width:290px; height:100%; background:#130d08; z-index:99001; overflow-y:auto; transition:right 0.3s; box-shadow:-6px 0 40px rgba(0,0,0,0.7); font-family:Georgia, serif;">
+    <div style="padding:20px; border-bottom:1px solid #333; display:flex; justify-content:space-between; align-items:center; background:#1a0a0a;">
+        <span style="font-size:10px; letter-spacing:3px; text-transform:uppercase; color:#d4af37;">Navigation</span>
+        <button onclick="toggleNavDrawer()" style="background:none; border:none; color:#aaa; cursor:pointer; font-size:20px;">✕</button>
+    </div>
+    <nav style="padding:10px;">
+        <a href="{{ site.baseurl }}/" style="display:block; color:#fff; padding:15px; text-decoration:none; border-bottom:1px solid #222;">🏠 Home</a>
+        <a href="{{ site.baseurl }}/materials" style="display:block; color:#fff; padding:15px; text-decoration:none; border-bottom:1px solid #222;">🧵 Materials</a>
+        <a href="{{ site.baseurl }}/history-carpet" style="display:block; color:#fff; padding:15px; text-decoration:none; border-bottom:1px solid #222;">🏛️ History</a>
+        <a href="{{ site.baseurl }}/carpet-map" style="display:block; color:#fff; padding:15px; text-decoration:none; border-bottom:1px solid #222;">🗺️ Regional Map</a>
+        <a href="{{ site.baseurl }}/Cappodoce" style="display:block; color:#fff; padding:15px; text-decoration:none; border-bottom:1px solid #222;">🌄 Cappadocia</a>
+        <a href="{{ site.baseurl }}/gallery" style="display:block; color:#fff; padding:15px; text-decoration:none; border-bottom:1px solid #222;">📸 Gallery</a>
+        <a href="{{ site.baseurl }}/me" style="display:block; color:#fff; padding:15px; text-decoration:none; border-bottom:1px solid #222;">👤 Curator Profile</a>
+    </nav>
+</div>

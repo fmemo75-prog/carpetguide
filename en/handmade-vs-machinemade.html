@@ -1,0 +1,153 @@
+---
+layout: default
+title: 
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expert Guide: Handmade vs. Machine-Made | Global Carpet Guide</title>
+    <style>
+        :root { --primary: #8b0000; --secondary: #d4af37; --text: #333; --bg: #fdfdfd; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: var(--text); background: #f4f4f4; margin: 0; }
+        
+        .container { max-width: 1000px; margin: 40px auto; padding: 30px; background: #fff; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+        
+        .header { text-align: center; border-bottom: 3px solid var(--primary); padding-bottom: 20px; margin-bottom: 40px; }
+        .header h1 { color: var(--primary); margin: 0; font-size: 2.2em; text-transform: uppercase; letter-spacing: 1px; }
+        .header p { font-style: italic; color: #666; margin-top: 10px; }
+
+        /* Checklist Section */
+        .checklist { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-bottom: 40px; background: #fffcf5; padding: 20px; border: 1px solid var(--secondary); border-radius: 10px; }
+        .check-item { display: flex; align-items: center; gap: 10px; font-weight: bold; color: #5d4037; font-size: 0.9em; }
+
+        /* Comparison Grid */
+        .comp-row { display: flex; flex-wrap: wrap; gap: 30px; margin-bottom: 50px; align-items: center; }
+        .comp-row:nth-child(even) { flex-direction: row-reverse; }
+        .comp-img { flex: 1; min-width: 300px; position: relative; border-radius: 10px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+        .comp-img img { width: 100%; display: block; transition: 0.5s; }
+        .comp-img:hover img { transform: scale(1.08); }
+        .comp-info { flex: 1; min-width: 300px; }
+        .comp-info h3 { color: var(--primary); border-left: 4px solid var(--secondary); padding-left: 15px; margin-top: 0; }
+
+        /* Burn Test Section */
+        .burn-test { background: #1a1a1a; color: #eee; padding: 30px; border-radius: 10px; margin: 40px 0; }
+        .burn-test h2 { color: var(--secondary); margin-top: 0; }
+        .burn-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        .burn-box { border: 1px solid #444; padding: 15px; border-radius: 5px; }
+
+        /* Table Style */
+        .summary-table { width: 100%; border-collapse: collapse; margin-top: 30px; }
+        .summary-table th { background: var(--primary); color: white; padding: 15px; text-align: left; }
+        .summary-table td { padding: 15px; border-bottom: 1px solid #eee; }
+        
+        .footer-note { text-align: center; margin-top: 50px; padding: 20px; border-top: 1px solid #eee; color: #888; font-size: 0.9em; }
+
+        @media (max-width: 768px) { .burn-grid { grid-template-columns: 1fr; } .comp-row { flex-direction: column !important; } }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <h1>Handmade vs. Machine-Made</h1>
+        <p>A Professional Curator's Guide to Rug Identification</p>
+    </div>
+
+    <!-- Quick Checklist -->
+    <div class="checklist">
+        <div class="check-item">🔍 Check the Back</div>
+        <div class="check-item">🧶 Pull the Fringe</div>
+        <div class="check-item">📐 Look for Asymmetry</div>
+        <div class="check-item">🔥 The Burn Test</div>
+    </div>
+
+    <!-- Comparison 1 -->
+    <div class="comp-row">
+        <div class="comp-img">
+            <img src="../images/comparison-1.jpg" alt="Flexibility">
+        </div>
+        <div class="comp-info">
+            <h3>1. Structural Flexibility</h3>
+            <p><strong>Hand-Knotted:</strong> Because they are made without glue or plastic backings, handmade rugs are incredibly supple. You can fold them like a piece of heavy fabric.</p>
+            <p><strong>Machine-Made:</strong> These rugs use a stiff "foundation" and often latex glue to hold fibers. They are rigid and can only be rolled, not easily folded.</p>
+        </div>
+    </div>
+
+    <!-- Comparison 2 -->
+    <div class="comp-row">
+        <div class="comp-info">
+            <h3>2. The Fringe Integrity</h3>
+            <p><strong>Hand-Knotted:</strong> The fringe is the actual extension of the warp threads (the rug's skeleton). It is vital to the rug's life.</p>
+            <p><strong>Machine-Made:</strong> The fringe is purely decorative. It is sewn or glued onto the finished rug. If you look closely at the base, you will see the stitching line.</p>
+        </div>
+        <div class="comp-img">
+            <img src="../images/comparison-2.jpg" alt="Fringe Detail">
+        </div>
+    </div>
+
+    <!-- Burn Test -->
+    <div class="burn-test">
+        <h2>🔥 The Ultimate "Burn Test"</h2>
+        <p>If you are unsure about the material, take a tiny fiber from the back and burn it with a lighter:</p>
+        <div class="burn-grid">
+            <div class="burn-box">
+                <h4 style="color:var(--secondary)">Natural Wool (Handmade)</h4>
+                <p>Smells like burning hair. The flame goes out quickly. The residue is a black, crumbly ash that turns to powder when touched.</p>
+            </div>
+            <div class="burn-box">
+                <h4 style="color:var(--secondary)">Synthetic (Machine)</h4>
+                <p>Smells like burning plastic or chemicals. The fiber melts and forms a hard, black bead that cannot be crushed.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Comparison 3 -->
+    <div class="comp-row">
+        <div class="comp-img">
+            <img src="../images/comparison-3.jpg" alt="Back Side">
+        </div>
+        <div class="comp-info">
+            <h3>3. Knot Precision & Symmetry</h3>
+            <p><strong>Hand-Knotted:</strong> Look for "happy accidents." Slight variations in knot size or color (abrash) are signs of human hands. The pattern on the back will be almost as clear as the front.</p>
+            <p><strong>Machine-Made:</strong> The back looks like a perfect, repetitive ızgara (grid). Every "knot" is identical, which actually devalues the rug in the eyes of collectors.</p>
+        </div>
+    </div>
+
+    <!-- Summary Table -->
+    <table class="summary-table">
+        <thead>
+            <tr>
+                <th>Feature</th>
+                <th>Hand-Knotted</th>
+                <th>Machine-Made</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Lifespan</strong></td>
+                <td>60 to 100+ Years</td>
+                <td>5 to 10 Years</td>
+            </tr>
+            <tr>
+                <td><strong>Value</strong></td>
+                <td>Appreciates (Investment)</td>
+                <td>Depreciates (Disposable)</td>
+            </tr>
+            <tr>
+                <td><strong>Dyes</strong></td>
+                <td>Natural/Vegetable (Usually)</td>
+                <td>Synthetic/Chemical</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="footer-note">
+        <p>Curated by Fatih Mehmet Canıtez — 50 Years of Weaving Heritage.</p>
+        <a href="../index.html" style="color:var(--primary); font-weight:bold;">← Back to Main Guide</a>
+    </div>
+</div>
+
+</body>
+</html>

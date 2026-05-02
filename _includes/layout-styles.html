@@ -1,0 +1,145 @@
+<style>
+    :root { --primary-red: #8b0000; --deep-navy: #1a2a6c; --cream-bg: #fdf5e6; --gold: #d4af37; }
+    * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+    body { background-color: var(--cream-bg); font-family: 'Georgia', serif; line-height: 1.8; color: #2c3e50; margin: 0; padding-left: 100px; padding-right: 100px; }
+    @media (max-width: 1200px) { body { padding-left: 80px; padding-right: 80px; } }
+    @media (max-width: 1000px) { body { padding: 0; } }
+
+    /* KİLİM BORDÜRLERİ */
+    .kilim-border {
+        position: fixed; top: 0; width: 140px; height: 100%;
+        background-color: #1a0a0a;
+        background-image: url('{{ site.baseurl }}/motif.jpg');
+        background-repeat: repeat-y;
+        background-size: 100% auto;
+        z-index: 1;
+        display: flex; flex-direction: column;
+    }
+    .left-border  { left: 0; border-right: 1px solid rgba(212,175,55,0.3); }
+    .right-border { right: 0; border-left: 1px solid rgba(212,175,55,0.3); }
+
+    .border-notes {
+        position: absolute; inset: 0; background: rgba(0,0,0,0.75);
+        display: flex; flex-direction: column; justify-content: space-around;
+        padding: 60px 0; z-index: 2;
+    }
+    .border-note { padding: 10px; text-align: center; border-bottom: 1px solid rgba(212,175,55,0.1); }
+    .border-note-icon { font-size: 20px; margin-bottom: 4px; }
+    .border-note-label { font-size: 8px; letter-spacing: 2px; text-transform: uppercase; color: var(--gold); display: block; }
+    .border-note-text { font-size: 10px; color: rgba(255,255,255,0.7); line-height: 1.4; }
+
+    /* HEADER - Çeviri menüsü için overflow: visible yapıldı */
+header { 
+    position: sticky; top: 0; z-index: 1000;
+    background: linear-gradient(to right, var(--deep-navy), #2a4858); 
+    padding: 0 20px; display: flex; justify-content: space-between; 
+    align-items: center; min-height: 60px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    overflow: visible !important; /* GİZLİ OLMAMALI */
+}
+
+.header-right { 
+    display: flex; 
+    align-items: center; 
+    gap: 12px; 
+    overflow: visible !important; /* GİZLİ OLMAMALI */
+}
+
+/* MOBİL İÇİN ÖZEL AYAR */
+@media (max-width: 768px) {
+    header {
+        padding: 10px !important;
+        overflow: visible !important;
+    }
+    .header-title {
+        font-size: 0.9rem !important;
+        max-width: 130px;
+    }
+}
+    /* Translate Widget Ayarları */
+    #google_translate_element { display: inline-block; }
+    .goog-te-gadget-simple { 
+        background: rgba(255,255,255,0.1) !important; 
+        border: 1px solid var(--gold) !important; 
+        border-radius: 20px !important; 
+        padding: 4px 10px !important; 
+    }
+    .goog-te-gadget-simple span { color: white !important; font-size: 12px !important; }
+
+    /* İÇERİK KUTUSU */
+    .page-wrap {
+        position: relative; z-index: 10;
+        max-width: 900px; margin: 30px auto;
+        background: white; border-radius: 15px;
+        box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+        border-top: 8px solid var(--primary-red);
+        padding: 40px;
+    }
+
+    /* MOBİL AYARLAR (768px ve altı için özel düzenleme) */
+    @media (max-width: 1200px) { 
+        .kilim-border { width: 80px; } 
+        .border-note-text { display: none; } 
+    }
+
+    @media (max-width: 1000px) { 
+        .kilim-border { display: none; } 
+        .page-wrap { margin: 15px; padding: 20px; } 
+    }
+
+    @media (max-width: 768px) {
+        header {
+            height: auto !important; /* Sabit 60px yüksekliği kaldırdık */
+            padding: 10px 15px !important;
+            flex-wrap: nowrap; /* Elemanların yan yana kalmasını zorla */
+        }
+        .header-title {
+            font-size: 0.9rem !important; /* Başlığı küçülttük */
+            max-width: 140px;
+        }
+        #google_translate_element {
+            transform: scale(0.85); /* Widget'ı biraz küçülttük */
+            margin-right: 5px;
+        }
+    }
+
+.kilim-border {
+    width: 100px !important; /* 140'tan 100'e düşürdük */
+}
+
+/* 📸 HERO ALBÜM BUTONU STİLİ */
+.btn-album {
+    display: inline-block;
+    background: #8b0000; /* Şık bir koyu kırmızı */
+    color: white !important;
+    padding: 12px 22px;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 14px;
+    min-height: 44px;
+    line-height: 1.2;
+    box-shadow: 0 4px 15px rgba(139,0,0,0.3);
+    transition: 0.3s ease;
+    text-align: center;
+}
+
+.btn-album:hover {
+    transform: translateY(-2px);
+    background: #a50000;
+    box-shadow: 0 6px 20px rgba(139,0,0,0.4);
+}
+
+/* Mobilde butonların düzgün dizilmesi için */
+@media (max-width: 500px) {
+    .hero-btns {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+    .btn-gold, .btn-album, .btn-outline {
+        width: 100%;
+        max-width: 250px;
+    }
+}
+</style>

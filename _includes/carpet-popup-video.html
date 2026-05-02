@@ -1,0 +1,191 @@
+<!-- ════════════════ VIDEO POPUP ════════════════ -->
+<!-- Dosya: _includes/carpet-popup-video.html -->
+
+<div id="videoPopup" style="display:none; position:fixed; z-index:10000; left:0; top:0; width:100%; height:100%; background:rgba(0,0,0,0.92); align-items:center; justify-content:center; backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px);">
+
+  <div style="position:relative; width:95%; max-width:520px; background:#0f0a06; border-radius:20px; overflow:hidden; box-shadow:0 30px 80px rgba(0,0,0,0.9); border:1px solid rgba(212,175,55,0.2); animation:popupAnim 0.4s ease-out;">
+
+    <!-- Kapat -->
+    <button onclick="closeVideo()" style="position:absolute; top:12px; right:12px; background:rgba(255,255,255,0.1); color:#fff; border:none; border-radius:50%; width:32px; height:32px; font-size:16px; cursor:pointer; z-index:20; display:flex; align-items:center; justify-content:center; line-height:1;">✕</button>
+
+    <!-- Başlık -->
+    <div style="padding:14px 20px 12px; border-bottom:1px solid rgba(255,255,255,0.07);">
+      <div style="font-size:9px; letter-spacing:3px; text-transform:uppercase; color:#d4af37; margin-bottom:3px;">Slow Motion Analysis</div>
+      <div style="font-size:14px; color:#f0ede8; font-family:Georgia,serif;">The Ghiordes (Turkish) Double Knot</div>
+    </div>
+
+    <!-- Video — büyük -->
+    <div style="position:relative; background:#000; cursor:pointer;" onclick="togglePlay()">
+      <video id="localVideo" width="100%" autoplay muted loop playsinline style="display:block; max-height:380px; object-fit:contain;">
+        <source src="{{ site.baseurl }}/images/ghiordes-knot.mp4" type="video/mp4">
+      </video>
+
+      <!-- Adım overlay — video üstünde -->
+      <div id="stepOverlay" style="position:absolute; bottom:0; left:0; right:0; background:linear-gradient(transparent, rgba(0,0,0,0.85)); padding:28px 16px 14px; pointer-events:none;">
+        <div id="overlayNum" style="font-size:9px; letter-spacing:3px; text-transform:uppercase; color:#d4af37; margin-bottom:4px;"></div>
+        <div id="overlayTitle" style="font-size:15px; font-weight:bold; color:#fff; margin-bottom:3px; font-family:Georgia,serif;"></div>
+        <div id="overlayDesc" style="font-size:11px; color:rgba(255,255,255,0.7); line-height:1.5;"></div>
+      </div>
+
+      <!-- Duraklat ikonu -->
+      <div id="playOverlay" style="display:none; position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); background:rgba(0,0,0,0.55); border-radius:50%; width:54px; height:54px; align-items:center; justify-content:center; color:white; font-size:22px; pointer-events:none;">▶</div>
+
+      <!-- Ses butonu -->
+      <button id="muteBtn" onclick="toggleMute(event)" style="position:absolute; top:12px; right:12px; background:rgba(0,0,0,0.55); border:none; color:white; border-radius:50%; width:32px; height:32px; cursor:pointer; z-index:12; font-size:13px; display:flex; align-items:center; justify-content:center;">🔇</button>
+
+      <!-- Duraklatıldı banner -->
+      <div id="pauseBanner" style="display:none; position:absolute; top:12px; left:12px; background:rgba(212,175,55,0.9); color:#1a0a0a; font-size:10px; letter-spacing:2px; text-transform:uppercase; padding:5px 12px; border-radius:20px; font-weight:bold;">Paused — 2s</div>
+    </div>
+
+    <!-- Adım göstergesi — küçük noktalar -->
+    <div style="display:flex; justify-content:center; gap:8px; padding:12px 16px 4px;">
+      <div class="step-dot" id="dot1"></div>
+      <div class="step-dot" id="dot2"></div>
+      <div class="step-dot" id="dot3"></div>
+      <div class="step-dot" id="dot4"></div>
+      <div class="step-dot" id="dot5"></div>
+    </div>
+
+    <!-- Adım isimleri — küçük yatay liste -->
+    <div style="display:flex; gap:0; padding:6px 12px 14px; overflow-x:auto;">
+      <div class="step-pill" id="pill1">01 · Place yarn</div>
+      <div class="step-pill" id="pill2">02 · Wrap left</div>
+      <div class="step-pill" id="pill3">03 · Wrap right</div>
+      <div class="step-pill" id="pill4">04 · Pull &amp; secure</div>
+      <div class="step-pill" id="pill5">05 · Single knot</div>
+    </div>
+
+    <!-- Referans -->
+    <div style="padding:0 16px 14px; font-size:10px; color:#444; text-align:center;">
+      Video: <a href="https://www.instagram.com/zarin.carpet_rug" target="_blank" style="color:#666; text-decoration:none;">@zarin.carpet_rug</a> — used for educational purposes.
+    </div>
+
+  </div>
+</div>
+
+<style>
+@keyframes popupAnim { from{transform:scale(0.93);opacity:0} to{transform:scale(1);opacity:1} }
+
+.step-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: rgba(255,255,255,0.15); transition: all 0.3s;
+  flex-shrink: 0;
+}
+.step-dot.active {
+  background: #d4af37; transform: scale(1.3);
+}
+
+.step-pill {
+  flex-shrink: 0; font-size: 10px; letter-spacing: 0.5px;
+  color: #555; padding: 5px 10px; border-radius: 20px;
+  border: 1px solid rgba(255,255,255,0.07);
+  margin-right: 6px; white-space: nowrap; transition: all 0.3s;
+}
+.step-pill.active {
+  color: #d4af37; border-color: rgba(212,175,55,0.4);
+  background: rgba(212,175,55,0.08);
+}
+</style>
+
+<script>
+var v = document.getElementById('localVideo');
+var mBtn = document.getElementById('muteBtn');
+var pOver = document.getElementById('playOverlay');
+var pauseBanner = document.getElementById('pauseBanner');
+var autoPauseTimer = null;
+var lastPausedStep = -1;
+var userPaused = false;
+
+var steps = [
+  { from: 0,    to: 2.5,  num: 'Step 01', title: 'Place the yarn',       desc: 'Fold a cut length of yarn over two adjacent warp threads.' },
+  { from: 2.5,  to: 5,    num: 'Step 02', title: 'Wrap left',            desc: 'Loop the left end around the left warp thread, pulling forward and down.' },
+  { from: 5,    to: 7.5,  num: 'Step 03', title: 'Wrap right',           desc: 'Loop the right end around the right warp thread — forming the Ω shape.' },
+  { from: 7.5,  to: 10,   num: 'Step 04', title: 'Pull & secure',        desc: 'Pull both ends down firmly. Double knot complete — 2 warp threads locked.' },
+  { from: 10,   to: 15,   num: 'Step 05', title: 'Single knot variation', desc: 'Same technique on one warp thread — used in finer, denser pile work.' }
+];
+
+window.addEventListener('load', function() {
+  setTimeout(function() {
+    document.getElementById('videoPopup').style.display = 'flex';
+    v.playbackRate = 0.5;
+    v.play();
+  }, 1500);
+});
+
+v.addEventListener('timeupdate', function() {
+  var t = v.currentTime;
+
+  // Aktif adımı bul
+  var activeIdx = -1;
+  for (var i = 0; i < steps.length; i++) {
+    if (t >= steps[i].from && t < steps[i].to) {
+      activeIdx = i;
+      break;
+    }
+  }
+
+  // Overlay güncelle
+  if (activeIdx >= 0) {
+    var s = steps[activeIdx];
+    document.getElementById('overlayNum').textContent   = s.num;
+    document.getElementById('overlayTitle').textContent = s.title;
+    document.getElementById('overlayDesc').textContent  = s.desc;
+
+    // Nokta ve pill güncelle
+    for (var j = 0; j < 5; j++) {
+      document.getElementById('dot' + (j+1)).classList.toggle('active', j === activeIdx);
+      document.getElementById('pill' + (j+1)).classList.toggle('active', j === activeIdx);
+    }
+
+    // Her yeni adımda 2 sn otomatik duraklat
+    if (activeIdx !== lastPausedStep && !userPaused) {
+      lastPausedStep = activeIdx;
+      if (activeIdx > 0) { // İlk adımda duraklatma
+        v.pause();
+        pauseBanner.style.display = 'block';
+        clearTimeout(autoPauseTimer);
+        autoPauseTimer = setTimeout(function() {
+          if (!userPaused) {
+            v.play();
+            pauseBanner.style.display = 'none';
+          }
+        }, 2000);
+      }
+    }
+  }
+});
+
+function togglePlay() {
+  if (v.paused) {
+    userPaused = false;
+    v.play();
+    pOver.style.display = 'none';
+    pauseBanner.style.display = 'none';
+    clearTimeout(autoPauseTimer);
+  } else {
+    userPaused = true;
+    v.pause();
+    pOver.style.display = 'flex';
+    pauseBanner.style.display = 'none';
+    clearTimeout(autoPauseTimer);
+  }
+}
+
+function toggleMute(e) {
+  e.stopPropagation();
+  v.muted = !v.muted;
+  mBtn.innerHTML = v.muted ? '🔇' : '🔊';
+}
+
+function closeVideo() {
+  document.getElementById('videoPopup').style.display = 'none';
+  v.pause();
+  clearTimeout(autoPauseTimer);
+  userPaused = false;
+  lastPausedStep = -1;
+}
+
+document.getElementById('videoPopup').onclick = function(e) {
+  if (e.target === this) closeVideo();
+};
+</script>

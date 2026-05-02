@@ -1,0 +1,142 @@
+<!-- NAV DRAWER OVERLAY -->
+<div id="nav-overlay" onclick="toggleNavDrawer()" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.7); backdrop-filter:blur(4px); z-index:99000;"></div>
+
+<!-- NAV DRAWER -->
+<div id="nav-drawer" style="position:fixed; top:0; right:-320px; width:300px; height:100%; background:#0f0a06; z-index:99001; overflow-y:auto; transition:right 0.4s cubic-bezier(0.4, 0, 0.2, 1); box-shadow:-10px 0 50px rgba(0,0,0,0.8); font-family:'Georgia', serif; border-left: 1px solid rgba(212,175,55,0.2);">
+    
+    <!-- Menü Üst Başlık -->
+    <div style="padding:25px 20px; border-bottom:1px solid rgba(255,255,255,0.05); display:flex; justify-content:space-between; align-items:center; position:sticky; top:0; background:#16100b; z-index:2;">
+        <div>
+            <div style="font-size:9px; letter-spacing:4px; text-transform:uppercase; color:#d4af37; margin-bottom:4px;">Curator's</div>
+            <div style="font-size:16px; color:#fff; font-weight:bold; letter-spacing:1px;">NAVIGATION</div>
+        </div>
+        <button onclick="toggleNavDrawer()" style="background:rgba(212,175,55,0.1); border:1px solid rgba(212,175,55,0.3); color:#d4af37; width:32px; height:32px; border-radius:50%; cursor:pointer; font-size:14px; display:flex; align-items:center; justify-content:center; transition:0.3s;">✕</button>
+    </div>
+
+    <!-- Menü İçeriği -->
+    <div style="padding:10px 0 40px;">
+        
+        <!-- ANA SAYFA & PROFİL -->
+        <a href="{{ site.baseurl }}/" class="nav-item active-nav">
+            <span class="nav-icon">🏠</span>
+            <div class="nav-text">
+                <span class="nav-title">Dashboard</span>
+                <span class="nav-sub">Global Carpet Guide Home</span>
+            </div>
+        </a>
+        <a href="{{ site.baseurl }}/me" class="nav-item">
+            <span class="nav-icon">👤</span>
+            <div class="nav-text">
+                <span class="nav-title">Curator Profile</span>
+                <span class="nav-sub">Fatih Mehmet Canıtez & French Lessons</span>
+            </div>
+        </a>
+
+        <!-- KATEGORİ: ACADEMIC KNOWLEDGE -->
+        <div class="nav-category">Academic Knowledge</div>
+        <a href="{{ site.baseurl }}/en/hereke" class="nav-item">
+            <span class="nav-icon">🏰</span>
+            <div class="nav-text"><span class="nav-title">Imperial Hereke</span><span class="nav-sub">Ottoman Palace Silk Carpets</span></div>
+        </a>
+        <a href="{{ site.baseurl }}/history-carpet" class="nav-item">
+            <span class="nav-icon">🏛️</span>
+            <div class="nav-text"><span class="nav-title">Carpet History</span><span class="nav-sub">From Pazyryk to Modern Looms</span></div>
+        </a>
+        <a href="{{ site.baseurl }}/materials" class="nav-item">
+            <span class="nav-icon">🧵</span>
+            <div class="nav-text"><span class="nav-title">Materials & Dyes</span><span class="nav-sub">Wool, Silk & Natural Pigments</span></div>
+        </a>
+        <a href="{{ site.baseurl }}/en/handknotted" class="nav-item">
+            <span class="nav-icon">🌍</span>
+            <div class="nav-text"><span class="nav-title">Carpet World</span><span class="nav-sub">Persia, Anatolia & Central Asia</span></div>
+        </a>
+
+        <!-- KATEGORİ: WEAVING & KILIM -->
+        <div class="nav-category">Weaving & Kilim</div>
+        <a href="{{ site.baseurl }}/en/kilim" class="nav-item">
+            <span class="nav-icon">📐</span>
+            <div class="nav-text"><span class="nav-title">Kilim Guide</span><span class="nav-sub">Symbols & Flat-weave Regions</span></div>
+        </a>
+        <a href="{{ site.baseurl }}/flat-viewing" class="nav-item">
+            <span class="nav-icon">🔍</span>
+            <div class="nav-text"><span class="nav-title">Interactive Techniques</span><span class="nav-sub">Double Knot & Weft Analysis</span></div>
+        </a>
+        <a href="{{ site.baseurl }}/en/sumak" class="nav-item"><span class="nav-icon">🌀</span><div class="nav-text"><span class="nav-title">Sumak Style</span></div></a>
+
+        <!-- KATEGORİ: TOOLS & MAPS -->
+        <div class="nav-category">Interactive Tools</div>
+        <a href="{{ site.baseurl }}/carpet-map" class="nav-item">
+            <span class="nav-icon">🗺️</span>
+            <div class="nav-text"><span class="nav-title">Regional Map</span><span class="nav-sub">20 Weaving Centers of Turkey</span></div>
+        </a>
+        <a href="{{ site.baseurl }}/carpet-sizes" class="nav-item">
+            <span class="nav-icon">📏</span>
+            <div class="nav-text"><span class="nav-title">Size & Room Guide</span><span class="nav-sub">Standard Sizes & Layouts</span></div>
+        </a>
+        <a href="{{ site.baseurl }}/cleaning" class="nav-item">
+            <span class="nav-icon">🧹</span>
+            <div class="nav-text"><span class="nav-title">Care & Maintenance</span><span class="nav-sub">Protecting Your Investment</span></div>
+        </a>
+
+        <!-- KATEGORİ: CAPPADOCIA -->
+        <div class="nav-category">Cappadocia Insider</div>
+        <a href="{{ site.baseurl }}/Cappodoce" class="nav-item">
+            <span class="nav-icon">🌄</span>
+            <div class="nav-text"><span class="nav-title">Cappadocia Guide</span><span class="nav-sub">50 Years of Local Secrets</span></div>
+        </a>
+        <a href="{{ site.baseurl }}/gallery" class="nav-item">
+            <span class="nav-icon">📸</span>
+            <div class="nav-text"><span class="nav-title">Photo Gallery</span><span class="nav-sub">Personal Collection & Landscapes</span></div>
+        </a>
+
+    </div>
+</div>
+
+<style>
+    /* Menü Eleman Stilleri */
+    .nav-item {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        padding: 12px 20px;
+        text-decoration: none;
+        transition: all 0.3s;
+        border-bottom: 1px solid rgba(255,255,255,0.03);
+    }
+    .nav-item:hover {
+        background: rgba(212,175,55,0.08);
+    }
+    .active-nav {
+        background: rgba(139,0,0,0.2);
+        border-left: 3px solid #d4af37;
+    }
+    .nav-icon {
+        font-size: 18px;
+        width: 24px;
+        text-align: center;
+        filter: grayscale(0.5);
+    }
+    .nav-text {
+        display: flex;
+        flex-direction: column;
+    }
+    .nav-title {
+        font-size: 14px;
+        color: #e0ddd8;
+        font-weight: 500;
+    }
+    .nav-sub {
+        font-size: 10px;
+        color: #666;
+        margin-top: 2px;
+    }
+    .nav-category {
+        padding: 25px 20px 10px;
+        font-size: 10px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #d4af37;
+        font-weight: bold;
+        opacity: 0.6;
+    }
+</style>

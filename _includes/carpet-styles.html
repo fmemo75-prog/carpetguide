@@ -1,0 +1,85 @@
+<style>
+/* ── TÜM BÖLÜMLERİ ORTALAMA ── */
+.hero, .search-wrap, .card-grid, .loom-layout-container, .care-cards, .site-footer, .sec-label, .weaving-box, .featured-wrap {
+    max-width: 940px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 90% !important;
+    text-align: center; /* Başlıkları ortalar */
+}
+
+/* ── CARE CARDS (BAKIM KARTLARI) DÜZELTME ── */
+.care-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px 0;
+}
+
+.care-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    text-decoration: none;
+    transition: 0.3s;
+    text-align: left; /* Kart içindeki yazılar sola yaslı kalsın */
+    border: 1px solid rgba(0,0,0,0.05);
+}
+
+.care-card:hover {
+    transform: scale(1.02);
+}
+
+.care-card-icon { font-size: 30px; }
+.care-card-title { font-weight: bold; font-size: 16px; margin-bottom: 4px; }
+.care-card-desc { font-size: 13px; color: #666; line-height: 1.4; }
+
+/* ── FOOTER ORTALAMA ── */
+.site-footer {
+    padding: 40px 0;
+    border-top: 1px solid #eee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+/* ── HERO ALANI DÜZELTME ── */
+.hero-inner {
+    display: flex; /* Resim ve yazıyı yan yana getirir */
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap; /* Mobilde alt alta geçmesini sağlar */
+    text-align: left; /* Yazıları sola yaslar (resmin yanında düzgün durması için) */
+}
+
+.hero-avatar {
+    width: 150px !important; /* Resim boyutunu buradan ayarlayabilirsiniz */
+    height: 150px !important;
+    border-radius: 50% !important; /* Tam yuvarlak yapar */
+    object-fit: cover !important; /* Resmin ezilmesini önler */
+    flex-shrink: 0 !important; /* Resmin sıkışmasını engeller */
+    border: 4px solid #d4af37;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.5);
+}
+
+.hero-text {
+    flex: 1;
+    min-width: 280px; /* Yazı alanının çok daralmasını önler */
+}
+
+/* Mobilde (Telefonlarda) her şeyi ortala */
+@media (max-width: 600px) {
+    .hero-inner {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-avatar {
+        width: 120px !important;
+        height: 120px !important;
+    }
+}
+</style>
