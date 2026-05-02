@@ -1,71 +1,48 @@
 <style>
-html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
-body { font-family: Georgia, 'Times New Roman', serif; background: #faf8f5; color: #2c2c2c; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
-a { text-decoration: none; }
-img { max-width: 100%; height: auto; display: block; }
+/* ── TÜM BÖLÜMLERİ ORTALAMA ── */
+.hero, .search-wrap, .card-grid, .loom-layout-container, .care-cards, .site-footer, .sec-label, .weaving-box, .featured-wrap {
+    max-width: 940px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 90% !important;
+    text-align: center; /* Başlıkları ortalar */
+}
 
-/* ── HERO ── */
-.hero { width: 100%; background: #6b2c2c; border-radius: 0 0 24px 24px; padding: 44px 20px 40px; position: relative; }
-.hero-inner { max-width: 860px; margin: 0 auto; display: flex; align-items: center; gap: 24px; flex-wrap: wrap; }
-.hero-avatar { width: 80px; height: 80px; border-radius: 50%; border: 3px solid #d4af37; object-fit: cover; box-shadow: 0 4px 16px rgba(0,0,0,0.5); }
-.hero-text h1 { font-size: 22px; color: #fff; line-height: 1.25; margin-bottom: 8px; }
-.hero-text h1 span { color: #d4af37; display: block; font-size: 17px; }
-.hero-text p { color: rgba(255,255,255,0.72); font-size: 14px; line-height: 1.6; margin-bottom: 20px; }
-.hero-btns { display: flex; gap: 10px; }
-.btn-gold { background: #d4af37; color: #1a0a0a !important; padding: 12px 22px; border-radius: 50px; font-weight: bold; font-size: 14px; }
-.btn-outline { border: 1.5px solid rgba(255,255,255,0.5); color: white !important; padding: 11px 22px; border-radius: 50px; font-weight: bold; font-size: 14px; }
-
-/* ── LOOM & CARDS MERKEZİ YERLEŞİM (YENİ) ── */
-.loom-layout-container {
-    max-width: 1000px;
-    margin: 10px auto 40px; /* Hero'ya yaklaştırdık */
-    padding: 0 16px;
+/* ── CARE CARDS (BAKIM KARTLARI) DÜZELTME ── */
+.care-cards {
     display: flex;
-    align-items: flex-start; /* Kartları yukarı hizalar */
-    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px 0;
+}
+
+.care-card {
+    display: flex;
+    align-items: center;
     gap: 20px;
-}
-.loom-side-column { flex: 1; display: flex; flex-direction: column; gap: 15px; margin-top: 5px; }
-.loom-center-column { flex: 1.4; text-align: center; }
-.loom-img-fixed { width: 100%; max-width: 400px; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
-.mini-card { padding: 12px 15px !important; min-height: 95px; margin: 0 !important; background: #fff; border-radius: 12px; border: 1px solid #eee; }
-
-/* ── KÜÇÜLTÜLMÜŞ KUTU (MINI VERSION) ── */
-.comparison-promo-box.mini-version {
-    max-width: 750px;
-    margin: 30px auto;
-    padding: 25px;
-    background: #fff;
-    border: 1px solid #eee;
-    text-align: center;
+    padding: 20px;
     border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-}
-.comparison-promo-box.mini-version h3 { font-size: 1.3rem; margin-bottom: 8px; color: #333; }
-.comparison-promo-box.mini-version p { font-size: 14px; color: #666; margin-bottom: 15px; }
-.btn-comparison { background: #8b0000; color: white !important; padding: 10px 25px; border-radius: 50px; font-weight: bold; font-size: 12px; display: inline-block; }
-
-/* ── DİĞER STİLLER ── */
-.gallery-btn-wrap { text-align: center; margin: 30px 0; }
-.gallery-btn { background: #8b0000; color: white !important; padding: 15px 30px; border-radius: 50px; font-weight: bold; }
-.sec-label { text-align: center; padding: 30px 16px 15px; }
-.sec-label-bar { width: 50px; height: 3px; background: #8b0000; margin: 0 auto 10px; }
-.card-grid { max-width: 960px; margin: 0 auto; padding: 0 16px; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; }
-.card { background: #fff; border-radius: 14px; padding: 18px; border: 1px solid #ede8df; }
-
-/* 📱 MOBİL AYARI */
-@media (max-width: 850px) {
-    .loom-layout-container { flex-direction: column; align-items: center; }
-    .loom-center-column { order: -1; width: 100%; }
-    .loom-side-column { width: 100%; display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
-}
-@media (max-width: 500px) {
-    .loom-side-column { grid-template-columns: 1fr; }
-    .hero-inner { flex-direction: column; text-align: center; }
+    text-decoration: none;
+    transition: 0.3s;
+    text-align: left; /* Kart içindeki yazılar sola yaslı kalsın */
+    border: 1px solid rgba(0,0,0,0.05);
 }
 
-/* Yanlardaki Dikey Motifler */
-.side-motif { position: fixed; top: 0; width: 80px; height: 100%; z-index: -1; background-image: url('./motif.jpg'); background-repeat: repeat-y; background-size: contain; opacity: 0.6; }
-.left-motif { left: 0; } .right-motif { right: 0; }
-@media (max-width: 1100px) { .side-motif { display: none; } }
+.care-card:hover {
+    transform: scale(1.02);
+}
+
+.care-card-icon { font-size: 30px; }
+.care-card-title { font-weight: bold; font-size: 16px; margin-bottom: 4px; }
+.care-card-desc { font-size: 13px; color: #666; line-height: 1.4; }
+
+/* ── FOOTER ORTALAMA ── */
+.site-footer {
+    padding: 40px 0;
+    border-top: 1px solid #eee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
 </style>
