@@ -1,7 +1,9 @@
 <style>
     :root { --primary-red: #8b0000; --deep-navy: #1a2a6c; --cream-bg: #fdf5e6; --gold: #d4af37; }
     * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
-    body { background-color: var(--cream-bg); font-family: 'Georgia', serif; line-height: 1.8; color: #2c3e50; margin: 0; padding: 0; }
+    body { background-color: var(--cream-bg); font-family: 'Georgia', serif; line-height: 1.8; color: #2c3e50; margin: 0; padding-left: 100px; padding-right: 100px; }
+    @media (max-width: 1200px) { body { padding-left: 80px; padding-right: 80px; } }
+    @media (max-width: 1000px) { body { padding: 0; } }
 
     /* KİLİM BORDÜRLERİ */
     .kilim-border {
@@ -100,4 +102,44 @@ header {
             margin-right: 5px;
         }
     }
+
+.kilim-border {
+    width: 100px !important; /* 140'tan 100'e düşürdük */
+}
+
+/* 📸 HERO ALBÜM BUTONU STİLİ */
+.btn-album {
+    display: inline-block;
+    background: #8b0000; /* Şık bir koyu kırmızı */
+    color: white !important;
+    padding: 12px 22px;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 14px;
+    min-height: 44px;
+    line-height: 1.2;
+    box-shadow: 0 4px 15px rgba(139,0,0,0.3);
+    transition: 0.3s ease;
+    text-align: center;
+}
+
+.btn-album:hover {
+    transform: translateY(-2px);
+    background: #a50000;
+    box-shadow: 0 6px 20px rgba(139,0,0,0.4);
+}
+
+/* Mobilde butonların düzgün dizilmesi için */
+@media (max-width: 500px) {
+    .hero-btns {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+    .btn-gold, .btn-album, .btn-outline {
+        width: 100%;
+        max-width: 250px;
+    }
+}
 </style>
