@@ -2,12 +2,19 @@
 layout: default
 title: Cappadocia Complete Guide — Fatih Mehmet Canıtez
 ---
-
 ### 🚀 [CLICK HERE: Where to Go & What to See in Cappadocia](./en/cappadocia-guide)
+
 ---
+
 <p align="center"><i>"Explore the timeless beauty of the valleys."</i></p>
+
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
 
 <style>
 /* ── GENEL ─────────────────────────────────────────────────────────── */
@@ -102,112 +109,102 @@ hr.divider { border: none; border-top: 1px solid #e8d5c0; margin: 40px 0; }
 .footer-cta a { color: #d4af37; font-weight: bold; text-decoration: none; }
 </style>
 
+&nbsp;
 
-<!-- ══════════════════════════════════════════════════════════════════ -->
-<!--  BAŞLIK                                                            -->
-<!-- ══════════════════════════════════════════════════════════════════ -->
 <div style="text-align:center; padding: 10px 0 4px;">
     <h1 style="color:#8b0000; margin-bottom:4px;">🏺 Cappadocia Complete Guide</h1>
     <p style="color:#888; font-size:14px; margin:0;"><i>Insider Tips · VIP Contacts · Interactive Map · 7 Languages</i></p>
 </div>
 
-
-<!-- ══════════════════════════════════════════════════════════════════ -->
-<!--  DİL SEÇİCİ                                                        -->
-<!-- ══════════════════════════════════════════════════════════════════ -->
 <div class="lang-box">
-    <button id="en-btn" class="lang-btn active" onclick="setLang('en')">🇺🇸 English</button>
-    <button id="fr-btn" class="lang-btn" onclick="setLang('fr')">🇫🇷 Français</button>
-    <button id="es-btn" class="lang-btn" onclick="setLang('es')">🇪🇸 Español</button>
-    <button id="it-btn" class="lang-btn" onclick="setLang('it')">🇮🇹 Italiano</button>
-    <button id="ru-btn" class="lang-btn" onclick="setLang('ru')">🇷🇺 Русский</button>
-    <button id="zh-btn" class="lang-btn" onclick="setLang('zh')">🇨🇳 中文</button>
-    <button id="ja-btn" class="lang-btn" onclick="setLang('ja')">🇯🇵 日本語</button>
+    <button id="en-btn" class="lang-btn active" onclick="setLang('en')">🇺🇸 English</button><p></p>
+    <button id="fr-btn" class="lang-btn" onclick="setLang('fr')">🇫🇷 Français</button><p></p>
+    <button id="es-btn" class="lang-btn" onclick="setLang('es')">🇪🇸 Español</button><p></p>
+    <button id="it-btn" class="lang-btn" onclick="setLang('it')">🇮🇹 Italiano</button><p></p>
+    <button id="ru-btn" class="lang-btn" onclick="setLang('ru')">🇷🇺 Русский</button><p></p>
+    <button id="zh-btn" class="lang-btn" onclick="setLang('zh')">🇨🇳 中文</button><p></p>
+    <button id="ja-btn" class="lang-btn" onclick="setLang('ja')">🇯🇵 日本語</button><p></p>
 </div>
 
+&nbsp;
 
-<!-- ══════════════════════════════════════════════════════════════════ -->
-<!--  BÖLÜM 1 — HARİTA + VIP TABLO                                      -->
-<!-- ══════════════════════════════════════════════════════════════════ -->
-<h2 class="section-title">🗺️ Interactive Map & Trusted Contacts</h2>
+<h2 class="section-title">🗺️ Interactive Map &amp; Trusted Contacts</h2>
 
 <div style="display:flex; gap:18px; align-items:flex-start; flex-wrap:wrap;">
-
-    <!-- Harita -->
-    <div style="flex:1 1 58%; min-width:280px;">
-        <div id="map-wrapper">
-            <div id="map"></div>
-            <div id="scroll-hint">👆 Scroll up to read more</div>
-            <div id="info-card">
-                <button id="close-btn" onclick="closePanel()">✕</button>
-                <h3 id="place-name"></h3>
-                <div class="info-section">
-                    <span class="info-label" id="label-worth"></span>
-                    <p id="worth-text" style="font-weight:bold; margin:4px 0; font-size:13px;"></p>
-                </div>
-                <div class="info-section">
-                    <span class="info-label" id="label-see"></span>
-                    <p id="see-text" style="margin:4px 0; font-size:13px;"></p>
-                </div>
-                <div id="contact-section" class="info-section" style="display:none; background:#f0fff4; padding:9px; border-radius:8px;">
-                    <span class="info-label">📱 Direct Contact</span>
-                    <p id="contact-name" style="margin:4px 0; font-weight:bold; font-size:12px;"></p>
-                    <a id="wa-link" href="#" target="_blank" class="whatsapp-btn">💬 WhatsApp</a>
-                    <a id="ig-link" href="#" target="_blank" style="display:none; margin-left:6px; background:#E1306C; color:white; padding:6px 13px; border-radius:50px; text-decoration:none; font-weight:bold; font-size:12px;">📸 Instagram</a>
-                    <a id="maps-link" href="#" target="_blank" style="display:none; margin-left:6px; background:#4285F4; color:white; padding:6px 13px; border-radius:50px; text-decoration:none; font-weight:bold; font-size:12px;">📍 Maps</a>
-                </div>
-                <div class="info-section" style="border-bottom:none;">
-                    <span class="info-label" id="label-secret"></span>
-                    <p id="do-text" style="margin:4px 0; font-style:italic; font-size:13px;"></p>
-                </div>
-            </div>
-        </div>
-        <p style="font-size:12px; color:#999; margin:6px 0 0; text-align:center;">📍 Click any marker for details, contacts & directions</p>
-    </div>
-
-    <!-- VIP Tablo -->
-    <div style="flex:1 1 34%; min-width:240px;">
-        <div class="vip-card">
-            <div class="vip-header">
-                <p style="font-size:15px; font-weight:bold; letter-spacing:0.4px;">⭐ Trusted VIP Contacts</p>
-                <p style="font-size:11px; color:#ffcccc; margin-top:3px;">Personally recommended · 50 years of friendship</p>
-            </div>
-            <div class="vip-person">
-                <p class="vip-name">Bülent Güler</p>
-                <p class="vip-loc">🏺 Kervan Carpet — Göreme</p>
-                <p class="vip-spec">Hand-knotted carpets & fine textiles</p>
-                <div class="btn-row">
-                    <a href="https://wa.me/905367602165" target="_blank" class="btn-sm" style="background:#25D366;">💬 WhatsApp</a>
-                    <a href="https://share.google/4EOqQF0v25v89O0XW" target="_blank" class="btn-sm" style="background:#4285F4;">📍 Maps</a>
-                </div>
-            </div>
-            <div class="vip-person">
-                <p class="vip-name">Headmaster Hüseyin ÖZER</p>
-                <p class="vip-loc">🖼️ Punto Antique Carpets — Ortahisar</p>
-                <p class="vip-spec">Rare antique & collectible textiles</p>
-                <div class="btn-row">
-                    <a href="https://wa.me/905324970321" target="_blank" class="btn-sm" style="background:#25D366;">💬 WhatsApp</a>
-                    <a href="https://www.instagram.com/puntoofcappadocia/" target="_blank" class="btn-sm" style="background:#E1306C;">📸 Instagram</a>
-                </div>
-            </div>
-            <div class="vip-person">
-                <p class="vip-name">Halil KÖKSAL</p>
-                <p class="vip-loc">🗺️ VIP Cultural Guide — Göreme</p>
-                <p class="vip-spec">French & Spanish specialist · Deep historian</p>
-                <div class="btn-row">
-                    <a href="https://wa.me/905322478674" target="_blank" class="btn-sm" style="background:#25D366;">💬 WhatsApp</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
+<p><!-- Harita -->
+</p><div style="flex:1 1 58%; min-width:280px;">
+<div id="map-wrapper">
+<div id="map"></div>
+<div id="scroll-hint">👆 Scroll up to read more</div>
+<div id="info-card">
+<button id="close-btn" onclick="closePanel()">✕</button><p></p>
+<h3 id="place-name"></h3>
+<div class="info-section">
+<span class="info-label" id="label-worth"></span>
+<p id="worth-text" style="font-weight:bold; margin:4px 0; font-size:13px;"></p>
+</div>
+<div class="info-section">
+<span class="info-label" id="label-see"></span>
+<p id="see-text" style="margin:4px 0; font-size:13px;"></p>
+</div>
+<div id="contact-section" class="info-section" style="display:none; background:#f0fff4; padding:9px; border-radius:8px;">
+<span class="info-label">📱 Direct Contact</span>
+<p id="contact-name" style="margin:4px 0; font-weight:bold; font-size:12px;"></p>
+<a id="wa-link" href="#" target="_blank" class="whatsapp-btn">💬 WhatsApp</a>
+<a id="ig-link" href="#" target="_blank" style="display:none; margin-left:6px; background:#E1306C; color:white; padding:6px 13px; border-radius:50px; text-decoration:none; font-weight:bold; font-size:12px;">📸 Instagram</a>
+<a id="maps-link" href="#" target="_blank" style="display:none; margin-left:6px; background:#4285F4; color:white; padding:6px 13px; border-radius:50px; text-decoration:none; font-weight:bold; font-size:12px;">📍 Maps</a>
+</div>
+<div class="info-section" style="border-bottom:none;">
+<span class="info-label" id="label-secret"></span>
+<p id="do-text" style="margin:4px 0; font-style:italic; font-size:13px;"></p>
+</div>
+</div>
+</div>
+<p style="font-size:12px; color:#999; margin:6px 0 0; text-align:center;">📍 Click any marker for details, contacts &amp; directions</p>
+</div><p></p>
+<p><!-- VIP Tablo -->
+</p><div style="flex:1 1 34%; min-width:240px;">
+<div class="vip-card">
+<div class="vip-header">
+<p style="font-size:15px; font-weight:bold; letter-spacing:0.4px;">⭐ Trusted VIP Contacts</p>
+<p style="font-size:11px; color:#ffcccc; margin-top:3px;">Personally recommended · 50 years of friendship</p>
+</div>
+<div class="vip-person">
+<p class="vip-name">Bülent Güler</p>
+<p class="vip-loc">🏺 Kervan Carpet — Göreme</p>
+<p class="vip-spec">Hand-knotted carpets &amp; fine textiles</p>
+<div class="btn-row">
+<a href="https://wa.me/905367602165" target="_blank" class="btn-sm" style="background:#25D366;">💬 WhatsApp</a>
+<a href="https://share.google/4EOqQF0v25v89O0XW" target="_blank" class="btn-sm" style="background:#4285F4;">📍 Maps</a>
+</div>
+</div>
+<div class="vip-person">
+<p class="vip-name">Headmaster Hüseyin ÖZER</p>
+<p class="vip-loc">🖼️ Punto Antique Carpets — Ortahisar</p>
+<p class="vip-spec">Rare antique &amp; collectible textiles</p>
+<div class="btn-row">
+<a href="https://wa.me/905324970321" target="_blank" class="btn-sm" style="background:#25D366;">💬 WhatsApp</a>
+<a href="https://www.instagram.com/puntoofcappadocia/" target="_blank" class="btn-sm" style="background:#E1306C;">📸 Instagram</a>
+</div>
+</div>
+<div class="vip-person">
+<p class="vip-name">Halil KÖKSAL</p>
+<p class="vip-loc">🗺️ VIP Cultural Guide — Göreme</p>
+<p class="vip-spec">French &amp; Spanish specialist · Deep historian</p>
+<div class="btn-row">
+<a href="https://wa.me/905322478674" target="_blank" class="btn-sm" style="background:#25D366;">💬 WhatsApp</a>
+</div>
+</div>
+</div>
+</div><p></p>
 </div>
 
+&nbsp;
 
-<!-- ══════════════════════════════════════════════════════════════════ -->
-<!--  BÖLÜM 2 — KİŞİSEL MEKTUP                                         -->
-<!-- ══════════════════════════════════════════════════════════════════ -->
-<hr class="divider">
+---
+
+&nbsp;
+
 <h2 class="section-title">✍️ A Letter from Your Local Guide</h2>
 
 <div class="personal-note">
@@ -230,34 +227,32 @@ hr.divider { border: none; border-top: 1px solid #e8d5c0; margin: 40px 0; }
     </div>
 </div>
 
+&nbsp;
 
-<!-- ══════════════════════════════════════════════════════════════════ -->
-<!--  BÖLÜM 3 — BALON BİBLİYASI                                        -->
-<!-- ══════════════════════════════════════════════════════════════════ -->
-<hr class="divider">
+---
+
+&nbsp;
+
 <h2 class="section-title">🎈 The Hot Air Balloon — Everything You Need to Know</h2>
 
 <div class="info-box">
     <p>The number one question every visitor asks. Here is the honest, complete answer.</p>
-
-    <p><strong>Why do prices change daily?</strong><br>
-    Think of it like a stock market. Prices depend on seasonality (May–October is peak) and the "backlog effect" — if flights are cancelled for 3 days in a row due to wind, prices on the 4th day spike sharply because hundreds of people are waiting. Book early and stay flexible with your dates.</p>
-
-    <p><strong>The Flag System — 🟢 Green / 🟡 Yellow / 🔴 Red</strong><br>
-    Each morning, the <strong>SHGM (Turkish Civil Aviation Authority)</strong> makes the final safety call.
-    🟢 Green means we fly. 🟡 Yellow means delay or standby. 🔴 Red means cancelled for everyone — no exceptions, regardless of price, agency, or luck. This is a safety rule. Respect it.</p>
-
-    <p><strong>What about refunds?</strong><br>
-    If the SHGM cancels the flight, you receive a <strong>100% full refund</strong>. No fees. Every legitimate company in Cappadocia follows this rule without question.</p>
-
-    <p style="margin-bottom:0;"><strong>💡 Free alternative:</strong> Drive to the <em>Göreme Panorama Viewpoint</em> at sunrise. Watching 80+ colourful balloons rise over the valleys with a cup of tea in hand is a memory for a lifetime — and it costs nothing.</p>
+<p></p><p><strong>Why do prices change daily?</strong><br />
+Think of it like a stock market. Prices depend on seasonality (May–October is peak) and the "backlog effect" — if flights are cancelled for 3 days in a row due to wind, prices on the 4th day spike sharply because hundreds of people are waiting. Book early and stay flexible with your dates.</p><p></p>
+<p></p><p><strong>The Flag System — 🟢 Green / 🟡 Yellow / 🔴 Red</strong><br />
+Each morning, the <strong>SHGM (Turkish Civil Aviation Authority)</strong> makes the final safety call.
+🟢 Green means we fly. 🟡 Yellow means delay or standby. 🔴 Red means cancelled for everyone — no exceptions, regardless of price, agency, or luck. This is a safety rule. Respect it.</p><p></p>
+<p></p><p><strong>What about refunds?</strong><br />
+If the SHGM cancels the flight, you receive a <strong>100% full refund</strong>. No fees. Every legitimate company in Cappadocia follows this rule without question.</p><p></p>
+<p></p><p style="margin-bottom:0;"><strong>💡 Free alternative:</strong> Drive to the <em>Göreme Panorama Viewpoint</em> at sunrise. Watching 80+ colourful balloons rise over the valleys with a cup of tea in hand is a memory for a lifetime — and it costs nothing.</p><p></p>
 </div>
 
+&nbsp;
 
-<!-- ══════════════════════════════════════════════════════════════════ -->
-<!--  BÖLÜM 4 — KASABALAR                                              -->
-<!-- ══════════════════════════════════════════════════════════════════ -->
-<hr class="divider">
+---
+
+&nbsp;
+
 <h2 class="section-title">🏘️ Towns You Must Visit</h2>
 
 <div style="display:flex; flex-wrap:wrap; gap:16px;">
@@ -279,12 +274,13 @@ hr.divider { border: none; border-top: 1px solid #e8d5c0; margin: 40px 0; }
     </div>
 </div>
 
+&nbsp;
 
-<!-- ══════════════════════════════════════════════════════════════════ -->
-<!--  BÖLÜM 5 — MÜZELER & VADİLER                                      -->
-<!-- ══════════════════════════════════════════════════════════════════ -->
-<hr class="divider">
-<h2 class="section-title">🏛️ Museums & Hidden Valleys</h2>
+---
+
+&nbsp;
+
+<h2 class="section-title">🏛️ Museums &amp; Hidden Valleys</h2>
 
 <div style="display:flex; flex-wrap:wrap; gap:16px;">
     <div class="museum-card">
@@ -305,12 +301,13 @@ hr.divider { border: none; border-top: 1px solid #e8d5c0; margin: 40px 0; }
     </div>
 </div>
 
+&nbsp;
 
-<!-- ══════════════════════════════════════════════════════════════════ -->
-<!--  BÖLÜM 6 — MACERA                                                 -->
-<!-- ══════════════════════════════════════════════════════════════════ -->
-<hr class="divider">
-<h2 class="section-title">🐎 Adventure & Outdoor Activities</h2>
+---
+
+&nbsp;
+
+<h2 class="section-title">🐎 Adventure &amp; Outdoor Activities</h2>
 
 <div style="display:flex; flex-wrap:wrap; gap:16px;">
     <div class="adventure-cell">
@@ -327,15 +324,14 @@ hr.divider { border: none; border-top: 1px solid #e8d5c0; margin: 40px 0; }
     </div>
 </div>
 
+&nbsp;
 
-<!-- ══════════════════════════════════════════════════════════════════ -->
-<!--  FOOTER                                                            -->
-<!-- ══════════════════════════════════════════════════════════════════ -->
-<hr class="divider">
+---
+
 <div class="footer-cta">
     <h3>Need more local advice?</h3>
     <p>As a local teacher active in Göreme for 50 years, I am here to help you understand the true culture behind the fairy chimneys — beyond the tourist trail.</p>
-    <a href="./me">Learn more about me & my French courses →</a>
+    <a href="./me">Learn more about me &amp; my French courses →</a>
 </div>
 
 <p style="text-align:center; margin-top:24px; font-size:13px; color:#888;">
@@ -344,10 +340,8 @@ hr.divider { border: none; border-top: 1px solid #e8d5c0; margin: 40px 0; }
     <a href="./en/handknotted" style="color:#8b0000;">🧶 Technical Carpet Guide</a>
 </p>
 
+&nbsp;
 
-<!-- ══════════════════════════════════════════════════════════════════ -->
-<!--  JAVASCRIPT                                                        -->
-<!-- ══════════════════════════════════════════════════════════════════ -->
 <script>
 var map = L.map('map').setView([38.65, 34.85], 11);
 var currentLang = 'en';
@@ -557,3 +551,5 @@ function setLang(lang) {
     updateUI();
 }
 </script>
+
+&nbsp;

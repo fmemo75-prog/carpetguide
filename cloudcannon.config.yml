@@ -1,0 +1,23 @@
+paths:
+  static: ''
+  uploads: uploads
+timezone: Europe/Istanbul
+markdown:
+  engine: commonmark
+  options: {}
+collections_config:
+  pages:
+    path: ''
+    icon: wysiwyg
+  data:
+    path: _data
+    icon: data_usage
+  en:
+    path: en
+    icon: ent
+  includes:
+    path: _includes
+    icon: circles
+  layouts:
+    path: _layouts
+    icon: layers
