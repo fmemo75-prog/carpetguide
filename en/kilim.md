@@ -58,7 +58,7 @@ The origins of Kilim symbols reach back to the **Neolithic era** (approx. 7000 B
 
 ### 🏔️ Born from the Nomadic Spirit
 *   **The Mountain Companion:** Kilims were lighter and easier to fold, making them perfect for high-altitude nomadic migration.
-*   **The Reversible Masterpiece:** Most Kilims are **reversible**. There is no "back side"; both sides are equally beautiful, doubling the life of the art in your. home.
+*   **The Reversible Masterpiece:** Most Kilims are **reversible**. There is no "back side"; both sides are equally beautiful, doubling the life of the art in your home.
 
 ---
 
@@ -76,9 +76,7 @@ A Kilim is created on a traditional wooden loom called a **"Tezgah."** There are
 This is the most important human motif in Anatolian weaving. It represents motherhood, fertility, and the **"Great Mother"** goddess.
 
 <div align="center">
-  <a href="{{ site.baseurl }}/images/elibelinde.jpg" target="_blank">
-    <img src="{{ site.baseurl }}/images/elibelinde.jpg" width="60%" style="border-radius: 10px; border: 2px solid #f39c12;" alt="Eli Belinde Motif">
-  </a>
+  <img src="./elibelinde.png" width="60%" style="border-radius: 10px; border: 2px solid #f39c12;" alt="Eli Belinde Motif">
   <p><b>The Motherhood Symbol:</b> <i>A 9,000-year-old celebration of feminine power and creation.</i></p>
 </div>
 
@@ -101,7 +99,7 @@ Every authentic Kilim is a product of immense patience:
 
 ---
 
-## ⚠️ A Vanishing art: Why Your Choice Matters
+## ⚠️ A Vanishing Art: Why Your Choice Matters
 Hand-weaving is a vanishing art. When you acquire a hand-woven Kilim, you are acting as a **patron of the arts**. You are helping this ancient tradition survive for another generation.
 
 ---

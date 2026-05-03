@@ -7,9 +7,8 @@ title: Cappadocia Complete Guide — Fatih Mehmet Canıtez
 ---
 
 <p align="center"><i>"Explore the timeless beauty of the valleys."</i></p>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" />
-<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
 
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 
 &nbsp;
 
