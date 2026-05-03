@@ -10,26 +10,27 @@ title: Global Carpet & Kilim Guide — Fatih Mehmet Canıtez
         max-width: 1000px;
         margin: 0 auto;
         padding: 20px;
-        position: relative; /* Motifin buna göre hizalanması için şart */
+        position: relative;
         z-index: 10;
     }
 
-    /* ELİBELİNDE MOTİFİ: Tam işaretlediğin sol boşluk için */
+    /* ELİBELİNDE MOTİFİ: Masaüstü ve Mobil Uyumluluk */
     .side-motif-elibelinde {
         position: absolute;
-        left: -80px; /* Siyah bordür ile kutu arasındaki boşluğa iter */
-        top: 40px;
+        left: -140px; /* Masaüstünde sol boşlukta */
+        top: 20px;
         width: 150px;
-        opacity: 0.9;
-        filter: grayscale(1) brightness(1.1);
+        opacity: 0.3;
+        filter: grayscale(1) brightness(1.2);
         z-index: 9999;
         pointer-events: none;
+        transition: all 0.4s ease;
     }
 
     /* CloudCannon Düzenlenebilir Alan İşareti */
     .editable { min-height: 20px; }
 
-    /* HERO BÖLÜMÜ: Profil ve Butonlar */
+    /* HERO BÖLÜMÜ */
     .hero-box {
         background: linear-gradient(135deg, #1a0a0a 0%, #3d0000 45%, #6b0f0f 100%);
         border-radius: 24px;
@@ -63,54 +64,53 @@ title: Global Carpet & Kilim Guide — Fatih Mehmet Canıtez
     .btn-red { background: #8b0000; color: white !important; }
     .btn-outline { border: 1px solid rgba(255,255,255,0.5); color: white !important; }
 
-    /* KARTLAR VE DİĞERLERİ */
+    /* KARTLAR */
     .grid-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; margin: 40px 0; }
     .info-card { background: white; padding: 20px; border-radius: 15px; border: 1px solid #eee; text-decoration: none; color: inherit; transition: 0.3s; box-shadow: 0 4px 10px rgba(0,0,0,0.03); display: block; }
     .info-card:hover { transform: translateY(-5px); border-color: #d4af37; }
     .info-card b { display: block; margin: 10px 0 5px; color: #8b0000; font-size: 16px; }
     .info-card p { font-size: 13px; color: #777; margin: 0; line-height: 1.4; }
 
+    /* TEZGAH */
     .loom-layout { display: flex; align-items: flex-start; gap: 20px; margin: 50px 0; }
     .loom-column { flex: 1; display: flex; flex-direction: column; gap: 15px; }
     .loom-image-wrapper { flex: 1.5; text-align: center; }
     .loom-image-wrapper img { width: 100%; max-width: 400px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
 
+    /* BAKIM */
     .care-list { display: flex; flex-direction: column; gap: 15px; margin: 40px 0; }
     .care-item { display: flex; align-items: center; gap: 20px; padding: 20px; border-radius: 15px; text-decoration: none; color: #333; background: #fff; border: 1px solid #eee; transition: 0.3s; }
 
-   /* ELİBELİNDE MOTİFİ: Masaüstü ve Mobil Uyumluluk */
-.side-motif-elibelinde {
-    position: absolute;
-    left: -140px; /* Masaüstünde sol boşlukta */
-    top: 20px;
-    width: 150px;
-    opacity: 0.3;
-    filter: grayscale(1) brightness(1.2);
-    z-index: 9999;
-    pointer-events: none;
-    transition: all 0.4s ease; /* Geçişleri yumuşatır */
-}
-
-/* 📱 MOBİL VE TABLET AYARI (Burası değişti) */
-@media (max-width: 1150px) {
-    .side-motif-elibelinde {
-        display: block !important; /* Gizlemeyi iptal ettik */
-        left: 20px;   /* Kutunun içine, sol üst köşeye aldık */
-        top: 10px;    /* Biraz yukarı çektik */
-        width: 100px; /* Mobilde biraz küçülttük */
-        opacity: 0.15; /* Yazıların okunmasını engellememesi için daha şeffaf yaptık */
+    /* 📱 MOBİL VE TABLET AYARLARI */
+    @media (max-width: 1150px) {
+        .side-motif-elibelinde {
+            left: 20px;
+            top: 10px;
+            width: 100px;
+            opacity: 0.15;
+        }
     }
-}
 
-@media (max-width: 768px) {
-    .side-motif-elibelinde {
-        left: 50%;
-        transform: translateX(-50%); /* Mobilde tam ortaya, başlığın arkasına alalım */
-        top: -30px;
-        width: 80px;
-        opacity: 0.2;
+    @media (max-width: 768px) {
+        .side-motif-elibelinde {
+            left: 50%;
+            transform: translateX(-50%);
+            top: -30px;
+            width: 80px;
+            opacity: 0.2;
+        }
+        .hero-box { flex-direction: column; text-align: center; padding: 25px; }
+        .hero-text-content { text-align: center; }
+        .hero-btns-row { justify-content: center; }
+        .loom-layout { flex-direction: column; }
+        .loom-column { width: 100%; display: grid; grid-template-columns: 1fr 1fr; }
+        .loom-image-wrapper { order: -1; width: 100%; }
     }
-}
+
+    @media (max-width: 500px) {
+        .loom-column { grid-template-columns: 1fr; }
+    }
+</style>
 
 <div class="home-container">
 
