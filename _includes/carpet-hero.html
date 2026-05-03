@@ -1,18 +1,33 @@
-<div class=<div class="hero" style="position:relative;"<img src="{{ site.baseurl }}/images/elibelinde.jpg" 
-     alt="Elibelinde" 
-     style="position:absolute; top:16px; right:16px; width:60px; opacity:0.7; filter:brightness(10);">>
-  <div class="hero-inner">
-    <img src="./carpet.jpeg" alt="Fatih Mehmet Canıtez" class="hero-avatar">
-    <div class="hero-text">
-      <h1>
-        🧶 Global Carpet & Kilim Guide
-        <span>by Fatih Mehmet Canıtez</span>
-      </h1>
-      <p>French Language Educator · Expert Curator · 50 years living and studying the carpets, valleys, and culture of Cappadocia.</p>
-      <div class="hero-btns">
-        <a href="./me" class="btn-gold">👤 Curator Profile</a>
-        <a href="./gallery" class="btn-album">📸 My Photo Album</a>
-        <a href="./Cappodoce" class="btn-outline">🌄 Cappadocia Guide</a>
+<!-- Dış kapsayıcı: Motifin dışarı taşmasına izin verir -->
+<div style="position: relative; max-width: 1000px; margin: 0 auto; overflow: visible;">
+
+  <!-- Elibelinde Motifi (Root dizininden çekiyor) -->
+  <img src="{{ site.baseurl }}/elibelinde.jpg" 
+       alt="Eli Belinde" 
+       style="position: absolute; 
+              left: -125px; 
+              top: 40px; 
+              width: 90px; 
+              opacity: 0.4; 
+              filter: grayscale(1); 
+              z-index: 9999; 
+              pointer-events: none;">
+
+  <!-- Hero Kutusu -->
+  <div class="hero" style="overflow: visible !important;">
+    <div class="hero-inner">
+      <img src="./carpet.jpeg" alt="Fatih Mehmet Canıtez" class="hero-avatar">
+      <div class="hero-text">
+        <h1>
+          🧶 Global Carpet & Kilim Guide
+          <span>by Fatih Mehmet Canıtez</span>
+        </h1>
+        <p>French Language Educator · Expert Curator · 50 years living and studying the carpets, valleys, and culture of Cappadocia.</p>
+        <div class="hero-btns">
+          <a href="./me" class="btn-gold">👤 Curator Profile</a>
+          <a href="./gallery" class="btn-album">📸 My Photo Album</a>
+          <a href="./Cappodoce" class="btn-outline">🌄 Cappadocia Guide</a>
+        </div>
       </div>
     </div>
   </div>
