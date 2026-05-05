@@ -37,7 +37,7 @@ title: Cappadocia Living History Guide
 
   <div class="sub-item">
     <h3>Zelve Open-Air Museum</h3>
-    <a href="{{ site.baseurl }}/images/zelve-museum.png" target="_blank">
+    <a href="{{ site.baseurl }}/images/zelve-museum.jpg" target="_blank">
       <img src="{{ site.baseurl }}/images/zelve-museum.png" class="guide-img" alt="Zelve Museum">
     </a>
     <p>A vibrant cave village until the 1950s. It offers a much more “raw” and quiet experience than Göreme.</p>
