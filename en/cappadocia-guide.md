@@ -50,8 +50,8 @@ title: Cappadocia Living History Guide
   
   <div class="sub-item">
     <h3>Love Valley (Bağlıdere)</h3>
-    <a href="{{ site.baseurl }}/images/love-valley.png" target="_blank">
-      <img src="{{ site.baseurl }}/images/love-valley.png" class="guide-img" alt="Love Valley">
+    <a href="{{ site.baseurl }}/images/love-valley.jpg" target="_blank">
+      <img src="{{ site.baseurl }}/images/love-valley.jpg" class="guide-img" alt="Love Valley">
     </a>
     <p>Famous for the most iconic, towering fairy chimneys. Perfect for a morning hike.</p>
   </div>
