@@ -38,7 +38,7 @@ title: Cappadocia Living History Guide
   <div class="sub-item">
     <h3>Zelve Open-Air Museum</h3>
     <a href="{{ site.baseurl }}/images/zelve-museum.jpg" target="_blank">
-      <img src="{{ site.baseurl }}/images/zelve-museum.png" class="guide-img" alt="Zelve Museum">
+      <img src="{{ site.baseurl }}/images/zelve-museum.jpg" class="guide-img" alt="Zelve Museum">
     </a>
     <p>A vibrant cave village until the 1950s. It offers a much more “raw” and quiet experience than Göreme.</p>
   </div>
@@ -50,8 +50,8 @@ title: Cappadocia Living History Guide
   
   <div class="sub-item">
     <h3>Love Valley (Bağlıdere)</h3>
-    <a href="{{ site.baseurl }}/images/love-valley.png" target="_blank">
-      <img src="{{ site.baseurl }}/images/love-valley.png" class="guide-img" alt="Love Valley">
+    <a href="{{ site.baseurl }}/images/love-valley.jpg" target="_blank">
+      <img src="{{ site.baseurl }}/images/love-valley.jpg" class="guide-img" alt="Love Valley">
     </a>
     <p>Famous for the most iconic, towering fairy chimneys. Perfect for a morning hike.</p>
   </div>
