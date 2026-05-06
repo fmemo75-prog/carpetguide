@@ -58,8 +58,8 @@ title: Cappadocia Living History Guide
 
   <div class="sub-item">
     <h3>Pasabağ (Monks Valley)</h3>
-    <a href="{{ site.baseurl }}/images/pasabag.png" target="_blank">
-      <img src="{{ site.baseurl }}/images/pasabag.png" class="guide-img" alt="Pasabag">
+    <a href="{{ site.baseurl }}/images/pasabag.jpg" target="_blank">
+      <img src="{{ site.baseurl }}/images/pasabag.jpg" class="guide-img" alt="Pasabag">
     </a>
     <p>Unique three-headed fairy chimneys. Once a retreat for Christian hermits.</p>
   </div>
