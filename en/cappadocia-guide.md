@@ -87,8 +87,8 @@ title: Cappadocia Living History Guide
 
   <div class="sub-item">
     <h3>Derinkuyu Underground City</h3>
-    <a href="{{ site.baseurl }}/images/derinkuyu.png" target="_blank">
-      <img src="{{ site.baseurl }}/images/derinkuyu.png" class="guide-img" alt="Derinkuyu">
+    <a href="{{ site.baseurl }}/images/derinkuyu.jpg" target="_blank">
+      <img src="{{ site.baseurl }}/images/derinkuyu.jpg" class="guide-img" alt="Derinkuyu">
     </a>
     <p>The deepest city, reaching 85 meters. An engineering marvel that once housed 20,000 people.</p>
   </div>
