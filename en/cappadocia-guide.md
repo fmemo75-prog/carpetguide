@@ -66,8 +66,8 @@ title: Cappadocia Living History Guide
 
   <div class="sub-item">
     <h3>Red & Rose Valleys</h3>
-    <a href="{{ site.baseurl }}/images/red-valley.png" target="_blank">
-      <img src="{{ site.baseurl }}/images/red-valley.png" class="guide-img" alt="Red Valley">
+    <a href="{{ site.baseurl }}/images/red-valley.webp" target="_blank">
+      <img src="{{ site.baseurl }}/images/red-valley.webp" class="guide-img" alt="Red Valley">
     </a>
     <p>The absolute best spots for sunset. The rocks turn into a palette of glowing pink and crimson.</p>
   </div>
