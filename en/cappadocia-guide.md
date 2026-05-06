@@ -79,8 +79,8 @@ title: Cappadocia Living History Guide
   
   <div class="sub-item">
     <h3>Kaymaklı Underground City</h3>
-    <a href="{{ site.baseurl }}/images/kaymakli.png" target="_blank">
-      <img src="{{ site.baseurl }}/images/kaymakli.png" class="guide-img" alt="Kaymakli">
+    <a href="{{ site.baseurl }}/images/kaymakli.webp" target="_blank">
+      <img src="{{ site.baseurl }}/images/kaymakli.webp" class="guide-img" alt="Kaymakli">
     </a>
     <p>The widest city with 8 levels. It feels like a labyrinthine village underground.</p>
   </div>
