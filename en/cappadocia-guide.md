@@ -3,11 +3,8 @@ layout: default
 title: Cappadocia Living History Guide
 ---
 
-[🇹🇷 Türkçe: Kapadokya Rehberi](https://fmemo75-prog.github.io/carpetguide/en/kapadokya)
+<a href="https://fmemo75-prog.github.io/carpetguide/en/kapadokya" style="display:inline-flex; align-items:center; gap:8px; padding:10px 18px; background:#8b0000; color:#fff; border-radius:6px; font-size:15px; font-weight:500; text-decoration:none;">🇹🇷 Practical Information for Cappadocia</a>
 
-> ### 🚀 Quick Access: Cappadocia Travel Guide
-> Looking for the best valleys, restaurants, and a 24-hour route? 
-> **[Click here to view the Full Travel & Route Guide →](cappadocia-guide.md)**
 
 ---
 <style>
