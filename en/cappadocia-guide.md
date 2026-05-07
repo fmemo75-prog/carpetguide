@@ -3,6 +3,8 @@ layout: default
 title: Cappadocia Living History Guide
 ---
 
+[🇹🇷 Türkçe: Kapadokya Rehberi](https://fmemo75-prog.github.io/carpetguide/en/kapadokya)
+
 > ### 🚀 Quick Access: Cappadocia Travel Guide
 > Looking for the best valleys, restaurants, and a 24-hour route? 
 > **[Click here to view the Full Travel & Route Guide →](cappadocia-guide.md)**
@@ -36,7 +38,7 @@ title: Cappadocia Living History Guide
     </a>
     <p>A UNESCO site featuring rock-cut churches. From the 10th century, these frescoes are masterpieces of Byzantine art.</p>
     <div class="insider-tip">
-      <strong>Insider Tip:</strong> Don’t skip the Dark Church (Karanlık Kilise); its frescoes are the best-preserved in the world.
+      <strong>Insider Tip:</strong> Don't skip the Dark Church (Karanlık Kilise); its frescoes are the best-preserved in the world.
     </div>
   </div>
 
@@ -45,7 +47,7 @@ title: Cappadocia Living History Guide
     <a href="{{ site.baseurl }}/images/zelve-museum.jpg" target="_blank">
       <img src="{{ site.baseurl }}/images/zelve-museum.jpg" class="guide-img" alt="Zelve Museum">
     </a>
-    <p>A vibrant cave village until the 1950s. It offers a much more “raw” and quiet experience than Göreme.</p>
+    <p>A vibrant cave village until the 1950s. It offers a much more "raw" and quiet experience than Göreme.</p>
   </div>
 </div>
 
