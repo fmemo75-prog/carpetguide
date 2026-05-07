@@ -3,6 +3,11 @@ layout: default
 title: Cappadocia Living History Guide
 ---
 
+> ### 🚀 Quick Access: Cappadocia Travel Guide
+> Looking for the best valleys, restaurants, and a 24-hour route? 
+> **[Click here to view the Full Travel & Route Guide →](cappadocia-guide.md)**
+
+---
 <style>
   .guide-section { margin-bottom: 40px; padding: 20px; background: #fff; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border-left: 8px solid #8b0000; }
   .guide-section h2 { color: #8b0000; margin-top: 0; border-bottom: 2px solid #d4af37; padding-bottom: 10px; }
