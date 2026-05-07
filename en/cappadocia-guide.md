@@ -100,8 +100,8 @@ title: Cappadocia Living History Guide
 
   <div class="sub-item">
     <h3>Avanos: The Pottery Hub</h3>
-    <a href="{{ site.baseurl }}/images/avanos-pottery.png" target="_blank">
-      <img src="{{ site.baseurl }}/images/avanos-pottery.png" class="guide-img" alt="Avanos">
+    <a href="{{ site.baseurl }}/images/avanos-pottery.jpg" target="_blank">
+      <img src="{{ site.baseurl }}/images/avanos-pottery.jpg" class="guide-img" alt="Avanos">
     </a>
     <p>The center of Hittite pottery for 4,000 years. Crossed by the Red River (Kızılırmak).</p>
   </div>
