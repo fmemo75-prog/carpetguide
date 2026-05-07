@@ -1,4 +1,118 @@
- 💡 Expert Tips for a Perfect Experience (Insider Secrets)
+<style>
+  .day-wrap { padding: 1.5rem 0; }
+  .day-header { margin-bottom: 1.5rem; }
+  .day-title { font-size: 20px; font-weight: 600; color: #8b0000; margin: 0 0 4px; }
+  .day-sub { font-size: 13px; color: #888; margin: 0; }
+  .timeline { display: flex; flex-direction: column; }
+  .stop { display: grid; grid-template-columns: 72px 28px minmax(0,1fr); gap: 0 12px; align-items: stretch; }
+  .stop-time { font-size: 12px; font-weight: 600; color: #888; text-align: right; padding-top: 14px; }
+  .stop-line { display: flex; flex-direction: column; align-items: center; }
+  .stop-dot { width: 14px; height: 14px; border-radius: 50%; flex-shrink: 0; margin-top: 14px; border: 2px solid; }
+  .stop-connector { flex: 1; width: 2px; min-height: 16px; opacity: 0.3; }
+  .stop-card { background: #fff; border: 1px solid #eee; border-radius: 12px; padding: 12px 14px; margin-bottom: 10px; }
+  .stop-card-top { display: flex; align-items: center; gap: 8px; margin-bottom: 4px; }
+  .stop-icon { font-size: 18px; line-height: 1; }
+  .stop-name { font-size: 15px; font-weight: 600; color: #222; }
+  .stop-desc { font-size: 13px; color: #555; line-height: 1.5; }
+  .stop-badge { font-size: 11px; padding: 2px 8px; border-radius: 20px; font-weight: 600; margin-left: auto; white-space: nowrap; }
+  .stop-tip { font-size: 12px; color: #999; font-style: italic; margin-top: 4px; }
+  .badge-dawn { background: #FAEEDA; color: #633806; }
+  .badge-morning { background: #E6F1FB; color: #0C447C; }
+  .badge-midday { background: #EAF3DE; color: #27500A; }
+  .badge-afternoon { background: #E1F5EE; color: #085041; }
+  .badge-evening { background: #FAECE7; color: #712B13; }
+  .badge-night { background: #EEEDFE; color: #3C3489; }
+  .dot-dawn { border-color: #EF9F27; background: #FAEEDA; }
+  .dot-morning { border-color: #378ADD; background: #E6F1FB; }
+  .dot-midday { border-color: #639922; background: #EAF3DE; }
+  .dot-afternoon { border-color: #1D9E75; background: #E1F5EE; }
+  .dot-evening { border-color: #D85A30; background: #FAECE7; }
+  .dot-night { border-color: #7F77DD; background: #EEEDFE; }
+  .line-dawn { background: #EF9F27; }
+  .line-morning { background: #378ADD; }
+  .line-midday { background: #639922; }
+  .line-afternoon { background: #1D9E75; }
+  .line-evening { background: #D85A30; }
+  .line-night { background: #7F77DD; }
+</style>
+
+<div class="day-wrap">
+  <div class="day-header">
+    <p class="day-title">🗓️ The "Perfect Day" Express Route</p>
+    <p class="day-sub">One day · Göreme-centered · Local expert route</p>
+  </div>
+  <div class="timeline">
+    <div class="stop">
+      <div class="stop-time">05:30 AM</div>
+      <div class="stop-line"><div class="stop-dot dot-dawn"></div><div class="stop-connector line-morning"></div></div>
+      <div class="stop-card">
+        <div class="stop-card-top"><span class="stop-icon">🎈</span><span class="stop-name">Balloon watch</span><span class="stop-badge badge-dawn">Dawn</span></div>
+        <div class="stop-desc">Göreme Sunset Point (Aydın Kırağı) — watch dozens of balloons rise over the valleys as the sky turns gold.</div>
+        <div class="stop-tip">💡 Arrive 10 min early for the best spot on the ridge.</div>
+      </div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">08:30 AM</div>
+      <div class="stop-line"><div class="stop-dot dot-morning"></div><div class="stop-connector line-midday"></div></div>
+      <div class="stop-card">
+        <div class="stop-card-top"><span class="stop-icon">🏛️</span><span class="stop-name">Göreme Open Air Museum</span><span class="stop-badge badge-morning">Morning</span></div>
+        <div class="stop-desc">UNESCO rock-cut churches with 10th-century Byzantine frescoes — before the tour buses arrive.</div>
+        <div class="stop-tip">💡 Don't skip the Dark Church (Karanlık Kilise) — best-preserved frescoes in the world.</div>
+      </div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">11:00 AM</div>
+      <div class="stop-line"><div class="stop-dot dot-midday"></div><div class="stop-connector line-midday"></div></div>
+      <div class="stop-card">
+        <div class="stop-card-top"><span class="stop-icon">🍄</span><span class="stop-name">Fairy chimneys</span><span class="stop-badge badge-midday">Midday</span></div>
+        <div class="stop-desc">Drive to Pasabağ (Monks Valley) for three-headed chimneys, then Devrent Valley for surreal rock sculptures.</div>
+      </div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">01:00 PM</div>
+      <div class="stop-line"><div class="stop-dot dot-midday"></div><div class="stop-connector line-afternoon"></div></div>
+      <div class="stop-card">
+        <div class="stop-card-top"><span class="stop-icon">🏺</span><span class="stop-name">Avanos — art & lunch</span><span class="stop-badge badge-midday">Lunch</span></div>
+        <div class="stop-desc">Pottery workshop at a Hittite atelier on the Red River, then lunch by the Kızılırmak waterfront.</div>
+        <div class="stop-tip">💡 Try the Testi Kebab (pottery kebab) — it's cracked open at your table.</div>
+      </div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">03:30 PM</div>
+      <div class="stop-line"><div class="stop-dot dot-afternoon"></div><div class="stop-connector line-evening"></div></div>
+      <div class="stop-card">
+        <div class="stop-card-top"><span class="stop-icon">🥾</span><span class="stop-name">Pigeon Valley hike</span><span class="stop-badge badge-afternoon">Afternoon</span></div>
+        <div class="stop-desc">Walk from Uçhisar Castle back to Göreme through cave pigeon houses and carved rock paths (~4 km, easy).</div>
+      </div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">06:30 PM</div>
+      <div class="stop-line"><div class="stop-dot dot-evening"></div><div class="stop-connector line-night"></div></div>
+      <div class="stop-card">
+        <div class="stop-card-top"><span class="stop-icon">🌅</span><span class="stop-name">Sunset at Rose Valley</span><span class="stop-badge badge-evening">Sunset</span></div>
+        <div class="stop-desc">Rose Valley Viewpoint — watch the tuff rock turn deep crimson and pink as the sun drops behind the horizon.</div>
+        <div class="stop-tip">💡 The #1 sunset spot in all of Cappadocia.</div>
+      </div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">08:30 PM</div>
+      <div class="stop-line"><div class="stop-dot dot-night"></div><div class="stop-connector" style="background:transparent;"></div></div>
+      <div class="stop-card">
+        <div class="stop-card-top"><span class="stop-icon">🍴</span><span class="stop-name">Dinner in Göreme</span><span class="stop-badge badge-night">Night</span></div>
+        <div class="stop-desc">Traditional Pottery Kebab at a cave restaurant in Göreme center. End the day the Anatolian way.</div>
+        <div class="stop-tip">💡 Dibek and Topdeck Cave Restaurant both have 4.5+ stars on Google.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+ 💡 
+
+
+Expert Tips for a Perfect Experience (Insider Secrets)
 
 <style>
   .tips-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 12px; margin-top: 16px; }
