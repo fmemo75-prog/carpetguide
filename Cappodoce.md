@@ -4,6 +4,10 @@ title: Cappadocia Complete Guide — Fatih Mehmet Canıtez
 ---
 
 ### 🚀 [CLICK HERE: Where to Go & What to See in Cappadocia](./en/cappadocia-guide)
+
+<a href="https://fmemo75-prog.github.io/carpetguide/en/kapadokya" style="display:inline-flex; align-items:center; gap:8px; padding:10px 18px; background:#8b0000; color:#fff; border-radius:6px; font-size:15px; font-weight:500; text-decoration:none;">🇹🇷 Practical Information for Cappadocia</a>
+
+
 ---
 <p align="center"><i>"Explore the timeless beauty of the valleys."</i></p>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
