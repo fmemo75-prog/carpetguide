@@ -126,3 +126,71 @@ title: Cappadocia Living History Guide
 <p style="text-align: center;">
   <a href="./">🏠 Return to Dashboard</a> | <a href="./en/handknotted">🧶 Technical Carpet Guide</a>
 </p>
+---
+
+# 🗺️ Cappadocia Comprehensive Travel Guide (Göreme-Centered)
+
+This guide provides essential information for travelers using **Göreme** as their base. Cappadocia is best explored by combining walking tours with local rentals.
+
+## 📍 Distances & Locations from Göreme Center
+| Location | Distance | Travel Time (Car) | Why Visit? |
+| :--- | :--- | :--- | :--- |
+| **Göreme Open Air Museum** | 1.5 km | 3 mins | UNESCO World Heritage cave churches. |
+| **Uçhisar Castle** | 5 km | 10 mins | Highest panoramic viewpoint in the region. |
+| **Love Valley Viewpoint** | 4 km | 8 mins | Iconic rock formations and balloon watching. |
+| **Pasabağ (Monks Valley)** | 6 km | 10 mins | Best examples of three-headed fairy chimneys. |
+| **Zelve Open Air Museum** | 7 km | 12 mins | An expansive, ancient cave village. |
+| **Avanos Town** | 10 km | 15 mins | Famous for pottery and the Red River. |
+| **Derinkuyu Underground City**| 35 km | 40 mins | A massive 8-level deep ancient city. |
+| **Ihlara Valley** | 80 km | 1 hr 15 min | A lush canyon perfect for a long hike. |
+
+---
+
+## 🛵 Transportation & Rental Options
+Göreme center is the hub for all rental services. 
+*   **Car Rental:** Recommended for visiting distant sites like Ihlara or Underground Cities. (Approx. €40-60/day).
+*   **Scooter & Motorcycle:** The most fun way to hop between nearby valleys. *Note: A valid license is required.*
+*   **Bicycles & E-Bikes:** Best for active travelers. E-bikes are highly recommended due to the steep hills and sandy terrain.
+    *   *Top Providers:* **Oz Cappadocia**, **Middle Earth Travel**.
+
+---
+
+## 🥾 Best Valleys for Hiking
+Most trails are accessible directly from Göreme on foot:
+1.  **Rose & Red Valley (Kızılçukur):** The #1 spot for sunset. The trails offer hidden churches and tunnels. (Moderate, 4-5 km).
+2.  **Pigeon Valley (Güvercinlik):** Connects Göreme to Uçhisar. Easy walk through caves and pigeon houses. (Easy, 4 km).
+3.  **Sword Valley (Kılıçlar):** Located right across from the Open Air Museum; short but very scenic.
+4.  **Love Valley:** Famous for its unique pillars. A flat and easy walk from the main road.
+
+---
+
+## 🍽️ Top-Rated Dining (Google 4.5+ Stars)
+*   **Topdeck Cave Restaurant:** Family-run, cozy atmosphere, famous for meze platters.
+*   **Dibek:** Traditional home cooking. You must try the **"Testi Kebab"** (Pottery Kebab).
+*   **Seten Restaurant:** High-end dining with a beautiful courtyard and local wine selection.
+*   **Turkish Ravioli Restaurant:** Specializing in "Manti" (Turkish dumplings).
+
+---
+
+## 🏨 Recommended Accommodations
+*   **Luxury:** *Museum Hotel* (Uçhisar) - A literal museum experience with a heated pool.
+*   **Iconic Views:** *Sultan Cave Suites* or *Mithra Cave Hotel* - Famous for their balloon-view terraces.
+*   **Authentic Boutique:** *Kelebek Special Cave Hotel* - Offers a mix of luxury and traditional cave living.
+
+---
+
+## 🧖‍♂️ Hamam, Wellness & Activities
+*   **Turkish Bath (Hamam):** **Kelebek Hamam & Spa** is the most highly rated for an authentic cave-spa experience.
+*   **Horseback Riding:** Known as the "Land of Beautiful Horses," a sunset ride through the valleys is unforgettable.
+*   **ATV (Quad) Safari:** A 2-hour dusty adventure through the Sword and Rose valleys, usually done at sunset.
+*   **Hot Air Balloon:** The signature experience. Book with **Royal Balloon** or **Butterfly Balloons** for premium service.
+
+---
+
+## 💎 "Don't Leave Without Seeing" (Must-Visit)
+1.  **The Dark Church (Karanlık Kilise):** Located inside Göreme Open Air Museum. The frescoes are the best-preserved in the world.
+2.  **Ortahisar Castle:** A more local and less crowded alternative to Uçhisar.
+3.  **Mustafapaşa (Sinasos):** An old Greek village with incredible stone masonry and a peaceful vibe.
+4.  **Sunset Point (Göreme):** A short walk from the center to see the entire town light up as the sun goes down.
+
+---
