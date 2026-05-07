@@ -108,8 +108,8 @@ title: Cappadocia Living History Guide
 
   <div class="sub-item">
     <h3>Mustafapaşa (Sinasos)</h3>
-    <a href="{{ site.baseurl }}/images/mustafapasa.png" target="_blank">
-      <img src="{{ site.baseurl }}/images/mustafapasa.png" class="guide-img" alt="Mustafapasa">
+    <a href="{{ site.baseurl }}/images/mustafapasa.jpg" target="_blank">
+      <img src="{{ site.baseurl }}/images/mustafapasa.jpg" class="guide-img" alt="Mustafapasa">
     </a>
     <p>An old Greek town with incredible masonry. A glimpse into multicultural Ottoman life.</p>
   </div>
