@@ -37,8 +37,8 @@ title: Cappadocia Living History Guide
 
   <div class="sub-item">
     <h3>Zelve Open-Air Museum</h3>
-    <a href="{{ site.baseurl }}/images/zelve-museum.png" target="_blank">
-      <img src="{{ site.baseurl }}/images/zelve-museum.png" class="guide-img" alt="Zelve Museum">
+    <a href="{{ site.baseurl }}/images/zelve-museum.jpg" target="_blank">
+      <img src="{{ site.baseurl }}/images/zelve-museum.jpg" class="guide-img" alt="Zelve Museum">
     </a>
     <p>A vibrant cave village until the 1950s. It offers a much more “raw” and quiet experience than Göreme.</p>
   </div>
@@ -50,24 +50,24 @@ title: Cappadocia Living History Guide
   
   <div class="sub-item">
     <h3>Love Valley (Bağlıdere)</h3>
-    <a href="{{ site.baseurl }}/images/love-valley.png" target="_blank">
-      <img src="{{ site.baseurl }}/images/love-valley.png" class="guide-img" alt="Love Valley">
+    <a href="{{ site.baseurl }}/images/love-valley.jpg" target="_blank">
+      <img src="{{ site.baseurl }}/images/love-valley.jpg" class="guide-img" alt="Love Valley">
     </a>
     <p>Famous for the most iconic, towering fairy chimneys. Perfect for a morning hike.</p>
   </div>
 
   <div class="sub-item">
     <h3>Pasabağ (Monks Valley)</h3>
-    <a href="{{ site.baseurl }}/images/pasabag.png" target="_blank">
-      <img src="{{ site.baseurl }}/images/pasabag.png" class="guide-img" alt="Pasabag">
+    <a href="{{ site.baseurl }}/images/pasabag.jpg" target="_blank">
+      <img src="{{ site.baseurl }}/images/pasabag.jpg" class="guide-img" alt="Pasabag">
     </a>
     <p>Unique three-headed fairy chimneys. Once a retreat for Christian hermits.</p>
   </div>
 
   <div class="sub-item">
     <h3>Red & Rose Valleys</h3>
-    <a href="{{ site.baseurl }}/images/red-valley.png" target="_blank">
-      <img src="{{ site.baseurl }}/images/red-valley.png" class="guide-img" alt="Red Valley">
+    <a href="{{ site.baseurl }}/images/red-valley.webp" target="_blank">
+      <img src="{{ site.baseurl }}/images/red-valley.webp" class="guide-img" alt="Red Valley">
     </a>
     <p>The absolute best spots for sunset. The rocks turn into a palette of glowing pink and crimson.</p>
   </div>
@@ -79,16 +79,16 @@ title: Cappadocia Living History Guide
   
   <div class="sub-item">
     <h3>Kaymaklı Underground City</h3>
-    <a href="{{ site.baseurl }}/images/kaymakli.png" target="_blank">
-      <img src="{{ site.baseurl }}/images/kaymakli.png" class="guide-img" alt="Kaymakli">
+    <a href="{{ site.baseurl }}/images/kaymakli.webp" target="_blank">
+      <img src="{{ site.baseurl }}/images/kaymakli.webp" class="guide-img" alt="Kaymakli">
     </a>
     <p>The widest city with 8 levels. It feels like a labyrinthine village underground.</p>
   </div>
 
   <div class="sub-item">
     <h3>Derinkuyu Underground City</h3>
-    <a href="{{ site.baseurl }}/images/derinkuyu.png" target="_blank">
-      <img src="{{ site.baseurl }}/images/derinkuyu.png" class="guide-img" alt="Derinkuyu">
+    <a href="{{ site.baseurl }}/images/derinkuyu.jpg" target="_blank">
+      <img src="{{ site.baseurl }}/images/derinkuyu.jpg" class="guide-img" alt="Derinkuyu">
     </a>
     <p>The deepest city, reaching 85 meters. An engineering marvel that once housed 20,000 people.</p>
   </div>
