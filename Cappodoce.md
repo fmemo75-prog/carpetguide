@@ -3,21 +3,30 @@ layout: default
 title: Cappadocia Complete Guide — Fatih Mehmet Canıtez
 ---
 
-### 🚀 [CLICK HERE: Where to Go & What to See in Cappadocia](./en/cappadocia-guide)
+### 🚀[CLICK HERE: Where to Go & What to See in Cappadocia](./en/cappadocia-guide)
 
-<a href="https://fmemo75-prog.github.io/carpetguide/en/kapadokya" style="display:inline-flex; align-items:center; gap:8px; padding:10px 18px; background:#8b0000; color:#fff; border-radius:6px; font-size:15px; font-weight:500; text-decoration:none;">🇹🇷 Practical Information for Cappadocia</a>
+<div style="display: flex; gap: 15px; flex-wrap: wrap; margin-bottom: 20px; align-items: center;">
+  
+  <!-- Mevcut Kırmızı Buton -->
+  <a href="https://fmemo75-prog.github.io/carpetguide/en/kapadokya" style="display:inline-flex; align-items:center; gap:8px; padding:10px 18px; background:#8b0000; color:#fff; border-radius:6px; font-size:15px; text-decoration:none; font-weight:bold;">
+    TR Practical Information for Cappadocia
+  </a>
 
+  <!-- Yeni WhatsApp Butonu -->
+  <a href="https://wa.me/905054466760?text=Hello,%20I%20would%20like%20to%20get%20information%20about%20Cappadocia%20tours%20and%20balloon%20reservations." target="_blank" style="display: inline-flex; align-items:center; background: #25D366; color: white !important; padding: 10px 24px; border-radius: 50px; text-decoration: none; font-weight: bold; font-size: 15px; box-shadow: 0 4px 10px rgba(37,211,102,0.3);">
+    💬 WhatsApp: +90 505 446 6760
+  </a>
+
+</div>
 
 ---
+
 <p align="center"><i>"Explore the timeless beauty of the valleys."</i></p>
+
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 
 <style>
-<!-- WhatsApp Linki (Numaranız ve Hazır Mesaj eklendi) -->
-<a href="https://wa.me/905054466760?text=Hello,%20I%20would%20like%20to%20get%20information%20about%20Cappadocia%20tours%20and%20balloon%20reservations." target="_blank" style="display: inline-block; background: #25D366; color: white !important; padding: 12px 24px; border-radius: 50px; text-decoration: none; font-weight: bold; font-size: 14px; box-shadow: 0 4px 10px rgba(37,211,102,0.3); transition: transform 0.3s; margin-top: 15px;">
-  💬 WhatsApp: +90 505 446 6760
-</a>
 
 /* ── GENEL ─────────────────────────────────────────────────────────── */
 body { font-family: Georgia, serif; color: #333; }
