@@ -217,7 +217,11 @@ hr.divider { border: none; border-top: 1px solid #e8d5c0; margin: 40px 0; }
             </div>
         </div>
         <!-- YENİ: Yusuf Canitez -->
-        <div class="vip-person">
+<div class="vip-person">
+    <div style="display:flex; gap:10px; align-items:flex-start;">
+        <img src="images/kabak.jpg" alt="Kabak çekirdeği" 
+             style="width:70px; height:70px; object-fit:cover; border-radius:8px; flex-shrink:0; border:1px solid rgba(139,69,19,0.5);">
+        <div>
             <p class="vip-name">Yusuf Canitez</p>
             <p class="vip-loc">🌰 Yöresel Lezzetler — Kapadokya</p>
             <p class="vip-spec">Kabak çekirdeği · Kuru yemiş · Yöresel ürünler</p>
