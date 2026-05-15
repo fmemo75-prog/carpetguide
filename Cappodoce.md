@@ -183,45 +183,52 @@ hr.divider { border: none; border-top: 1px solid #e8d5c0; margin: 40px 0; }
         <p style="font-size:12px; color:#999; margin:6px 0 0; text-align:center;">📍 Click any marker for details, contacts & directions</p>
     </div>
 
-    <!-- VIP Tablo -->
-    <div style="flex:1 1 34%; min-width:240px;">
-        <div class="vip-card">
-            <div class="vip-header">
-                <p style="font-size:15px; font-weight:bold; letter-spacing:0.4px;">⭐ Trusted VIP Contacts</p>
-                <p style="font-size:11px; color:#ffcccc; margin-top:3px;">Personally recommended · 50 years of friendship</p>
+  <!-- VIP Tablo -->
+<div style="flex:1 1 34%; min-width:240px;">
+    <div class="vip-card">
+        <div class="vip-header">
+            <p style="font-size:15px; font-weight:bold; letter-spacing:0.4px;">⭐ Trusted VIP Contacts</p>
+            <p style="font-size:11px; color:#ffcccc; margin-top:3px;">Personally recommended · 50 years of friendship</p>
+        </div>
+        <div class="vip-person">
+            <p class="vip-name">Bülent Güler</p>
+            <p class="vip-loc">🏺 Kervan Carpet — Göreme</p>
+            <p class="vip-spec">Hand-knotted carpets & fine textiles</p>
+            <div class="btn-row">
+                <a href="https://wa.me/905367602165" target="_blank" class="btn-sm" style="background:#25D366;">💬 WhatsApp</a>
+                <a href="https://share.google/4EOqQF0v25v89O0XW" target="_blank" class="btn-sm" style="background:#4285F4;">📍 Maps</a>
             </div>
-            <div class="vip-person">
-                <p class="vip-name">Bülent Güler</p>
-                <p class="vip-loc">🏺 Kervan Carpet — Göreme</p>
-                <p class="vip-spec">Hand-knotted carpets & fine textiles</p>
-                <div class="btn-row">
-                    <a href="https://wa.me/905367602165" target="_blank" class="btn-sm" style="background:#25D366;">💬 WhatsApp</a>
-                    <a href="https://share.google/4EOqQF0v25v89O0XW" target="_blank" class="btn-sm" style="background:#4285F4;">📍 Maps</a>
-                </div>
+        </div>
+        <div class="vip-person">
+            <p class="vip-name">Headmaster Hüseyin ÖZER</p>
+            <p class="vip-loc">🖼️ Punto Antique Carpets — Ortahisar</p>
+            <p class="vip-spec">Rare antique & collectible textiles</p>
+            <div class="btn-row">
+                <a href="https://wa.me/905324970321" target="_blank" class="btn-sm" style="background:#25D366;">💬 WhatsApp</a>
+                <a href="https://www.instagram.com/puntoofcappadocia/" target="_blank" class="btn-sm" style="background:#E1306C;">📸 Instagram</a>
             </div>
-            <div class="vip-person">
-                <p class="vip-name">Headmaster Hüseyin ÖZER</p>
-                <p class="vip-loc">🖼️ Punto Antique Carpets — Ortahisar</p>
-                <p class="vip-spec">Rare antique & collectible textiles</p>
-                <div class="btn-row">
-                    <a href="https://wa.me/905324970321" target="_blank" class="btn-sm" style="background:#25D366;">💬 WhatsApp</a>
-                    <a href="https://www.instagram.com/puntoofcappadocia/" target="_blank" class="btn-sm" style="background:#E1306C;">📸 Instagram</a>
-                </div>
+        </div>
+        <div class="vip-person">
+            <p class="vip-name">Halil KÖKSAL</p>
+            <p class="vip-loc">🗺️ VIP Cultural Guide — Göreme</p>
+            <p class="vip-spec">French & Spanish specialist · Deep historian</p>
+            <div class="btn-row">
+                <a href="https://wa.me/905322478674" target="_blank" class="btn-sm" style="background:#25D366;">💬 WhatsApp</a>
             </div>
-            <div class="vip-person">
-                <p class="vip-name">Halil KÖKSAL</p>
-                <p class="vip-loc">🗺️ VIP Cultural Guide — Göreme</p>
-                <p class="vip-spec">French & Spanish specialist · Deep historian</p>
-                <div class="btn-row">
-                    <a href="https://wa.me/905322478674" target="_blank" class="btn-sm" style="background:#25D366;">💬 WhatsApp</a>
-                </div>
+        </div>
+        <!-- YENİ: Yusuf Canitez -->
+        <div class="vip-person">
+            <p class="vip-name">Yusuf Canitez</p>
+            <p class="vip-loc">🌰 Yöresel Lezzetler — Kapadokya</p>
+            <p class="vip-spec">Kabak çekirdeği · Kuru yemiş · Yöresel ürünler</p>
+            <p style="font-size:11px; color:#ffcccc; margin:0 0 8px; font-style:italic;">🤝 Ask for his brother · Local family business</p>
+            <div class="btn-row">
+                <a href="https://wa.me/905426265926" target="_blank" class="btn-sm" style="background:#25D366;">💬 WhatsApp</a>
+                <a href="https://share.google/enmUxvnjtsEEn69We" target="_blank" class="btn-sm" style="background:#4285F4;">📍 Maps</a>
             </div>
         </div>
     </div>
-
 </div>
-
-
 <!-- ══════════════════════════════════════════════════════════════════ -->
 <!--  BÖLÜM 2 — KİŞİSEL MEKTUP                                         -->
 <!-- ══════════════════════════════════════════════════════════════════ -->
