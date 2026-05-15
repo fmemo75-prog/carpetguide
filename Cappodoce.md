@@ -216,6 +216,7 @@ hr.divider { border: none; border-top: 1px solid #e8d5c0; margin: 40px 0; }
                 <a href="https://wa.me/905322478674" target="_blank" class="btn-sm" style="background:#25D366;">💬 WhatsApp</a>
             </div>
         </div>
+
         <!-- YENİ: Yusuf Canitez -->
 <div class="vip-person">
     <div style="display:flex; gap:10px; align-items:flex-start;">
