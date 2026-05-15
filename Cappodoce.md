@@ -217,16 +217,16 @@ hr.divider { border: none; border-top: 1px solid #e8d5c0; margin: 40px 0; }
             </div>
         </div>
 
-        <!-- YENİ: Yusuf Canitez -->
+       <!-- YENİ: Yusuf Canitez -->
 <div class="vip-person">
-    <div style="display:flex; gap:10px; align-items:flex-start;">
+    <div style="display:flex; gap:10px; align-items:flex-start; flex-wrap:nowrap;">
         <img src="images/kabak.jpg" alt="Kabak çekirdeği" 
-             style="width:70px; height:70px; object-fit:cover; border-radius:8px; flex-shrink:0; border:1px solid rgba(139,69,19,0.5);">
-        <div>
-            <p class="vip-name">Yusuf Canitez</p>
-            <p class="vip-loc">🌰 Yöresel Lezzetler — Kapadokya</p>
-            <p class="vip-spec">Kabak çekirdeği · Kuru yemiş · Yöresel ürünler</p>
-            <p style="font-size:11px; color:#ffcccc; margin:0 0 8px; font-style:italic;">🤝 Ask for his brother · Local family business</p>
+             style="width:64px; height:64px; object-fit:cover; border-radius:8px; flex-shrink:0; border:1px solid rgba(139,69,19,0.5);">
+        <div style="flex:1; min-width:0;">
+            <p class="vip-name" style="margin:0 0 2px;">Yusuf Canitez</p>
+            <p class="vip-loc" style="margin:0 0 2px;">🌰 Yöresel Lezzetler — Kapadokya</p>
+            <p class="vip-spec" style="margin:0 0 4px;">Kabak çekirdeği · Kuru yemiş · Yöresel ürünler</p>
+            <p style="font-size:11px; color:#ffcccc; margin:0 0 6px; font-style:italic;">🤝 Ask for his brother · Local family business</p>
             <div class="btn-row">
                 <a href="https://wa.me/905426265926" target="_blank" class="btn-sm" style="background:#25D366;">💬 WhatsApp</a>
                 <a href="https://share.google/enmUxvnjtsEEn69We" target="_blank" class="btn-sm" style="background:#4285F4;">📍 Maps</a>
