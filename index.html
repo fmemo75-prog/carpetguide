@@ -136,6 +136,17 @@ title: Global Carpet & Kilim Guide — Fatih Mehmet Canıtez
         <input type="text" id="carpetSearch" style="width: 100%; max-width: 600px; padding: 15px 25px; border-radius: 50px; border: 2px solid #d4af37; font-size: 16px; outline: none;" placeholder="Search for Hereke, Kilim, Materials..." oninput="filterCards()">
     </div>
 
+<!-- YENİLİKLER -->
+<h2 style="color:#8b0000; margin: 30px 0 15px;">🆕 What's New</h2>
+<div class="grid-cards">
+  {% for post in site.posts limit:3 %}
+  <a href="{{ post.url }}" class="info-card">
+    📰 <b>{{ post.title }}</b>
+    <p>{{ post.date | date: "%d.%m.%Y" }}</p>
+  </a>
+  {% endfor %}
+</div>
+
     <!-- 4. AKADEMİK BİLGİ KARTLARI -->
     <div class="grid-cards editable">
         <a href="./en/hereke" class="info-card">🏰 <b>Imperial Hereke</b><p>The finest silk carpets ever woven for Ottoman palaces.</p></a>
