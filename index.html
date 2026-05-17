@@ -140,9 +140,9 @@ title: Global Carpet & Kilim Guide — Fatih Mehmet Canıtez
 <h2 style="color:#8b0000; margin: 30px 0 15px;">🆕 What's New</h2>
 <div class="grid-cards">
   {% for post in site.posts limit:3 %}
-  <a href="{{ post.url }}" class="info-card">
-    📰 <b>{{ post.title }}</b>
-    <p>{{ post.date | date: "%d.%m.%Y" }}</p>
+  <a href="{{ site.baseurl }}{{ post.url }}" class="info-card" style="display:block; padding:15px; border:1px solid #eee; border-radius:8px; margin-bottom:10px; text-decoration:none; color:#333;">
+    <div style="font-size:16px; margin-bottom:5px;">📰 <b>{{ post.title }}</b></div>
+    <div style="font-size:12px; color:#888;">{{ post.date | date: "%d.%m.%Y" }}</div>
   </a>
   {% endfor %}
 </div>

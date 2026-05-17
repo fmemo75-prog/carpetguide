@@ -1,6 +1,5 @@
 title: Global Carpet & Kilim Guide
 description: Fatih Mehmet Canıtez
-baseurl: ""
+baseurl: "/carpetguide"
 url: "https://fmemo75-prog.github.io"
-
 permalink: /:year/:month/:day/:title.html
