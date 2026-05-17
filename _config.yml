@@ -1,20 +1,5 @@
-backend:
-  name: github
-  repo: fmemo75-prog/carpetguide
-  branch: main
-
-media_folder: "images"
-public_folder: "/images"
-
-collections:
-  - name: "haberler"
-    label: "Haberler & Yazılar"
-    folder: "_posts"
-    create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    fields:
-      - {label: "Layout", name: "layout", widget: "hidden", default: "default"}
-      - {label: "Başlık", name: "title", widget: "string"}
-      - {label: "Kısa Açıklama (Özet)", name: "description", widget: "text"}
-      - {label: "Kapak Resmi", name: "image", widget: "image", required: false}
-      - {label: "İçerik", name: "body", widget: "markdown"}
+title: Global Carpet & Kilim Guide
+description: Fatih Mehmet Canıtez
+baseurl: "/carpetguide"
+url: "https://fmemo75-prog.github.io"
+permalink: /:year/:month/:day/:title.html
