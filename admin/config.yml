@@ -18,3 +18,20 @@ collections:
       - {label: "Kısa Açıklama (Özet)", name: "description", widget: "text"}
       - {label: "Kapak Resmi", name: "image", widget: "image", required: false}
       - {label: "İçerik", name: "body", widget: "markdown"}
+
+  - name: "sayfalar"
+    label: "Sayfa Ayarları"
+    files:
+      - label: "Ana Sayfa (Index)"
+        name: "anasayfa"
+        file: "index.html"
+        fields:
+          - {label: "Layout", name: "layout", widget: "hidden", default: "default"}
+          - {label: "Sayfa Başlığı", name: "title", widget: "string"}
+          - label: "Üst Butonlar (Hero Linkleri)"
+            name: "hero_buttons"
+            widget: "list"
+            fields:
+              - {label: "Buton Yazısı (İkon ekleyebilirsiniz)", name: "title", widget: "string"}
+              - {label: "Gideceği Link (URL)", name: "url", widget: "string"}
+              - {label: "Buton Rengi", name: "style", widget: "select", options: ["btn-gold", "btn-outline", "btn-red"]}
