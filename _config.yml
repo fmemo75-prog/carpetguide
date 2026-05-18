@@ -3,20 +3,3 @@ description: Fatih Mehmet Canıtez
 baseurl: "/carpetguide"
 url: "https://fmemo75-prog.github.io"
 permalink: /:year/:month/:day/:title.html
-
-- name: "sayfalar"
-    label: "Sayfa Ayarları"
-    files:
-      - label: "Ana Sayfa (Index)"
-        name: "anasayfa"
-        file: "index.html"
-        fields:
-          - {label: "Layout", name: "layout", widget: "hidden", default: "default"}
-          - {label: "Sayfa Başlığı", name: "title", widget: "string"}
-          - label: "Üst Butonlar (Hero Linkleri)"
-            name: "hero_buttons"
-            widget: "list"
-            fields:
-              - {label: "Buton Yazısı (İkon ekleyebilirsiniz)", name: "title", widget: "string"}
-              - {label: "Gideceği Link (URL)", name: "url", widget: "string"}
-              - {label: "Buton Rengi", name: "style", widget: "select", options: ["btn-gold", "btn-outline", "btn-red"]}
