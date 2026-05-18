@@ -130,6 +130,12 @@ title: Global Carpet & Kilim Guide — Fatih Mehmet Canıtez
     </div>
 </div>
 
+<div class="hero-btns-row">
+    {% for btn in page.hero_buttons %}
+        <a href="{{ btn.url }}" class="btn-custom {{ btn.style }}">{{ btn.title }}</a>
+    {% endfor %}
+</div>
+
     <!-- 3. ARAMA BÖLÜMÜ -->
     <div class="search-section">
         <input type="text" id="carpetSearch" style="width: 100%; max-width: 600px; padding: 15px 25px; border-radius: 50px; border: 2px solid #d4af37; font-size: 16px; outline: none;" placeholder="Search for Hereke, Kilim, Materials..." oninput="filterCards()">
