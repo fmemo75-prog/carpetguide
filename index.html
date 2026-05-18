@@ -132,11 +132,11 @@ hero_buttons:
     <div class="hero-text-content editable">
         <h1>🧶 Global Carpet & Kilim Guide <span>by Fatih Mehmet Canıtez</span></h1>
         <p>French Language Educator · Expert Curator · 50 years living and studying the carpets, valleys, and culture of Cappadocia.</p>
-        <div class="hero-btns-row">
-            <a href="./me" class="btn-custom btn-gold">👤 Curator Profile</a>
-            <a href="./gallery" class="btn-custom btn-red">📸 My Photo Album</a>
-            <a href="./Cappodoce" class="btn-custom btn-outline">🌄 Cappadocia Guide</a>
-        </div>
+      <div class="hero-btns-row">
+    {% for btn in page.hero_buttons %}
+        <a href="{{ btn.url }}" class="btn-custom {{ btn.style }}">{{ btn.title }}</a>
+    {% endfor %}
+</div> 
     </div>
 </div>
 
