@@ -1,20 +1,22 @@
 ---
 layout: default
 title: Global Carpet & Kilim Guide — Fatih Mehmet Canıtez
-hero_buttons:
-  - title: 👤 Curator Profile
-    url: ./me
-    style: btn-gold
-  - title: 📸 My Photo Album
-    url: ./gallery
-    style: btn-red
-  - title: 🌄 Cappadocia Guide
-    url: ./Cappodoce
-    style: btn-outline
-  - title: Fatih Mehmet CANITEZ
-    url: https://fmemo75-prog.github.io/fatihmehmetcanitez/
-    style: btn-gold
----
+<!-- 2. HERO BÖLÜMÜ -->
+    <div class="hero-box">
+        <img src="./carpet.jpeg" alt="Fatih Mehmet Canıtez" class="hero-avatar-fixed">
+        <div class="hero-text-content editable">
+            <h1>🧶 Global Carpet & Kilim Guide <span>by Fatih Mehmet Canıtez</span></h1>
+            <p>French Language Educator · Expert Curator · 50 years living and studying the carpets, valleys, and culture of Cappadocia.</p>
+            
+            <!-- ESKİ SABİT BUTONLAR SİLİNDİ, SADECE OTOMATİK LİSTE KALDI -->
+            <div class="hero-btns-row">
+                {% for btn in page.hero_buttons %}
+                    <a href="{{ btn.url }}" class="btn-custom {{ btn.style }}">{{ btn.title }}</a>
+                {% endfor %}
+            </div>
+            
+        </div>
+    </div>
 
 <!-- 1. GÖRSEL DÜZENLEYİCİ VE MİZANPAJ AYARLARI -->
 <style>
