@@ -4,7 +4,7 @@ layout: page
 
 title: "Kervan Carpet - Bülent Güler"
 
-permalink: /kervan-carpet/
+permalink: /kervancarpet/
 
 
 
