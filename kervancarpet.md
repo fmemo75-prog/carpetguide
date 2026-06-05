@@ -51,7 +51,7 @@ photos:
     map: "https://www.google.com/maps/search/?api=1&query=Kervan+Carpet+Goreme"
     instagram: "https://www.instagram.com/anatolian_kilim_cappadocia"
     whatsapp: "905367602165"
-    text: "3rd generation expert <b>Bülent Güler</b> inside Kervan Carpet. A true master and dear friend. His 4.9 Google rating is a testament to his honesty."
+    text:"A true master and dear friend. His 4.9 Google rating is a testament to his honesty."
 
   - file: "images/kervan carpet/WhatsApp Image 2026-06-04 at 22.24.14.jpeg"
     tag: "Kervan Carpet"
