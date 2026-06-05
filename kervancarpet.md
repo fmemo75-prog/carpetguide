@@ -61,11 +61,11 @@ photos:
     text: "Intricate borders and central motifs on a finely woven tribal piece."
 
   - file: "images/kervan carpet/WhatsApp Image 2026-06-04 at 22.24.15 (4).jpeg"
-    tag: "Bülent Güler"
+    tag: "Kervan Carpet"
     map: "https://www.google.com/maps/search/?api=1&query=Kervan+Carpet+Goreme"
     instagram: "https://www.instagram.com/anatolian_kilim_cappadocia"
     whatsapp: "905367602165"
-    text: "Bülent Güler in front of Kervan Carpet, welcoming carpet lovers from all around the world to Göreme."
+    text: " in front of Kervan Carpet, welcoming carpet lovers from all around the world to Göreme."
 
   - file: "images/kervan carpet/WhatsApp Image 2026-06-04 at 22.24.16 (1).jpeg"
     tag: "Kervan Carpet"
