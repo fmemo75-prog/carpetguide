@@ -47,7 +47,7 @@ photos:
     text: "Excellent craftsmanship with high-quality, hand-spun wool."
 
   - file: "images/kervan carpet/WhatsApp Image 2026-06-04 at 22.24.14 (4).jpeg"
-    tag: "Bülent Güler"
+    tag: Kervan Carpet
     map: "https://www.google.com/maps/search/?api=1&query=Kervan+Carpet+Goreme"
     instagram: "https://www.instagram.com/anatolian_kilim_cappadocia"
     whatsapp: "905367602165"
