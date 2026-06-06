@@ -157,13 +157,7 @@ Every diamond, triangle, and zigzag on a Kilim is a letter in an ancient alphabe
       <h3>WOLF'S MOUTH</h3>
       <p>Symbolizes Protection and Bravery.</p>
     </div>
-    <div class="img-left">
-      <img src="../images/wolfs-mouth-2.png" alt="Wolf's Mouth 2">
-    </div>
-    <div class="img-right">
-      <img src="../images/water-motif.png" alt="Water Motif">
-    </div>
-    <div class="desc-right">
+    
       <h3>WATER MOTIF</h3>
       <p>Symbol of Purity, Life, and Cleansing.</p>
     </div>
