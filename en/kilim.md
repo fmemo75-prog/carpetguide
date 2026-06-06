@@ -11,7 +11,7 @@ A Kilim is not just a rug; it is a **woven poem**. As the older ancestor of the 
 ## 🧿 The Silent Language: Kilim Motifs
 Every diamond, triangle, and zigzag on a Kilim is a letter in an ancient alphabet. These designs were born from the **Shamanistic beliefs** of early Turkic tribes.
 
-<!-- YENİ DÜZENLİ MOTİF ALANI BAŞLANGICI -->
+<!-- YENİ DÜZENLİ MOTİF ALANI (SADELEŞTİRİLMİŞ) -->
 <style>
   .kilim-container {
     max-width: 1000px;
@@ -27,9 +27,43 @@ Every diamond, triangle, and zigzag on a Kilim is a letter in an ancient alphabe
     padding-bottom: 15px;
     border-bottom: 1px dashed #e5e5e5;
   }
-  .motif-row:last-child {
+  
+  /* Tek kalan son motifi ortalamak için özel stil */
+  .motif-row.centered-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
     border-bottom: none;
+    margin-top: 30px;
   }
+  .centered-row .desc-center {
+    text-align: right;
+    max-width: 350px;
+  }
+  .centered-row .img-center img {
+    width: 100%;
+    max-width: 80px;
+    height: auto;
+    display: block;
+    transition: transform 0.2s ease;
+  }
+  .centered-row .img-center img:hover {
+    transform: scale(1.1);
+  }
+  .centered-row .desc-center h3 {
+    font-size: 16px;
+    margin: 0 0 5px 0;
+    color: #8b0000;
+    font-weight: bold;
+  }
+  .centered-row .desc-center p {
+    font-size: 13.5px;
+    color: #555;
+    line-height: 1.4;
+    margin: 0;
+  }
+
   .img-left img, .img-right img {
     width: 100%;
     max-width: 80px;
@@ -68,7 +102,12 @@ Every diamond, triangle, and zigzag on a Kilim is a letter in an ancient alphabe
       text-align: center;
       padding-bottom: 25px;
     }
-    .desc-left, .desc-right {
+    .motif-row.centered-row {
+      flex-direction: column-reverse; /* Mobilde önce resim sonra yazı gelsin diye */
+      gap: 15px;
+      text-align: center;
+    }
+    .desc-left, .desc-right, .centered-row .desc-center {
       text-align: center;
     }
     .desc-left { order: 2; }
@@ -151,21 +190,14 @@ Every diamond, triangle, and zigzag on a Kilim is a letter in an ancient alphabe
     </div>
   </div>
 
-  <!-- Satır 5: Kurt Ağzı 2 & Su Yolu -->
-  <div class="motif-row">
-    <div class="desc-left">
-      <h3>WOLF'S MOUTH</h3>
-      <p>Symbolizes Protection and Bravery.</p>
-    </div>
-    <div class="img-left">
-      <img src="../images/wolfs-mouth-2.png" alt="Wolf's Mouth 2">
-    </div>
-    <div class="img-right">
-      <img src="../images/water-motif.png" alt="Water Motif">
-    </div>
-    <div class="desc-right">
+  <!-- Satır 5: Ortalanmış Su Yolu (Water Motif) -->
+  <div class="motif-row centered-row">
+    <div class="desc-center">
       <h3>WATER MOTIF</h3>
       <p>Symbol of Purity, Life, and Cleansing.</p>
+    </div>
+    <div class="img-center">
+      <img src="../images/water-motif.png" alt="Water Motif">
     </div>
   </div>
 </div>
