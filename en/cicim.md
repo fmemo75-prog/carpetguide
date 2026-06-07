@@ -1,8 +1,22 @@
-# 🌸 Cicim (Jijim) The Art of Woven Embroidery  
+# 🌸 Cicim (Jijim) The Art of Woven Embroidery
 
 Cicim is one of the most decorative and labor-intensive flat-weave techniques in Anatolia. Often mistaken for embroidery, it is actually a specialized weaving method where extra colorful threads are added during the weaving process.
 
+<!-- VİDEO BAŞLANGICI -->
+<div align="center" style="margin: 25px auto;">
+  <video width="100%" style="max-width: 320px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);" autoplay loop muted playsinline>
+    <source src="../images/video/cicim_dokuyan_kadin.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <p style="font-size: 12.5px; color: #666; font-style: italic; margin-top: 8px;">Anatolian artisan weaving a traditional Cicim rug</p>
+</div>
+<!-- VİDEO BİTİŞİ -->
+
 ---
+
+## 🎨 What Makes Cicim Special
+
+Unlike a standard Kilim, where the surface is smooth, a Cicim rug has a raised pattern. The weaver creates the background first and then brocades the motifs on top using a needle-like technique on the loom.---
 
 ## 🎨 What Makes Cicim Special
 Unlike a standard Kilim, where the surface is smooth, a Cicim rug has a raised pattern. The weaver creates the background first and then brocades the motifs on top using a needle-like technique on the loom.
