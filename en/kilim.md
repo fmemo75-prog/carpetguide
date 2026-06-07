@@ -203,7 +203,7 @@ Every diamond, triangle, and zigzag on a Kilim is a letter in an ancient alphabe
 </div>
 <!-- YENİ DÜZENLİ MOTİF ALANI BİTİŞİ -->
 
----<hr style="margin: 40px 0; border-top: 2px dashed #d4af37;">
+<hr style="margin: 40px 0; border-top: 2px dashed #d4af37;">
 
 <!-- MOTİF ANALİZ ÖRNEĞİ BÖLÜMÜ -->
 <div style="background-color: #fdf5e6; padding: 25px; border-radius: 15px; border: 1px solid #d4af37;">
