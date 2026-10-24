@@ -143,6 +143,48 @@ photos:
     instagram: "https://www.instagram.com/galerieikman/"
     whatsapp: "905362640131"
     text: "The final piece of our 2026 Galerie Ikman curation."
+
+  - file: "images/Galerie Ikman/WhatsApp Image 2026-10-24 at 22.06.38.jpeg"
+    tag: "Galerie Ikman Courtyard"
+    map: "https://www.google.com/maps/search/?api=1&query=Galerie+Ikman+Goreme"
+    instagram: "https://www.instagram.com/galerieikman/"
+    whatsapp: "905362640131"
+    text: "Warm terracotta and vibrant Anatolian carpets laid out across the historic courtyard of Galerie Ikman."
+
+  - file: "images/Galerie Ikman/WhatsApp Image 2026-10-24 at 22.06.39 (1).jpeg"
+    tag: "Historic Halılı Han"
+    map: "https://www.google.com/maps/search/?api=1&query=Galerie+Ikman+Goreme"
+    instagram: "https://www.instagram.com/galerieikman/"
+    whatsapp: "905362640131"
+    text: "Sunlight pouring into the legendary open-air courtyard surrounded by centuries of textile heritage."
+
+  - file: "images/Galerie Ikman/WhatsApp Image 2026-10-24 at 22.06.39 (2).jpeg"
+    tag: "Vertical Kilim Wall"
+    map: "https://www.google.com/maps/search/?api=1&query=Galerie+Ikman+Goreme"
+    instagram: "https://www.instagram.com/galerieikman/"
+    whatsapp: "905362640131"
+    text: "Towering layers of tribal flatweaves and kilims reaching toward the Cappadocian sky."
+
+  - file: "images/Galerie Ikman/WhatsApp Image 2026-10-24 at 22.06.39 (3).jpeg"
+    tag: "Tribal Diamond Kilim"
+    map: "https://www.google.com/maps/search/?api=1&query=Galerie+Ikman+Goreme"
+    instagram: "https://www.instagram.com/galerieikman/"
+    whatsapp: "905362640131"
+    text: "A striking Anatolian tribal kilim with a bold central diamond medallion in authentic black, cream, and madder red."
+
+  - file: "images/Galerie Ikman/WhatsApp Image 2026-10-24 at 22.06.39 (4).jpeg"
+    tag: "Antique Runner (Yolluk)"
+    map: "https://www.google.com/maps/search/?api=1&query=Galerie+Ikman+Goreme"
+    instagram: "https://www.instagram.com/galerieikman/"
+    whatsapp: "905362640131"
+    text: "An elegant antique runner displaying a delicate floral border and deep natural-dyed field."
+
+  - file: "images/Galerie Ikman/WhatsApp Image 2026-10-24 at 22.06.39.jpeg"
+    tag: "Carpet Harmony"
+    map: "https://www.google.com/maps/search/?api=1&query=Galerie+Ikman+Goreme"
+    instagram: "https://www.instagram.com/galerieikman/"
+    whatsapp: "905362640131"
+    text: "A fascinating juxtaposition of intricate ivory floral weaving alongside bold geometric tribal artistry."
 ---
 
 <style>
