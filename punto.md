@@ -45,6 +45,42 @@ photos:
     map: "https://www.google.com/maps/search/?api=1&query=Punto+Carpet+Cappadocia"
     whatsapp: "905324970321"
     text: "A very special woven Eagle motif that resembles a painting, drawing attention with its fine details."
+
+  - file: "images/Punto/WhatsApp Image 2026-10-24 at 21.28.48 (1).jpeg"
+    tag: "Tribal Flatweave"
+    map: "https://www.google.com/maps/search/?api=1&query=Punto+Carpet+Cappadocia"
+    whatsapp: "905324970321"
+    text: "An authentic, deeply textured tribal flatweave / kilim featuring rich earth tones, bold geometric framing, and ancient Anatolian symbolic motifs."
+
+  - file: "images/Punto/WhatsApp Image 2026-10-24 at 21.28.48 (2).jpeg"
+    tag: "Classical Medallion Carpet"
+    map: "https://www.google.com/maps/search/?api=1&query=Punto+Carpet+Cappadocia"
+    whatsapp: "905324970321"
+    text: "A grand hand-knotted classical carpet showcasing an intricate central medallion, subtle antique patina, and harmonious vegetal dyes."
+
+  - file: "images/Punto/WhatsApp Image 2026-10-24 at 21.28.48.jpeg"
+    tag: "Framed Circular Textile Art"
+    map: "https://www.google.com/maps/search/?api=1&query=Punto+Carpet+Cappadocia"
+    whatsapp: "905324970321"
+    text: "An extraordinary framed circular textile artwork depicting detailed historical figures and ornate celestial borders, presented as a museum-grade collector piece."
+
+  - file: "images/Punto/WhatsApp Image 2026-10-24 at 21.28.49 (1).jpeg"
+    tag: "Pictorial Tapestry - Tower of Babel"
+    map: "https://www.google.com/maps/search/?api=1&query=Punto+Carpet+Cappadocia"
+    whatsapp: "905324970321"
+    text: "A breathtaking pictorial hand-woven tapestry recreating the legendary Tower of Babel with astonishing knot density and architectural detail."
+
+  - file: "images/Punto/WhatsApp Image 2026-10-24 at 21.28.49 (2).jpeg"
+    tag: "Showroom Collection"
+    map: "https://www.google.com/maps/search/?api=1&query=Punto+Carpet+Cappadocia"
+    whatsapp: "905324970321"
+    text: "Curated stacks of antique and vintage hand-knotted carpets alongside framed pictorial art pieces inside the Punto Cappadocia showroom."
+
+  - file: "images/Punto/WhatsApp Image 2026-10-24 at 21.28.49.jpeg"
+    tag: "Artistic Runner & Wall Hanging"
+    map: "https://www.google.com/maps/search/?api=1&query=Punto+Carpet+Cappadocia"
+    whatsapp: "905324970321"
+    text: "A graceful, colorful woven wall hanging demonstrating modern artistic palette harmony rooted in traditional Anatolian knotting excellence."
 ---
 
 <style>
